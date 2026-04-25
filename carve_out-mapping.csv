@@ -1,0 +1,5 @@
+﻿objectApiName;componentName;settingType;targetName;template
+Account;Accord_partenaires_et_filiales_EHS__c;helpText;;Accord du client pour recevoir des propositions commerciales par Email de la part des partenaires de {{Brand_Name}}.
+Account;Lead_AD_RaisonCloture__c;picklistLabel;Transfert agence –déjà client EHS;Transfert agence –déjà client {{Brand_Acronym}}
+Account;Numero_Tier_EHS__c;relatedListLabel;;Accounts (Numéro Tier {{Brand_Acronym}})
+Agence__c;QRCodeGeneration;webLinkUrl;;{{URL_ExtranetPro}}v2/genqrcode?agenceId={!Agence__c.Id}&token=25725f3a738a0092f910563828675992527e5338da63d1ca03dc43c2a4f687570f0e026ac155fed37fa58e2f244d0cc985e0eae76a1f1e9051a033c79963044d6290002c111f5bfc5367072be6f2b75bfc8c7b9e42458e2217e4543ec9957555390f1852ff325d08a821f47034fb5102e41909ab734f921b807c61ea905511c6
