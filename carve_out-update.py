@@ -12,6 +12,8 @@ from xml.sax.saxutils import escape, unescape
 
 
 DEFAULT_WORK_DIR = ".carve_out_work"
+DEFAULT_SF_TIMEOUT_SECONDS = 300
+MAX_SOQL_LABELS_PER_QUERY = 100
 CSV_HEADERS = ["objectApiName", "componentName", "settingType", "targetName", "template"]
 SUPPORTED_SETTING_TYPES = {
     "defaultValue",
@@ -46,10 +48,15 @@ def fail(message):
     sys.exit(1)
 
 
-def run_sf(args):
+def run_sf(args, timeout_seconds=DEFAULT_SF_TIMEOUT_SECONDS):
     executable = "sf.cmd" if os.name == "nt" else "sf"
     cmd = [executable] + args
-    result = subprocess.run(cmd, capture_output=True, text=True, shell=False)
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, shell=False, timeout=timeout_seconds)
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(
+            f"Command timed out after {timeout_seconds} seconds: {' '.join(cmd)}"
+        ) from exc
     if result.returncode != 0:
         raise RuntimeError(
             "\n".join(
@@ -70,9 +77,16 @@ def read_csv(csv_path):
         sample = f.read(4096)
         f.seek(0)
 
-        delimiter = ","
-        if ";" in sample and "," not in sample:
+        first_line = next((line for line in sample.splitlines() if line.strip()), "")
+        if first_line.count(";") > first_line.count(","):
             delimiter = ";"
+        elif first_line.count(",") > first_line.count(";"):
+            delimiter = ","
+        else:
+            try:
+                delimiter = csv.Sniffer().sniff(sample, delimiters=",;").delimiter
+            except csv.Error:
+                delimiter = ","
 
         reader = csv.DictReader(f, delimiter=delimiter)
         fieldnames = [name.strip() for name in (reader.fieldnames or [])]
@@ -178,7 +192,7 @@ def group_by_component(rows):
         grouped.setdefault(key, []).append(row)
     return grouped
 
-
+dlls
 def resolve_group_key(row):
     return build_default_relative_path(
         row["objectApiName"],
@@ -207,11 +221,8 @@ def build_default_relative_path(object_api_name, component_name, setting_type):
     raise RuntimeError(f"Unsupported settingType '{setting_type}'.")
 
 
-def retrieve_metadata(alias, row):
+def get_metadata_member(row):
     setting_type = row["settingType"]
-    object_api_name = row["objectApiName"]
-    component_name = row["componentName"]
-
     if setting_type in {
         "fieldLabel",
         "helpText",
@@ -221,85 +232,54 @@ def retrieve_metadata(alias, row):
         "picklistLabel",
         "relatedListLabel",
     }:
-        if object_api_name and component_name:
-            run_sf(
-                [
-                    "project",
-                    "retrieve",
-                    "start",
-                    "--metadata",
-                    f"CustomField:{object_api_name}.{component_name}",
-                    "--target-org",
-                    alias,
-                    "--json",
-                ]
-            )
-        return
+        return f"CustomField:{row['objectApiName']}.{row['componentName']}"
 
     if setting_type in {"listViewLabel", "listViewFilterValue"}:
-        if object_api_name and component_name:
-            run_sf(
-                [
-                    "project",
-                    "retrieve",
-                    "start",
-                    "--metadata",
-                    f"ListView:{object_api_name}.{component_name}",
-                    "--target-org",
-                    alias,
-                    "--json",
-                ]
-            )
-        return
+        return f"ListView:{row['objectApiName']}.{row['componentName']}"
 
     if setting_type == "webLinkUrl":
-        if object_api_name and component_name:
-            run_sf(
-                [
-                    "project",
-                    "retrieve",
-                    "start",
-                    "--metadata",
-                    f"WebLink:{object_api_name}.{component_name}",
-                    "--target-org",
-                    alias,
-                    "--json",
-                ]
-            )
-        return
+        return f"WebLink:{row['objectApiName']}.{row['componentName']}"
 
     if setting_type == "validationRuleFormula":
-        if object_api_name and component_name:
-            run_sf(
-                [
-                    "project",
-                    "retrieve",
-                    "start",
-                    "--metadata",
-                    f"ValidationRule:{object_api_name}.{component_name}",
-                    "--target-org",
-                    alias,
-                    "--json",
-                ]
-            )
-        return
+        return f"ValidationRule:{row['objectApiName']}.{row['componentName']}"
 
     raise RuntimeError(f"Unsupported settingType '{setting_type}'.")
 
 
-def deploy_file(alias, file_path):
-    run_sf(
-        [
-            "project",
-            "deploy",
-            "start",
-            "--source-dir",
-            str(file_path),
-            "--target-org",
-            alias,
-            "--json",
-        ]
-    )
+def retrieve_metadata_batch(alias, rows, timeout_seconds):
+    metadata_members = sorted({get_metadata_member(row) for row in rows})
+    if not metadata_members:
+        return
+
+    args = [
+        "project",
+        "retrieve",
+        "start",
+        "--target-org",
+        alias,
+        "--json",
+    ]
+    for member in metadata_members:
+        args.extend(["--metadata", member])
+    run_sf(args, timeout_seconds=timeout_seconds)
+
+
+def deploy_files(alias, file_paths, timeout_seconds):
+    deploy_paths = [str(path) for path in file_paths]
+    if not deploy_paths:
+        return
+
+    args = [
+        "project",
+        "deploy",
+        "start",
+        "--target-org",
+        alias,
+        "--json",
+    ]
+    for file_path in deploy_paths:
+        args.extend(["--source-dir", file_path])
+    run_sf(args, timeout_seconds=timeout_seconds)
 
 
 def get_label_value(alias, label_name):
@@ -322,6 +302,54 @@ def get_label_value(alias, label_name):
     if len(records) != 1:
         raise RuntimeError(f"Custom Label not found or not unique: {label_name}")
     return records[0]["Value"]
+
+
+def extract_label_names(rows):
+    label_names = set()
+    for row in rows:
+        label_names.update(re.findall(r"\{\{([A-Za-z0-9_]+)\}\}", row["template"]))
+    return sorted(label_names)
+
+
+def chunked(items, size):
+    for index in range(0, len(items), size):
+        yield items[index : index + size]
+
+
+def prefetch_label_values(alias, rows, timeout_seconds):
+    label_names = extract_label_names(rows)
+    if not label_names:
+        return {}
+
+    cache = {}
+    for batch in chunked(label_names, MAX_SOQL_LABELS_PER_QUERY):
+        escaped_names = [name.replace("'", "\\'") for name in batch]
+        in_clause = ", ".join(f"'{name}'" for name in escaped_names)
+        soql = f"SELECT Name, Value FROM ExternalString WHERE Name IN ({in_clause})"
+        output = run_sf(
+            [
+                "data",
+                "query",
+                "--use-tooling-api",
+                "--query",
+                soql,
+                "--target-org",
+                alias,
+                "--json",
+            ],
+            timeout_seconds=timeout_seconds,
+        )
+        parsed = json.loads(output)
+        records = parsed.get("result", {}).get("records", [])
+        for record in records:
+            cache[record["Name"]] = record["Value"]
+
+        missing = [name for name in batch if name not in cache]
+        if missing:
+            raise RuntimeError(
+                "Custom Label not found or not unique: " + ", ".join(sorted(missing))
+            )
+    return cache
 
 
 def resolve_template(template, alias, cache):
@@ -616,6 +644,7 @@ def main():
     parser.add_argument("--alias", required=True)
     parser.add_argument("--mode", choices=["check", "preview", "prepare", "deploy"], default="check")
     parser.add_argument("--work-dir", default=DEFAULT_WORK_DIR)
+    parser.add_argument("--sf-timeout-seconds", type=int, default=DEFAULT_SF_TIMEOUT_SECONDS)
     args = parser.parse_args()
 
     project_root = Path.cwd()
@@ -628,9 +657,11 @@ def main():
     rows = read_csv(csv_path)
     if not rows:
         fail("The CSV file contains no change rows.")
+    if args.sf_timeout_seconds < 1:
+        fail("--sf-timeout-seconds must be 1 or greater.")
 
     grouped = group_by_component(rows)
-    label_cache = {}
+    label_cache = prefetch_label_values(args.alias, rows, args.sf_timeout_seconds)
     preview_rows = []
 
     if args.mode in ("prepare", "deploy"):
@@ -638,12 +669,13 @@ def main():
             shutil.rmtree(work_dir)
         work_dir.mkdir(parents=True, exist_ok=True)
 
+    print(f"Retrieving {len(grouped)} metadata component(s) in one batch...")
+    retrieve_metadata_batch(args.alias, rows, args.sf_timeout_seconds)
+
     for group_key, component_rows in grouped.items():
-        sample_row = component_rows[0]
         print(f"\nProcessing {group_key}")
 
         try:
-            retrieve_metadata(args.alias, sample_row)
             component_file = get_file_path(project_root, group_key)
             xml_text = component_file.read_text(encoding="utf-8")
 
@@ -684,14 +716,14 @@ def main():
         return
 
     if args.mode == "deploy":
-        print("\nCopying prepared files into the project and deploying them...")
+        print("\nCopying prepared files into the project...")
         for prepared_file, project_file in prepared_files:
             project_file.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(prepared_file, project_file)
             print(f"- copied {prepared_file} -> {project_file}")
 
-            deploy_file(args.alias, project_file)
-            print(f"- deployed {project_file}")
+        print(f"\nDeploying {len(prepared_files)} prepared file(s) in one batch...")
+        deploy_files(args.alias, [project_file for _, project_file in prepared_files], args.sf_timeout_seconds)
 
         print("\nDeployment finished.")
 
