@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_NePasEnvoyerEmail__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 14 :  Cette case non cochée par defaut a été créée pour limiter l&apos;envoie des emails. Au statut non cochée l&apos;email sera envoyé. Pour l&apos;INIT la case est cochée</description>
+    <label>TECH_NePasEnvoyerEmail</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

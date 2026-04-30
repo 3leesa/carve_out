@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avec_financement_Devis_gagn__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Agence Digitale - Evol - lot 1</description>
+    <label>Avec financement  - Devis gagné</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

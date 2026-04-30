@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeInteraction__c</fullName>
+    <description>Sprint 44 - Evolution Processus consignation d&apos;appel</description>
+    <label>Type d&apos;interaction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CreerEchangeClient__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Interaction entrante</fullName>
+                <default>false</default>
+                <label>Interaction entrante</label>
+            </value>
+            <value>
+                <fullName>Interaction sortante</fullName>
+                <default>false</default>
+                <label>Interaction sortante</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Interaction entrante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Interaction sortante</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

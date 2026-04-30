@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reference_piece_a_commander__c</fullName>
+    <description>CRM-648 champ spécifique pour enregistrer la référence de la pièce à commander (référence remontée par le PDA &amp; par la tablette sous NUM).</description>
+    <externalId>false</externalId>
+    <label>Référence pièce à commander</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

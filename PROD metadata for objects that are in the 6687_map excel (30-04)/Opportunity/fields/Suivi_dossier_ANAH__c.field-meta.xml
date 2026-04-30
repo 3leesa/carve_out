@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suivi_dossier_ANAH__c</fullName>
+    <label>Suivi dossier ANAH</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>En attente de désignation mandataire</fullName>
+                <default>false</default>
+                <label>En attente de désignation mandataire</label>
+            </value>
+            <value>
+                <fullName>Mandat Accepté</fullName>
+                <default>false</default>
+                <label>Mandat Accepté</label>
+            </value>
+            <value>
+                <fullName>Instruction bloquée</fullName>
+                <default>false</default>
+                <label>Instruction bloquée</label>
+            </value>
+            <value>
+                <fullName>Mandat accepté avec les pièces chargées</fullName>
+                <default>false</default>
+                <label>Mandat accepté avec les pièces chargées</label>
+            </value>
+            <value>
+                <fullName>En instruction</fullName>
+                <default>false</default>
+                <label>En instruction</label>
+            </value>
+            <value>
+                <fullName>Subvention accordée</fullName>
+                <default>false</default>
+                <label>Subvention accordée</label>
+            </value>
+            <value>
+                <fullName>Subvention rejetée</fullName>
+                <default>false</default>
+                <label>Subvention rejetée</label>
+            </value>
+            <value>
+                <fullName>Demande de paiement</fullName>
+                <default>false</default>
+                <label>Demande de paiement</label>
+            </value>
+            <value>
+                <fullName>Paiement accepté</fullName>
+                <default>false</default>
+                <label>Paiement accepté</label>
+            </value>
+            <value>
+                <fullName>Paiement effectué</fullName>
+                <default>false</default>
+                <label>Paiement effectué</label>
+            </value>
+            <value>
+                <fullName>Abandonned</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Abandonned</label>
+            </value>
+            <value>
+                <fullName>Advance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Advance</label>
+            </value>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Canceled</label>
+            </value>
+            <value>
+                <fullName>KO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KO</label>
+            </value>
+            <value>
+                <fullName>OK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OK</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>Payment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Payment</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Progress</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Progress</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

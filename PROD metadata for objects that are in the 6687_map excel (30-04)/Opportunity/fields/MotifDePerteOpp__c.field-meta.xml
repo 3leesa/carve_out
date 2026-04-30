@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotifDePerteOpp__c</fullName>
+    <description>Sprint 14 : Motifs de perte d&apos;une opportunité
+MCOSF-2322 : Ajout du valeur Requalification dans le picklist
+MCOSF-2903 : Ajout du valeur VT Refuse dans le picklist
+MCOSF-4696 : Ajout de nouvelles valeurs</description>
+    <label>Motif de perte</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Abandon du projet</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Abandon du projet</label>
+            </value>
+            <value>
+                <fullName>Abandon projet par client</fullName>
+                <default>false</default>
+                <label>Abandon projet par client</label>
+            </value>
+            <value>
+                <fullName>Abandon projet par EHS</fullName>
+                <default>false</default>
+                <label>Abandon projet par EHS</label>
+            </value>
+            <value>
+                <fullName>Choix de la concurrence</fullName>
+                <default>false</default>
+                <label>Choix de la concurrence</label>
+            </value>
+            <value>
+                <fullName>Contrat non souhaitable</fullName>
+                <default>false</default>
+                <label>Contrat non souhaitable</label>
+            </value>
+            <value>
+                <fullName>Devis envoyé trop tard ou non reçu</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Devis envoyé trop tard ou non reçu</label>
+            </value>
+            <value>
+                <fullName>Devis locataire refus propriétaire</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Devis locataire refus propriétaire</label>
+            </value>
+            <value>
+                <fullName>Doublon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Doublon</label>
+            </value>
+            <value>
+                <fullName>Doublon CRM</fullName>
+                <default>false</default>
+                <label>Doublon CRM</label>
+            </value>
+            <value>
+                <fullName>Financement banque refusé</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Financement banque refusé</label>
+            </value>
+            <value>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Injoignable</label>
+            </value>
+            <value>
+                <fullName>Pas de réponse du client malgré les relances</fullName>
+                <default>false</default>
+                <label>Pas de réponse du client malgré les relances</label>
+            </value>
+            <value>
+                <fullName>Projet non-mature (&gt;12 mois)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Projet non-mature (&gt;12 mois)</label>
+            </value>
+            <value>
+                <fullName>Projet non-mature (&gt;6 mois)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Projet non-mature (&gt;6 mois)</label>
+            </value>
+            <value>
+                <fullName>Refus Administratif</fullName>
+                <default>false</default>
+                <label>Refus Administratif</label>
+            </value>
+            <value>
+                <fullName>Refus client</fullName>
+                <default>false</default>
+                <label>Refus client</label>
+            </value>
+            <value>
+                <fullName>Refus dossier ANAH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Refus dossier ANAH</label>
+            </value>
+            <value>
+                <fullName>Refus souscription contrat d&apos;élec</fullName>
+                <default>false</default>
+                <label>Refus souscription contrat d&apos;élec</label>
+            </value>
+            <value>
+                <fullName>Requalification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Requalification</label>
+            </value>
+            <value>
+                <fullName>VT refusée</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VT refusée</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

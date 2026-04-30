@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>TECH_GazelleId__c</columns>
+    <columns>Niveau_d_escalade_trait_par_ce_site__c</columns>
+    <columns>Approbateur_1__c</columns>
+    <columns>CodeAgenceGazelle__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Tout</label>
+    <language>fr</language>
+</ListView>

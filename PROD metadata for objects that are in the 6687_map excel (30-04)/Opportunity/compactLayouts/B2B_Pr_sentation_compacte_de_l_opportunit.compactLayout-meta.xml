@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Pr_sentation_compacte_de_l_opportunit</fullName>
+    <fields>Name</fields>
+    <fields>AccountId</fields>
+    <fields>B2B_nom_du_contact__c</fields>
+    <fields>NouvelleEcheanceProjet__c</fields>
+    <fields>B2B_budget_estime__c</fields>
+    <label>B2B Présentation compacte de l&apos;opportunité</label>
+</CompactLayout>

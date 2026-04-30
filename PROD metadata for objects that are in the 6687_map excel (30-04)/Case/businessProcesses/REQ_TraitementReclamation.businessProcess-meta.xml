@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_TraitementReclamation</fullName>
+    <description>Processus de traitement des demandes de type &quot;Réclamation&quot;</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Annulé</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Annulé %28Client%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Annulé %28Interne%29</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>En attente d%27approbation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>En cours</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Nouveau</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Terminé</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

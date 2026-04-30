@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR055_NePasFermerSiSupNiveau0</fullName>
+    <active>true</active>
+    <description>MCOSF-2034:Opportunité: Mettre à jour les automatismes de devis, d&apos;opportunité et de demande</description>
+    <errorConditionFormula>AND(
+NOT(RecordType.DeveloperName = &apos;PoseEquipement&apos;),
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c),
+TECH_CreatedBySelfHelp__c == false,
+ISPICKVAL(Status,&apos;Terminé&apos;),
+ISCHANGED(Status),
+NOT(ISPICKVAL( NiveauDEscalade__c, &apos;Courante&apos;)),
+$UserRole.Name &lt;&gt; &apos;Direction Relation Client&apos;,
+$UserRole.Name &lt;&gt; &apos;Service National Consommateurs&apos;,
+$Profile.Name &lt;&gt; &apos;Administrateur du CRM&apos;,
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Escalade modifiable uniquement par le SNC</errorMessage>
+</ValidationRule>

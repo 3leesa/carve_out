@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MiseEnConcurrence__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 10 - Affichage du champ Mise en concurrence de la demande-mère. Champ alimenté par le Générateur de processus avec : [Case].OppMiseEnConcurrence__c.</description>
+    <label>Mise en concurrence</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

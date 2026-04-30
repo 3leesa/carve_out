@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Traitment_Vilogia</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8</booleanFilter>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>TECH_PhenixId__c</columns>
+    <columns>StatutTri__c</columns>
+    <columns>NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>ChoixAgence__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ServiceContract__c</field>
+        <operation>contains</operation>
+        <value>VILOGIA</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouveau</value>
+    </filters>
+    <filters>
+        <field>CASES.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>9/26/2018 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>TECH_InterventionExiste__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Travaux,Visite / Entretien</value>
+    </filters>
+    <filters>
+        <field>InformationCRC__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>MonAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>notEqual</operation>
+        <value>Equipe Demandes courantes</value>
+    </filters>
+    <label>Traitment Vilogia</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>EquipeVilogia</group>
+    </sharedTo>
+</ListView>

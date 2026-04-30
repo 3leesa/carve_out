@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offre_souhaitee__c</fullName>
+    <label>Offre souhaitée</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Essentiel</fullName>
+                <default>false</default>
+                <label>Essentiel</label>
+            </value>
+            <value>
+                <fullName>Sécurité</fullName>
+                <default>false</default>
+                <label>Sécurité</label>
+            </value>
+            <value>
+                <fullName>Intégral</fullName>
+                <default>false</default>
+                <label>Intégral</label>
+            </value>
+            <value>
+                <fullName>Pack PAC renouvellement</fullName>
+                <default>false</default>
+                <label>Pack PAC renouvellement</label>
+            </value>
+            <value>
+                <fullName>Pack PAC conversion</fullName>
+                <default>false</default>
+                <label>Pack PAC conversion</label>
+            </value>
+            <value>
+                <fullName>Pack Eideris</fullName>
+                <default>false</default>
+                <label>Pack Eideris</label>
+            </value>
+            <value>
+                <fullName>PCTI</fullName>
+                <default>false</default>
+                <label>PCTI</label>
+            </value>
+            <value>
+                <fullName>Pack confort Clim</fullName>
+                <default>false</default>
+                <label>Pack confort Clim</label>
+            </value>
+            <value>
+                <fullName>Vente sèche</fullName>
+                <default>false</default>
+                <label>Vente sèche</label>
+            </value>
+            <value>
+                <fullName>Visite forfaitaire</fullName>
+                <default>false</default>
+                <label>Visite forfaitaire</label>
+            </value>
+            <value>
+                <fullName>Diagnostic</fullName>
+                <default>false</default>
+                <label>Diagnostic</label>
+            </value>
+            <value>
+                <fullName>PCTC</fullName>
+                <default>false</default>
+                <label>PCTC</label>
+            </value>
+            <value>
+                <fullName>PCTC illigo</fullName>
+                <default>false</default>
+                <label>PCTC illigo</label>
+            </value>
+            <value>
+                <fullName>Service illigo</fullName>
+                <default>false</default>
+                <label>Service illigo</label>
+            </value>
+            <value>
+                <fullName>Révision</fullName>
+                <default>false</default>
+                <label>Révision</label>
+            </value>
+            <value>
+                <fullName>Liberté</fullName>
+                <default>false</default>
+                <label>Liberté</label>
+            </value>
+            <value>
+                <fullName>Liberté Biennale</fullName>
+                <default>false</default>
+                <label>Liberté Biennale</label>
+            </value>
+            <value>
+                <fullName>Transition</fullName>
+                <default>false</default>
+                <label>Transition</label>
+            </value>
+            <value>
+                <fullName>Vente sèche Coup de Pouce</fullName>
+                <default>false</default>
+                <label>Vente sèche Coup de Pouce</label>
+            </value>
+            <value>
+                <fullName>Adoucisseur</fullName>
+                <default>false</default>
+                <label>Adoucisseur</label>
+            </value>
+            <value>
+                <fullName>Remplacement Ballon</fullName>
+                <default>false</default>
+                <label>Remplacement Ballon</label>
+            </value>
+            <value>
+                <fullName>Clim Multi-Split</fullName>
+                <default>false</default>
+                <label>Clim Multi-Split</label>
+            </value>
+            <value>
+                <fullName>Forfait dépannage</fullName>
+                <default>false</default>
+                <label>Forfait dépannage</label>
+            </value>
+            <value>
+                <fullName>Access</fullName>
+                <default>false</default>
+                <label>Access</label>
+            </value>
+            <value>
+                <fullName>Sérénité</fullName>
+                <default>false</default>
+                <label>Sérénité</label>
+            </value>
+            <value>
+                <fullName>Eco-Bois</fullName>
+                <default>false</default>
+                <label>Eco-Bois</label>
+            </value>
+            <value>
+                <fullName>Offre PAC Hybride</fullName>
+                <default>false</default>
+                <label>Offre PAC Hybride</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

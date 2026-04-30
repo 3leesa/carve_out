@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InterlocuteurSecondaireEHSClient__c</fullName>
+    <description>Sprint 11 - Affichage en texte du champ Interlocuteur secondaure EHS du client.</description>
+    <externalId>false</externalId>
+    <formula>Client__r.InterlocuteurSecondaireEHS__r.FirstName &amp;&quot; &quot;&amp; Client__r.InterlocuteurSecondaireEHS__r.LastName</formula>
+    <label>Interlocuteur secondaire EHS</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

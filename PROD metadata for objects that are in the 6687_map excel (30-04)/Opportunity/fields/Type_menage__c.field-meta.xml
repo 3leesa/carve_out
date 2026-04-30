@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_menage__c</fullName>
+    <description>Sprint 19 - CPQ-536 : Devis Appareil: Implémenter la nouvelle Prime Renov sur opportunité pour le 15/09 (PEPA V2)</description>
+    <label>Type de ménage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Modeste</fullName>
+                <default>false</default>
+                <label>Modeste (jaune)</label>
+            </value>
+            <value>
+                <fullName>Très Modeste</fullName>
+                <default>false</default>
+                <label>Très Modeste (bleu)</label>
+            </value>
+            <value>
+                <fullName>Intermédiaire</fullName>
+                <default>false</default>
+                <label>Intermédiaire (violet)</label>
+            </value>
+            <value>
+                <fullName>Aisé</fullName>
+                <default>false</default>
+                <label>Aisé (rose)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

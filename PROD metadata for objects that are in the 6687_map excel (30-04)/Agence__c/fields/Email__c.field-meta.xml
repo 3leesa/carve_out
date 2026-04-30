@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email__c</fullName>
+    <description>Sprint 13 - Information reçue de Gazelle, noeud Adresse [Hr_locations_all.Loc_information14].</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Exclusivement utilisée pour les échanges clients et non pas pour les échanges internes</inlineHelpText>
+    <label>Email Service client de l&apos;agence</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

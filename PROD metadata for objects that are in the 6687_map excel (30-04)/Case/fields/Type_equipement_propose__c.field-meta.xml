@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_equipement_propose__c</fullName>
+    <description>MCOSF-2889: Add new picklist values</description>
+    <label>Type d&apos;équipement proposé</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Autre équipement</fullName>
+                <default>true</default>
+                <label>Autre équipement</label>
+            </value>
+            <value>
+                <fullName>Ballon</fullName>
+                <default>false</default>
+                <label>Ballon</label>
+            </value>
+            <value>
+                <fullName>Thermostat connecté</fullName>
+                <default>false</default>
+                <label>Thermostat connecté</label>
+            </value>
+            <value>
+                <fullName>Adoucisseur</fullName>
+                <default>false</default>
+                <label>Adoucisseur</label>
+            </value>
+            <value>
+                <fullName>Radiateur</fullName>
+                <default>false</default>
+                <label>Radiateur</label>
+            </value>
+            <value>
+                <fullName>Pompe à chaleur Eau / Eau</fullName>
+                <default>false</default>
+                <label>Pompe à chaleur Eau / Eau</label>
+            </value>
+            <value>
+                <fullName>Chauffe-eau</fullName>
+                <default>false</default>
+                <label>Chauffe-eau</label>
+            </value>
+            <value>
+                <fullName>Climatiseur ou pompe à chaleur Air / Air</fullName>
+                <default>false</default>
+                <label>Climatiseur ou pompe à chaleur Air / Air</label>
+            </value>
+            <value>
+                <fullName>Photovoltaïque</fullName>
+                <default>false</default>
+                <label>Photovoltaïque</label>
+            </value>
+            <value>
+                <fullName>Pompe à chaleur Air / Eau</fullName>
+                <default>false</default>
+                <label>Pompe à chaleur Air / Eau</label>
+            </value>
+            <value>
+                <fullName>Borne de Recharge</fullName>
+                <default>false</default>
+                <label>Borne de Recharge</label>
+            </value>
+            <value>
+                <fullName>Hybride</fullName>
+                <default>false</default>
+                <label>Hybride</label>
+            </value>
+            <value>
+                <fullName>VMC</fullName>
+                <default>false</default>
+                <label>VMC</label>
+            </value>
+            <value>
+                <fullName>Inertage cuve fioul</fullName>
+                <default>false</default>
+                <label>Inertage cuve fioul</label>
+            </value>
+            <value>
+                <fullName>Chaudière</fullName>
+                <default>false</default>
+                <label>Chaudière</label>
+            </value>
+            <value>
+                <fullName>Chaudière gaz murale</fullName>
+                <default>false</default>
+                <label>Chaudière gaz murale</label>
+            </value>
+            <value>
+                <fullName>Chaudière gaz sol</fullName>
+                <default>false</default>
+                <label>Chaudière gaz sol</label>
+            </value>
+            <value>
+                <fullName>Chaudière fioul murale</fullName>
+                <default>false</default>
+                <label>Chaudière fioul murale</label>
+            </value>
+            <value>
+                <fullName>Chaudière fioul sol</fullName>
+                <default>false</default>
+                <label>Chaudière fioul sol</label>
+            </value>
+            <value>
+                <fullName>Chaudière bois</fullName>
+                <default>false</default>
+                <label>Chaudière bois</label>
+            </value>
+            <value>
+                <fullName>Chauffe-eau thermodynamique</fullName>
+                <default>false</default>
+                <label>Chauffe-eau thermodynamique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Creneau_de_rappel_souhaite__c</fullName>
+    <label>Créneau de rappel souhaité</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>9h-11h</fullName>
+                <default>false</default>
+                <label>9h-11h</label>
+            </value>
+            <value>
+                <fullName>11h-13h</fullName>
+                <default>false</default>
+                <label>11h-13h</label>
+            </value>
+            <value>
+                <fullName>13h-15h</fullName>
+                <default>false</default>
+                <label>13h-15h</label>
+            </value>
+            <value>
+                <fullName>15h-17h</fullName>
+                <default>false</default>
+                <label>15h-17h</label>
+            </value>
+            <value>
+                <fullName>17h-19h</fullName>
+                <default>false</default>
+                <label>17h-19h</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

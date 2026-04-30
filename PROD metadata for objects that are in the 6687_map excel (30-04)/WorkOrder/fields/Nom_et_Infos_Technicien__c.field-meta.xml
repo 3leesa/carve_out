@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nom_et_Infos_Technicien__c</fullName>
+    <description>Sprint 106 CRM-915 concaténation infos technicen pour gagner 1 colonne dans liste associé</description>
+    <externalId>false</externalId>
+    <formula>Nom_du_technicien__c  + &apos; &apos; + &apos;/&apos; + &apos; &apos; +  Commentaire__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Nom et Infos Technicien</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

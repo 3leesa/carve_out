@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DemandeUrgente__c</fullName>
+    <description>MCOSF-6272</description>
+    <label>Demande Urgente</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non</fullName>
+                <default>true</default>
+                <label>Non</label>
+            </value>
+            <value>
+                <fullName>Urgence technique</fullName>
+                <default>false</default>
+                <label>Urgence technique</label>
+            </value>
+            <value>
+                <fullName>Urgence technique Appel KO</fullName>
+                <default>false</default>
+                <label>Urgence technique Appel KO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

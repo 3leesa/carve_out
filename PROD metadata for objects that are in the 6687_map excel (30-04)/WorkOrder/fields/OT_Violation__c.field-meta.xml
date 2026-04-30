@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OT_Violation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>OP-239 : OT Job -&gt; SF WorkOrder : infos manquantes : Flag violation
+OP-239 : OT Job -&gt; SF WorkOrder : missing infos : Violation flag</description>
+    <label>Violation Opti-Time</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_GazelleIdAdresseFactu__c</fullName>
+    <description>Sprint 8 - Identifiant technique Gazelle de l&apos;adresse de facturation, information reçue de l&apos;outil Gazelle noeud Adresse [Hz_locations.Location_id].</description>
+    <externalId>true</externalId>
+    <label>TECH_ID Gazelle Adresse facturation</label>
+    <length>20</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

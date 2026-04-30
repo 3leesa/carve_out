@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Devis_a_valider</fullName>
+    <booleanFilter>1 AND 5 AND (2 OR (3 AND 4)) AND 6 AND 7 AND 8</booleanFilter>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>TECH_CpqDevisStatus__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>n_du_telephone_du_client__c</columns>
+    <columns>CommentaireSuiviCommercial__c</columns>
+    <columns>LogementConcerne__c</columns>
+    <columns>Type_equipement_propose__c</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Equipement</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.CRM_B2C,Opportunity.Contrat</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Appareil_Agence_Digitale</value>
+    </filters>
+    <filters>
+        <field>ATransfererAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Primary_Quote_Pack__c</field>
+        <operation>notEqual</operation>
+        <value>Offre Borne Electrique</value>
+    </filters>
+    <filters>
+        <field>MonSite__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notContain</operation>
+        <value>Fermée / Perdue</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Besoin détecté,Devis créé</value>
+    </filters>
+    <label>Devis à envoyer</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>ChefEquipe_Conseillere</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>DirecteurAgence_ConseillerePrincipale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

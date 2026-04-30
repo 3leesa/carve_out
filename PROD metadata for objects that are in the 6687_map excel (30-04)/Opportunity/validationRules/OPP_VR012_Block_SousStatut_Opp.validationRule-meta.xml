@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR012_Block_SousStatut_Opp</fullName>
+    <active>true</active>
+    <description>&quot;The selection of the &apos;Programmée à poser&apos; value must be blocked if there is no &apos;Replacement&apos; type Work Order with a status of &apos;Programmé&apos; or &apos;Confirmé&apos; associated with the Case linked to the Opportunity. MCOSF- 6754</description>
+    <errorConditionFormula>AND(
+			NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c),
+			ISCHANGED(Sous_statut__c),
+   ISPICKVAL(Sous_statut__c, &quot;Programmée à poser&quot;),
+   TECH_Intervention_Remplacement_Programm__c = FALSE
+)</errorConditionFormula>
+    <errorMessage>Veuillez programmer ou confirmer une intervention de remplacement pour modifier le sous-statut.</errorMessage>
+</ValidationRule>

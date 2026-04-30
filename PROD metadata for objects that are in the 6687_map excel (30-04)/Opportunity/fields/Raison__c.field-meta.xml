@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Raison__c</fullName>
+    <description>Sprint 14 : Raison du choix de la concurrence
+MCOSF-4696 : Ajout de nouvelles valeurs</description>
+    <label>Raison</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>MotifDePerteOpp__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prix</fullName>
+                <default>false</default>
+                <label>Prix</label>
+            </value>
+            <value>
+                <fullName>Manque de réactivité - Lenteur du processus</fullName>
+                <default>false</default>
+                <label>Manque de réactivité - Lenteur du processus</label>
+            </value>
+            <value>
+                <fullName>Suite avis négatifs autres clients</fullName>
+                <default>false</default>
+                <label>Suite avis négatifs autres clients</label>
+            </value>
+            <value>
+                <fullName>Préfère un artisan local</fullName>
+                <default>false</default>
+                <label>Préfère un artisan local</label>
+            </value>
+            <value>
+                <fullName>Financement banque client refusé</fullName>
+                <default>false</default>
+                <label>Financement banque client refusé</label>
+            </value>
+            <value>
+                <fullName>Budget client non adapté au projet</fullName>
+                <default>false</default>
+                <label>Budget client non adapté au projet</label>
+            </value>
+            <value>
+                <fullName>Refus dossier Anah</fullName>
+                <default>false</default>
+                <label>Refus dossier Anah</label>
+            </value>
+            <value>
+                <fullName>Devis reçu trop tard/non reçu</fullName>
+                <default>false</default>
+                <label>Devis reçu trop tard/non reçu</label>
+            </value>
+            <value>
+                <fullName>Ne souhaitait pas de RDV</fullName>
+                <default>false</default>
+                <label>Ne souhaitait pas de RDV</label>
+            </value>
+            <value>
+                <fullName>Client trop éloigné de l’agence</fullName>
+                <default>false</default>
+                <label>Client trop éloigné de l’agence</label>
+            </value>
+            <value>
+                <fullName>Solution technique impossible</fullName>
+                <default>false</default>
+                <label>Solution technique impossible</label>
+            </value>
+            <value>
+                <fullName>Client injoignable malgré relances</fullName>
+                <default>false</default>
+                <label>Client injoignable malgré relances</label>
+            </value>
+            <value>
+                <fullName>L’agence ne porte pas l’équipement souhaité par le client</fullName>
+                <default>false</default>
+                <label>L’agence ne porte pas l’équipement souhaité par le client</label>
+            </value>
+            <value>
+                <fullName>Pas de disponibilité en agence pour traiter la demande client</fullName>
+                <default>false</default>
+                <label>Pas de disponibilité en agence pour traiter la demande client</label>
+            </value>
+            <value>
+                <fullName>Equipement réparé</fullName>
+                <default>false</default>
+                <label>Equipement réparé</label>
+            </value>
+            <value>
+                <fullName>Projet non-mature / A relancer dans 6 mois</fullName>
+                <default>false</default>
+                <label>Projet non-mature / A relancer dans 6 mois</label>
+            </value>
+            <value>
+                <fullName>Projet non-mature / A relancer dans 12 mois</fullName>
+                <default>false</default>
+                <label>Projet non-mature / A relancer dans 12 mois</label>
+            </value>
+            <value>
+                <fullName>RDV ou VT non honorée par EHS</fullName>
+                <default>false</default>
+                <label>RDV ou VT non honorée par EHS</label>
+            </value>
+            <value>
+                <fullName>Réclamation non traitée</fullName>
+                <default>false</default>
+                <label>Réclamation non traitée</label>
+            </value>
+            <value>
+                <fullName>Meilleure solution technique</fullName>
+                <default>false</default>
+                <label>Meilleure solution technique</label>
+            </value>
+            <value>
+                <fullName>Délai de pose</fullName>
+                <default>false</default>
+                <label>Délai de pose</label>
+            </value>
+            <value>
+                <fullName>Doublon CRM Fiche Client</fullName>
+                <default>false</default>
+                <label>Doublon CRM Fiche Client</label>
+            </value>
+            <value>
+                <fullName>Doublon CRM Opp Co&apos;</fullName>
+                <default>false</default>
+                <label>Doublon CRM Opp Co&apos;</label>
+            </value>
+            <value>
+                <fullName>Nettoyage Masse DSI</fullName>
+                <default>false</default>
+                <label>Nettoyage Masse DSI</label>
+            </value>
+            <value>
+                <fullName>Financement FranFinance refusé</fullName>
+                <default>false</default>
+                <label>Financement FranFinance refusé</label>
+            </value>
+            <value>
+                <fullName>Erreur - Mauvais geste métier CRM</fullName>
+                <default>false</default>
+                <label>Erreur - Mauvais geste métier CRM</label>
+            </value>
+            <value>
+                <fullName>Devis locataire</fullName>
+                <default>false</default>
+                <label>Devis locataire</label>
+            </value>
+            <value>
+                <fullName>Refus propriétaire</fullName>
+                <default>false</default>
+                <label>Devis locataire, Refus propriétaire</label>
+            </value>
+            <value>
+                <fullName>Relance Devis ColorFil</fullName>
+                <default>false</default>
+                <label>Relance Devis ColorFil</label>
+            </value>
+            <value>
+                <fullName>Aucune raison donnée par le client</fullName>
+                <default>false</default>
+                <label>Aucune raison donnée par le client</label>
+            </value>
+            <value>
+                <fullName>Projet de revente du logement ou logement vendu</fullName>
+                <default>false</default>
+                <label>Projet de revente du logement ou logement vendu</label>
+            </value>
+            <value>
+                <fullName>Devis conseil sur initiative d’EHS</fullName>
+                <default>false</default>
+                <label>Devis conseil sur initiative d’EHS</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <controllingFieldValue>Choix de la concurrence</controllingFieldValue>
+            <valueName>Suite avis négatifs autres clients</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <valueName>Budget client non adapté au projet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <controllingFieldValue>Choix de la concurrence</controllingFieldValue>
+            <valueName>Devis reçu trop tard/non reçu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <valueName>Ne souhaitait pas de RDV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <valueName>Equipement réparé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <valueName>Projet non-mature / A relancer dans 6 mois</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <valueName>Projet non-mature / A relancer dans 12 mois</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <valueName>RDV ou VT non honorée par EHS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <controllingFieldValue>Choix de la concurrence</controllingFieldValue>
+            <valueName>Réclamation non traitée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <controllingFieldValue>Abandon projet par EHS</controllingFieldValue>
+            <valueName>Devis locataire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <controllingFieldValue>Abandon projet par EHS</controllingFieldValue>
+            <valueName>Refus propriétaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par client</controllingFieldValue>
+            <controllingFieldValue>Abandon projet par EHS</controllingFieldValue>
+            <valueName>Projet de revente du logement ou logement vendu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doublon CRM</controllingFieldValue>
+            <valueName>Doublon CRM Fiche Client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doublon CRM</controllingFieldValue>
+            <valueName>Doublon CRM Opp Co&apos;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Doublon CRM</controllingFieldValue>
+            <valueName>Nettoyage Masse DSI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par EHS</controllingFieldValue>
+            <valueName>Client trop éloigné de l’agence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par EHS</controllingFieldValue>
+            <valueName>Solution technique impossible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par EHS</controllingFieldValue>
+            <valueName>Client injoignable malgré relances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par EHS</controllingFieldValue>
+            <valueName>L’agence ne porte pas l’équipement souhaité par le client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par EHS</controllingFieldValue>
+            <valueName>Pas de disponibilité en agence pour traiter la demande client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par EHS</controllingFieldValue>
+            <valueName>Erreur - Mauvais geste métier CRM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par EHS</controllingFieldValue>
+            <valueName>Relance Devis ColorFil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandon projet par EHS</controllingFieldValue>
+            <valueName>Devis conseil sur initiative d’EHS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrat non souhaitable</controllingFieldValue>
+            <valueName>Aucune raison donnée par le client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refus Administratif</controllingFieldValue>
+            <valueName>Financement banque client refusé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refus Administratif</controllingFieldValue>
+            <valueName>Refus dossier Anah</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Refus Administratif</controllingFieldValue>
+            <valueName>Financement FranFinance refusé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Choix de la concurrence</controllingFieldValue>
+            <valueName>Prix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Choix de la concurrence</controllingFieldValue>
+            <valueName>Manque de réactivité - Lenteur du processus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Choix de la concurrence</controllingFieldValue>
+            <valueName>Préfère un artisan local</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Choix de la concurrence</controllingFieldValue>
+            <valueName>Meilleure solution technique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Choix de la concurrence</controllingFieldValue>
+            <valueName>Délai de pose</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

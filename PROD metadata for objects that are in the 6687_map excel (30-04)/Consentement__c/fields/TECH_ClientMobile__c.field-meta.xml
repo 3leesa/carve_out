@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_ClientMobile__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Client__r.RecordType.DeveloperName, 
+&quot;PersonAccount&quot;,IF(LEN(SUBSTITUTE(SUBSTITUTE(Client__r.PersonMobilePhone, &quot; &quot;, &quot;&quot;), &quot;.&quot;, &quot;&quot;))=10 &amp;&amp; OR(BEGINS(Client__r.PersonMobilePhone, &apos;06&apos;), BEGINS(Client__r.PersonMobilePhone, &apos;07&apos;)),SUBSTITUTE(SUBSTITUTE(Client__r.PersonMobilePhone, &quot; &quot;, &quot;&quot;), &quot;.&quot;, &quot;&quot;),&apos;&apos;),
+IF(LEN(SUBSTITUTE(SUBSTITUTE(Client__r.EntrepriseMobilePhone__c, &quot; &quot;, &quot;&quot;), &quot;.&quot;, &quot;&quot;))=10 &amp;&amp; OR(BEGINS(Client__r.EntrepriseMobilePhone__c, &apos;06&apos;), BEGINS(Client__r.EntrepriseMobilePhone__c, &apos;07&apos;)),SUBSTITUTE(SUBSTITUTE(Client__r.EntrepriseMobilePhone__c, &quot; &quot;, &quot;&quot;), &quot;.&quot;, &quot;&quot;),&apos;&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Téléphone mobile du tiers</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

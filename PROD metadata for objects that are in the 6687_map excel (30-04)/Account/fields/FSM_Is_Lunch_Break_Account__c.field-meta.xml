@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Is_Lunch_Break_Account__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Signals if this is an Account linked to a Service Resource to store its lunch break Service Appointments</description>
+    <label>Is Lunch Break Account</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

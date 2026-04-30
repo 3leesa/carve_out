@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Horaires_d_ouverture__c</fullName>
+    <description>Horaires tels qu&apos;ils apparaissent sur les communications aux clients</description>
+    <inlineHelpText>Phrase reprise dans les communications faites au client</inlineHelpText>
+    <label>Horaires d&apos;ouverture</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

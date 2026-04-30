@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRD_VR001_ProductName_non_modifiable</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c )
+&amp;&amp; ($Profile.Id != &quot;00e24000000Ivmh&quot;)
+&amp;&amp; ($Profile.Id != &quot;00e24000000yCvG&quot;)
+&amp;&amp; (ISCHANGED( Name ) || ISCHANGED(ProductCode))
+&amp;&amp; CreatedBy.Profile.Id = &quot;00e24000000Ivmh&quot;</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas modifier le nom de ce produit</errorMessage>
+</ValidationRule>

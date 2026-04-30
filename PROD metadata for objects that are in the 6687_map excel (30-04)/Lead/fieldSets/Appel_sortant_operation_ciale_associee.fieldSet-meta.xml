@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appel_sortant_operation_ciale_associee</fullName>
+    <description>Cet ensemble de champs va être utilisé sur la visualforce page Lead de type &quot;Appel Sortant&quot; pour la section &quot;Opération commerciale associée&quot;</description>
+    <displayedFields>
+        <field>Code_operation_commerciale__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Nom_operation_commerciale__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Appel_sortant_operation_commerciale_associee</label>
+</FieldSet>

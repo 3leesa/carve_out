@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Devis_BR_Envoye_relance</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Nom_complet_du_createur__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>SBQQ__PrimaryQuote__c</columns>
+    <columns>TECH_CpqDevisStatus__c</columns>
+    <columns>Date_de_remise_du_devis__c</columns>
+    <columns>Primary_Quote_Pack__c</columns>
+    <columns>n_du_telephone_du_client__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TECH_CpqDevisStatus__c</field>
+        <operation>equals</operation>
+        <value>Envoyé</value>
+    </filters>
+    <filters>
+        <field>Primary_Quote_Pack__c</field>
+        <operation>equals</operation>
+        <value>Offre Borne Electrique</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Devis remis au client</value>
+    </filters>
+    <filters>
+        <field>TECH_CreateurOpportunite__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Devis BR - Envoyé relance</label>
+    <sharedTo>
+        <group>AdministrateursSysteme</group>
+        <group>Mobilite_verte</group>
+    </sharedTo>
+</ListView>

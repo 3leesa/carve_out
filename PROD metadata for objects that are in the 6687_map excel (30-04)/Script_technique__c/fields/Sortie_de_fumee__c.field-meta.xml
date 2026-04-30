@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sortie_de_fumee__c</fullName>
+    <label>Sortie de fumée</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conduit cheminée</fullName>
+                <default>false</default>
+                <label>Conduit cheminée</label>
+            </value>
+            <value>
+                <fullName>Ventouse</fullName>
+                <default>false</default>
+                <label>Ventouse</label>
+            </value>
+            <value>
+                <fullName>Déjà en condensation</fullName>
+                <default>false</default>
+                <label>Déjà en condensation</label>
+            </value>
+            <value>
+                <fullName>VMC</fullName>
+                <default>false</default>
+                <label>VMC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

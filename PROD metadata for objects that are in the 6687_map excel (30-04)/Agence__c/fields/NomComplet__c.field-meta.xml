@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NomComplet__c</fullName>
+    <description>Sprint 14: nom complet du site. Champ créé afin de stocker le nom des sites dépassants les 80 characteres du champs Name</description>
+    <externalId>false</externalId>
+    <label>Nom complet</label>
+    <length>240</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

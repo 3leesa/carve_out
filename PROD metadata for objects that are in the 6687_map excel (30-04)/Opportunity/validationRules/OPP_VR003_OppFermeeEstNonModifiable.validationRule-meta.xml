@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR003_OppFermeeEstNonModifiable</fullName>
+    <active>true</active>
+    <description>Sprint 14 : Une opportunité fermée n&apos;est pas modifiable
+MCOSF-4657: bypass pour Privacy Center</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c),
+OR(RecordTypeId = &quot;0121p000000wsmlAAA&quot;, RecordTypeId = &quot;0121p000000LWlWAAW&quot;),
+NOT(ISCHANGED(ToBeDeleted__c)),
+NOT(ISCHANGED(ToBeArchived__c)),
+NOT(ISCHANGED( NbDevisAcceptes__c )),
+NOT(ISCHANGED( NbDevisEnCours__c )),
+NOT(ISCHANGED( NbDevisRefuses__c )),
+NOT(ISCHANGED( NbDevisTotal__c )),
+NOT(ISCHANGED( date_Edition_de_facture__c )),
+NOT(ISCHANGED( NombreDePiecesJointes__c )),
+NOT(ISCHANGED( TECH_DateCreationDemandeMere__c)),
+NOT(ISCHANGED( TECH_DateRealisationInterventionAssociee__c)),
+NOT(ISCHANGED( Proprietaire__c)),
+NOT(ISPICKVAL(StageName,&apos;Fermée / Perdue&apos;)),
+NOT(ISCHANGED( IsClosed )) &amp;&amp; IsClosed = TRUE &amp;&amp; NOT(ISBLANK(Id)) &amp;&amp; NOT(ISPICKVAL(StageName,&apos;Fermée / Gagnée&apos;)))</errorConditionFormula>
+    <errorMessage>Une opportunité fermée n&apos;est pas modifiable.</errorMessage>
+</ValidationRule>

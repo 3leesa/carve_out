@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Filter_on_date_de_creation__c</fullName>
+    <description>CRM-609 Elements de reporting parcours dépannage en ligne / champ qui calcule le temps depuis la createdDate entre -15 et -45</description>
+    <formula>AND(
+DATEVALUE(CreatedDate) &lt;= TODAY()-15 ,
+DATEVALUE(CreatedDate) &gt;= TODAY()-45
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_Filter on date de création</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

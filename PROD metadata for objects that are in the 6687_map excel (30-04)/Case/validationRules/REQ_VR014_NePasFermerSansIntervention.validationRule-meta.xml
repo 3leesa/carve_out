@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR014_NePasFermerSansIntervention</fullName>
+    <active>false</active>
+    <description>Sprint 10 - L&apos;utilisateur ne peut pas clôturer une demande de mise-en-service sur laquelle il n&apos;y a aucune intervention.</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c), 
+TECH_InterventionExiste__c = FALSE, 
+TEXT(Status) = &quot;Terminé&quot;, 
+TEXT(Type) = &quot;Mise en service&quot; )</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas clôturer une demande de mise-en-service sur laquelle il n&apos;y a aucune intervention.</errorMessage>
+</ValidationRule>

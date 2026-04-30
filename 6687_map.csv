@@ -32,8 +32,7 @@ Case;Motif_de_remboursement__c;picklistLabel;Remplacement appareil par EHS;Rempl
 Case;Motif_Dossier_Detracteur__c;picklistLabel;Injoignable;{{Brand_Acronym}} injoignable
 Case;MotifResiliation__c;picklistLabel;"Remplacement d&apos;appareil Engie Home Services";Remplacement d'appareil {{Brand_Name}}
 Case;Origine_de_la_demande__c;picklistLabel;Autre;Autre (Distributeur, Installateurs {{Brand_Acronym}}/Partenaires, Promoteur)
-Case;TECH_AdressesDesMediateurs__c;formula;;"	 
-IF(TEXT(NiveauDEscalade__c)=""Courante"", ""Si vous n’êtes pas satisfait de cette réponse, vous pouvez écrire à : ""&BR()& $Label.Brand_Name & "", Service Consommateurs - CS 90125 - 27091 EVREUX Cedex"",
+Case;TECH_AdressesDesMediateurs__c;formula;;"IF(TEXT(NiveauDEscalade__c)=""Courante"", ""Si vous n’êtes pas satisfait de cette réponse, vous pouvez écrire à : ""&BR()&""{{Brand_Name}}, Service Consommateurs - CS 90125 - 27091 EVREUX Cedex"",
 IF(TEXT(NiveauDEscalade__c)=""Niveau 1"", ""Si vous n’êtes pas satisfait de cette réponse, vous pouvez écrire à : ""&BR()&""ENGIE, Courrier du Médiateur - TSA 27601– 59973 Tourcoing Cedex"",
 null
 )
@@ -88,10 +87,10 @@ IF( RIGHT(B2C_Plateau__c,3) == 'LEE', 'LEE DGP',
 IF( LEFT(B2C_Plateau__c, 3) == 'DPP', 'CRC DGP',
 IF( LEFT(B2C_Plateau__c, 5) == 'DCRCP', 'CRC DGP',
 IF( LEFT(B2C_Plateau__c, 3) == 'TVE', 'TELEVENTE DGP',
-IF( LEFT(B2C_Plateau__c, 3) == $Label.Brand_Acronym, 'CRC ' & $Label.Brand_Acronym,
+IF( LEFT(B2C_Plateau__c, 3) == '{{Brand_Acronym}}', 'CRC {{Brand_Acronym}}',
 IF( LEFT(B2C_Plateau__c, 3) == 'PIL', 'WEB formulaire DGP','')))))))))))"
 Lead;TECH_ToBeTransferedToAD__c;formula;;"AND(
-ISPICKVAL(LeadSource, $Label.Brand_Acronym),
+ISPICKVAL(LeadSource, '{{Brand_Acronym}}'),
 !ISPICKVAL(Type_devis__c, 'CRC'),
 ISPICKVAL(Objet_de_la_demande__c, 'Devis'),
 ISBLANK(TEXT(Statut_de_la_conversion__c)),
@@ -124,7 +123,7 @@ ISPICKVAL(Origine_detaillee_2__c, 'Batiweb'),
 ISPICKVAL(Origine_detaillee_2__c, 'DevisPlus')))))"
 Lead;TECH_TranquilityStatus__c;formula;;"IF(ISPICKVAL(Statut_de_la_conversion__c ,'Traité et converti en projet') && ISPICKVAL(Sous_statut_conversion__c ,'Transfert Agence Digitale'), '4.2',
 IF(OR((ISPICKVAL(Statut_de_la_conversion__c,'Traité et converti en projet')&&(ISPICKVAL(Sous_statut_conversion__c, 'RDV Pris')||ISPICKVAL(Sous_statut_conversion__c, ""RDV à prendre par l'agence""))),ISPICKVAL(Statut_de_la_conversion__c, 'Traité et transféré')),'4.3',
-IF(ISPICKVAL(Statut_de_la_conversion__c, 'Traité non converti'),CASE(TEXT(Motif_non_conversion__c), 'Pas intéressé','9.1','Horaires trop contraignants','9.1','Demande_informations','9.1','Prix trop élevé','9.1',""Refus d'entretien"",'9.2','Préfère un artisan local','9.3','Collectif ou social','10.1','Test – Fausse demande','10.1','Prospect déjà sous contrat avec un concurrent','10.2','Projet déjà réalisé (appareil / VE / dépannage)','10.3','RDV déjà pris (cas multi-demandes)','10.3','Projet non mature > 6 mois','10.4','Projet non mature < 6 mois','10.4',""Installation ou habitat non adapté à l'offre"",'10.5','Contact polluant','10.6','N_ne_correspond_pas_a_interesse','10.6','Pas de projet','10.7','Produit non vendu par ' & $Label.Brand_Acronym,'10.8','Interlocuteur non décisionnaire','10.9','Doublon','10.10','Injoignable permanent','11.1','Relance','11.3','Raccroché client','11.3','Cas suspicion C-19','11.4','Rappel','11.4','Faux numéro','11.5','11.2'),
+IF(ISPICKVAL(Statut_de_la_conversion__c, 'Traité non converti'),CASE(TEXT(Motif_non_conversion__c), 'Pas intéressé','9.1','Horaires trop contraignants','9.1','Demande_informations','9.1','Prix trop élevé','9.1',""Refus d'entretien"",'9.2','Préfère un artisan local','9.3','Collectif ou social','10.1','Test – Fausse demande','10.1','Prospect déjà sous contrat avec un concurrent','10.2','Projet déjà réalisé (appareil / VE / dépannage)','10.3','RDV déjà pris (cas multi-demandes)','10.3','Projet non mature > 6 mois','10.4','Projet non mature < 6 mois','10.4',""Installation ou habitat non adapté à l'offre"",'10.5','Contact polluant','10.6','N_ne_correspond_pas_a_interesse','10.6','Pas de projet','10.7','Produit non vendu par {{Brand_Name}}', '10.8','Interlocuteur non décisionnaire','10.9','Doublon','10.10','Injoignable permanent','11.1','Relance','11.3','Raccroché client','11.3','Cas suspicion C-19','11.4','Rappel','11.4','Faux numéro','11.5','11.2'),
 IF(ISPICKVAL(Motif_Rappel_n1__c,'89')||ISPICKVAL(Motif_Rappel_n2__c,'89')||ISPICKVAL(Motif_Rappel_n3__c,'89')||ISPICKVAL(Motif_Rappel_n4__c,'89')||ISPICKVAL(Motif_Rappel_n1__c,'92')||ISPICKVAL(Motif_Rappel_n2__c,'92')||ISPICKVAL(Motif_Rappel_n3__c,'92')||ISPICKVAL(Motif_Rappel_n4__c,'92')||ISPICKVAL(Motif_Rappel_n1__c,'93')||ISPICKVAL(Motif_Rappel_n2__c,'93')||ISPICKVAL(Motif_Rappel_n4__c,'93')||ISPICKVAL(Motif_Rappel_n4__c,'93'),'11.2',
 IF(ISPICKVAL(Motif_Rappel_n1__c,'95')||ISPICKVAL(Motif_Rappel_n2__c,'95')||ISPICKVAL(Motif_Rappel_n3__c,'95')||ISPICKVAL(Motif_Rappel_n4__c,'95'),'11.3',
 IF(ISPICKVAL(Motif_Rappel_n1__c,'94')||ISPICKVAL(Motif_Rappel_n2__c,'94')||ISPICKVAL(Motif_Rappel_n3__c,'94')||ISPICKVAL(Motif_Rappel_n4__c,'94'),'11.4',

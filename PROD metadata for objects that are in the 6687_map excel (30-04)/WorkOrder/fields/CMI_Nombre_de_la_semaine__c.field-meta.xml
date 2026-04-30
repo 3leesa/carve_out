@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CMI_Nombre_de_la_semaine__c</fullName>
+    <description>Recuperer le nombre de la semaine pour afficher dans le rapport par rapport date debut programmeé</description>
+    <externalId>false</externalId>
+    <formula>MOD(FLOOR( (DATEVALUE(DateDebutProgrammee__c) - DATE(2016,01,01))/7),52)+1</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Numéro de la semaine (Date programmée)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

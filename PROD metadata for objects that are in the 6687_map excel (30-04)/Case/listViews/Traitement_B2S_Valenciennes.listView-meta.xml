@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Traitement_B2S_Valenciennes</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>NAME</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>SiteDeRattachement__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SiteDeCreation__c</field>
+        <operation>equals</operation>
+        <value>CRC-COMDATA-Service client-Valenciennes</value>
+    </filters>
+    <filters>
+        <field>IsAnimateur__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Souscription</value>
+    </filters>
+    <filters>
+        <field>CASES.ORIGIN</field>
+        <operation>equals</operation>
+        <value>Téléphone,Site web</value>
+    </filters>
+    <label>Traitement B2S Valenciennes</label>
+    <sharedTo>
+        <group>Groupe_B2S_Valenciennes</group>
+        <group>PublicGroupAnimateur</group>
+    </sharedTo>
+</ListView>

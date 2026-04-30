@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sign_sourcer</fullName>
+    <booleanFilter>1 AND (2 AND 3)</booleanFilter>
+    <columns>ChoixAgence__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Sous_statut__c</columns>
+    <columns>Date_de_signature_du_devis__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Type_equipement_propose__c</columns>
+    <columns>SBQQ__PrimaryQuote__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Devis signé</value>
+    </filters>
+    <filters>
+        <field>Sous_statut__c</field>
+        <operation>equals</operation>
+        <value>Signé à sourcer</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.CRM_B2C</value>
+    </filters>
+    <label>Signé à sourcer</label>
+</ListView>

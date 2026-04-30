@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR011_Lead_AS_Champs_Obligatoire</fullName>
+    <active>false</active>
+    <description>Cette règle de validation permet d&apos;éviter qu&apos;un Lead - Appel Sortant ne passe au statut &quot;Suivi des Rappels&quot; lorsque ces champs obligatoires ne sont pas renseignés</description>
+    <errorConditionFormula>NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c) &amp;&amp;
+AND(
+TEXT(PRIORVALUE(Status)) = &apos;Intégration&apos;,
+TEXT(Status) = &apos;Suivi des rappels&apos;,
+TECH_RecordTypeName__c = &apos;Appel_Sortant&apos;) &amp;&amp;
+OR(
+ISBLANK( TEXT(Salutation) ),
+ISBLANK( LastName ),
+ISBLANK( FirstName ),
+AND( ISBLANK(Phone), ISBLANK(MobilePhone)),
+ISBLANK( Email ),
+ISBLANK( TEXT(Canal_de_reception__c) ),
+ISBLANK( Date_de_la_demande_client__c ))</errorConditionFormula>
+    <errorMessage>Veuillez remplir les champs obligatoires : Civilité, Nom, Prénom, Téléphone ou Mobile, Adresse Mail, Statut du Lead, Canal de réception et Date de la demande Client.</errorMessage>
+</ValidationRule>

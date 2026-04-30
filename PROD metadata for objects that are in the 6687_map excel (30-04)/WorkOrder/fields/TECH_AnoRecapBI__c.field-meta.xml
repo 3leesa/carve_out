@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_AnoRecapBI__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+NUM_Absence__c &amp;&amp; IsSMSFactorAlreadyCalled__c , &apos;Renvoi du SMS d\&apos;absence bloqué par le mécanisme anti-rejeu&apos;,
+IF(
+NUM_Absence__c &amp;&amp; NOT(IsSMSFactorAlreadyCalled__c) , &apos;SMS d\&apos;absence jamais envoyé. Peut-être &quot;Unable to lock row&quot;&apos;,
+IF(
+NUM_EmailPDF__c &amp;&amp; IsRecapBIAlreadySent__c , &apos;Renvoi de l\&apos;email bloqué par le mécanisme anti-rejeu&apos;,
+IF(
+NUM_CourrierPDF__c &amp;&amp; IsRecapBIAlreadySent__c , &apos;Renvoi du courrier bloqué par le mécanisme anti-rejeu&apos;,
+IF(
+NUM_EmailPDF__c &amp;&amp; Get_Url_Recap__c&lt;&gt;&apos;none&apos; &amp;&amp; !ISPICKVAL(StatutMobilite__c,&apos;TER_ABS&apos;) &amp;&amp; !ISPICKVAL(StatutMobilite__c,&apos;TER_RFI&apos;), &apos;URL générée mais non envoyée par email. Peut-être TemplateRenderingException&apos;,
+IF(
+NUM_EmailPDF__c &amp;&amp; Get_Url_Recap__c=&apos;none&apos; &amp;&amp; !ISPICKVAL(StatutMobilite__c,&apos;TER_ABS&apos;) &amp;&amp; !ISPICKVAL(StatutMobilite__c,&apos;TER_RFI&apos;), &apos;URL non générée pour le canal email&apos;,
+IF(
+NUM_CourrierPDF__c &amp;&amp; Url_du_BI_Imprimeur__c&lt;&gt;&apos;&apos; &amp;&amp; !ISPICKVAL(StatutMobilite__c,&apos;TER_ABS&apos;) &amp;&amp; !ISPICKVAL(StatutMobilite__c,&apos;TER_RFI&apos;), &apos;URL générée mais non envoyée par courrier. Peut-être TemplateRenderingException&apos;,
+IF(
+NUM_CourrierPDF__c &amp;&amp; Url_du_BI_Imprimeur__c=&apos;&apos; &amp;&amp; !ISPICKVAL(StatutMobilite__c,&apos;TER_ABS&apos;) &amp;&amp; !ISPICKVAL(StatutMobilite__c,&apos;TER_RFI&apos;), &apos;URL non générée pour le canal courrier. Peut-être l\&apos;erreur &quot;Probably Limit Exceeded or 0 recipients &quot; i.e vieux BI sans email imprimeur&apos;,
+&apos;RAS&apos;
+)
+)
+)
+)
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Anomalie Récap BI</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

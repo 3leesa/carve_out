@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etape_Dossier_Detracteur__c</fullName>
+    <description>CRM-624-633 : Etape d&apos;avancement du dossier détracteur</description>
+    <externalId>false</externalId>
+    <formula>IF(Pas_de_demande_associee_DDetracteur__c,
+IF(ISPICKVAL(Status, &apos;Nouveau&apos;),
+IMAGE(&quot;/resource/TimelineDossierDetracteur/timelineClientARappelerSansDemande.png&quot;, &quot;&quot;, 45, 592),
+IF(ISPICKVAL(Status, &apos;En cours&apos;) &amp;&amp;  ISBLANK(TEXT(Motif_Dossier_Detracteur__c)), 
+IMAGE(&quot;/resource/TimelineDossierDetracteur/timelineMotifARenseignerSansDemande.png&quot;, &quot;&quot;, 45, 592),
+IF(ISPICKVAL(Status, &apos;En cours&apos;),
+IMAGE(&quot;/resource/TimelineDossierDetracteur/timelineDossierACloreSansDemande.png&quot;, &quot;&quot;, 45, 592),
+IMAGE(&quot;/resource/TimelineDossierDetracteur/timelineDossierClosSansDemande.png&quot;, &quot;&quot;, 45, 592)
+))),
+IF(ISPICKVAL(Status, &apos;Nouveau&apos;),
+IMAGE(&quot;/resource/TimelineDossierDetracteur/timelineClientARappeler.png&quot;, &quot;&quot;, 45, 592),
+IF(ISPICKVAL(Status, &apos;En cours&apos;) &amp;&amp;  ISBLANK(TEXT(Motif_Dossier_Detracteur__c)), 
+IMAGE(&quot;/resource/TimelineDossierDetracteur/timelineMotifARenseigner.png&quot;, &quot;&quot;, 45, 592),
+IF(ISPICKVAL(Status, &apos;En cours&apos;) &amp;&amp; (ISPICKVAL(TECH_Dossier_Detracteur_Case_Status__c, &apos;SansDemandeAssociée&apos;) || ISPICKVAL(TECH_Dossier_Detracteur_Case_Status__c, &apos;DemandeAssociéeOuverte&apos;)), 
+IMAGE(&quot;/resource/TimelineDossierDetracteur/timelineEnAttenteDemandeAssociee.png&quot;, &quot;&quot;, 45, 592),
+IF(ISPICKVAL(Status, &apos;En cours&apos;) &amp;&amp; (ISPICKVAL(TECH_Dossier_Detracteur_Case_Status__c, &apos;DemandeAssociéeTerminé&apos;)),
+IMAGE(&quot;/resource/TimelineDossierDetracteur/timelineDossierAClore.png&quot;, &quot;&quot;, 45, 592), 
+IMAGE(&quot;/resource/TimelineDossierDetracteur/timelineDossierClos.png&quot;, &quot;&quot;, 45, 592)
+))))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Etape</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

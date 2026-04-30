@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeDeClient__c</fullName>
+    <description>Distingue le type de client entre le fait qu&apos;il soit individuel ou collectif</description>
+    <label>Type de client</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Individuel</fullName>
+                <default>false</default>
+                <label>Individuel</label>
+            </value>
+            <value>
+                <fullName>Collectif</fullName>
+                <default>false</default>
+                <label>Collectif</label>
+            </value>
+            <value>
+                <fullName>INDUSTRIE</fullName>
+                <default>false</default>
+                <label>INDUSTRIE</label>
+            </value>
+            <value>
+                <fullName>PUBLIC</fullName>
+                <default>false</default>
+                <label>PUBLIC</label>
+            </value>
+            <value>
+                <fullName>HLM</fullName>
+                <default>false</default>
+                <label>HLM</label>
+            </value>
+            <value>
+                <fullName>SYNDIC</fullName>
+                <default>false</default>
+                <label>SYNDIC</label>
+            </value>
+            <value>
+                <fullName>TERTIAIRE</fullName>
+                <default>false</default>
+                <label>TERTIAIRE</label>
+            </value>
+            <value>
+                <fullName>COLL_LOC</fullName>
+                <default>false</default>
+                <label>COLL_LOC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EA_Opp_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( StageName ,
+&quot;Besoin détecté&quot;, &quot;01.Besoin détecté&quot;,
+&quot;Devis créé&quot;, &quot;02.Devis créé&quot;,
+&quot;Devis remis au client&quot;, &quot;03.Devis remis au client&quot;,
+&quot;En sommeil&quot;, &quot;04.En sommeil&quot;,
+&quot;Devis signé&quot;, &quot;05.Devis signé&quot;,
+&quot;Collecte dossier ANAH / TEKSIAL&quot;, &quot;06.Instructions Administratives&quot;,
+&quot;Dossier ANAH envoyé / TEKSIAL&quot;, &quot;06.Instructions Administratives&quot;,
+&quot;Collecte documents financement&quot;, &quot;06.Instructions Administratives&quot;,
+&quot;Dossier financement envoyé&quot;, &quot;06.Instructions Administratives&quot;,
+&quot;Instructions Administratives&quot;, &quot;06.Instructions Administratives&quot;,
+&quot;Gagnée à poser&quot;, &quot;07.Gagnée à poser&quot;,
+&quot;Fermée / Gagnée&quot;, &quot;07.Gagnée à poser&quot;,
+&quot;Fermée / Perdue&quot;, &quot;08.Fermée / Perdue&quot;,
+&quot;Posée à facturer&quot;, &quot;09.Posée realisée, à facturer&quot;,
+&quot;Pose réalisée, à facturer&quot;, &quot;09.Posée realisée, à facturer&quot;,
+&quot;Facturée&quot;, &quot;10.Facturée&quot;,
+&quot;Annulée&quot;, &quot;11.Annulée&quot;,
+&quot;Clôturée&quot;, &quot;12.Clôturée&quot;,
+&quot;Statut inconnu&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>EA_Opp_Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

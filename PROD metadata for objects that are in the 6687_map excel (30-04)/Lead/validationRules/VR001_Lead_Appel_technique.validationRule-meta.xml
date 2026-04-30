@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR001_Lead_Appel_technique</fullName>
+    <active>false</active>
+    <description>Une fois l’appel technique réalisé, le chargé d’affaires doit obligatoirement cocher la case « Appel technique réalisé ». Une fois la case cochée, le statut passe automatiquement à la valeur « Estimation à envoyer au client ».</description>
+    <errorConditionFormula>NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c) &amp;&amp;
+NOT(ISPICKVAL(Status,&quot;Nouveau dossier&quot;)) &amp;&amp; 
+NOT(ISPICKVAL(Status,&quot;Prospect à appeler&quot;)) &amp;&amp;
+NOT(ISPICKVAL(Status,&quot;Annulé&quot;)) &amp;&amp;
+Appel_technique_realise__c = FALSE</errorConditionFormula>
+    <errorDisplayField>Appel_technique_realise__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas passer à ce statut sans avoir réalisé l&apos;appel technique.</errorMessage>
+</ValidationRule>

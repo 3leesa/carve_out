@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR017_AS_StatutConversionConvertiDepend</fullName>
+    <active>true</active>
+    <description>Empêche les leads convertis d&apos;avoir le Statut de la conversion &quot;Traité non converti&quot;</description>
+    <errorConditionFormula>AND( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c = false, OR(ISCHANGED(Statut_de_la_conversion__c), ISCHANGED(Status)), ISPICKVAL(Status, &apos;Converti&apos;), ISPICKVAL(Statut_de_la_conversion__c, &apos;Traité non converti&apos;), TECH_RecordTypeDeveloperName__c = &apos;Appel_Sortant&apos;)</errorConditionFormula>
+    <errorMessage>Veuillez modifier le statut de la conversion.</errorMessage>
+</ValidationRule>

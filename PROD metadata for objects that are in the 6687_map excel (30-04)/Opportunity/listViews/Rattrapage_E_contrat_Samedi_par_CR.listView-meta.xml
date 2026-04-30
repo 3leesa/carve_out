@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rattrapage_E_contrat_Samedi_par_CR</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9</booleanFilter>
+    <columns>TECH_DemandeMotifSouscription__c</columns>
+    <columns>EContratDateEntretien__c</columns>
+    <columns>Demande__c</columns>
+    <columns>Statut_demande_mere__c</columns>
+    <columns>TECH_DateCreationDemande__c</columns>
+    <columns>DemandeSousStatut__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>SBQQ__PrimaryQuote__c</columns>
+    <columns>TECH_CpqDevisStatus__c</columns>
+    <columns>Accord_Illigo__c</columns>
+    <columns>TECH_CreatedByUserSite__c</columns>
+    <columns>TECH_CreatedDateMoreThan4h__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut_demande_mere__c</field>
+        <operation>notEqual</operation>
+        <value>Terminé</value>
+    </filters>
+    <filters>
+        <field>Statut_demande_mere__c</field>
+        <operation>notEqual</operation>
+        <value>Annulé (Client)</value>
+    </filters>
+    <filters>
+        <field>Statut_demande_mere__c</field>
+        <operation>notEqual</operation>
+        <value>Annulée</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Contrat</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Contrat / option</value>
+    </filters>
+    <filters>
+        <field>TECH_DateCreationDemande__c</field>
+        <operation>equals</operation>
+        <value>12/30/2023</value>
+    </filters>
+    <filters>
+        <field>TECH_CreatedByUserSite__c</field>
+        <operation>equals</operation>
+        <value>CRC</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Besoin détecté,Proposition créée</value>
+    </filters>
+    <filters>
+        <field>EContratDateEntretien__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/2/2024 12:00 AM</value>
+    </filters>
+    <label>Rattrapage E-contrat Samedi par CR</label>
+    <sharedTo>
+        <role>CentreRelationClient</role>
+    </sharedTo>
+</ListView>

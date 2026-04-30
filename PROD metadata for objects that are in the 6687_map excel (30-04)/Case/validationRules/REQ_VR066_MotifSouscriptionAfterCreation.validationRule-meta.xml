@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR066_MotifSouscriptionAfterCreation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c),
+NOT(ISNEW()),
+ISCHANGED(Motif_Souscription__c),
+OR(
+ISPICKVAL(Motif_Souscription__c, &apos;Contrat offert suite VF facturée&apos;),
+ISPICKVAL(Motif_Souscription__c, &apos;Contrat offert suite Dépannage HC facturé&apos;),
+ISPICKVAL(Motif_Souscription__c, &apos;Contrat offert suite MES&apos;),
+ISPICKVAL(Motif_Souscription__c, &apos;Offre CMISTE&apos;),
+ISPICKVAL(Motif_Souscription__c, &apos;Parcours Web&apos;),
+ISPICKVAL(Motif_Souscription__c, &apos;Client souhaite un contrat&apos;)
+))</errorConditionFormula>
+    <errorDisplayField>Motif_Souscription__c</errorDisplayField>
+    <errorMessage>On ne peut pas renseigner ce motif de souscription.</errorMessage>
+</ValidationRule>

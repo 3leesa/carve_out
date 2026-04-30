@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mon_Site__c</fullName>
+    <formula>IF( Site_de_rattachement__r.TECH_GazelleId__c = $User.IDGazelleAgence__c , TRUE,
+IF( ISBLANK( Site_de_rattachement__r.SiteParent__c ), FALSE,
+IF( Site_de_rattachement__r.SiteParent__r.TECH_GazelleId__c = $User.IDGazelleAgence__c, TRUE,
+IF( ISBLANK( Site_de_rattachement__r.SiteParent__r.SiteParent__c ), FALSE,
+IF( Site_de_rattachement__r.SiteParent__r.SiteParent__r.TECH_GazelleId__c = $User.IDGazelleAgence__c, TRUE,
+IF( ISBLANK( Site_de_rattachement__r.SiteParent__r.SiteParent__r.SiteParent__c ), FALSE,
+IF( Site_de_rattachement__r.SiteParent__r.SiteParent__r.SiteParent__r.TECH_GazelleId__c = $User.IDGazelleAgence__c, TRUE, FALSE 
+)
+)
+)
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mon Site</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

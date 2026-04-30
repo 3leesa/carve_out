@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumeroSIRET__c</fullName>
+    <description>Sprint 8. Permet d&apos;indiquer un numéro de SIRET</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Le n° siret évitera la création de client en doublon. L&apos;information est disponible sur le site &quot;www.societe.com&quot;.</inlineHelpText>
+    <label>Numéro SIRET</label>
+    <length>14</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

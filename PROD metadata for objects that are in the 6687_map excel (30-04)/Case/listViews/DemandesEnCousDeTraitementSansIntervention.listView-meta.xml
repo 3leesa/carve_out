@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DemandesEnCousDeTraitementSansIntervention</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6</booleanFilter>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>ChoixAgence__c</columns>
+    <columns>SiteDeCreation__c</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CASES.REASON</columns>
+    <columns>Type_INTENT__c</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <columns>Demande_Associee_Dossier_Detracteur__c</columns>
+    <columns>StatutInterventions__c</columns>
+    <columns>TECH_NomOpportunite__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CREATED_DATE_DATE_ONLY</field>
+        <operation>equals</operation>
+        <value>LAST_90_DAYS</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>,En cours,En attente d&apos;approbation,Nouveau,Annulé (Client)</value>
+    </filters>
+    <filters>
+        <field>MonAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>TECH_InterventionExiste__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.REASON</field>
+        <operation>equals</operation>
+        <value>Devis</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Informations,Pose d&apos;équipement</value>
+    </filters>
+    <label>Demandes en cours agence sans interventi</label>
+    <language>fr</language>
+    <sharedTo>
+        <role>ChefEquipe_Conseillere</role>
+        <role>DirecteurAgence_ConseillerePrincipale</role>
+    </sharedTo>
+</ListView>

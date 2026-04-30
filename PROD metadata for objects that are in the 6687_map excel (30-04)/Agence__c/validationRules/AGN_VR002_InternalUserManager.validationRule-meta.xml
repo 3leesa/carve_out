@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AGN_VR002_InternalUserManager</fullName>
+    <active>true</active>
+    <description>MCOSF-5622, MCOSF-6246</description>
+    <errorConditionFormula>!$Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c
+&amp;&amp; ( ISPICKVAL ( Approbateur_1__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Approbateur_2__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Approbateur_3__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Approbateur_4__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Approbateur_5__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Approbateur_6__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Approbateur_7__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Approbateur_8__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Approbateur_9__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Approbateur_10__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Approbateur_11__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Approbateur_12__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( ChefEquipe1__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( ChefEquipe2__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( ChefEquipe3__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( ChefEquipe4__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( ChefEquipe5__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( ChefEquipe6__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( ChefEquipe7__r.UserType, &apos;CspLitePortal&apos; )
+     || ISPICKVAL ( Responsable_agence__r.UserType, &apos;CspLitePortal&apos; ) )</errorConditionFormula>
+    <errorMessage>Seuls les utilisateurs internes sont autorisés sur les champs &quot;Responsable d&apos;agence&quot;, &quot;Chef d&apos;équipe&quot; et &quot;Approbateur&quot;.</errorMessage>
+</ValidationRule>

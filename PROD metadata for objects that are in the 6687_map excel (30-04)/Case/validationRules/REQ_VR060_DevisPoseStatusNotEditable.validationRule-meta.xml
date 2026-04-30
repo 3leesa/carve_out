@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR060_DevisPoseStatusNotEditable</fullName>
+    <active>true</active>
+    <description>Blocage de la modification de statut d&apos;une demande de Devis &amp; Pose (suit le cycle de vie du devis principal uniquement)
+MCOSF-2034:Opportunité: Mettre à jour les automatismes de devis, d&apos;opportunité et de demande</description>
+    <errorConditionFormula>AND(NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c), ISPICKVAL(Type, &quot;Pose d&apos;équipement&quot;), NOT(ISNEW()), OR(ISCHANGED(Status),ISCHANGED(Sous_statut__c)), NOT(ISCHANGED(TECH_NbModifStatuts__c)))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Les statuts de la demande et de l&apos;opportunité ne peuvent être modifiés manuellement. Merci de mettre à jour le statut du devis principal afin de mouvementer automatiquement le statut de l&apos;opportunité et de la demande liées.</errorMessage>
+</ValidationRule>

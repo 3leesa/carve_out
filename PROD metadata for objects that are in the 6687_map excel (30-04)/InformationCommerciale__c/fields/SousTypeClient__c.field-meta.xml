@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SousTypeClient__c</fullName>
+    <description>Sprint 11 - Affichage en texte du champ Sous-type de client.</description>
+    <externalId>false</externalId>
+    <formula>TEXT( Client__r.SousTypeClient__c )</formula>
+    <label>Sous-type de client</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

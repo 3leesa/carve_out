@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_canal_de_contact__c</fullName>
+    <label>Canal de contact</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Appel d&apos;offres</fullName>
+                <default>false</default>
+                <label>Appel d&apos;offres</label>
+            </value>
+            <value>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+                <label>Courrier</label>
+            </value>
+            <value>
+                <fullName>Mailing</fullName>
+                <default>false</default>
+                <label>Mailing</label>
+            </value>
+            <value>
+                <fullName>Parrainage</fullName>
+                <default>false</default>
+                <label>Parrainage</label>
+            </value>
+            <value>
+                <fullName>RDV</fullName>
+                <default>false</default>
+                <label>RDV</label>
+            </value>
+            <value>
+                <fullName>Téléphone</fullName>
+                <default>false</default>
+                <label>Téléphone</label>
+            </value>
+            <value>
+                <fullName>Web</fullName>
+                <default>false</default>
+                <label>Web</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

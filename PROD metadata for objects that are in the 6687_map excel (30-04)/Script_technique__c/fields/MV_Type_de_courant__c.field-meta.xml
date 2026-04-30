@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV_Type_de_courant__c</fullName>
+    <inlineHelpText>Visite technique si Triphasé</inlineHelpText>
+    <label>Type de courant (VT)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Monophasé</fullName>
+                <default>false</default>
+                <label>Monophasé</label>
+            </value>
+            <value>
+                <fullName>Triphasé</fullName>
+                <default>false</default>
+                <label>Triphasé</label>
+            </value>
+            <value>
+                <fullName>Ne sait pas</fullName>
+                <default>false</default>
+                <label>Ne sait pas</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Monophase</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>Triphase</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

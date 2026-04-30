@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_Souscription__c</fullName>
+    <description>Sprint 16. Champ permettant de sélectionner le motif de souscription
+MCOSF-3194: Ajout du valeur &apos;Parcours Web&apos;</description>
+    <inlineHelpText>Veuillez sélectionner un motif de souscription</inlineHelpText>
+    <label>Motif de souscription</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Downgrade</fullName>
+                <default>false</default>
+                <label>Downgrade</label>
+            </value>
+            <value>
+                <fullName>Upgrade</fullName>
+                <default>false</default>
+                <label>Upgrade</label>
+            </value>
+            <value>
+                <fullName>Modification de mode de paiement</fullName>
+                <default>false</default>
+                <label>Modification de mode de paiement</label>
+            </value>
+            <value>
+                <fullName>Pack chauffage</fullName>
+                <default>false</default>
+                <label>Pack chauffage</label>
+            </value>
+            <value>
+                <fullName>Mensualisation</fullName>
+                <default>false</default>
+                <label>Prélèvement mensuel</label>
+            </value>
+            <value>
+                <fullName>Offre CMISTE</fullName>
+                <default>false</default>
+                <label>Offre CMISTE</label>
+            </value>
+            <value>
+                <fullName>Suite remplacement équipement</fullName>
+                <default>false</default>
+                <label>Suite remplacement équipement</label>
+            </value>
+            <value>
+                <fullName>Option Therm.Connecté illigo</fullName>
+                <default>false</default>
+                <label>Option Therm.Connecté illigo</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Contrat offert suite VF facturée</fullName>
+                <default>false</default>
+                <label>Contrat offert suite VF facturée</label>
+            </value>
+            <value>
+                <fullName>Contrat offert suite Dépannage HC facturé</fullName>
+                <default>false</default>
+                <label>Contrat offert suite Dépannage HC facturé</label>
+            </value>
+            <value>
+                <fullName>Contrat offert suite MES</fullName>
+                <default>false</default>
+                <label>Contrat offert suite MES</label>
+            </value>
+            <value>
+                <fullName>Client souhaite un contrat</fullName>
+                <default>false</default>
+                <label>Client souhaite un contrat</label>
+            </value>
+            <value>
+                <fullName>Parcours Web</fullName>
+                <default>false</default>
+                <label>Parcours Web</label>
+            </value>
+            <value>
+                <fullName>Contrat Essentiel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrat Essentiel</label>
+            </value>
+            <value>
+                <fullName>Contrat Intégral</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrat Intégral</label>
+            </value>
+            <value>
+                <fullName>Contrat Liberté</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrat Liberté</label>
+            </value>
+            <value>
+                <fullName>Contrat Sécurité</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contrat Sécurité</label>
+            </value>
+            <value>
+                <fullName>Sérénité</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sérénité</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

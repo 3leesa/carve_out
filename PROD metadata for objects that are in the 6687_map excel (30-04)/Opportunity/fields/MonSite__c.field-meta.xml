@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MonSite__c</fullName>
+    <description>Sprint 38 - gestion des affaires commerciales</description>
+    <formula>IF( ChoixAgence__r.TECH_GazelleId__c = $User.IDGazelleAgence__c , TRUE,
+ IF( ISBLANK( ChoixAgence__r.SiteParent__c ), FALSE,
+ IF( ChoixAgence__r.SiteParent__r.TECH_GazelleId__c = $User.IDGazelleAgence__c, TRUE,
+ IF( ISBLANK( ChoixAgence__r.SiteParent__r.SiteParent__c ), FALSE,
+ IF( ChoixAgence__r.SiteParent__r.SiteParent__r.TECH_GazelleId__c = $User.IDGazelleAgence__c, TRUE,
+ IF( ISBLANK( ChoixAgence__r.SiteParent__r.SiteParent__r.SiteParent__c ), FALSE,
+ IF( ChoixAgence__r.SiteParent__r.SiteParent__r.SiteParent__r.TECH_GazelleId__c = $User.IDGazelleAgence__c, TRUE, FALSE 
+ )
+ )
+ )
+ )
+ )
+ )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mon Site</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

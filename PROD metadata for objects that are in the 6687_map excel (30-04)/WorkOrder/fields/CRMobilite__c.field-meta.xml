@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRMobilite__c</fullName>
+    <description>Sprint 13: Compte rendu d&apos;intervention reçu depuis la mobilité. Stocké indépendamment a cause de sa taille. Synchronisé depuis gazelle</description>
+    <label>Compte rendu mobilité</label>
+    <length>4000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR004_NePasModifierStatut</fullName>
+    <active>true</active>
+    <description>Sprint1: Le statut passe automatiquement à : &quot;Nouveau&quot;, &quot;En cours&quot; et  &quot;Terminé&quot; 
+MCOSF-407: Case au statut Nouveau si créer Flow
+MCOSF-2034:Opportunité: Mettre à jour les automatismes de devis, d&apos;opportunité et de demande</description>
+    <errorConditionFormula>AND(
+NOT(RecordType.DeveloperName = &apos;PoseEquipement&apos;),
+NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c
+), 
+AND(TECH_VerifierQuonVientDeGazelle__c=False, TECH_CreatedBySelfHelp__c = false),
+ISPICKVAL( Status, &quot;Nouveau&quot;), 
+OR( 
+AND( 
+NOT( CONTAINS( TEXT( NiveauDEscalade__c), &quot;Niveau 1&quot; ) ), 
+CONTAINS(Owner:Queue.DeveloperName, &quot;Escalades_N1&quot;) ), 
+AND( 
+NOT( CONTAINS( TEXT( NiveauDEscalade__c), &quot;Niveau 2&quot; ) ), 
+CONTAINS(Owner:Queue.DeveloperName, &quot;Escalades_N2&quot;) ), 
+AND( 
+NOT( CONTAINS( TEXT( NiveauDEscalade__c), &quot;Niveau 3&quot; ) ), 
+CONTAINS(Owner:Queue.DeveloperName, &quot;Escalades_N3&quot;) ), 
+AND( 
+NOT( CONTAINS( TEXT(NiveauDEscalade__c), &quot;Courante&quot; ) ), 
+CONTAINS(Owner:Queue.DeveloperName, &quot;Demandes_courantes&quot;)) ) )</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Veuillez annuler cette action. Les statuts sont : &quot;Nouveau&quot; à la création d&apos;une nouvelle demande, puis &quot;En cours&quot; lorsque vous désignez un gestionnaire, puis &quot;Terminé&quot; lorsque vous fermez une demande.</errorMessage>
+</ValidationRule>

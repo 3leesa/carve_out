@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotifARevoir__c</fullName>
+    <description>Sprint 46 - Champ Motif à revoir
+MCOSF - 2147 modif sur la picklist Pièce reçue</description>
+    <label>Avancement demande</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>30</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>10</label>
+            </value>
+            <value>
+                <fullName>60</fullName>
+                <default>false</default>
+                <label>60</label>
+            </value>
+            <value>
+                <fullName>Devis en attente d’acceptation</fullName>
+                <default>false</default>
+                <label>Devis en attente d’acceptation</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>20</label>
+            </value>
+            <value>
+                <fullName>40</fullName>
+                <default>false</default>
+                <label>40</label>
+            </value>
+            <value>
+                <fullName>Pièce commandée (en attente de réception)</fullName>
+                <default>false</default>
+                <label>Pièce commandée (en attente de réception)</label>
+            </value>
+            <value>
+                <fullName>Pièce reçue</fullName>
+                <default>false</default>
+                <label>Pièce reçue</label>
+            </value>
+            <value>
+                <fullName>Autre motif</fullName>
+                <default>false</default>
+                <label>Autre motif</label>
+            </value>
+            <value>
+                <fullName>50</fullName>
+                <default>false</default>
+                <label>50</label>
+            </value>
+            <value>
+                <fullName>70</fullName>
+                <default>false</default>
+                <label>70</label>
+            </value>
+            <value>
+                <fullName>Pièce reçue - RDV pris</fullName>
+                <default>false</default>
+                <label>Pièce reçue - RDV pris</label>
+            </value>
+            <value>
+                <fullName>Pièce reçue - Relance client 1</fullName>
+                <default>false</default>
+                <label>Pièce reçue - Relance client 1</label>
+            </value>
+            <value>
+                <fullName>Pièce reçue - Relance client 2</fullName>
+                <default>false</default>
+                <label>Pièce reçue - Relance client 2</label>
+            </value>
+            <value>
+                <fullName>Absence énergies</fullName>
+                <default>false</default>
+                <label>Absence énergies</label>
+            </value>
+            <value>
+                <fullName>Mise en conformité nécessaire</fullName>
+                <default>false</default>
+                <label>Mise en conformité nécessaire</label>
+            </value>
+            <value>
+                <fullName>Mise à l&apos;état opérationnel nécessaire</fullName>
+                <default>false</default>
+                <label>Mise à l&apos;état opérationnel nécessaire</label>
+            </value>
+            <value>
+                <fullName>Absence Robinet test ECS</fullName>
+                <default>false</default>
+                <label>Absence Robinet test ECS</label>
+            </value>
+            <value>
+                <fullName>Rdv pris</fullName>
+                <default>false</default>
+                <label>Rdv pris</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

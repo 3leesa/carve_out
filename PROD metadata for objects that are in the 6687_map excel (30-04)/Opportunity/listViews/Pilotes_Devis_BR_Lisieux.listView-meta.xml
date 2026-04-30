@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pilotes_Devis_BR_Lisieux</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Nom_complet_du_createur__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Sous_statut__c</columns>
+    <columns>Date_de_signature_du_devis__c</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Primary_Quote_Pack__c</field>
+        <operation>equals</operation>
+        <value>Offre Borne Electrique</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Besoin détecté,Devis créé,Devis remis au client,Devis signé,Fermée / Gagnée</value>
+    </filters>
+    <filters>
+        <field>site_gestionnaire_createur__c</field>
+        <operation>equals</operation>
+        <value>TV EURO CRM Lisieux</value>
+    </filters>
+    <label>Pilotes Devis BR - Lisieux</label>
+    <sharedTo>
+        <group>Pilote_MV_Lisieux</group>
+    </sharedTo>
+</ListView>

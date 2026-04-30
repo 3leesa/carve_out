@@ -182,7 +182,7 @@ Examples:
 
 - `{{LBL_FIELD_HELP}}`
 - `/apex/MyPage?id={{LBL_PAGE_ID}}`
-- `AND(ISPICKVAL(Status, "{{LBL_STATUS}}"), TRUE)`
+- `TEXT(Status__c) = "{{LBL_STATUS}}"`
 
 ## What Metadata Can Be Updated
 
@@ -367,6 +367,8 @@ These methods are used while reading or modifying metadata.
 ### `resolve_template(template, alias, cache)`
 
 Replaces `{{Label_Name}}` placeholders with actual label values.
+
+For `formula` and `validationRuleFormula`, replacement happens before the metadata is written back to disk. That means `{{Brand_Name}}` becomes the actual label text in the generated formula; it does not stay as `$Label.Brand_Name`.
 
 It uses:
 

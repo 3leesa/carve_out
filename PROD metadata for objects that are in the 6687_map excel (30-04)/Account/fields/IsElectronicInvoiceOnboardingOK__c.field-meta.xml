@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsElectronicInvoiceOnboardingOK__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>MCOSF-398 : E-facture : 1- Adhérer au service
+Flag autorisant le Onboarding sur Espace Client.</description>
+    <label>IsElectronicInvoiceOnboardingOK</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

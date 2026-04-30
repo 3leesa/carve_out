@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Createur_Agence_Digitale__c</fullName>
+    <description>Sprint 106 CRM-916</description>
+    <formula>IF( OR(CONTAINS( CreatedBy.Nom_du_site_de_rattachement__c ,&apos;AGENCE DIGITALE&apos;), 
+CONTAINS( CreatedBy.Nom_du_site_de_rattachement__c ,&apos;Agence Digitale&apos;)),
+
+true,
+
+false
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Créateur Agence Digitale</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

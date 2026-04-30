@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_de_non_conversion_B2B__c</fullName>
+    <label>Motif de non conversion</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hors périmètre EHS</fullName>
+                <default>false</default>
+                <label>Hors périmètre EHS</label>
+            </value>
+            <value>
+                <fullName>Prix</fullName>
+                <default>false</default>
+                <label>Prix</label>
+            </value>
+            <value>
+                <fullName>Choix de la concurrence</fullName>
+                <default>false</default>
+                <label>Choix de la concurrence</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Prospect - non intéressé</controllingFieldValue>
+            <valueName>Hors périmètre EHS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prospect - non intéressé</controllingFieldValue>
+            <valueName>Prix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prospect - non intéressé</controllingFieldValue>
+            <valueName>Choix de la concurrence</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

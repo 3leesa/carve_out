@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Layout_Lightning_Opportunity_equipement</fullName>
+    <fields>Name</fields>
+    <fields>AccountId</fields>
+    <fields>Montant_Total_TTC__c</fields>
+    <fields>Nom_du_technicien__c</fields>
+    <fields>LogementConcerne__c</fields>
+    <fields>Demande__c</fields>
+    <fields>Intervention__c</fields>
+    <label>Layout Lightning Opportunity equipement</label>
+</CompactLayout>

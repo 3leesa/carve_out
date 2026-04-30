@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Region_liste__c</fullName>
+    <label>Région</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>B2B_Departement__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>CENTRE-IDF</fullName>
+                <default>false</default>
+                <label>CENTRE-IDF</label>
+            </value>
+            <value>
+                <fullName>EST</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EST</label>
+            </value>
+            <value>
+                <fullName>MEDITERRANEE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MEDITERRANEE</label>
+            </value>
+            <value>
+                <fullName>NORD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NORD</label>
+            </value>
+            <value>
+                <fullName>NORD-EST</fullName>
+                <default>false</default>
+                <label>NORD-EST</label>
+            </value>
+            <value>
+                <fullName>OUEST</fullName>
+                <default>false</default>
+                <label>OUEST</label>
+            </value>
+            <value>
+                <fullName>OUEST-NORMANDIE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OUEST-NORMANDIE</label>
+            </value>
+            <value>
+                <fullName>RHONES-ALPES</fullName>
+                <default>false</default>
+                <label>RHONES-ALPES</label>
+            </value>
+            <value>
+                <fullName>SUD-EST</fullName>
+                <default>false</default>
+                <label>SUD-EST</label>
+            </value>
+            <value>
+                <fullName>SUD-OUEST</fullName>
+                <default>false</default>
+                <label>SUD-OUEST</label>
+            </value>
+            <value>
+                <fullName>T1_Méditerranée</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>T1_Méditerranée</label>
+            </value>
+            <value>
+                <fullName>T2_Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>T2_Centre</label>
+            </value>
+            <value>
+                <fullName>T3_Rhône-Alpes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>T3_Rhône-Alpes</label>
+            </value>
+            <value>
+                <fullName>T4_Ouest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>T4_Ouest</label>
+            </value>
+            <value>
+                <fullName>T5_Est</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>T5_Est</label>
+            </value>
+            <value>
+                <fullName>T6_Sud-Ouest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>T6_Sud-Ouest</label>
+            </value>
+            <value>
+                <fullName>T7_IDF</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>T7_IDF</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>43 - Haute-Loire</controllingFieldValue>
+            <controllingFieldValue>48 - Lozère</controllingFieldValue>
+            <controllingFieldValue>13 - Bouches-du-Rhône</controllingFieldValue>
+            <controllingFieldValue>3 - Allier</controllingFieldValue>
+            <controllingFieldValue>4 - Alpes de Hautes-Provence</controllingFieldValue>
+            <controllingFieldValue>5 - Hautes-Alpes</controllingFieldValue>
+            <controllingFieldValue>6 - Alpes-Maritimes</controllingFieldValue>
+            <controllingFieldValue>7 - Ardèche</controllingFieldValue>
+            <controllingFieldValue>63 - Puy-de-Dôme</controllingFieldValue>
+            <controllingFieldValue>26 - Drôme</controllingFieldValue>
+            <controllingFieldValue>69 - Rhône</controllingFieldValue>
+            <controllingFieldValue>69 - Rhône (Lyon chaufferie)</controllingFieldValue>
+            <controllingFieldValue>71 - Saône-et-Loire</controllingFieldValue>
+            <controllingFieldValue>30 - Gard</controllingFieldValue>
+            <controllingFieldValue>73 - Savoie</controllingFieldValue>
+            <controllingFieldValue>74 - Haute-Savoie</controllingFieldValue>
+            <controllingFieldValue>38 - Isère</controllingFieldValue>
+            <controllingFieldValue>20 - Corse</controllingFieldValue>
+            <controllingFieldValue>39 - Jura</controllingFieldValue>
+            <controllingFieldValue>83 - Var</controllingFieldValue>
+            <controllingFieldValue>84 - Vaucluse</controllingFieldValue>
+            <controllingFieldValue>42 - Loire</controllingFieldValue>
+            <valueName>SUD-EST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>86 - Vienne</controllingFieldValue>
+            <controllingFieldValue>87 - Haute-Vienne</controllingFieldValue>
+            <controllingFieldValue>46 - Lot</controllingFieldValue>
+            <controllingFieldValue>47 - Lot-et-Garonne</controllingFieldValue>
+            <controllingFieldValue>11 - Aude</controllingFieldValue>
+            <controllingFieldValue>12 - Aveyron</controllingFieldValue>
+            <controllingFieldValue>15 - Cantal</controllingFieldValue>
+            <controllingFieldValue>16 - Charente</controllingFieldValue>
+            <controllingFieldValue>17 - Charente-Maritime</controllingFieldValue>
+            <controllingFieldValue>19 - Corrèze</controllingFieldValue>
+            <controllingFieldValue>9 - Ariège</controllingFieldValue>
+            <controllingFieldValue>64 - Pyrénées-Atlantiques</controllingFieldValue>
+            <controllingFieldValue>65 - Hautes-Pyrénées</controllingFieldValue>
+            <controllingFieldValue>66 - Pyrénées-Orientales</controllingFieldValue>
+            <controllingFieldValue>23 - Creuse</controllingFieldValue>
+            <controllingFieldValue>24 - Dordogne</controllingFieldValue>
+            <controllingFieldValue>31 - Haute-Garonne</controllingFieldValue>
+            <controllingFieldValue>32 - Gers</controllingFieldValue>
+            <controllingFieldValue>33 - Gironde</controllingFieldValue>
+            <controllingFieldValue>34 - Hérault</controllingFieldValue>
+            <controllingFieldValue>79 - Deux-Sèvres</controllingFieldValue>
+            <controllingFieldValue>81 - Tarn</controllingFieldValue>
+            <controllingFieldValue>82 - Tarn-et-Garonne</controllingFieldValue>
+            <controllingFieldValue>40 - Landes</controllingFieldValue>
+            <controllingFieldValue>85 - Vendée</controllingFieldValue>
+            <valueName>SUD-OUEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>44 - Loire-Atlantique</controllingFieldValue>
+            <controllingFieldValue>49 - Maine-et-Loire</controllingFieldValue>
+            <controllingFieldValue>50 - Manche</controllingFieldValue>
+            <controllingFieldValue>53 - Mayenne</controllingFieldValue>
+            <controllingFieldValue>56 - Morbihan</controllingFieldValue>
+            <controllingFieldValue>14 - Calvados</controllingFieldValue>
+            <controllingFieldValue>61 - Orne</controllingFieldValue>
+            <controllingFieldValue>22 - Côtes d&apos;Armor</controllingFieldValue>
+            <controllingFieldValue>27 - Eure</controllingFieldValue>
+            <controllingFieldValue>29 - Finistère</controllingFieldValue>
+            <controllingFieldValue>72 - Sarthe</controllingFieldValue>
+            <controllingFieldValue>76 - Seine-Maritime</controllingFieldValue>
+            <controllingFieldValue>35 - Ille-et-Vilaine</controllingFieldValue>
+            <valueName>OUEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>45 - Loiret</controllingFieldValue>
+            <controllingFieldValue>89 - Yonne</controllingFieldValue>
+            <controllingFieldValue>91 - Essonne</controllingFieldValue>
+            <controllingFieldValue>92 - Hauts-de-Seine</controllingFieldValue>
+            <controllingFieldValue>93 - Seine-Saint-Denis</controllingFieldValue>
+            <controllingFieldValue>94 - Val-de-Marne</controllingFieldValue>
+            <controllingFieldValue>95 - Val-d&apos;Oise</controllingFieldValue>
+            <controllingFieldValue>58 - Nièvre</controllingFieldValue>
+            <controllingFieldValue>18 - Cher</controllingFieldValue>
+            <controllingFieldValue>60 - Oise</controllingFieldValue>
+            <controllingFieldValue>28 - Eure-et-Loir</controllingFieldValue>
+            <controllingFieldValue>75 - Paris</controllingFieldValue>
+            <controllingFieldValue>77 - Seine-et-Marne</controllingFieldValue>
+            <controllingFieldValue>36 - Indre</controllingFieldValue>
+            <controllingFieldValue>37 - Indre-et-Loire</controllingFieldValue>
+            <controllingFieldValue>78 - Yvelines</controllingFieldValue>
+            <controllingFieldValue>41 - Loir-et-Cher</controllingFieldValue>
+            <valueName>CENTRE-IDF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>88 - Vosges</controllingFieldValue>
+            <controllingFieldValue>90 - Territoire-de-Belfort</controllingFieldValue>
+            <controllingFieldValue>51 - Marne</controllingFieldValue>
+            <controllingFieldValue>52 - Haute-Marne</controllingFieldValue>
+            <controllingFieldValue>10 - Aube</controllingFieldValue>
+            <controllingFieldValue>54 - Meurthe-et-Moselle</controllingFieldValue>
+            <controllingFieldValue>55 - Meuse</controllingFieldValue>
+            <controllingFieldValue>57 - Moselle</controllingFieldValue>
+            <controllingFieldValue>2 - Aisne</controllingFieldValue>
+            <controllingFieldValue>8 - Ardennes</controllingFieldValue>
+            <controllingFieldValue>59 - Nord</controllingFieldValue>
+            <controllingFieldValue>62 - Pas-de-Calais</controllingFieldValue>
+            <controllingFieldValue>21 - Côte-d&apos;Or</controllingFieldValue>
+            <controllingFieldValue>67 - Bas-Rhin</controllingFieldValue>
+            <controllingFieldValue>68 - Haut-Rhin</controllingFieldValue>
+            <controllingFieldValue>25 - Doubs</controllingFieldValue>
+            <controllingFieldValue>70 - Haute-Saône</controllingFieldValue>
+            <controllingFieldValue>80 - Somme</controllingFieldValue>
+            <valueName>NORD-EST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1 - Ain</controllingFieldValue>
+            <valueName>RHONES-ALPES</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

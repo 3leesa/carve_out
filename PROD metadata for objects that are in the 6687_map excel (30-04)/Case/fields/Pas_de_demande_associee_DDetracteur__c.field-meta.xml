@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pas_de_demande_associee_DDetracteur__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>CRM-663 : La case est décochée par défaut donc le statut en attente de clôture de la demande associée s&apos;affiche par défaut , dans ce cas l&apos;utilisateur doit créer une demande associée pour traiter le dossier.</description>
+    <inlineHelpText>Cocher la case lorsque le traitement du dossier détracteur ne nécessite pas la création d’une nouvelle demande associée ( type dépannage réclamation … )</inlineHelpText>
+    <label>Pas de demande associée</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

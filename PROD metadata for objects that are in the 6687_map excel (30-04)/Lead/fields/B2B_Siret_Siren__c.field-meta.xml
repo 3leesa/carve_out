@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Siret_Siren__c</fullName>
+    <description>Le SIRET doit être composé de 14 chiffres sans espace</description>
+    <externalId>false</externalId>
+    <label>Numéro SIRET</label>
+    <length>14</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

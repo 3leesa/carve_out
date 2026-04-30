@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_GenericProduct_PAC_AE__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (AND(CategorieAchat__r.Name = &apos;APPAREIL-PAC A/E&apos;,  ProductCode != &apos;SDU0010023173&apos;, ProductCode != &apos;SDU0010023527&apos;),&apos;true&apos;,&apos;false&apos; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tech_GenericProduct_PAC_AE</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X17_Les_pistes_de_la_r_gion</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.CRM_B2B</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Suspect - à qualifier</value>
+    </filters>
+    <filters>
+        <field>Secteur__c</field>
+        <operation>equals</operation>
+        <value>Habitat Social,Copropriété,Tertiaire privé,Collectivité locale &amp; tertiaire public</value>
+    </filters>
+    <filters>
+        <field>B2B_Region_liste__c</field>
+        <operation>equals</operation>
+        <value>CENTRE-IDF</value>
+    </filters>
+    <label>LEADS B2B CENTRE-IDF</label>
+    <sharedTo>
+        <role>B2B_DN_CMI</role>
+        <role>DirectionRelationClient</role>
+        <role>Direction_Marketing_et_Commercial</role>
+        <roleAndSubordinatesInternal>DCR_CENTRE_IDF</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

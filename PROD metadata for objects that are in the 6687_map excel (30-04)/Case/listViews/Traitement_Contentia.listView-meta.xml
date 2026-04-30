@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Traitement_Contentia</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>NumeroClient__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.REASON</columns>
+    <columns>SiteDeRattachement__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Informations</value>
+    </filters>
+    <filters>
+        <field>MonAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Terminé,Annulé (Client),Annulé (Interne)</value>
+    </filters>
+    <label>Traitement Contentia</label>
+    <language>en_US</language>
+    <queue>CSP</queue>
+    <sharedTo>
+        <group>CSP</group>
+    </sharedTo>
+</ListView>

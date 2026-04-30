@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HasBeenCustomer__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flagged by Privacy Center when the account signs a quote, or starts a workorder or a contract</description>
+    <label>HasBeenCustomer</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

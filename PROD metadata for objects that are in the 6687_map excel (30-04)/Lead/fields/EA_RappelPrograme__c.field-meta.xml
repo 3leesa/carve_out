@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EA_RappelPrograme__c</fullName>
+    <formula>IF(
+OR(NOT(ISBLANK(Rappel_n1__c)), 
+NOT(ISBLANK(Rappel_n2__c)), 
+NOT(ISBLANK(Rappel_n3__c)), 
+NOT(ISBLANK(Rappel_n4__c))),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>EA_RappelProgrammé</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR016_BloquerChgStatutLeadHorsConversion</fullName>
+    <active>true</active>
+    <description>Bloque les changements de statut de la piste à &quot;Converti&quot; hors conversion du Lead.</description>
+    <errorConditionFormula>AND( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c = false, ISCHANGED(Status), ISPICKVAL(Status, &apos;Converti&apos;), IsConverted = false)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas modifier le statut de la piste à &quot;Converti&quot; sans la convertir.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Layout_Lightning_Ressource</fullName>
+    <fields>Name</fields>
+    <fields>NomComplet__c</fields>
+    <fields>Categorie__c</fields>
+    <label>Layout Lightning Ressource</label>
+</CompactLayout>

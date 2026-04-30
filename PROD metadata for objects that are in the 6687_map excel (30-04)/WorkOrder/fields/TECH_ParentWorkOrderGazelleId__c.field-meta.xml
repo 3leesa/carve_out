@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_ParentWorkOrderGazelleId__c</fullName>
+    <description>Sprint 9 - Id technique Gazelle du BI parent (pour les outbound message)</description>
+    <externalId>false</externalId>
+    <formula>ParentWorkOrder.TECH_GazelleId__c</formula>
+    <label>TECH_ParentWorkOrderGazelleId</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

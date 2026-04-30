@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Desembouage_Filtre__c</fullName>
+    <label>Désembouage / Filtre</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pas besoin</fullName>
+                <default>false</default>
+                <label>Pas besoin</label>
+            </value>
+            <value>
+                <fullName>Traitement et rinçage</fullName>
+                <default>false</default>
+                <label>Traitement et rinçage</label>
+            </value>
+            <value>
+                <fullName>Traitement et rinçage avec pot à boue</fullName>
+                <default>false</default>
+                <label>Traitement et rinçage avec pot à boue</label>
+            </value>
+            <value>
+                <fullName>Désembouage</fullName>
+                <default>false</default>
+                <label>Désembouage</label>
+            </value>
+            <value>
+                <fullName>Désembouage avec pot à boue</fullName>
+                <default>false</default>
+                <label>Désembouage avec pot à boue</label>
+            </value>
+            <value>
+                <fullName>Pot à boue</fullName>
+                <default>false</default>
+                <label>Pot à boue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

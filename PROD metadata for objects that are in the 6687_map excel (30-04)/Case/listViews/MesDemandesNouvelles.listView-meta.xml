@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MesDemandesNouvelles</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.REASON</columns>
+    <columns>SiteRattachement__c</columns>
+    <columns>NAME</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>NiveauDEscalade__c</columns>
+    <columns>ApprobationRejetee__c</columns>
+    <columns>NbRelancesActuel__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>En cours,En attente d&apos;approbation</value>
+    </filters>
+    <label>Mes demandes nouvelles</label>
+    <language>fr</language>
+    <sharedTo>
+        <role>DirectionRelationClient</role>
+    </sharedTo>
+</ListView>

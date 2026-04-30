@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_TranquilityStatus__c</fullName>
+    <description>MCOSF-275. Code du statut du lead renvoyé à Tranquility pour les leads d&apos;origine DGP</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Statut_de_la_conversion__c ,&apos;Traité et converti en projet&apos;) &amp;&amp; ISPICKVAL(Sous_statut_conversion__c ,&apos;Transfert Agence Digitale&apos;), &apos;4.2&apos;,
+IF(OR((ISPICKVAL(Statut_de_la_conversion__c,&apos;Traité et converti en projet&apos;)&amp;&amp;(ISPICKVAL(Sous_statut_conversion__c, &apos;RDV Pris&apos;)||ISPICKVAL(Sous_statut_conversion__c, &quot;RDV à prendre par l&apos;agence&quot;))),ISPICKVAL(Statut_de_la_conversion__c, &apos;Traité et transféré&apos;)),&apos;4.3&apos;,
+IF(ISPICKVAL(Statut_de_la_conversion__c, &apos;Traité non converti&apos;),CASE(TEXT(Motif_non_conversion__c), &apos;Pas intéressé&apos;,&apos;9.1&apos;,&apos;Horaires trop contraignants&apos;,&apos;9.1&apos;,&apos;Demande_informations&apos;,&apos;9.1&apos;,&apos;Prix trop élevé&apos;,&apos;9.1&apos;,&quot;Refus d&apos;entretien&quot;,&apos;9.2&apos;,&apos;Préfère un artisan local&apos;,&apos;9.3&apos;,&apos;Collectif ou social&apos;,&apos;10.1&apos;,&apos;Test – Fausse demande&apos;,&apos;10.1&apos;,&apos;Prospect déjà sous contrat avec un concurrent&apos;,&apos;10.2&apos;,&apos;Projet déjà réalisé (appareil / VE / dépannage)&apos;,&apos;10.3&apos;,&apos;RDV déjà pris (cas multi-demandes)&apos;,&apos;10.3&apos;,&apos;Projet non mature &gt; 6 mois&apos;,&apos;10.4&apos;,&apos;Projet non mature &lt; 6 mois&apos;,&apos;10.4&apos;,&quot;Installation ou habitat non adapté à l&apos;offre&quot;,&apos;10.5&apos;,&apos;Contact polluant&apos;,&apos;10.6&apos;,&apos;N_ne_correspond_pas_a_interesse&apos;,&apos;10.6&apos;,&apos;Pas de projet&apos;,&apos;10.7&apos;,&apos;Produit non vendu par EHS&apos;,&apos;10.8&apos;,&apos;Interlocuteur non décisionnaire&apos;,&apos;10.9&apos;,&apos;Doublon&apos;,&apos;10.10&apos;,&apos;Injoignable permanent&apos;,&apos;11.1&apos;,&apos;Relance&apos;,&apos;11.3&apos;,&apos;Raccroché client&apos;,&apos;11.3&apos;,&apos;Cas suspicion C-19&apos;,&apos;11.4&apos;,&apos;Rappel&apos;,&apos;11.4&apos;,&apos;Faux numéro&apos;,&apos;11.5&apos;,&apos;11.2&apos;),
+IF(ISPICKVAL(Motif_Rappel_n1__c,&apos;89&apos;)||ISPICKVAL(Motif_Rappel_n2__c,&apos;89&apos;)||ISPICKVAL(Motif_Rappel_n3__c,&apos;89&apos;)||ISPICKVAL(Motif_Rappel_n4__c,&apos;89&apos;)||ISPICKVAL(Motif_Rappel_n1__c,&apos;92&apos;)||ISPICKVAL(Motif_Rappel_n2__c,&apos;92&apos;)||ISPICKVAL(Motif_Rappel_n3__c,&apos;92&apos;)||ISPICKVAL(Motif_Rappel_n4__c,&apos;92&apos;)||ISPICKVAL(Motif_Rappel_n1__c,&apos;93&apos;)||ISPICKVAL(Motif_Rappel_n2__c,&apos;93&apos;)||ISPICKVAL(Motif_Rappel_n4__c,&apos;93&apos;)||ISPICKVAL(Motif_Rappel_n4__c,&apos;93&apos;),&apos;11.2&apos;,
+IF(ISPICKVAL(Motif_Rappel_n1__c,&apos;95&apos;)||ISPICKVAL(Motif_Rappel_n2__c,&apos;95&apos;)||ISPICKVAL(Motif_Rappel_n3__c,&apos;95&apos;)||ISPICKVAL(Motif_Rappel_n4__c,&apos;95&apos;),&apos;11.3&apos;,
+IF(ISPICKVAL(Motif_Rappel_n1__c,&apos;94&apos;)||ISPICKVAL(Motif_Rappel_n2__c,&apos;94&apos;)||ISPICKVAL(Motif_Rappel_n3__c,&apos;94&apos;)||ISPICKVAL(Motif_Rappel_n4__c,&apos;94&apos;),&apos;11.4&apos;,
+IF(ISPICKVAL(Motif_Rappel_n1__c,&apos;91&apos;)||ISPICKVAL(Motif_Rappel_n2__c,&apos;91&apos;)||ISPICKVAL(Motif_Rappel_n3__c,&apos;91&apos;)||ISPICKVAL(Motif_Rappel_n4__c,&apos;91&apos;),&apos;11.5&apos;,
+IF(ISPICKVAL(Motif_Rappel_n1__c,&apos;97&apos;)||ISPICKVAL(Motif_Rappel_n2__c,&apos;97&apos;)||ISPICKVAL(Motif_Rappel_n3__c,&apos;97&apos;)||ISPICKVAL(Motif_Rappel_n4__c,&apos;97&apos;),&apos;4.2&apos;,&apos;11.2&apos;))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Code statut Tranquility</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

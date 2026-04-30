@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR036_Remplissaga_Msg_Cloture_oblige</fullName>
+    <active>true</active>
+    <description>Les utilisateurs ne peuvent pas cloturer les demandes contentia sans remplir le champ &quot;Message Contentia&quot;</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c), 
+NOT(ISNEW()), 
+ISBLANK( message_cl_ture_dossier_Contentia__c ), 
+OR( 
+ISPICKVAL( Status , &quot;Terminé&quot;), 
+ISPICKVAL( Status , &quot;Annulé (Client)&quot;),
+ISPICKVAL( Status , &quot;Annulé (Interne)&quot;)
+),
+OR( 
+ISPICKVAL(Reason, &quot;Confirmation de règlement&quot;), 
+ISPICKVAL(Reason, &quot;Contestation/litiges&quot;), 
+ISPICKVAL(Reason, &quot;Résiliation (Contentia)&quot;), 
+ISPICKVAL(Reason, &quot;Geste Commercial&quot;), 
+ISPICKVAL(Reason, &quot;Attente VE&quot;), 
+ISPICKVAL(Reason, &quot;Prêt financier (BNP PF)&quot;),
+ISPICKVAL(Reason, &quot;Duplicata facture&quot;), 
+ISPICKVAL(Reason, &quot;Rematerialisation BI&quot;) 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>message_cl_ture_dossier_Contentia__c</errorDisplayField>
+    <errorMessage>Pour clôturer cette demande, il faut renseigner des éléments de réponse à destination de Contentia</errorMessage>
+</ValidationRule>

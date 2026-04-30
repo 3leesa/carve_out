@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Surface_du_logement__c</fullName>
+    <label>Surface du logement</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Entre 0 et 50 m²</fullName>
+                <default>false</default>
+                <label>Entre 0 et 50 m²</label>
+            </value>
+            <value>
+                <fullName>Entre 51 et 100 m²</fullName>
+                <default>false</default>
+                <label>Entre 51 et 100 m²</label>
+            </value>
+            <value>
+                <fullName>Supérieur à 100m²</fullName>
+                <default>false</default>
+                <label>Supérieur à 100m²</label>
+            </value>
+            <value>
+                <fullName>Nsp</fullName>
+                <default>false</default>
+                <label>Nsp</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RemboursementsATraiter</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>EtapeApprobation__c</columns>
+    <columns>NAME</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CompteClientAR__c</columns>
+    <columns>TypePieceComptable__c</columns>
+    <columns>NumeroDocument__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>RemboursementARembourser__c</columns>
+    <columns>SiteDeRattachement__c</columns>
+    <columns>Remboursement_effectue__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MonAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Informations</value>
+    </filters>
+    <filters>
+        <field>CASES.REASON</field>
+        <operation>equals</operation>
+        <value>Remboursement</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Annulé (Interne),Annulé (Client)</value>
+    </filters>
+    <filters>
+        <field>Remboursement_effectue__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Informations</value>
+    </filters>
+    <label>Remboursements à traiter</label>
+</ListView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEPANNAGE_J_3</fullName>
+    <columns>Name</columns>
+    <columns>WorkType</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <columns>Account</columns>
+    <columns>NumeroClientCompteDemande__c</columns>
+    <columns>Commentaire__c</columns>
+    <columns>Asset</columns>
+    <columns>StartDate</columns>
+    <columns>Collectif_ou_Individuel__c</columns>
+    <columns>TECH_Agence_equipement__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>103,102,107,105</value>
+    </filters>
+    <filters>
+        <field>StartDate</field>
+        <operation>equals</operation>
+        <value>NEXT_N_DAYS:4</value>
+    </filters>
+    <filters>
+        <field>EstSiteUser__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>10003,10004</value>
+    </filters>
+    <filters>
+        <field>StartDate</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>DEPANNAGE J+3</label>
+</ListView>

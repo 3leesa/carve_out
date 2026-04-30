@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClosedStatusIsFinal</fullName>
+    <active>true</active>
+    <description>MCOSF-1315 Un BI au statut clos ne doit pas pouvoir être rouvert. Aucun bypass possible, même Gazelle</description>
+    <errorConditionFormula>AND(NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c),ISCHANGED(Status), NOT(Est_clos__c), PRIORVALUE(Est_clos__c))</errorConditionFormula>
+    <errorMessage>Un BI au statut clos ne peut pas être rouvert</errorMessage>
+</ValidationRule>

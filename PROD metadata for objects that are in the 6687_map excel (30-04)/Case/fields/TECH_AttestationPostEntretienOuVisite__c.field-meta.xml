@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_AttestationPostEntretienOuVisite__c</fullName>
+    <description>Sprint 11 - Champ technique pour afficher, sur les modèles de clôture d&apos;une visite ou d&apos;un entretien, le texte indiquant comment télécharger l&apos;attestation de conformité.</description>
+    <externalId>false</externalId>
+    <formula>IF( OR( CONTAINS(TEXT(Type), &quot;Visite&quot;), 
+        CONTAINS(TEXT(Type), &quot;Entretien&quot;) ),
+BR()+BR()+
+&quot;Notre technicien ayant réalisé l’entretien de votre appareil, vous pouvez télécharger et imprimer votre attestation de conformité sur votre espace client accessible à cette adresse : &quot;, null)</formula>
+    <label>TECH_AttestationPostEntretienOuVisite</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

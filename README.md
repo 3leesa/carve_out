@@ -96,6 +96,16 @@ It retrieves their current values from the target org through Salesforce Tooling
 
 This means the org passed with `--alias` is the source of truth for label content.
 
+For `formula` and `validationRuleFormula`, the placeholder is resolved by the script before deployment. In other words, `{{Brand_Name}}` is replaced with the current label value and written into the formula as text; it is not kept as `$Label.Brand_Name` in the deployed metadata.
+
+Example:
+
+```csv
+Lead,My_Formula__c,formula,,TEXT(LeadSource) = "{{Brand_Acronym}}"
+```
+
+After resolution, the script writes the literal label value into the formula. This is useful when you want carve-out output to contain the target brand text directly.
+
 ## Run Modes
 
 - `check`: show the resolved target value for each row

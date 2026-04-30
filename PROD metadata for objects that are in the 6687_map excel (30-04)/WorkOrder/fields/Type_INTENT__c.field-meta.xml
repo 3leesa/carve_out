@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_INTENT__c</fullName>
+    <description>Si Type=10003 (dep), Si cat1 (PT), Si G: 1-1, Sinon 3-1
+Si Type=10003 (dep), Si cat2 (PP), Si G: 1-10, Sinon 3-8
+Si Type=10003 (dep), Si cat autre: &quot;&quot;
+Si Type=10005 (ent), Si G: 1-11, sinon 1-11 (anciennement 3-13)
+Si Type=10007 (trv), Si G: 1-18, sinon 3-15
+Sinon: &quot;&quot;</description>
+    <externalId>false</externalId>
+    <formula>If(
+OR(
+    Numero_de_contrat__c = &apos;22318760762&apos;,
+             Numero_de_contrat__c = &apos;22318759762&apos;,
+             Numero_de_contrat__c = &apos;22318761762&apos;,
+             Numero_de_contrat__c = &apos;22318766762&apos;,
+             Numero_de_contrat__c = &apos;22318765762&apos;,
+             Numero_de_contrat__c = &apos;22318764762&apos;
+)
+,
+ 
+IF(
+   AND(
+      ISPICKVAL(Type__c, &apos;10003&apos;),
+      OR(ProduitGeneriqueFonction__c = &apos;G&apos;,ProduitGeneriqueFonction__c = &apos;F&apos;)
+   ),
+   &apos;1-1&apos;,
+   IF(
+      AND(
+      OR(ISPICKVAL(Type__c, &apos;10004&apos;),ISPICKVAL(Type__c, &apos;10005&apos;)),
+      OR(ProduitGeneriqueFonction__c = &apos;G&apos;,ProduitGeneriqueFonction__c = &apos;F&apos;)
+   ), &apos;1-11&apos; ,
+ 
+ 
+   IF(
+      AND(
+      OR(ISPICKVAL(Type__c, &apos;10003&apos;),ISPICKVAL(Type__c, &apos;10004&apos;),ISPICKVAL(Type__c, &apos;10005&apos;)),
+      OR(ProduitGeneriqueFonction__c = &apos;B&apos;,ProduitGeneriqueFonction__c = &apos;A&apos;,ProduitGeneriqueFonction__c = &apos;U&apos;)
+   ), &apos;3-8&apos; ,
+   IF(
+      AND(
+      ISPICKVAL(Type__c, &apos;10003&apos;),
+      OR(ProduitGeneriqueFonction__c = &apos;BO&apos;,ProduitGeneriqueFonction__c = &apos;I&apos;,ProduitGeneriqueFonction__c = &apos;CA&apos;)
+   ), &apos;5-1&apos; ,
+
+   IF(
+      AND(
+      OR(ISPICKVAL(Type__c, &apos;10004&apos;),ISPICKVAL(Type__c, &apos;10005&apos;)),
+      OR(ProduitGeneriqueFonction__c = &apos;I&apos;,ProduitGeneriqueFonction__c = &apos;CA&apos;,ProduitGeneriqueFonction__c = &apos;BO&apos;)
+   ), &apos;5-9&apos; ,
+   &apos;&apos;
+   )
+ 
+   
+   )
+ 
+   
+
+      )
+   )
+)
+ 
+ 
+,IF(
+    OR(Numero_de_contrat__c = $Label.CLContratIntent1, 
+       Numero_de_contrat__c = $Label.CLContratIntent2
+    ), TEXT(Type__c),
+       IF(
+          OR(Numero_de_contrat__c = $Label.CLContratIntent6,
+             Numero_de_contrat__c = $Label.CLContratIntent3,
+             Numero_de_contrat__c = $Label.CLContratIntent4,
+             Numero_de_contrat__c = $Label.CLContratIntent5,
+             Numero_de_contrat__c = &apos;22212810707&apos;,
+             Numero_de_contrat__c = &apos;22212814708&apos;,
+             Numero_de_contrat__c = &apos;2218421605&apos;,
+             Numero_de_contrat__c = &apos;22217163661&apos;,
+             Numero_de_contrat__c = &apos;22425300653&apos;,             
+Numero_de_contrat__c = &apos;22425531165&apos;,
+             Numero_de_contrat__c = &apos;22112326605&apos;,
+             CONTAINS($Label.CL_ContratIntentNumbers,Numero_de_contrat__c)
+          ), IF(ISPICKVAL(Type__c, &apos;10003&apos;), 
+              IF(OR(ISPICKVAL(Case.CategorieDemande__c, &apos;1&apos;),ISPICKVAL(Case.CategorieDemande__c, &apos;3&apos;)),
+                 IF(ProduitGeneriqueFonction__c = &apos;G&apos;, &apos;1-1&apos;, &apos;3-1&apos;), 
+                    IF(ISPICKVAL(Case.CategorieDemande__c,&apos;2&apos;), 
+                      IF(ProduitGeneriqueFonction__c = &apos;G&apos;, &apos;1-10&apos;,  &apos;3-8&apos;), &apos;&apos;) ) ,   IF(OR(ISPICKVAL(Type__c, &apos;10004&apos;),ISPICKVAL(Type__c, &apos;10005&apos;)), 
+                        IF(ProduitGeneriqueFonction__c = &apos;G&apos;, &apos;1-11&apos;, &apos;1-11&apos;), 
+                           IF(ISPICKVAL(Type__c,&apos;10007&apos;), 
+                             IF(ProduitGeneriqueFonction__c = &apos;G&apos;, &apos;1-18&apos;, &apos;3-15&apos;), &apos;&apos;)) ) , &apos;&apos;) ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Type_INTENT</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

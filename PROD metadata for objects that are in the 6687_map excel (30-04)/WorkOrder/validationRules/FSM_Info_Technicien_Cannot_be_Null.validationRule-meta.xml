@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Info_Technicien_Cannot_be_Null</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(Commentaire__c), ISBLANK(Commentaire__c))</errorConditionFormula>
+    <errorMessage>Le champ info technicien ne peut pas être vide</errorMessage>
+</ValidationRule>

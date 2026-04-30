@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV_Besoin_visite_technique__c</fullName>
+    <formula>IF(OR(
+ISPICKVAL(MV_Type_de_montage__c, &quot;Sur mur irrégulier&quot;),
+ISPICKVAL(MV_Type_de_montage__c, &quot;Sur pied vissé&quot;),
+ISPICKVAL(MV_Nombre_percements__c, &quot;&gt;2&quot;),
+ISPICKVAL(MV_Nombre_percements__c, &quot;2&quot;),
+ISPICKVAL(MV_Nb_de_percements_compteur_LNKY_BR_VT__c,&quot;&gt;2&quot;),
+ISPICKVAL(MV_Nb_de_percements_compteur_LNKY_BR_VT__c,&quot;2&quot;),
+ISPICKVAL(MV_Type_de_courant__c,&quot;Triphasé&quot;),
+NOT(ISBLANK(MV_Travaux_specifiques__c)),
+NOT(ISBLANK(Travaux_specifiques_compteur_LNKY_BR_VT__c)),
+ISPICKVAL(MV_Tranchee_a_realiser__c, &quot;Oui à réaliser par l&apos;installateur&quot;),
+ISPICKVAL(Tranchee_realiser_compteur_LNKY_BR_VT__c, &quot;Oui à réaliser par l&apos;installateur&quot;),
+ISPICKVAL(Longueur_cable_compteur_LNKY_BR_ml_VT__c, &quot;Supérieure à 25 ml&quot;),
+Cable_non_apparent_compteur_LNKY_BR_VT__c = TRUE,
+MV_Cable_apparent__c = TRUE,
+MV_Place_dispo_tableau_supplementaire__c = FALSE,
+ISPICKVAL(MV_Longueur_du_cable__c, &apos;Supérieure à 25 ml&apos;),
+ISPICKVAL(MV_Longueur_du_cable__c,	&apos;Entre 15 et 25 ml&apos;)), true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Tous les champs portant l&apos;indicateur (VT) contribuent au calcul de cette formule.</inlineHelpText>
+    <label>Besoin visite technique</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

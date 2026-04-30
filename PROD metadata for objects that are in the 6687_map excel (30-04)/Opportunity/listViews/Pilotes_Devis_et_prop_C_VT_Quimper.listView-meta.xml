@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pilotes_Devis_et_prop_C_VT_Quimper</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Nom_complet_du_createur__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>TECH_CpqDevisStatus__c</columns>
+    <columns>Primary_Quote_Pack__c</columns>
+    <columns>n_du_telephone_du_client__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Primary_Quote_Pack__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>site_gestionnaire_createur__c</field>
+        <operation>equals</operation>
+        <value>CRC-QUIMPER</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Devis créé,Devis remis au client,Devis signé,Fermée / Perdue,Annulée,Fermée Gagnée / Pose réalisée</value>
+    </filters>
+    <label>Pilotes Devis et prop C - VT - Quimper</label>
+    <sharedTo>
+        <group>Mobilite_verte</group>
+    </sharedTo>
+</ListView>

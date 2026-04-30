@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR002_DateCloturePasAvantCreation</fullName>
+    <active>true</active>
+    <description>Sprint 10 - Quand elle est modifiée, la date de clôture ne doit pas être antérieure à la date de création.</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c), 
+OR(
+   AND(
+      ISNEW(),
+      CloseDate &lt; TODAY()
+),
+    AND(
+ISCHANGED(CloseDate),
+CloseDate &lt; DATEVALUE(CreatedDate)
+) 
+)
+)</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
+    <errorMessage>La date de clôture ne peut pas être antérieure à la date de création de l&apos;opportunité.</errorMessage>
+</ValidationRule>

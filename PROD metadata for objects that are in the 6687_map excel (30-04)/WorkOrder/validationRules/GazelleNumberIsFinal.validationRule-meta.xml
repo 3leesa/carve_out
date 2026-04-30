@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GazelleNumberIsFinal</fullName>
+    <active>true</active>
+    <description>MA-6333 Il est interdit de modifier le numéro Gazelle d&apos;une intervention</description>
+    <errorConditionFormula>AND(!ISBLANK(PRIORVALUE(NumeroGazelle__c)), ISCHANGED(NumeroGazelle__c))</errorConditionFormula>
+    <errorDisplayField>NumeroGazelle__c</errorDisplayField>
+    <errorMessage>Il est interdit de modifier le numéro Gazelle d&apos;une intervention</errorMessage>
+</ValidationRule>

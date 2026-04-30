@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrestationFamille__c</fullName>
+    <description>Sprint 11: ce champ stocke la combinaison &quot;ID de prestation&quot; - &quot;ID de la famille tarifaire couverte&quot;. Uniquement applicable pour les produit de type prestation individuelle.</description>
+    <externalId>false</externalId>
+    <label>Prestation Famille</label>
+    <length>50</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

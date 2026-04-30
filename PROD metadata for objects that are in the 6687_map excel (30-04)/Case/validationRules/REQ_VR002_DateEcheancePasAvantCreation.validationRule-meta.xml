@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR002_DateEcheancePasAvantCreation</fullName>
+    <active>true</active>
+    <description>Sprint 10 - Quand elle est modifiée, la date d&apos;échéance (qui est la date de clôture de l&apos;opportunité associée) ne doit pas être antérieure à la date de création de la demande.</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c), 
+OR( AND(ISNEW(), OppDateEcheance__c &lt; DATEVALUE(CreatedDate)),
+    AND(ISCHANGED(OppDateEcheance__c), OppDateEcheance__c &lt; DATEVALUE(CreatedDate)) )
+)</errorConditionFormula>
+    <errorDisplayField>OppDateEcheance__c</errorDisplayField>
+    <errorMessage>La date d&apos;échéance ne peut pas être antérieure à la date de création de la demande.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mod_le_de_la_chaudi_re_actuelle__c</fullName>
+    <label>Modèle de la chaudière actuelle</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Condensation</fullName>
+                <default>false</default>
+                <label>Condensation</label>
+            </value>
+            <value>
+                <fullName>Basse température</fullName>
+                <default>false</default>
+                <label>Basse température</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

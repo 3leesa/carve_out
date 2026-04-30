@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_statut_de_la_piste__c</fullName>
+    <description>Evol - lot 1</description>
+    <label>Sous-statut de la piste</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>A rappeler</fullName>
+                <default>false</default>
+                <label>A rappeler</label>
+            </value>
+            <value>
+                <fullName>Installation confirmée</fullName>
+                <default>false</default>
+                <label>Installation confirmée</label>
+            </value>
+            <value>
+                <fullName>Installation débriefée</fullName>
+                <default>false</default>
+                <label>Installation débriefée</label>
+            </value>
+            <value>
+                <fullName>Installation demandée</fullName>
+                <default>false</default>
+                <label>Installation demandée</label>
+            </value>
+            <value>
+                <fullName>Installation - Hors délai client</fullName>
+                <default>false</default>
+                <label>Installation - Hors délai client</label>
+            </value>
+            <value>
+                <fullName>Installation organisée</fullName>
+                <default>false</default>
+                <label>Installation organisée</label>
+            </value>
+            <value>
+                <fullName>Installation réalisée</fullName>
+                <default>false</default>
+                <label>Installation réalisée</label>
+            </value>
+            <value>
+                <fullName>NRP1</fullName>
+                <default>false</default>
+                <label>NRP1</label>
+            </value>
+            <value>
+                <fullName>NRP2</fullName>
+                <default>false</default>
+                <label>NRP2</label>
+            </value>
+            <value>
+                <fullName>NRP3</fullName>
+                <default>false</default>
+                <label>NRP3</label>
+            </value>
+            <value>
+                <fullName>NRP4</fullName>
+                <default>false</default>
+                <label>NRP4</label>
+            </value>
+            <value>
+                <fullName>Visite confirmée</fullName>
+                <default>false</default>
+                <label>Visite confirmée</label>
+            </value>
+            <value>
+                <fullName>Visite débriefée</fullName>
+                <default>false</default>
+                <label>Visite débriefée</label>
+            </value>
+            <value>
+                <fullName>Visite demandée</fullName>
+                <default>false</default>
+                <label>Visite demandée</label>
+            </value>
+            <value>
+                <fullName>Visite - Hors délai client</fullName>
+                <default>false</default>
+                <label>Visite - Hors délai client</label>
+            </value>
+            <value>
+                <fullName>Visite organisée</fullName>
+                <default>false</default>
+                <label>Visite organisée</label>
+            </value>
+            <value>
+                <fullName>Visite réalisée</fullName>
+                <default>false</default>
+                <label>Visite réalisée</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>A traiter</controllingFieldValue>
+            <valueName>A rappeler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A traiter</controllingFieldValue>
+            <valueName>NRP1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A traiter</controllingFieldValue>
+            <valueName>NRP2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A traiter</controllingFieldValue>
+            <valueName>NRP3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A traiter</controllingFieldValue>
+            <valueName>NRP4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visite préalable planifiée</controllingFieldValue>
+            <valueName>Visite confirmée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visite préalable planifiée</controllingFieldValue>
+            <valueName>Visite demandée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visite préalable planifiée</controllingFieldValue>
+            <valueName>Visite organisée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visite préalable réalisée</controllingFieldValue>
+            <valueName>Visite débriefée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visite préalable réalisée</controllingFieldValue>
+            <valueName>Visite - Hors délai client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visite préalable réalisée</controllingFieldValue>
+            <valueName>Visite réalisée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation planifiée</controllingFieldValue>
+            <valueName>Installation confirmée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation planifiée</controllingFieldValue>
+            <valueName>Installation demandée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation planifiée</controllingFieldValue>
+            <valueName>Installation organisée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation réalisée</controllingFieldValue>
+            <valueName>Installation débriefée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation réalisée</controllingFieldValue>
+            <valueName>Installation - Hors délai client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation réalisée</controllingFieldValue>
+            <valueName>Installation réalisée</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

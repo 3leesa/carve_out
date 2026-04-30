@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reclamations_Mobilite_Verte</fullName>
+    <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>NAME</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.REASON</columns>
+    <columns>SousMotif__c</columns>
+    <columns>CategorieDemande__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>ChoixAgence__c</columns>
+    <columns>NiveauDEscalade__c</columns>
+    <columns>PARENT.CASE_NUMBER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Réclamation</value>
+    </filters>
+    <filters>
+        <field>TECH_CreatedByUserRole__c</field>
+        <operation>equals</operation>
+        <value>Mobilité Verte</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>equals</operation>
+        <value>Equipe Mobilité Verte</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouveau,En cours,En attente d&apos;approbation</value>
+    </filters>
+    <label>Réclamations Mobilité Verte</label>
+    <sharedTo>
+        <group>Reclamations_MV_D_Devaux</group>
+        <role>MV_Supervision</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distance_chaudiere_unite_exterieur__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Distance chaudière vers futur emplacement unité extérieure</inlineHelpText>
+    <label>Distance chaudière unité extérieur</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

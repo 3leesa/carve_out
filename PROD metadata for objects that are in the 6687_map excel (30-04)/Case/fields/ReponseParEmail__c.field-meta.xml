@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReponseParEmail__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 3 - La case cochée indique que la réponse au client pour clôturer la réclamation a été effectuée par email. Utilisé pour définir les actions d&apos;approbation requises.</description>
+    <inlineHelpText>A renseigner avant de soumettre pour approbation. La case cochée indique que la réponse à valider est un email.</inlineHelpText>
+    <label>Réponse par email</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

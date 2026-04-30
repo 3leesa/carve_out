@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IdReferentielPoste__c</fullName>
+    <description>Sprint 8 - Information reçue de l&apos;outil Gazelle pour l&apos;adresse de facturation, noeud Adresse [Hz_locations.County]. (Il faudrait implémenter un contrôle des adresses, au moment de la saisie dans Salesforce, en se basant sur le référentiel de la poste).</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Identifiant du référentiel postal</inlineHelpText>
+    <label>Code Hexaclé</label>
+    <length>60</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

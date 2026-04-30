@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_AD_RaisonCloture__c</fullName>
+    <label>Lead_AD_RaisonCloture</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+                <label>Injoignable</label>
+            </value>
+            <value>
+                <fullName>Projet abandonné</fullName>
+                <default>false</default>
+                <label>Projet abandonné</label>
+            </value>
+            <value>
+                <fullName>Projet pas mûr - Délai &gt; 6 mois</fullName>
+                <default>false</default>
+                <label>Projet pas mûr - Délai &gt; 6 mois</label>
+            </value>
+            <value>
+                <fullName>Visite non réalisée – Annulée cause client</fullName>
+                <default>false</default>
+                <label>Visite non réalisée – Annulée cause client</label>
+            </value>
+            <value>
+                <fullName>Visite non réalisée – Annulée cause agence</fullName>
+                <default>false</default>
+                <label>Visite non réalisée – Annulée cause agence</label>
+            </value>
+            <value>
+                <fullName>Devis perdu – Abandon du projet</fullName>
+                <default>false</default>
+                <label>Devis perdu – Abandon du projet</label>
+            </value>
+            <value>
+                <fullName>Devis perdu – Choix de la concurrence</fullName>
+                <default>false</default>
+                <label>Devis perdu – Choix de la concurrence</label>
+            </value>
+            <value>
+                <fullName>Devis sans suite</fullName>
+                <default>false</default>
+                <label>Devis sans suite</label>
+            </value>
+            <value>
+                <fullName>Dossier de financement refusé</fullName>
+                <default>false</default>
+                <label>Dossier de financement refusé</label>
+            </value>
+            <value>
+                <fullName>Doublon</fullName>
+                <default>false</default>
+                <label>Doublon</label>
+            </value>
+            <value>
+                <fullName>Faux numéro</fullName>
+                <default>false</default>
+                <label>Faux numéro</label>
+            </value>
+            <value>
+                <fullName>Test – Fausse demande</fullName>
+                <default>false</default>
+                <label>Test – Fausse demande</label>
+            </value>
+            <value>
+                <fullName>Script technique sans suite</fullName>
+                <default>false</default>
+                <label>Script technique sans suite</label>
+            </value>
+            <value>
+                <fullName>Hors cible</fullName>
+                <default>false</default>
+                <label>Hors cible</label>
+            </value>
+            <value>
+                <fullName>Devis refusé</fullName>
+                <default>false</default>
+                <label>Devis refusé</label>
+            </value>
+            <value>
+                <fullName>Estimation perdue</fullName>
+                <default>false</default>
+                <label>Estimation perdue</label>
+            </value>
+            <value>
+                <fullName>Dossier ANAH refusé</fullName>
+                <default>false</default>
+                <label>Dossier ANAH refusé</label>
+            </value>
+            <value>
+                <fullName>Transfert agence –déjà client EHS</fullName>
+                <default>false</default>
+                <label>Transfert agence –déjà client EHS</label>
+            </value>
+            <value>
+                <fullName>Transfert agence –hors périmètre AD</fullName>
+                <default>false</default>
+                <label>Transfert agence –hors périmètre AD</label>
+            </value>
+            <value>
+                <fullName>Visite annulée cause agence</fullName>
+                <default>false</default>
+                <label>Visite annulée cause agence</label>
+            </value>
+            <value>
+                <fullName>Visite annulée cause client</fullName>
+                <default>false</default>
+                <label>Visite annulée cause client</label>
+            </value>
+            <value>
+                <fullName>Demande de contrat d’énergie</fullName>
+                <default>false</default>
+                <label>Demande de contrat d’énergie</label>
+            </value>
+            <value>
+                <fullName>Inscription forcée</fullName>
+                <default>false</default>
+                <label>Inscription forcée</label>
+            </value>
+            <value>
+                <fullName>Pas de projet de remplacement</fullName>
+                <default>false</default>
+                <label>Pas de projet de remplacement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

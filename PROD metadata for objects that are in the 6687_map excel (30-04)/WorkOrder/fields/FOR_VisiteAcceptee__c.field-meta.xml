@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FOR_VisiteAcceptee__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Est-ce que le client a accepté la visite, depuis le formulaire dont le lien était dans le SMS préalable à la visite ?</inlineHelpText>
+    <label>Visite acceptée formulaire</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

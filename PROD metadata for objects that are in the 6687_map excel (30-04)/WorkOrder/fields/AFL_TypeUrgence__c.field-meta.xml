@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AFL_TypeUrgence__c</fullName>
+    <formula>IF(ISPICKVAL(Information_CRC__c , &apos;Urgence technique Trans.Affludia&apos;),true,false)</formula>
+    <label>Type d&apos;urgence Afludia</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

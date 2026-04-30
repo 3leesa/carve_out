@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ModeReglement__c</fullName>
+    <description>Sprint 9 - Mode de règlement (retour BI)</description>
+    <label>Mode de règlement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BOR T7</fullName>
+                <default>false</default>
+                <label>BOR T7</label>
+            </value>
+            <value>
+                <fullName>Carte bancaire T7</fullName>
+                <default>false</default>
+                <label>Carte bancaire T7</label>
+            </value>
+            <value>
+                <fullName>CHEQUE ETRANGER T7</fullName>
+                <default>false</default>
+                <label>CHEQUE ETRANGER T7</label>
+            </value>
+            <value>
+                <fullName>CHEQUE T7</fullName>
+                <default>false</default>
+                <label>CHEQUE T7</label>
+            </value>
+            <value>
+                <fullName>ENC CONTENTIEUX T7</fullName>
+                <default>false</default>
+                <label>ENC CONTENTIEUX T7</label>
+            </value>
+            <value>
+                <fullName>ESPECE T7</fullName>
+                <default>false</default>
+                <label>ESPECE T7</label>
+            </value>
+            <value>
+                <fullName>MANDAT CASH T7</fullName>
+                <default>false</default>
+                <label>MANDAT CASH T7</label>
+            </value>
+            <value>
+                <fullName>PRELEVEMENT T7</fullName>
+                <default>false</default>
+                <label>PRELEVEMENT T7</label>
+            </value>
+            <value>
+                <fullName>REP_RGT_CGS_RG7</fullName>
+                <default>false</default>
+                <label>REP_RGT_CGS_RG7</label>
+            </value>
+            <value>
+                <fullName>REP_RGT_DMS_RG7</fullName>
+                <default>false</default>
+                <label>REP_RGT_DMS_RG7</label>
+            </value>
+            <value>
+                <fullName>TIP CHEQUE T7</fullName>
+                <default>false</default>
+                <label>TIP CHEQUE T7</label>
+            </value>
+            <value>
+                <fullName>TIP T7</fullName>
+                <default>false</default>
+                <label>TIP T7</label>
+            </value>
+            <value>
+                <fullName>T7 : Transfert CG580411</fullName>
+                <default>false</default>
+                <label>T7 : Transfert CG580411</label>
+            </value>
+            <value>
+                <fullName>T7 TESSI AG BASCULEES</fullName>
+                <default>false</default>
+                <label>T7 TESSI AG BASCULEES</label>
+            </value>
+            <value>
+                <fullName>VIREMENT BANCAIRE T7</fullName>
+                <default>false</default>
+                <label>VIREMENT BANCAIRE T7</label>
+            </value>
+            <value>
+                <fullName>VIREMENT POSTAL T7</fullName>
+                <default>false</default>
+                <label>VIREMENT POSTAL T7</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

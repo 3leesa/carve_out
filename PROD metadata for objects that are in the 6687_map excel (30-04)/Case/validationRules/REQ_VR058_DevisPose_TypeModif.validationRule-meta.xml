@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR058_DevisPose_TypeModif</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c = false, ISPICKVAL(Type, &quot;Pose d&apos;équipement&quot;), ISCHANGED(Type_equipement_propose__c), NOT(ISBLANK(QuoteId__c)), NOT(ISCHANGED(QuoteId__c)))</errorConditionFormula>
+    <errorDisplayField>Type_equipement_propose__c</errorDisplayField>
+    <errorMessage>Le type d&apos;équipement proposé est repris depuis le devis principal associé à la demande.</errorMessage>
+</ValidationRule>

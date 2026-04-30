@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_URL_contrat_devis__c</fullName>
+    <description>Sprint 97 CRM-775 : champ qui va être alimenter par la suite d&apos;un URL qui portera l&apos;ID de devis rédigé dans CPQ</description>
+    <label>URL-contrat-devis</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

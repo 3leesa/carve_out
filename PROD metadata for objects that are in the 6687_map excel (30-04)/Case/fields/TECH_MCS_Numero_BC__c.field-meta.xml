@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_MCS_Numero_BC__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>CRM-396: MCS nous enverra le N° de BC pour validation de l&apos;intervention de travaux, créant dans Salesforce une nouvelle demande de type &quot;Travaux&quot;.</description>
+    <externalId>true</externalId>
+    <label>N° de bon de commande</label>
+    <length>25</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

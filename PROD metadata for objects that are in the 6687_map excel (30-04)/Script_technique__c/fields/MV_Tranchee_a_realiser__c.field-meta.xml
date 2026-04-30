@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV_Tranchee_a_realiser__c</fullName>
+    <inlineHelpText>Visite technique si Tranchée à réaliser par l&apos;installateur
+Consignes tranchée réalisée par le client : un TPC (tube de protection de câble, couleur rouge, diamètre 40 ou 50 mm) enterré à 60 cm.</inlineHelpText>
+    <label>Tranchée à réaliser tableau élec-BR (VT)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Oui à réaliser par l&apos;installateur</fullName>
+                <default>false</default>
+                <label>Oui à réaliser par l&apos;installateur</label>
+            </value>
+            <value>
+                <fullName>Oui réalisée par le client à sa charge</fullName>
+                <default>false</default>
+                <label>Oui réalisée par le client à sa charge</label>
+            </value>
+            <value>
+                <fullName>Non pas besoin</fullName>
+                <default>false</default>
+                <label>Non pas besoin</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

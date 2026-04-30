@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR028_ChangementCanalImpossible</fullName>
+    <active>true</active>
+    <description>Permet de rendre impossible la modification du canal d&apos;une demande de réclamation écrite</description>
+    <errorConditionFormula>AND(NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ), 
+ISCHANGED(Origin),
+ISPICKVAL(Type,&quot;Réclamation&quot;),
+OR(ISPICKVAL( PRIORVALUE(Origin),&quot;Email&quot;), 
+ISPICKVAL( PRIORVALUE(Origin),&quot;Courrier&quot;), 
+ISPICKVAL( PRIORVALUE(Origin),&quot;Espace Client&quot;), 
+ISPICKVAL( PRIORVALUE(Origin),&quot;Application mobile&quot;), 
+ISPICKVAL( PRIORVALUE(Origin),&quot;Réseaux sociaux&quot;), 
+ISPICKVAL( PRIORVALUE(Origin),&quot;Site web&quot;), 
+ISPICKVAL( PRIORVALUE(Origin),&quot;Site web réclamation&quot;), 
+ISPICKVAL( PRIORVALUE(Origin),&quot;Site web Contact&quot;), 
+ISPICKVAL( PRIORVALUE(Origin),&quot;Site web Chat&quot;))
+  
+)</errorConditionFormula>
+    <errorDisplayField>Origin</errorDisplayField>
+    <errorMessage>La modification du canal n&apos;est pas possible</errorMessage>
+</ValidationRule>

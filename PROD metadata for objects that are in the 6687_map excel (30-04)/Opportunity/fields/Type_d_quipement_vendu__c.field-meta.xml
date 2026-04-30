@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_d_quipement_vendu__c</fullName>
+    <label>Type d&apos;équipement vendu</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chaudière condensation</fullName>
+                <default>false</default>
+                <label>Chaudière condensation</label>
+            </value>
+            <value>
+                <fullName>Chaudière BT</fullName>
+                <default>false</default>
+                <label>Chaudière BT</label>
+            </value>
+            <value>
+                <fullName>PAC R/R</fullName>
+                <default>false</default>
+                <label>PAC R/R</label>
+            </value>
+            <value>
+                <fullName>PAC R/O</fullName>
+                <default>false</default>
+                <label>PAC R/O</label>
+            </value>
+            <value>
+                <fullName>Clim</fullName>
+                <default>false</default>
+                <label>Clim</label>
+            </value>
+            <value>
+                <fullName>Adoucisseur</fullName>
+                <default>false</default>
+                <label>Adoucisseur</label>
+            </value>
+            <value>
+                <fullName>Ballon</fullName>
+                <default>false</default>
+                <label>Ballon</label>
+            </value>
+            <value>
+                <fullName>Eideris</fullName>
+                <default>false</default>
+                <label>Eideris</label>
+            </value>
+            <value>
+                <fullName>Hybride</fullName>
+                <default>false</default>
+                <label>Hybride</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

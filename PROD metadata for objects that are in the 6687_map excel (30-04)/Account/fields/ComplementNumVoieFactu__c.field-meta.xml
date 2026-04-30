@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ComplementNumVoieFactu__c</fullName>
+    <description>Sprint 8 - Information reçue de l&apos;outil Gazelle pour l&apos;adresse de facturation, noeud Adresse [Hz_locations.Street_number_cpt].</description>
+    <label>Complément n° de voie de facturation</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>BIS</fullName>
+                <default>false</default>
+                <label>BIS</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>D</fullName>
+                <default>false</default>
+                <label>D</label>
+            </value>
+            <value>
+                <fullName>E</fullName>
+                <default>false</default>
+                <label>E</label>
+            </value>
+            <value>
+                <fullName>QUATER</fullName>
+                <default>false</default>
+                <label>QUATER</label>
+            </value>
+            <value>
+                <fullName>TER</fullName>
+                <default>false</default>
+                <label>TER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

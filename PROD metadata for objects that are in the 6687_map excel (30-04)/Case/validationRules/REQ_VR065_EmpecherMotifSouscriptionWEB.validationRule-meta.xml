@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR065_EmpecherMotifSouscriptionWEB</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Type, &apos;Souscription&apos;),
+ISPICKVAL(Motif_Souscription__c, &apos;Parcours Web&apos;),
+$Profile.Name  &lt;&gt;  $Label.CL_PROFILE_MAGENTO,
+$Profile.Name  &lt;&gt;  &apos;Administrateur du CRM&apos;,
+ISNEW()
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas sélectionner ce motif de souscription.</errorMessage>
+</ValidationRule>

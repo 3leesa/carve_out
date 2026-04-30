@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Numero_Tier_EHS__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Numéro Tier EHS</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Accounts (Numéro Tier EHS)</relationshipLabel>
+    <relationshipName>Accounts1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offres_packagees</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>PRODUCT2.DESCRIPTION</columns>
+    <columns>PRODUCT2.FAMILY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TECHGS_ProductType__c</field>
+        <operation>equals</operation>
+        <value>Offres packagées</value>
+    </filters>
+    <filters>
+        <field>PRODUCT2.FAMILY</field>
+        <operation>equals</operation>
+        <value>XX_APPAREIL</value>
+    </filters>
+    <label>Offres packagées</label>
+    <language>en_US</language>
+</ListView>

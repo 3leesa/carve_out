@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Autre_equipement_Devis_gagne__c</fullName>
+    <description>Agence Digitale - Evol - Lot 1</description>
+    <label>Autre équipement - Devis gagné</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adoucisseur</fullName>
+                <default>false</default>
+                <label>Adoucisseur</label>
+            </value>
+            <value>
+                <fullName>Radiateur</fullName>
+                <default>false</default>
+                <label>Radiateur</label>
+            </value>
+            <value>
+                <fullName>Thermostat</fullName>
+                <default>false</default>
+                <label>Thermostat</label>
+            </value>
+            <value>
+                <fullName>Contrat de maintenance</fullName>
+                <default>false</default>
+                <label>Contrat de maintenance</label>
+            </value>
+            <value>
+                <fullName>Filtre anti-tartre</fullName>
+                <default>false</default>
+                <label>Filtre anti-tartre</label>
+            </value>
+            <value>
+                <fullName>Pot à boue</fullName>
+                <default>false</default>
+                <label>Pot à boue</label>
+            </value>
+            <value>
+                <fullName>Sonde extérieure</fullName>
+                <default>false</default>
+                <label>Sonde extérieure</label>
+            </value>
+            <value>
+                <fullName>Module de partage</fullName>
+                <default>false</default>
+                <label>Module de partage</label>
+            </value>
+            <value>
+                <fullName>Ballon</fullName>
+                <default>false</default>
+                <label>Ballon</label>
+            </value>
+            <value>
+                <fullName>Robinet thermostatique</fullName>
+                <default>false</default>
+                <label>Robinet thermostatique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

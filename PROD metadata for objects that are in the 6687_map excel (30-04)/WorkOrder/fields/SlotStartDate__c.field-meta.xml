@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SlotStartDate__c</fullName>
+    <description>MA-4969 Créneau précis dans Opti-Time. Lorsqu’aucun créneau n’a été défini (cas où l’intervention n’a pas été confirmée ou avisée s’il s’agit d’un lot de visite), le créneau peut s&apos;étaler sur plusieurs jours</description>
+    <label>Date de début du créneau</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>DateTime</type>
+</CustomField>

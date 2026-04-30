@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signataire_Des_Communications__c</fullName>
+    <description>Nom et titre de la personne apparaissant comme signataire des communications faites au client.</description>
+    <inlineHelpText>Nom et titre de la personne apparaissant comme signataire des communications faites au client.</inlineHelpText>
+    <label>Signataire des communications</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

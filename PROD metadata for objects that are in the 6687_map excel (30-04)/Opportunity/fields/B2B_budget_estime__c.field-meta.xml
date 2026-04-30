@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_budget_estime__c</fullName>
+    <label>Budget estimé</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0 à 5K€</fullName>
+                <default>false</default>
+                <label>0 à 5K€</label>
+            </value>
+            <value>
+                <fullName>5K€ à 10K€</fullName>
+                <default>false</default>
+                <label>5K€ à 10K€</label>
+            </value>
+            <value>
+                <fullName>10K€ à 100K€</fullName>
+                <default>false</default>
+                <label>10K€ à 100K€</label>
+            </value>
+            <value>
+                <fullName>100K€ à 500K€</fullName>
+                <default>false</default>
+                <label>100K€ à 500K€</label>
+            </value>
+            <value>
+                <fullName>500 K€ à 1000K€</fullName>
+                <default>false</default>
+                <label>500 K€ à 1000K€</label>
+            </value>
+            <value>
+                <fullName>+1000K€</fullName>
+                <default>false</default>
+                <label>+1000K€</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

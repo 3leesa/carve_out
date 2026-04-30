@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EtapeApprobation__c</fullName>
+    <label>Etape d&apos;approbation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>En cours d’approbation</fullName>
+                <default>false</default>
+                <label>En cours d’approbation</label>
+            </value>
+            <value>
+                <fullName>Demande approuvée</fullName>
+                <default>false</default>
+                <label>Demande approuvée</label>
+            </value>
+            <value>
+                <fullName>Demande refusée</fullName>
+                <default>false</default>
+                <label>Demande refusée</label>
+            </value>
+            <value>
+                <fullName>Remboursement effectué</fullName>
+                <default>false</default>
+                <label>Remboursement effectué</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Affichage_Suspendue__c</fullName>
+    <description>MCOSF 1160 Ne pas afficher l’indicateur “suspendu” si l’intervention est terminée</description>
+    <formula>IF(  Est_clos__c = true, 
+     false,
+     EstSuspendue__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Suspendue</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

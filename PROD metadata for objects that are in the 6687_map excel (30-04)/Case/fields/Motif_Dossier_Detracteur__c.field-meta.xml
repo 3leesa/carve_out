@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_Dossier_Detracteur__c</fullName>
+    <description>CRM-624-633 : Motif justifiant la note NPS</description>
+    <label>Motif</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Attitude technicien</fullName>
+                <default>false</default>
+                <label>Attitude technicien</label>
+            </value>
+            <value>
+                <fullName>Accueil</fullName>
+                <default>false</default>
+                <label>Accueil</label>
+            </value>
+            <value>
+                <fullName>Bonne note pour le client</fullName>
+                <default>false</default>
+                <label>Bonne note pour le client</label>
+            </value>
+            <value>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+                <label>EHS injoignable</label>
+            </value>
+            <value>
+                <fullName>client injoignable après 3 essais</fullName>
+                <default>false</default>
+                <label>client injoignable après 3 essais</label>
+            </value>
+            <value>
+                <fullName>Pièce en attente</fullName>
+                <default>false</default>
+                <label>Pièce en attente</label>
+            </value>
+            <value>
+                <fullName>RDV reporté</fullName>
+                <default>false</default>
+                <label>RDV reporté</label>
+            </value>
+            <value>
+                <fullName>A revoir nécessaire</fullName>
+                <default>false</default>
+                <label>A revoir nécessaire</label>
+            </value>
+            <value>
+                <fullName>Pas mon rôle de recommander</fullName>
+                <default>false</default>
+                <label>Pas mon rôle de recommander</label>
+            </value>
+            <value>
+                <fullName>Prestation technicien</fullName>
+                <default>false</default>
+                <label>Prestation technicien</label>
+            </value>
+            <value>
+                <fullName>Rapport qualité/prix</fullName>
+                <default>false</default>
+                <label>Rapport qualité/prix</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>1 er RDV</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1 er RDV</label>
+            </value>
+            <value>
+                <fullName>5 est une bonne note</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>5 est une bonne note</label>
+            </value>
+            <value>
+                <fullName>6 est une bonne note</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>6 est une bonne note</label>
+            </value>
+            <value>
+                <fullName>Délai d&apos;intervention trop long</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Délai d&apos;intervention trop long</label>
+            </value>
+            <value>
+                <fullName>Erreur</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Erreur</label>
+            </value>
+            <value>
+                <fullName>Mauvaise expérience passée</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mauvaise expérience passée</label>
+            </value>
+            <value>
+                <fullName>Nécessite un second passage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nécessite un second passage</label>
+            </value>
+            <value>
+                <fullName>Pas le travail du client de faire de la pub</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pas le travail du client de faire de la pub</label>
+            </value>
+            <value>
+                <fullName>Trop cher</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Trop cher</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

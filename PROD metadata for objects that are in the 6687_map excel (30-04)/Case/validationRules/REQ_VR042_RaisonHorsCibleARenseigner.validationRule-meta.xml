@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR042_RaisonHorsCibleARenseigner</fullName>
+    <active>true</active>
+    <description>champ RaisonHorsCible__c à renseigner obligatoirement si la valeur &apos;Hors cible&apos; sur &apos;Resultat_depannage_en_ligne__c&apos; est renseigné</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Resultat_depannage_en_ligne__c ,&quot;Hors cible&quot;),
+ISBLANK(Text(Raison_du_hors_cible__c)) 
+)</errorConditionFormula>
+    <errorDisplayField>Raison_du_hors_cible__c</errorDisplayField>
+    <errorMessage>Veuillez remplir le champ Raison du hors cible</errorMessage>
+</ValidationRule>

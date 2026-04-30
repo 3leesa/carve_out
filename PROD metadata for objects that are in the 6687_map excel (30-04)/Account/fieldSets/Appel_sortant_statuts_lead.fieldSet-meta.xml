@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appel_sortant_statuts_lead</fullName>
+    <description>Cet ensemble de champs va être utilisé sur la visualforce page d&apos;un Account provenant d&apos;un Lead de type &quot;Appel Sortant&quot; pour la section &quot;Dates de rappel&quot;</description>
+    <displayedFields>
+        <field>Statut_de_la_conversion__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Sous_statut_conversion__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Opportunite_commerciale__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Motif_non_conversion__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Date_de_fin_de_contrat_concurrent__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Appel_sortant_statuts_lead</label>
+</FieldSet>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR010_SourcingRealise</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(Fournisseur_1__c)),
+NOT(ISBLANK(Site_de_fournisseur_1__c)),
+NOT(ISBLANK(DelaiFournisseur1__c)),
+NOT(SourcingRealise__c)
+)</errorConditionFormula>
+    <errorDisplayField>SourcingRealise__c</errorDisplayField>
+    <errorMessage>Veuillez préciser  que le sourcing a été réalisé.</errorMessage>
+</ValidationRule>

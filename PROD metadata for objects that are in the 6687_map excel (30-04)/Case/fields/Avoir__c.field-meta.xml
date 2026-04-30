@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avoir__c</fullName>
+    <description>Sprint 7. Champ indiquant si un avoir est généré en fonction du motif de résiliation sélectionné</description>
+    <formula>IF(OR(
+ISPICKVAL( MotifResiliation__c , &quot;Modification contrat&quot;) ,
+ISPICKVAL( MotifResiliation__c , &quot;Déménagé (Arrêt mensu)&quot;) ,
+ISPICKVAL( MotifResiliation__c , &quot;Déménagé (Remb. Fin Contrat)&quot;) ,
+ISPICKVAL( MotifResiliation__c , &quot;Changement de mode de paiement&quot;) ,
+ISPICKVAL( MotifResiliation__c , &quot;Décédé (Arrêt mensu)&quot;)
+), true, false
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Indique si un avoir est généré en fonction du motif de résiliation sélectionné</inlineHelpText>
+    <label>Avoir</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

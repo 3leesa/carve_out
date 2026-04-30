@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Confirmer_RDV</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Confirmer RDV</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/xdomain/xdomain.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/support/console/25.0/integration.js&quot;)} 
+document.getElementsByName(&quot;confirmer_rdv&quot;)[0].disabled = true;
+document.getElementsByName(&quot;confirmer_rdv&quot;)[0].className = &quot;btnDisabled&quot;;
+if (sforce.console.isInConsole()) {
+                  window.location = &apos;apex/VFP_ConfirmerRDV?Id={!WorkOrder.Id}&amp;isdtp=vw&apos;;
+               } else {
+                window.location = &apos;apex/VFP_ConfirmerRDV?Id={!WorkOrder.Id}&apos;;  
+         }</url>
+</WebLink>

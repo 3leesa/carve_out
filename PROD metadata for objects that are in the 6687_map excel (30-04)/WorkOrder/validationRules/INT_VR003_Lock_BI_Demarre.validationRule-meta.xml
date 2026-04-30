@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INT_VR003_Lock_BI_Demarre</fullName>
+    <active>true</active>
+    <description>Un BI au statut mobilité démarré ne peut être modifié que par JUM
+JJI-1904/MCOSF-995: ajout stat. mobilité sup + bypass GZL
+MCOSF-1413/1442/4657: +bypass si modif par flow &quot;Prop de contrat&quot; ou MediaTech ou Afludia ou Privacy Center
+MA-6110: +bypass OT</description>
+    <errorConditionFormula>AND(
+$User.Id &lt;&gt; &apos;0051p000009mcLA&apos;,
+$User.Id &lt;&gt; &apos;00524000003m42Z&apos;,
+$User.Id &lt;&gt; &apos;00524000005dotj&apos;,
+$User.Id &lt;&gt; &apos;0051p00000Bivbg&apos;,
+$User.Id &lt;&gt; &apos;0050800000F4GX0&apos;,
+$User.Id &lt;&gt; &apos;0050800000EjuM0&apos;,
+$User.Id &lt;&gt; &apos;0050800000H8T2p&apos;,
+NOT(ISCHANGED(Url_QuoteId__c)),
+NOT(ISCHANGED(ToBeDeleted__c)),
+NOT(ISCHANGED(ToBeArchived__c)),
+NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ),
+NOT(ISNEW()),
+(OR(ISPICKVAL(StatutMobilite__c, &apos;BI_DEMARRE&apos;), ISPICKVAL(StatutMobilite__c, &apos;BI_PAUSE&apos;), ISPICKVAL(StatutMobilite__c, &apos;BI_GOING&apos;), ISPICKVAL(StatutMobilite__c, &apos;TER_ABS&apos;), ISPICKVAL(StatutMobilite__c, &apos;TER_REA&apos;), ISPICKVAL(StatutMobilite__c, &apos;TER_REV&apos;), ISPICKVAL(StatutMobilite__c, &apos;TER_DGI&apos;), ISPICKVAL(StatutMobilite__c, &apos;TER_RFI&apos;))
+))</errorConditionFormula>
+    <errorMessage>Ce BI a été démarré par le technicien et ne peut donc plus être modifié</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR069_CustomerCommunityUpdateField</fullName>
+    <active>true</active>
+    <description>MCOSF-6115</description>
+    <errorConditionFormula>$Profile.Name = &apos;$Label.CL_Customer_CommunityProfile&apos;
+&amp;&amp; !ISNEW()
+&amp;&amp; !ISCHANGED(SelfCare_Client__c)</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Vous n&apos;êtes pas autorisé à modifier cet enregistrement.</errorMessage>
+</ValidationRule>

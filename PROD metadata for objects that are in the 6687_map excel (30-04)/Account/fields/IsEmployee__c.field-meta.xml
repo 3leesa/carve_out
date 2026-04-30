@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsEmployee__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>MA-3468 Identification des employés créés dans Gazelle, pour les rendre non modifiables dans SF</description>
+    <label>Flag employé</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

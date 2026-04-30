@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Depannage_en_ligne</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>NAME</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Besoin_d_assistance__c</columns>
+    <columns>SiteDeCreation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Resultat_depannage_en_ligne__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ChoixAgence__c</field>
+        <operation>equals</operation>
+        <value>CRC-DEL</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouveau,En cours,En attente d&apos;approbation</value>
+    </filters>
+    <label>Dépannage en ligne</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>Depannage_en_ligne</group>
+    </sharedTo>
+</ListView>

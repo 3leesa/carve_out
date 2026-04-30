@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_occupant__c</fullName>
+    <label>Statut occupant</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Locataire</fullName>
+                <default>false</default>
+                <label>Locataire</label>
+            </value>
+            <value>
+                <fullName>Propriétaire</fullName>
+                <default>false</default>
+                <label>Propriétaire</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

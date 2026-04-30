@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_TerRev__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 47 - Champ permettant de stocker l&apos;information TER_REV présente dans le champ WorkOrder.StatutMobilite__c au niveau de la demande à chaque fois que la valeur devient TER_REV</description>
+    <label>TECH_TerRev</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CpE_Contrats_a_cr_er_envoyer_par_CRC_v2</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+    <columns>ChoixAgence__c</columns>
+    <columns>TECH_DemandeMotifSouscription__c</columns>
+    <columns>TECH_CreatedByUserSite__c</columns>
+    <columns>EContratDateEntretien__c</columns>
+    <columns>Demande__c</columns>
+    <columns>DemandeSousStatut__c</columns>
+    <columns>TECH_DateCreationDemande__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>SBQQ__PrimaryQuote__c</columns>
+    <columns>TECH_CpqDevisStatus__c</columns>
+    <columns>ContractStartDate__c</columns>
+    <columns>Condition_de_reglement__c</columns>
+    <columns>OPPORTUNITY.LAST_STAGE_CHANGE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut_demande_mere__c</field>
+        <operation>notEqual</operation>
+        <value>Annulé (Client)</value>
+    </filters>
+    <filters>
+        <field>Statut_demande_mere__c</field>
+        <operation>notEqual</operation>
+        <value>Annulée</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Contrat</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Contrat / option</value>
+    </filters>
+    <filters>
+        <field>ChoixAgence__c</field>
+        <operation>contains</operation>
+        <value>LYON OUEST</value>
+    </filters>
+    <label>8.Suivi des E-contrats all</label>
+    <sharedTo>
+        <group>Referents_CRM_T4</group>
+    </sharedTo>
+</ListView>

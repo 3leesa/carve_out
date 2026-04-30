@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Precision</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.Name = &apos;Client B2B&apos;,OR(AND(!ISPICKVAL(B2B_Typologie__c, &apos;Autre professionnel&apos;),!ISBLANK(B2B_Precision__c)),
+AND(ISPICKVAL(B2B_Typologie__c, &apos;Autre professionnel&apos;), ISBLANK(B2B_Precision__c))))</errorConditionFormula>
+    <errorDisplayField>B2B_Precision__c</errorDisplayField>
+    <errorMessage>Ce champ est à renseigner seulement dans le cas de typologie &quot;Autre professionnel&quot;</errorMessage>
+</ValidationRule>

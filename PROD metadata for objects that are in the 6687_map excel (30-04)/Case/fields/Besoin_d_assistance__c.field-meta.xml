@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Besoin_d_assistance__c</fullName>
+    <label>Besoin d&apos;assistance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Remise en route</fullName>
+                <default>false</default>
+                <label>Remise en route</label>
+            </value>
+            <value>
+                <fullName>Mise à l&apos; arrêt prolongé</fullName>
+                <default>false</default>
+                <label>Mise à l&apos; arrêt prolongé</label>
+            </value>
+            <value>
+                <fullName>Assistance purge</fullName>
+                <default>false</default>
+                <label>Assistance purge</label>
+            </value>
+            <value>
+                <fullName>Pression inférieure à 1 bar, pas de fuite</fullName>
+                <default>false</default>
+                <label>Pression inférieure à 1 bar, pas de fuite</label>
+            </value>
+            <value>
+                <fullName>Pression supérieure à 2 bars, pas de fuite</fullName>
+                <default>false</default>
+                <label>Pression supérieure à 2 bars, pas de fuite</label>
+            </value>
+            <value>
+                <fullName>Thermostat - Assistance changement piles</fullName>
+                <default>false</default>
+                <label>Thermostat - Assistance changement piles</label>
+            </value>
+            <value>
+                <fullName>Assistance passage thermostat position hiver/mode été</fullName>
+                <default>false</default>
+                <label>Assistance passage thermostat position hiver/mode été</label>
+            </value>
+            <value>
+                <fullName>Autre souci thermostat</fullName>
+                <default>false</default>
+                <label>Autre souci thermostat</label>
+            </value>
+            <value>
+                <fullName>Borne non alimentée</fullName>
+                <default>false</default>
+                <label>Borne non alimentée</label>
+            </value>
+            <value>
+                <fullName>Borne non connectée à internet</fullName>
+                <default>false</default>
+                <label>Borne non connectée à internet</label>
+            </value>
+            <value>
+                <fullName>Présence d’un code erreur</fullName>
+                <default>false</default>
+                <label>Présence d’un code erreur</label>
+            </value>
+            <value>
+                <fullName>La charge ne se lance pas</fullName>
+                <default>false</default>
+                <label>La charge ne se lance pas</label>
+            </value>
+            <value>
+                <fullName>La charge ne s’arrête pas</fullName>
+                <default>false</default>
+                <label>La charge ne s’arrête pas</label>
+            </value>
+            <value>
+                <fullName>La borne fait disjoncter ma maison</fullName>
+                <default>false</default>
+                <label>La borne fait disjoncter ma maison</label>
+            </value>
+            <value>
+                <fullName>Utilisation de l’application</fullName>
+                <default>false</default>
+                <label>Utilisation de l’application</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Arrêt prolongé</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Arrêt prolongé</label>
+            </value>
+            <value>
+                <fullName>Purge</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Purge</label>
+            </value>
+            <value>
+                <fullName>Thermostat</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Thermostat</label>
+            </value>
+            <value>
+                <fullName>remise en pression</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>remise en pression</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

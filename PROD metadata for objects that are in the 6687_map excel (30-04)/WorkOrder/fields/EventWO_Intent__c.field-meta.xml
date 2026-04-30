@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EventWO_Intent__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Status, &apos;102&apos;), &apos;acknowledged&apos;, 
+IF(ISPICKVAL(Status, &apos;103&apos;), &apos;planned&apos;, 
+IF(ISPICKVAL(Status, &apos;105&apos;), &apos;client_planned&apos;, 
+IF(ISPICKVAL(Status, &apos;2&apos;), &apos;start&apos;, 
+IF(ISPICKVAL(Status, &apos;51&apos;), &apos;start&apos;, 
+IF(ISPICKVAL(Status, &apos;115&apos;), &apos;start&apos;, 
+IF(ISPICKVAL(Status, &apos;116&apos;), &apos;start&apos;,
+IF(ISPICKVAL(Status, &apos;110&apos;), &apos;occupant_absent&apos;, 
+IF(ISPICKVAL(Status, &apos;111&apos;), &apos;occupant_absent&apos;, 
+IF(ISPICKVAL(Status, &apos;114&apos;), &apos;occupant_denial&apos;, 
+IF(ISPICKVAL(Status, &apos;108&apos;), &apos;canceled&apos;, 
+IF(ISPICKVAL(Status, &apos;101&apos;), &apos;canceled&apos;,
+&apos;&apos;))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>EventWO_Intent</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

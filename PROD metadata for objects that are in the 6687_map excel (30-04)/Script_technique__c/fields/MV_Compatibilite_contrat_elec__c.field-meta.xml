@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV_Compatibilite_contrat_elec__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(5*VALUE(TEXT(MV_Type_contrat_energie__c)) - (MV_Puissance_maximale_consommee__c/220 + CASE(VALUE(TEXT(MV_Puissance_de_la_borne__c)), 3.7, 16, 7.4, 32, 11, 48, 22, 96, 1000)) &lt; 0, &quot;Cette proposition n&apos;est pas compatible avec votre contrat électrique. Nécessité d&apos;augmenter la puissance de votre contrat.&quot;, &quot;Cette proposition est compatible avec votre contrat électrique (pas de changement de puissance nécessaire)&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Compatibilité contrat élec</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

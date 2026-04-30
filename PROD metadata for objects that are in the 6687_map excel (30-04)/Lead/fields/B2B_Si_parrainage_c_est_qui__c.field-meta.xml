@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Si_parrainage_c_est_qui__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Veuillez remplir ce champs si vous choisissez la valeur &quot;Parrainage&quot; du champs &quot;Origine de la piste&quot; !</inlineHelpText>
+    <label>Si parrainage, c&apos;est qui ?</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

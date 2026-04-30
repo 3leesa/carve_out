@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categorie__c</fullName>
+    <description>Sprint 12 - Categorie de la ressource. Synchronisé depuis gazelle</description>
+    <label>Catégorie</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EMPLOYEE</fullName>
+                <default>false</default>
+                <label>EMPLOYEE</label>
+            </value>
+            <value>
+                <fullName>SUPPLIER_CONTACT</fullName>
+                <default>false</default>
+                <label>SUPPLIER_CONTACT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

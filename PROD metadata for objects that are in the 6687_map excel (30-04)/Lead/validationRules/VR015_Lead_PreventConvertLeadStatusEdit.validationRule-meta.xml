@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR015_Lead_PreventConvertLeadStatusEdit</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(AND($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c = false, $User.IsAdmin__c = false, ISCHANGED(Status), ISPICKVAL(PRIORVALUE(Status), &quot;Converti&quot;)), true, false)</errorConditionFormula>
+    <errorMessage>Il n&apos;est plus possible de modifier le statut d&apos;un lead déjà converti.</errorMessage>
+</ValidationRule>

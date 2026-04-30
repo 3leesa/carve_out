@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NbDevisEnCours__c</fullName>
+    <description>Sprint 14 - Calcul du nombre de devis liés ayant l&apos;état (Status) &quot;Devis en cours&quot;.</description>
+    <label>Nb de devis en cours</label>
+    <summaryFilterItems>
+        <field>Quote.Status</field>
+        <operation>notEqual</operation>
+        <value>Accepté, Refusé</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Quote.OpportunityId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoTransitionToCreatedStatus</fullName>
+    <active>true</active>
+    <description>MA-6278 Un BI ne peut pas retourner au statut créé</description>
+    <errorConditionFormula>AND(ISCHANGED(Status), NOT(ISNEW()), ISPICKVAL(Status, &quot;1&quot;))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Un BI ne peut pas retourner au statut créé</errorMessage>
+</ValidationRule>

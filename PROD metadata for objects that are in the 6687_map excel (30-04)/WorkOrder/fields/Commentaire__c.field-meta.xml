@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commentaire__c</fullName>
+    <description>Sprint 13: champ commentaire avant intervention. Remplace le champ description afin d&apos;en limiter la longueur à 240 caractères pour la synchronisation avec Gazelle.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Commentaire BI</inlineHelpText>
+    <label>Infos technicien</label>
+    <length>240</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

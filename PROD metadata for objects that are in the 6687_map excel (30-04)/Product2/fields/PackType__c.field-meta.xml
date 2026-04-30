@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PackType__c</fullName>
+    <description>CPQ - Guided Selling - Used to indicate whether the product is part of packaged offer, or a hors-pack product</description>
+    <label>Type de pack</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PackType</valueSetName>
+    </valueSet>
+</CustomField>

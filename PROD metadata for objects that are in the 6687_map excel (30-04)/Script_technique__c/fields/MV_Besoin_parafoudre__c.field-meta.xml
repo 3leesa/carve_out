@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV_Besoin_parafoudre__c</fullName>
+    <formula>IF(AND(Prospect__r.MV_Departement__c != &apos;&apos;, CONTAINS($Label.MV_Departement_zone_parafoudre, Prospect__r.MV_Departement__c), ISPICKVAL( MV_Alimentation_electrique_maison__c, &quot;Câble d’alimentation relié par voie aérienne sur des poteaux&quot;)), true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Besoin parafoudre</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

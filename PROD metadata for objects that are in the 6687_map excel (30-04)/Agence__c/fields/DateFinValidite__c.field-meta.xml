@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateFinValidite__c</fullName>
+    <description>Sprint 13 - Date de fin de validité du site. Information reçue de Gazelle, noeud Organisation [Hr_all_organization_units.Date_to].</description>
+    <label>Date de fin</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

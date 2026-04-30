@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Preciser_la_demande__c</fullName>
+    <inlineHelpText>Veuillez préciser la demande si vous choisissez la valeur &quot;Autre&quot; du champs &quot;Intérêt&quot; !</inlineHelpText>
+    <label>Préciser la demande</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

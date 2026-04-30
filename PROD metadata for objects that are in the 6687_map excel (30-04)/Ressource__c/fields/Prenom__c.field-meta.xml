@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prenom__c</fullName>
+    <description>Sprint 12: prénom de la ressource. Synchronisé depuis Gazelle</description>
+    <label>Prénom</label>
+    <length>360</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

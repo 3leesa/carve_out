@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X8_D_RDV_programmer</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4  AND ((6  AND 7) OR 5 OR 8) AND 9</booleanFilter>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>MotifARevoir__c</columns>
+    <columns>NAME</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CategorieDemande__c</columns>
+    <columns>StatutDerniereInter__c</columns>
+    <columns>TechnicienInterARevoir__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.LAST_UPDATE</field>
+        <operation>equals</operation>
+        <value>LAST_90_DAYS</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouveau,En cours</value>
+    </filters>
+    <filters>
+        <field>MonAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>MotifARevoir__c</field>
+        <operation>equals</operation>
+        <value>30,10,20,40,Pièce commandée (en attente de réception),Pièce reçue,50,Pièce reçue - Relance client 1,Pièce reçue - Relance client 2</value>
+    </filters>
+    <filters>
+        <field>StatutDerniereInter__c</field>
+        <operation>equals</operation>
+        <value>101,104,106,108,110,51,115,111,114</value>
+    </filters>
+    <filters>
+        <field>ArevoirDateProchaineIntervention__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>DateARevoir__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ArevoirDateProchaineIntervention__c</field>
+        <operation>lessThan</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>CASES.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_N_DAYS:180</value>
+    </filters>
+    <label>8.D RDV à programmer</label>
+</ListView>

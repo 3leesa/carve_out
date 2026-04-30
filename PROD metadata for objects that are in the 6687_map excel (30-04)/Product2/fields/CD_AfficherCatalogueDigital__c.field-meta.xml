@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CD_AfficherCatalogueDigital__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indique si le produit est affiché dans le catalogue digital ou non</description>
+    <label>Afficher dans le catalogue digital</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

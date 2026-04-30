@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_NombreDateDePosePrevisionnelle__c</fullName>
+    <description>Sprint 69 - Permet de savoir si la date de pose prévisionnelle est remplie, dans le cadre des rapports sur les opportunités commerciales</description>
+    <formula>NOT(ISNULL( Date_de_pose_previsionnelle__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date de pose prévisionnelle (nombre)</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

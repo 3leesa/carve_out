@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatutInterventions__c</fullName>
+    <description>Sprint 9 - Affichage du statut des interventions de la demande sous forme de pictogrammes : Escalade technique (agenda rouge), A revoir (agenda simple), RDV planifié (agenda avec horloge).</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(TECH_NombreInterventionARevoir__c), &quot;&quot;, 
+IF(TECH_NombreInterventionARevoir__c &gt;= 3, IMAGE(&quot;/resource/Pictogramme/Escalade_technique2.png&quot;,&quot;Escalade technique&quot;),
+IF(TECH_NombreInterventionARevoir__c &gt;=1, IMAGE(&quot;/resource/Pictogramme/a_revoir.png&quot;,&quot;A revoir&quot;,25,25),&quot;&quot;))) 
++&quot; &quot; 
++IF(ISBLANK(TECH_NombreRDVProgramme__c),&quot;&quot;,IF(TECH_NombreRDVProgramme__c &gt; 0, IMAGE(&quot;/resource/Pictogramme/rdv_planifie_1.png&quot;,&quot;RDV programmé&quot;,25,25), &quot;&quot;))
++IF(ISBLANK(TECH_NombreRDVConfirme__c),&quot;&quot;,IF(TECH_NombreRDVConfirme__c &gt; 0, IMAGE(&quot;/resource/Pictogramme/rdv_confirme.png&quot;,&quot;RDV confirmé&quot;,25,25), &quot;&quot;))
++IF(ISBLANK(TECH_NombreRDVReportClient__c),&quot;&quot;,IF(TECH_NombreRDVReportClient__c &gt; 0, IMAGE(&quot;/resource/Pictogramme/Reprogramme_Client.png&quot;,&quot;Reporté client&quot;,25,25), &quot;&quot;))
++IF(ISBLANK(TECH_NombreRDVReportEHS__c),&quot;&quot;,IF(TECH_NombreRDVReportEHS__c &gt; 0, IMAGE(&quot;/resource/Pictogramme/Reprogramme_EHS.png&quot;,&quot;Reporté interne&quot;,25,25), &quot;&quot;))</formula>
+    <inlineHelpText>Icônes du statut des interventions : Escalade technique (agenda rouge), A revoir (agenda simple), RDV programmé (agenda avec horloge).</inlineHelpText>
+    <label>Statut des interventions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PretPourApprobation__c</fullName>
+    <description>Sprint 9 - La demande d&apos;approbation ne peut s&apos;effectuer que si : réclamation en cours, au moins un canal de réponse coché, champ Approbateur_1__c renseigné sur la demande (copie du champ Approbateur_1__c du site associé) et champ Rôle renseigné sur la fiche de l&apos;utilisateur.
+Sprint 11 - Hors canal &quot;Téléphone&quot;.</description>
+    <externalId>false</externalId>
+    <formula>IF( OR( NOT(ISPICKVAL(Type,&quot;Réclamation&quot;)), NOT(ISPICKVAL(Status,&quot;En cours&quot;)), ISPICKVAL(Origin,&quot;Téléphone&quot;), ISPICKVAL(Origin,&quot;Visite en agence&quot;) ), IMAGE(LEFT($Api.Partner_Server_URL_260, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_260))+&quot;img/msg_icons/info16.png&quot;, &quot;N/A&quot;)&amp;&quot; &quot;&amp;&quot;Approbation non requise&quot;,
+ IF( AND( NOT(ISBLANK(Approbateur_1__c)), NOT(ISBLANK($User.UserRoleId)), OR( ReponseParEmail__c = TRUE, ReponseParCourrier__c = TRUE ) ), 
+       IMAGE(LEFT($Api.Partner_Server_URL_260, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_260))+&quot;img/msg_icons/confirm16.png&quot;, &quot;prêt&quot;),
+  IF( OR( ISBLANK(Approbateur_1__c), ISBLANK($User.UserRoleId), AND( ReponseParEmail__c = FALSE, ReponseParCourrier__c = FALSE ) ),
+        IMAGE(LEFT($Api.Partner_Server_URL_260, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_260))+&quot;img/msg_icons/warning16.png&quot;, &quot;non prêt&quot;)&amp;&quot; Champs à renseigner : &quot; 
+        +IF( AND( ReponseParEmail__c = FALSE, ReponseParCourrier__c = FALSE ), BR()&amp;&quot;- Canal de réponse (email ou courrier)&quot;, &quot;&quot;)
+        +IF( ISBLANK(Approbateur_1__c), BR()&amp;&quot;- Approbateur du site gestionnaire&quot;, &quot;&quot;)
+        +IF( ISBLANK($User.UserRoleId), BR()&amp;&quot;- Rôle de l&apos;utilisateur (contacter votre administrateur)&quot;, &quot;&quot;),
+IMAGE(LEFT($Api.Partner_Server_URL_260, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_260))+&quot;img/msg_icons/info16.png&quot;, &quot;N/A&quot;)&amp;&quot; &quot;&amp;&quot;Approbation non requise&quot;) ) )</formula>
+    <inlineHelpText>Indique les champs manquants pour soumettre à approbation.</inlineHelpText>
+    <label>Prêt pour approbation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

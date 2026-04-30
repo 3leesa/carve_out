@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_NePasEnvoyerEmailDemande__c</fullName>
+    <description>Sprint 14 - La valeur du champ NePasEnvoyerEmail porté par la demande-mère est utilisé dans les critères de workflow, pour filtrer l&apos;envoi d&apos;email au client selon le statut de l&apos;intervention.</description>
+    <formula>Case.TECH_NePasEnvoyerEmail__c</formula>
+    <label>TECH_Ne pas envoyer email</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

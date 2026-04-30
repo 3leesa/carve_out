@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dossier_detracteur</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>Etat_avancement_Dossier_Detracteur__c</columns>
+    <columns>Commentaire__c</columns>
+    <columns>NAME</columns>
+    <columns>Date_reponse_enquete__c</columns>
+    <columns>PARENT.CASE_NUMBER</columns>
+    <columns>Note_NPS__c</columns>
+    <columns>Verbatim__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Demande_Associee_Dossier_Detracteur__c</columns>
+    <columns>Delais_rappel_client_Dossier_Detracteur__c</columns>
+    <columns>Delai_cloture_Dossier_Detracteur__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.REQ_TraitementDossierDetracteur</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouveau,En cours</value>
+    </filters>
+    <filters>
+        <field>MonAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_N_DAYS:180</value>
+    </filters>
+    <label>7.2 Dossiers détracteur de mon agence</label>
+</ListView>

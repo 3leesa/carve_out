@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NbEscaladeTotal__c</fullName>
+    <description>Sprint 2. Nombre total d&apos;escalades associées.</description>
+    <label>Nombre d&apos;escalades Total</label>
+    <summaryForeignKey>ArchiveDemandes__c.NumDeDemandeMere__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

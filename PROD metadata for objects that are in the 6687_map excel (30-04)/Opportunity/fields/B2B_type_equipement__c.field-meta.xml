@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_type_equipement__c</fullName>
+    <label>Type d&apos;équipement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ACCUMULATEUR / BALLON</fullName>
+                <default>false</default>
+                <label>ACCUMULATEUR / BALLON</label>
+            </value>
+            <value>
+                <fullName>ADOUCISSEUR</fullName>
+                <default>false</default>
+                <label>ADOUCISSEUR</label>
+            </value>
+            <value>
+                <fullName>AEROTHERME</fullName>
+                <default>false</default>
+                <label>AEROTHERME</label>
+            </value>
+            <value>
+                <fullName>A QUALIFIER</fullName>
+                <default>false</default>
+                <label>A QUALIFIER</label>
+            </value>
+            <value>
+                <fullName>ARMOIRE PUISSANCE</fullName>
+                <default>false</default>
+                <label>ARMOIRE PUISSANCE</label>
+            </value>
+            <value>
+                <fullName>ARMOIRE REGULATION</fullName>
+                <default>false</default>
+                <label>ARMOIRE REGULATION</label>
+            </value>
+            <value>
+                <fullName>AUTRE APPAREIL</fullName>
+                <default>false</default>
+                <label>AUTRE APPAREIL</label>
+            </value>
+            <value>
+                <fullName>BALLON THERMODYNAMIQUE</fullName>
+                <default>false</default>
+                <label>BALLON THERMODYNAMIQUE</label>
+            </value>
+            <value>
+                <fullName>BOUCHES VMC</fullName>
+                <default>false</default>
+                <label>BOUCHES VMC</label>
+            </value>
+            <value>
+                <fullName>BRULEUR</fullName>
+                <default>false</default>
+                <label>BRULEUR</label>
+            </value>
+            <value>
+                <fullName>CENTRALE DETECTION GAZ/INCENDIE</fullName>
+                <default>false</default>
+                <label>CENTRALE DETECTION GAZ/INCENDIE</label>
+            </value>
+            <value>
+                <fullName>CENTRALE TRAITEMENT AIR</fullName>
+                <default>false</default>
+                <label>CENTRALE TRAITEMENT AIR</label>
+            </value>
+            <value>
+                <fullName>CHAUDIERE MURALE</fullName>
+                <default>false</default>
+                <label>CHAUDIERE MURALE</label>
+            </value>
+            <value>
+                <fullName>CHAUDIERE SOL ATMO</fullName>
+                <default>false</default>
+                <label>CHAUDIERE SOL ATMO</label>
+            </value>
+            <value>
+                <fullName>CHAUDIERE SOL MECANIQUE</fullName>
+                <default>false</default>
+                <label>CHAUDIERE SOL MECANIQUE</label>
+            </value>
+            <value>
+                <fullName>CHAUFFE-BAIN</fullName>
+                <default>false</default>
+                <label>CHAUFFE-BAIN</label>
+            </value>
+            <value>
+                <fullName>CHAUFFE-EAU</fullName>
+                <default>false</default>
+                <label>CHAUFFE-EAU</label>
+            </value>
+            <value>
+                <fullName>CHAUFFERIE</fullName>
+                <default>false</default>
+                <label>CHAUFFERIE</label>
+            </value>
+            <value>
+                <fullName>CLAPET COUPE FEU</fullName>
+                <default>false</default>
+                <label>CLAPET COUPE FEU</label>
+            </value>
+            <value>
+                <fullName>CLIMATISEUR</fullName>
+                <default>false</default>
+                <label>CLIMATISEUR</label>
+            </value>
+            <value>
+                <fullName>COGENERATION</fullName>
+                <default>false</default>
+                <label>COGENERATION</label>
+            </value>
+            <value>
+                <fullName>COMPTEUR</fullName>
+                <default>false</default>
+                <label>COMPTEUR</label>
+            </value>
+            <value>
+                <fullName>COMPTEUR EAU</fullName>
+                <default>false</default>
+                <label>COMPTEUR EAU</label>
+            </value>
+            <value>
+                <fullName>CONDUIT FUMEE</fullName>
+                <default>false</default>
+                <label>CONDUIT FUMEE</label>
+            </value>
+            <value>
+                <fullName>DISCONNECTEUR</fullName>
+                <default>false</default>
+                <label>DISCONNECTEUR</label>
+            </value>
+            <value>
+                <fullName>ECHANGEUR</fullName>
+                <default>false</default>
+                <label>ECHANGEUR</label>
+            </value>
+            <value>
+                <fullName>GRANDE CUISINE</fullName>
+                <default>false</default>
+                <label>GRANDE CUISINE</label>
+            </value>
+            <value>
+                <fullName>GROUPE EAU GLACEE</fullName>
+                <default>false</default>
+                <label>GROUPE EAU GLACEE</label>
+            </value>
+            <value>
+                <fullName>GROUPE ELECTROGENE</fullName>
+                <default>false</default>
+                <label>GROUPE ELECTROGENE</label>
+            </value>
+            <value>
+                <fullName>GROUPE MAINTIEN PRESSION</fullName>
+                <default>false</default>
+                <label>GROUPE MAINTIEN PRESSION</label>
+            </value>
+            <value>
+                <fullName>GROUPE TRAITEMENT EAU</fullName>
+                <default>false</default>
+                <label>GROUPE TRAITEMENT EAU</label>
+            </value>
+            <value>
+                <fullName>GTC</fullName>
+                <default>false</default>
+                <label>GTC</label>
+            </value>
+            <value>
+                <fullName>HYBRIDE</fullName>
+                <default>false</default>
+                <label>HYBRIDE</label>
+            </value>
+            <value>
+                <fullName>MODULE / SATELLITE CIC</fullName>
+                <default>false</default>
+                <label>MODULE / SATELLITE CIC</label>
+            </value>
+            <value>
+                <fullName>MODULE CIC</fullName>
+                <default>false</default>
+                <label>MODULE CIC</label>
+            </value>
+            <value>
+                <fullName>MODULE PLANCHER CHAUFFANT</fullName>
+                <default>false</default>
+                <label>MODULE PLANCHER CHAUFFANT</label>
+            </value>
+            <value>
+                <fullName>PANNEAU RADIANT</fullName>
+                <default>false</default>
+                <label>PANNEAU RADIANT</label>
+            </value>
+            <value>
+                <fullName>PHOTOVOLTAIQUE</fullName>
+                <default>false</default>
+                <label>PHOTOVOLTAIQUE</label>
+            </value>
+            <value>
+                <fullName>POELE / INSERT</fullName>
+                <default>false</default>
+                <label>POELE / INSERT</label>
+            </value>
+            <value>
+                <fullName>POMPE A CHALEUR AIR / AIR</fullName>
+                <default>false</default>
+                <label>POMPE A CHALEUR AIR / AIR</label>
+            </value>
+            <value>
+                <fullName>POMPE A CHALEUR AIR / EAU</fullName>
+                <default>false</default>
+                <label>POMPE A CHALEUR AIR / EAU</label>
+            </value>
+            <value>
+                <fullName>POMPE A CHALEUR EAU / EAU</fullName>
+                <default>false</default>
+                <label>POMPE A CHALEUR EAU / EAU</label>
+            </value>
+            <value>
+                <fullName>POMPE DE RELEVAGE</fullName>
+                <default>false</default>
+                <label>POMPE DE RELEVAGE</label>
+            </value>
+            <value>
+                <fullName>POMPE PRIMAIRE</fullName>
+                <default>false</default>
+                <label>POMPE PRIMAIRE</label>
+            </value>
+            <value>
+                <fullName>POMPE RECYCLAGE</fullName>
+                <default>false</default>
+                <label>POMPE RECYCLAGE</label>
+            </value>
+            <value>
+                <fullName>POMPE SECONDAIRE</fullName>
+                <default>false</default>
+                <label>POMPE SECONDAIRE</label>
+            </value>
+            <value>
+                <fullName>PORTE DE GARAGE</fullName>
+                <default>false</default>
+                <label>PORTE DE GARAGE</label>
+            </value>
+            <value>
+                <fullName>PREPARATEUR EAU CHAUDE</fullName>
+                <default>false</default>
+                <label>PREPARATEUR EAU CHAUDE</label>
+            </value>
+            <value>
+                <fullName>RAD / CONV / POELE / INSERT / CIC / MODULE</fullName>
+                <default>false</default>
+                <label>RAD / CONV / POELE / INSERT / CIC / MODULE</label>
+            </value>
+            <value>
+                <fullName>RECUPERATEUR CONDENSATION</fullName>
+                <default>false</default>
+                <label>RECUPERATEUR CONDENSATION</label>
+            </value>
+            <value>
+                <fullName>REGULATION ROBINETS THERMOSTATIQUES</fullName>
+                <default>false</default>
+                <label>REGULATION ROBINETS THERMOSTATIQUES</label>
+            </value>
+            <value>
+                <fullName>REGULATION THERMOSTAT HORLOGE</fullName>
+                <default>false</default>
+                <label>REGULATION THERMOSTAT HORLOGE</label>
+            </value>
+            <value>
+                <fullName>RESEAU</fullName>
+                <default>false</default>
+                <label>RESEAU</label>
+            </value>
+            <value>
+                <fullName>RESEAU SECONDAIRE</fullName>
+                <default>false</default>
+                <label>RESEAU SECONDAIRE</label>
+            </value>
+            <value>
+                <fullName>ROBINETTERIE</fullName>
+                <default>false</default>
+                <label>ROBINETTERIE</label>
+            </value>
+            <value>
+                <fullName>SOGINORPA - LOT ELECTRICITE</fullName>
+                <default>false</default>
+                <label>SOGINORPA - LOT ELECTRICITE</label>
+            </value>
+            <value>
+                <fullName>SOGINORPA - LOT MENUISERIE</fullName>
+                <default>false</default>
+                <label>SOGINORPA - LOT MENUISERIE</label>
+            </value>
+            <value>
+                <fullName>SS STATION CHAUFFAGE</fullName>
+                <default>false</default>
+                <label>SS STATION CHAUFFAGE</label>
+            </value>
+            <value>
+                <fullName>SS STATION CHAUFFAGE+ECS</fullName>
+                <default>false</default>
+                <label>SS STATION CHAUFFAGE+ECS</label>
+            </value>
+            <value>
+                <fullName>SS STATION ECS</fullName>
+                <default>false</default>
+                <label>SS STATION ECS</label>
+            </value>
+            <value>
+                <fullName>SUPRESSEUR</fullName>
+                <default>false</default>
+                <label>SUPRESSEUR</label>
+            </value>
+            <value>
+                <fullName>SYST. DESENFUMAGE</fullName>
+                <default>false</default>
+                <label>SYST. DESENFUMAGE</label>
+            </value>
+            <value>
+                <fullName>TELEALARME</fullName>
+                <default>false</default>
+                <label>TELEALARME</label>
+            </value>
+            <value>
+                <fullName>Thermostat connecté</fullName>
+                <default>false</default>
+                <label>Thermostat connecté</label>
+            </value>
+            <value>
+                <fullName>VASE EXPANSION</fullName>
+                <default>false</default>
+                <label>VASE EXPANSION</label>
+            </value>
+            <value>
+                <fullName>VENTILO CONVECTEUR</fullName>
+                <default>false</default>
+                <label>VENTILO CONVECTEUR</label>
+            </value>
+            <value>
+                <fullName>VMC / EXTRACTEUR</fullName>
+                <default>false</default>
+                <label>VMC / EXTRACTEUR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

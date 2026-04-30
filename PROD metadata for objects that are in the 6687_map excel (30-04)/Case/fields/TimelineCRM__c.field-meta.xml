@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TimelineCRM__c</fullName>
+    <description>MCOSF-195: Remplacement de CMI_Demande_CMI__c par Origine_de_la_demande__c
+MCOSF-2034:Opportunité: Mettre à jour les automatismes de devis, d&apos;opportunité et de demande</description>
+    <externalId>false</externalId>
+    <formula>IF( NOT(ISPICKVAL(Origine_de_la_demande__c, &apos;CMI&apos;)) ,
+Case(Status,
+&quot;Terminé&quot;, IMAGE(&quot;/resource/TimelineCRM/timelineCaseClosed.png&quot;, &quot;&quot;, 26, 656),
+&quot;Annulé (Client)&quot;, IMAGE(&quot;/resource/TimelineCRM/timelineCaseClosed.png&quot;, &quot;&quot;, 26, 656),
+&quot;Annulé (Interne)&quot;, IMAGE(&quot;/resource/TimelineCRM/timelineCaseClosed.png&quot;, &quot;&quot;, 26, 656),
+&quot;Annulée&quot;, IMAGE(&quot;/resource/TimelineCRM/timelineCaseClosed.png&quot;, &quot;&quot;, 26, 656),
+&quot;Délai de clôture dépassé&quot;, IMAGE(&quot;/resource/TimelineCRM/timelineCaseClosed.png&quot;, &quot;&quot;, 26, 656),
+IMAGE(&quot;/resource/TimelineCRM/timelineCaseOpen.png&quot;, &quot;&quot;, 26, 656)) , null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Etape</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

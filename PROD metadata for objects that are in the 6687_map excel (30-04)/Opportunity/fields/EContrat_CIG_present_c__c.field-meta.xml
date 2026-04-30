@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EContrat_CIG_present_c__c</fullName>
+    <formula>AND(NOT(ISBLANK(LogementConcerne__r.CIG__c)), OR(ISPICKVAL(Demande__r.Motif_Souscription__c, &apos;Client souhaite un contrat&apos;),ISPICKVAL(Demande__r.Motif_Souscription__c,&apos;Contrat offert suite VF facturée&apos;),
+ISPICKVAL(Demande__r.Motif_Souscription__c, &apos;Contrat offert suite Dépannage HC facturé&apos;),ISPICKVAL(Demande__r.Motif_Souscription__c, &apos;Contrat offert suite MES&apos;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>E-contrat CIG présent</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

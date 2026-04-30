@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRCLinks</fullName>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>InformationCRC__c</columns>
+    <columns>FSM_Requested_Slot__c</columns>
+    <columns>NAME</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Formule_du_contrat_demande__c</columns>
+    <columns>Options_du_contrat_de_la_demande__c</columns>
+    <columns>NbRelanceTotal__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>MonAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Dépannage,Mise en service,Pose d&apos;équipement,Souscription,Travaux</value>
+    </filters>
+    <filters>
+        <field>InformationCRC__c</field>
+        <operation>notEqual</operation>
+        <value>,Urgence technique Trans. Agence,UT HO Appel OK N°Urgence technique Agence,UT HO Appel KO N°Urgence technique Agence</value>
+    </filters>
+    <label>1- Demandes urgentes</label>
+    <queue>Equipe_Demandes_courantes</queue>
+    <sharedTo>
+        <group>AdministrateursSysteme</group>
+        <role>CentreRelationClient</role>
+        <role>ChefEquipe_Conseillere</role>
+        <role>DirecteurAgence_ConseillerePrincipale</role>
+        <role>DirecteurOperationnelSecteur</role>
+        <role>DirecteurRegional</role>
+        <role>DirectionRelationClient</role>
+        <role>ReferentRelationClient</role>
+        <role>ServiceNationalConsommateurs</role>
+    </sharedTo>
+</ListView>

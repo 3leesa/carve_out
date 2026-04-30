@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CodeZone__c</fullName>
+    <description>Sprint 13 - Code zone de la région à laquelle appartient le site, ex: T4. Information reçue de Gazelle, noeud Organisation [Hr_all_organization_units.Substr(attribute19,0,2)].</description>
+    <externalId>false</externalId>
+    <label>Code région</label>
+    <length>2</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

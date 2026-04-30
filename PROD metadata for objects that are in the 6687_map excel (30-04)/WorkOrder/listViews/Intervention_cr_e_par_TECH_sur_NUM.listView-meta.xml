@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intervention_cr_e_par_TECH_sur_NUM</fullName>
+    <columns>Name</columns>
+    <columns>Case</columns>
+    <columns>Status</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <columns>Account</columns>
+    <columns>NumeroClientCompteDemande__c</columns>
+    <columns>DateDebutProgrammee__c</columns>
+    <columns>CreatedDate</columns>
+    <columns>CreatedBy</columns>
+    <columns>IDSiteDeRattachement__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>1,102,105</value>
+    </filters>
+    <filters>
+        <field>CreatedBy</field>
+        <operation>equals</operation>
+        <value>Jumanji</value>
+    </filters>
+    <filters>
+        <field>CreatedDate</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:30</value>
+    </filters>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>10003,10004</value>
+    </filters>
+    <filters>
+        <field>EstSiteUser__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Intervention crée par TECH sur NUM</label>
+</ListView>

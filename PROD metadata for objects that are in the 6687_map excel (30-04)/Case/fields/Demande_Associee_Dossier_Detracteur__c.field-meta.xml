@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demande_Associee_Dossier_Detracteur__c</fullName>
+    <description>CRM-624-633 : Numéro de la demande associée (créé pour résoudre le dossier détracteur)</description>
+    <externalId>false</externalId>
+    <label>Demande Associée</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

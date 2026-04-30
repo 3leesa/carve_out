@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCS_IsBTCQ__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>CRM-398 : Dans le cadre du projet Villogia, le pack 4 inclut tous travaux liés au changement d&apos;occupant:</description>
+    <label>MCS_IsBTCQ</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

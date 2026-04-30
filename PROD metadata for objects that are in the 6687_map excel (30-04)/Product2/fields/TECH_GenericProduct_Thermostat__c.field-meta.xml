@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_GenericProduct_Thermostat__c</fullName>
+    <formula>IF( ProduitGenerique__r.Name == &apos;thermostat connecté&apos; || ProduitGenerique__r.Name == &apos;thermostat ou horloge&apos; || CategorieAchat__r.Name == &apos;ACCESS-THERMOSTAT&apos;, TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_GenericProduct_Thermostat</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

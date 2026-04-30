@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INT_VR005_BlockExtranet</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c) &amp;&amp; ISPICKVAL(PRIORVALUE(Status), &quot;104&quot;) &amp;&amp; OR(ISPICKVAL(Status, &quot;105&quot;), ISPICKVAL(Status, &quot;102&quot;), ISPICKVAL(Status, &quot;103&quot;))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Il est interdit de passer du statut Reporté client au statut Confirmé ou Programmé ou Avisé</errorMessage>
+</ValidationRule>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR039_CannotChooseDelaiDepasse</fullName>
+    <active>true</active>
+    <description>CRM-614 Empêcher la sélection manuelle de ce champ de clôture &quot;délai de clôture dépassé&quot;
+MCOSF-1156 Empêcher le passage plutôt que toute modif à ce statut + bypass Gazelle et Jumanji
+JJI-3343 ajout bypass NUM CE
+MCOSF-2034:Opportunité: MAJ Opp</description>
+    <errorConditionFormula>AND(
+NOT(RecordType.DeveloperName = &apos;PoseEquipement&apos;),
+$User.Id &lt;&gt; &apos;0051p000009mcLA&apos;,
+$User.Id &lt;&gt; &apos;00524000003m42Z&apos;,
+$User.Id &lt;&gt; &apos;0050800000EjuM0&apos;,
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c),
+ISPICKVAL(Status, &quot;Délai de clôture dépassé&quot;),
+ISCHANGED(Status)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>La sélection manuelle de ce motif n&apos;est pas autorisée, merci de sélectionner Annulé (interne)</errorMessage>
+</ValidationRule>

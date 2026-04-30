@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alexandre_M_Suppression_Lead_MV</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.RECORDTYPE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Identifiant_lead_source_externe__c</columns>
+    <columns>Identifiant_Lead_EHS__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Identifiant_lead_source_externe__c</field>
+        <operation>startsWith</operation>
+        <value>mv_</value>
+    </filters>
+    <filters>
+        <field>FULL_NAME</field>
+        <operation>contains</operation>
+        <value>test</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_YEAR</value>
+    </filters>
+    <label>Suppression Lead de test MV</label>
+    <sharedTo>
+        <group>Administration_MV</group>
+    </sharedTo>
+</ListView>

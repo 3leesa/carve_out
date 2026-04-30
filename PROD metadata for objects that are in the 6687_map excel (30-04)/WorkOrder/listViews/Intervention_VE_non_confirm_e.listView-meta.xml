@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intervention_VE_non_confirm_e</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+    <columns>Name</columns>
+    <columns>Status</columns>
+    <columns>Subject</columns>
+    <columns>Account</columns>
+    <columns>StartDate</columns>
+    <columns>NumeroTelDuClient__c</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <columns>Collectif_ou_Individuel__c</columns>
+    <columns>TECH_Agence_equipement__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>103,102</value>
+    </filters>
+    <filters>
+        <field>EstSiteUser__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>10005</value>
+    </filters>
+    <filters>
+        <field>StartDate</field>
+        <operation>equals</operation>
+        <value>NEXT_N_DAYS:4</value>
+    </filters>
+    <label>Intervention VE non confirmée</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>Pilote_Agence_Confirmation_VE</group>
+        <group>UtilisateursT6</group>
+        <role>ChefEquipe_Conseillere</role>
+        <role>DirecteurAgence_ConseillerePrincipale</role>
+    </sharedTo>
+</ListView>

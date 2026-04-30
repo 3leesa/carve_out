@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsNeverCustomerOrGeneric__c</fullName>
+    <description>Tiers qui n&apos;a jamais été client, ou bien fait partie des 3 tiers génériques (en particulier Occupant Inconnu). Utilisé par Privacy Center dans les règles de suppression</description>
+    <formula>(HasBeenCustomer__c = false || Id = &apos;0012400000mqlVWAAY&apos; || Id = &apos;0012400000mqlP2AAI&apos; || Id = &apos;0012400000W9tKrAAJ&apos;)</formula>
+    <label>IsNeverCustomerOrGeneric</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

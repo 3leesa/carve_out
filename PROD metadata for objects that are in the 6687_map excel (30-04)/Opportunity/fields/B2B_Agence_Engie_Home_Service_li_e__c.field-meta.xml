@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Agence_Engie_Home_Service_li_e__c</fullName>
+    <label>Agence Engie Home Service liée</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>valeur 1</fullName>
+                <default>false</default>
+                <label>valeur 1</label>
+            </value>
+            <value>
+                <fullName>valeur 2</fullName>
+                <default>false</default>
+                <label>valeur 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

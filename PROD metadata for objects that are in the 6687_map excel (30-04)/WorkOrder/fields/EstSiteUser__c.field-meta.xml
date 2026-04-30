@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EstSiteUser__c</fullName>
+    <description>Sprint 10 - Indique si l&apos;agence de l&apos;équipement renseigné sur l&apos;intervention est celle de l&apos;utilisateur.</description>
+    <formula>IF( Asset.Site__r.TECH_GazelleId__c = $User.IDGazelleAgence__c, TRUE,
+ IF( ISBLANK( Asset.Site__r.SiteParent__c ), FALSE,
+  IF( Asset.Site__r.SiteParent__r.TECH_GazelleId__c = $User.IDGazelleAgence__c, TRUE,
+   IF( ISBLANK( Asset.Site__r.SiteParent__r.SiteParent__c ), FALSE,
+    IF( Asset.Site__r.SiteParent__r.SiteParent__r.TECH_GazelleId__c = $User.IDGazelleAgence__c, TRUE,
+     IF( ISBLANK( Asset.Site__r.SiteParent__r.SiteParent__r.SiteParent__c ), FALSE,
+      IF( Asset.Site__r.SiteParent__r.SiteParent__r.SiteParent__r.TECH_GazelleId__c = $User.IDGazelleAgence__c, TRUE, FALSE 
+      )
+     )
+    )
+   )
+  )
+ )
+)</formula>
+    <label>Mon site</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

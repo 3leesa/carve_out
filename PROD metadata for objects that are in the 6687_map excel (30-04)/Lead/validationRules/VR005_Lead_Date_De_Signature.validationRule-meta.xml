@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR005_Lead_Date_De_Signature</fullName>
+    <active>false</active>
+    <description>Agence Digitale  - Evol  - Lot 1 : la date de signature doit etre renseignée quand le statut = devis accepté</description>
+    <errorConditionFormula>NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c) &amp;&amp; AND(ISPICKVAL(Status, &quot;Devis accepté&quot;),ISBLANK(Date_de_signature__c) )</errorConditionFormula>
+    <errorMessage>Veuillez indiquer la date de signature.</errorMessage>
+</ValidationRule>

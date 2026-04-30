@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Motif_du_no_go__c</fullName>
+    <inlineHelpText>Préciser le motif de l&apos;abandon de l&apos;opportunité</inlineHelpText>
+    <label>Motif du no go</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Abandon du projet</fullName>
+                <default>false</default>
+                <label>Abandon du projet</label>
+            </value>
+            <value>
+                <fullName>Affaire transmise au groupe</fullName>
+                <default>false</default>
+                <label>Affaire transmise au groupe</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Délai de réponse</fullName>
+                <default>false</default>
+                <label>Délai de réponse</label>
+            </value>
+            <value>
+                <fullName>Hors secteur d&apos;activité</fullName>
+                <default>false</default>
+                <label>Hors secteur d&apos;activité</label>
+            </value>
+            <value>
+                <fullName>Manque de ressources d&apos;exploitation</fullName>
+                <default>false</default>
+                <label>Manque de ressources d&apos;exploitation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

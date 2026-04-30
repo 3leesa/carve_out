@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modifier_Lead_B2C_MV</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Modifier</masterLabel>
+    <openType>replace</openType>
+    <page>Lead_B2C_MV_modifyDetailPage</page>
+    <protected>false</protected>
+</WebLink>

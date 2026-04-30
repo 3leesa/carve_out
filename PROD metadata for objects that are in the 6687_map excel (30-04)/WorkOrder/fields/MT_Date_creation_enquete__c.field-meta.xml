@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MT_Date_creation_enquete__c</fullName>
+    <description>Sprint 28 - Champs nécessaires pour avoir le NPS du client dans le CRM</description>
+    <label>Date de la création de l&apos;enquête</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

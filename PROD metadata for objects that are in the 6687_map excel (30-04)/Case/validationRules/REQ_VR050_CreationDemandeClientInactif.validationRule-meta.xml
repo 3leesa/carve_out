@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR050_CreationDemandeClientInactif</fullName>
+    <active>true</active>
+    <description>CRM-605 : message d&apos;erreur lors de la prise de rdv sur un client inactif</description>
+    <errorConditionFormula>AND(NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ), 
+ISPICKVAL(Account.Statut__c, &apos;I&apos;),
+ISNEW()
+)</errorConditionFormula>
+    <errorMessage>Il est impossible de créer une demande sur un client inactif</errorMessage>
+</ValidationRule>

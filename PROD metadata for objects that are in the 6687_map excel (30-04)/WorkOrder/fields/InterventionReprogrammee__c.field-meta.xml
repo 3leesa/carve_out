@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InterventionReprogrammee__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 10 - Lorsqu&apos;on ajoute une intervention (Statut &lt;&gt; Annulé ou Absent) à une demande ayant déjà au moins une intervention &quot;A revoir&quot;, il faut cocher &quot;Intervention reprogrammée&quot; sur toutes les interventions antérieures (Statut = A revoir).</description>
+    <label>Intervention reprogrammée</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

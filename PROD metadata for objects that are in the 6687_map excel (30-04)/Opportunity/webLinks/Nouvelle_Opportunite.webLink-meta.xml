@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nouvelle_Opportunite</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Nouvelle Opportunité</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/006/e?CF00N2400000IhtSf={!Case.CaseNumber}&amp;CF00N2400000IhtSf_lkid={!Case.Id}&amp;accname={!Account.Name}&amp;accid={!Account.Id}&amp;CF00N9E000000zR10={!Case.ChoixAgence__c}&amp;Pricebook2=Standard+Price+Book&amp;CF00N2400000IhtSg={!Asset.Logement__c}&amp;Pricebook2_lkid=01s240000031bkN&amp;retURL=%2F0019E000005Nrlx&amp;opp9={!TODAY()+90}&amp;opp3=&quot;OPP-XXXXXXX&quot;</url>
+</WebLink>

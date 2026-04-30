@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AutreAPreciser__c</fullName>
+    <description>Sprint 1. Permet de préciser le sous-motif de la demande lorsque le motif est : &quot;Autre à préciser&quot;.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Permet de préciser le sous-motif de la demande lorsque le motif est : &quot;Autre à préciser&quot;.</inlineHelpText>
+    <label>Autre à préciser</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

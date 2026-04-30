@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateDebutRecherche__c</fullName>
+    <description>Sprint 8 - Date de début de planification (fichier mapping GZL/SF)
+Sprint 10 - changement nom</description>
+    <label>Date de début de recherche</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

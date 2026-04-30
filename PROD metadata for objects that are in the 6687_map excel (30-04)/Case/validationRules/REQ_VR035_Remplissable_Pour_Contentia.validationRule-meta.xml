@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR035_Remplissable_Pour_Contentia</fullName>
+    <active>true</active>
+    <description>Les autres utilisateurs peuvent cloturer les autres demandes qui ne sont pas Contentia , en ne remplissant pas le champ &quot;Message Contentia&quot;</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c), 
+NOT(ISNEW()),
+NOT(ISBLANK( message_cl_ture_dossier_Contentia__c )),
+OR( 
+ISPICKVAL( Status , &quot;Terminé&quot;), 
+ISPICKVAL( Status , &quot;Annulé (Client)&quot;), 
+ISPICKVAL( Status , &quot;Annulé (Interne)&quot;) 
+), 
+NOT( 
+OR( 
+ISPICKVAL(Reason, &quot;Confirmation de règlement&quot;), 
+ISPICKVAL(Reason, &quot;Contestation/litiges&quot;), 
+ISPICKVAL(Reason, &quot;Résiliation (Contentia)&quot;), 
+ISPICKVAL(Reason, &quot;Geste Commercial&quot;), 
+ISPICKVAL(Reason, &quot;Attente VE&quot;), 
+ISPICKVAL(Reason, &quot;Prêt financier (BNP PF)&quot;),
+ISPICKVAL(Reason, &quot;Duplicata facture&quot;), 
+ISPICKVAL(Reason, &quot;Rematerialisation BI&quot;) 
+) 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>message_cl_ture_dossier_Contentia__c</errorDisplayField>
+    <errorMessage>Ce champ est destiné aux demandes provenant de Contentia. 
+Pour clôturer la demande merci de ne pas remplir ce champ</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR032_EmpecherPassageTravToDep</fullName>
+    <active>true</active>
+    <description>CRM?</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_Neutraliser_Synchro_Vilogia__c), 
+ISCHANGED(Type),
+ISPICKVAL(PRIORVALUE(Type), &quot;Travaux&quot;)  				
+)</errorConditionFormula>
+    <errorMessage>Impossible de modifier le type de travaux à dépannage</errorMessage>
+</ValidationRule>

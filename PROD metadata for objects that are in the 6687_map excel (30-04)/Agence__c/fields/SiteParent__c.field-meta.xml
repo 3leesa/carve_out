@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SiteParent__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Site parent (hiérarchie : antenne &gt; agence &gt; secteur &gt; region).
+Sprint 13 - Information reçue de Gazelle, noeud Liens org mère/fille [Xxprd_ep_com_org_per293.Organization_master_id].</description>
+    <label>Site parent</label>
+    <referenceTo>Agence__c</referenceTo>
+    <relationshipLabel>Sites enfants</relationshipLabel>
+    <relationshipName>Sites_Enfants</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

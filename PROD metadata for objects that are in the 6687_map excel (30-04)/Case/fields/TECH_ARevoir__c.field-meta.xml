@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_ARevoir__c</fullName>
+    <description>Sprint 8. Permet d&apos;afficher sur la demande si il y a des interventions &quot;à revoir&quot;
+Sprint 9. Champs technique alimentant le champ &quot;A revoir&quot; pictogramme</description>
+    <formula>IF(TECH_NombreInterventionARevoir__c &gt; 0,true,false)</formula>
+    <label>TECH_ARevoir</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

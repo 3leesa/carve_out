@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_MV_Injoignable_relance</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>Proprietaire_du_lead__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Date_de_reception_du_lead__c</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>MV_Offres_mobilite__c</columns>
+    <columns>Date_appel__c</columns>
+    <columns>Rappel_n1__c</columns>
+    <columns>Rappel_n2__c</columns>
+    <columns>Rappel_n3__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.CRM_B2C_MV</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>A traiter</value>
+    </filters>
+    <label>Leads MV - Injoignable relance</label>
+    <sharedTo>
+        <group>AdministrateursSysteme</group>
+        <group>Mobilite_verte</group>
+    </sharedTo>
+</ListView>

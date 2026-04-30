@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Dossier_Gagne_Pose_A_Planifier</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 8 AND (4 OR 5) AND (6 OR 7) AND 9</booleanFilter>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Sous_statut__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>n_du_telephone_du_client__c</columns>
+    <columns>Date_de_pose_previsionnelle__c</columns>
+    <columns>LogementConcerne__c</columns>
+    <columns>Type_equipement_propose__c</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MonSite__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Equipement</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Devis signé</value>
+    </filters>
+    <filters>
+        <field>Date_de_pose_previsionnelle__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Date_de_pose_previsionnelle__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>TOMORROW</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.CRM_B2C,Opportunity.Contrat</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Appareil_Agence_Digitale</value>
+    </filters>
+    <filters>
+        <field>Primary_Quote_Pack__c</field>
+        <operation>notEqual</operation>
+        <value>Offre Borne Electrique - Visite Technique</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_N_DAYS:180</value>
+    </filters>
+    <label>06. Dossier gagné - pose à planifier</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>ChefEquipe_Conseillere</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>DirecteurAgence_ConseillerePrincipale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

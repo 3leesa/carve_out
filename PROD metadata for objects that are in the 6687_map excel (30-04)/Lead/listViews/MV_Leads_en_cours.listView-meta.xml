@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV_Leads_en_cours</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>Proprietaire_du_lead__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Date_de_reception_du_lead__c</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>MV_Offres_mobilite__c</columns>
+    <columns>Date_dernier_script_technique__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.CRM_B2C_MV</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Script technique réalisé</value>
+    </filters>
+    <label>Leads MV - En cours</label>
+    <sharedTo>
+        <group>AdministrateursSysteme</group>
+        <group>Mobilite_verte</group>
+    </sharedTo>
+</ListView>

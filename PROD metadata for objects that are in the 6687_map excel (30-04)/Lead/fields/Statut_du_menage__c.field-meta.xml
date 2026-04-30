@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_du_menage__c</fullName>
+    <label>Statut du ménage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non modeste</fullName>
+                <default>false</default>
+                <label>Non modeste</label>
+            </value>
+            <value>
+                <fullName>Modeste</fullName>
+                <default>false</default>
+                <label>Modeste</label>
+            </value>
+            <value>
+                <fullName>Très modeste</fullName>
+                <default>false</default>
+                <label>Très modeste</label>
+            </value>
+            <value>
+                <fullName>Intermédiaire</fullName>
+                <default>false</default>
+                <label>Intermédiaire</label>
+            </value>
+            <value>
+                <fullName>Non éligible</fullName>
+                <default>false</default>
+                <label>Non éligible</label>
+            </value>
+            <value>
+                <fullName>Revenus supérieurs</fullName>
+                <default>false</default>
+                <label>Revenus supérieurs</label>
+            </value>
+            <value>
+                <fullName>Non précaire</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non précaire</label>
+            </value>
+            <value>
+                <fullName>Précaire</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Précaire</label>
+            </value>
+            <value>
+                <fullName>Très précaire</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Très précaire</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

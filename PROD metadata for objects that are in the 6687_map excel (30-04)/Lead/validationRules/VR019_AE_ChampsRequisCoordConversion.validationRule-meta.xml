@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR019_AE_ChampsRequisCoordConversion</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(IsConverted), IsConverted = true, TECH_RecordTypeDeveloperName__c = &apos;Appel_Entrant&apos;, OR(ISBLANK(Phone), ISBLANK(Email)))</errorConditionFormula>
+    <errorMessage>Veuillez remplir le numéro de téléphone et l&apos;adresse email du prospect avant de le convertir.</errorMessage>
+</ValidationRule>

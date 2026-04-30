@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_solution_PAC__c</fullName>
+    <label>Type solution PAC</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Monobloc Chauffage seul</fullName>
+                <default>false</default>
+                <label>Monobloc Chauffage seul</label>
+            </value>
+            <value>
+                <fullName>Bi-bloc Chauffage seul</fullName>
+                <default>false</default>
+                <label>Bi-bloc Chauffage seul</label>
+            </value>
+            <value>
+                <fullName>Bi-bloc Chauffage + eau chaude sanitaire</fullName>
+                <default>false</default>
+                <label>Bi-bloc Chauffage + eau chaude sanitaire</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

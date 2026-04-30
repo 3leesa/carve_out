@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_NomOpportunite__c</fullName>
+    <description>Sprint 14 - Nom de l&apos;opportunité défini par la règle de nommage, ce champ écrase le Name standard via une règle de workflow.</description>
+    <displayFormat>OPP{YY}{MM}-{000000}</displayFormat>
+    <externalId>false</externalId>
+    <label>TECH_Nom de l&apos;opportunité</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

@@ -1,0 +1,1756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_B2C</fullName>
+    <active>true</active>
+    <businessProcess>Processus B2C</businessProcess>
+    <compactLayoutAssignment>Layout_Lightning_Opportunity_equipement</compactLayoutAssignment>
+    <label>Appareil</label>
+    <picklistValues>
+        <picklist>B2B_Agence_Engie_Home_Service_li_e__c</picklist>
+        <values>
+            <fullName>valeur 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>valeur 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Departements__c</picklist>
+        <values>
+            <fullName>1 - Ain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 - Aube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11 - Aude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 - Aveyron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13 - Bouches-du-Rhône</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 - Calvados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15 - Cantal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16 - Charente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17 - Charente-Maritime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18 - Cher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19 - Corrèze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Aisne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21 - Côte-d%27Or</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22 - Côtes d%27Armor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23 - Creuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 - Dordogne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25 - Doubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26 - Drôme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27 - Eure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28 - Eure-et-Loir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>29 - Finistère</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Allier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 - Gard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31 - Haute-Garonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32 - Gers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33 - Gironde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>34 - Hérault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35 - Ille-et-Vilaine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36 - Indre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>37 - Indre-et-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>38 - Isère</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>39 - Jura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Alpes de Hautes-Provence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40 - Landes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>41 - Loir-et-Cher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42 - Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>43 - Haute-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44 - Loire-Atlantique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 - Loiret</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46 - Lot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>47 - Lot-et-Garonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48 - Lozère</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>49 - Maine-et-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Hautes-Alpes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50 - Manche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51 - Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>52 - Haute-Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>53 - Mayenne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54 - Meurthe-et-Moselle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55 - Meuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>56 - Morbihan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>57 - Moselle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>58 - Nièvre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>59 - Nord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - Alpes-Maritimes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 - Oise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>61 - Orne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>62 - Pas-de-Calais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>63 - Puy-de-Dôme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>64 - Pyrénées-Atlantiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>65 - Hautes-Pyrénées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>66 - Pyrénées-Orientales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>67 - Bas-Rhin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>68 - Haut-Rhin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>69 - Rhône</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>69 - Rhône %28Lyon chaufferie%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 - Ardèche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70 - Haute-Saône</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>71 - Saône-et-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72 - Sarthe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>73 - Savoie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>74 - Haute-Savoie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75 - Paris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>76 - Seine-Maritime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>77 - Seine-et-Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>78 - Yvelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>79 - Deux-Sèvres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8 - Ardennes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80 - Somme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>81 - Tarn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>82 - Tarn-et-Garonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>83 - Var</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>84 - Vaucluse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>85 - Vendée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>86 - Vienne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>87 - Haute-Vienne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>88 - Vosges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>89 - Yonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9 - Ariège</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 - Territoire-de-Belfort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>91 - Essonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>92 - Hauts-de-Seine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>93 - Seine-Saint-Denis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>94 - Val-de-Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>95 - Val-d%27Oise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Motif_du_no_go__c</picklist>
+        <values>
+            <fullName>Abandon du projet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Affaire transmise au groupe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Délai de réponse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hors secteur d%27activité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manque de ressources d%27exploitation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Notation__c</picklist>
+        <values>
+            <fullName>Chaud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Froid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiède</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Region__c</picklist>
+        <values>
+            <fullName>CENTRE-IDF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEDITERRANEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RHONES-ALPES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUD-OUEST</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Type__c</picklist>
+        <values>
+            <fullName>Client Existant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouveau client</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Type_de_chantier__c</picklist>
+        <values>
+            <fullName>Chaufferie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrat d%27entretien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remplacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Type_de_segment__c</picklist>
+        <values>
+            <fullName>Privé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_budget_estime__c</picklist>
+        <values>
+            <fullName>%2B1000K%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0 à 5K%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100K%E2%82%AC à 500K%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10K%E2%82%AC à 100K%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500 K%E2%82%AC à 1000K%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5K%E2%82%AC à 10K%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_canal_de_contact__c</picklist>
+        <values>
+            <fullName>Appel d%27offres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parrainage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléphone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_type_equipement__c</picklist>
+        <values>
+            <fullName>A QUALIFIER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACCUMULATEUR %2F BALLON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADOUCISSEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AEROTHERME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARMOIRE PUISSANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARMOIRE REGULATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUTRE APPAREIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BALLON THERMODYNAMIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOUCHES VMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRULEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CENTRALE DETECTION GAZ%2FINCENDIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CENTRALE TRAITEMENT AIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAUDIERE MURALE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAUDIERE SOL ATMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAUDIERE SOL MECANIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAUFFE-BAIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAUFFE-EAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAUFFERIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLAPET COUPE FEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIMATISEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COGENERATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMPTEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMPTEUR EAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONDUIT FUMEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISCONNECTEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECHANGEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRANDE CUISINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GROUPE EAU GLACEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GROUPE ELECTROGENE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GROUPE MAINTIEN PRESSION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GROUPE TRAITEMENT EAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HYBRIDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MODULE %2F SATELLITE CIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MODULE CIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MODULE PLANCHER CHAUFFANT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PANNEAU RADIANT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHOTOVOLTAIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POELE %2F INSERT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POMPE A CHALEUR AIR %2F AIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POMPE A CHALEUR AIR %2F EAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POMPE A CHALEUR EAU %2F EAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POMPE DE RELEVAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POMPE PRIMAIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POMPE RECYCLAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POMPE SECONDAIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PORTE DE GARAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PREPARATEUR EAU CHAUDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAD %2F CONV %2F POELE %2F INSERT %2F CIC %2F MODULE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RECUPERATEUR CONDENSATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REGULATION ROBINETS THERMOSTATIQUES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REGULATION THERMOSTAT HORLOGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RESEAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RESEAU SECONDAIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROBINETTERIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOGINORPA - LOT ELECTRICITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOGINORPA - LOT MENUISERIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS STATION CHAUFFAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS STATION CHAUFFAGE%2BECS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS STATION ECS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUPRESSEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYST%2E DESENFUMAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TELEALARME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermostat connecté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VASE EXPANSION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VENTILO CONVECTEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMC %2F EXTRACTEUR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ConcurrentPerteOpp__c</picklist>
+        <values>
+            <fullName>Artisan local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concurrent national</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DB_Competitor__c</picklist>
+        <values>
+            <fullName>Competitor A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Demande_dossier_ANAH__c</picklist>
+        <values>
+            <fullName>25 %25 %28du devis HT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 %25 %28du devis HT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35 %25 %28du devis HT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40 %25 %28du devis HT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 %25 %28du devis HT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50 %25 %28du devis HT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55 %25 %28du devis HT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 %25 %28du devis HT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non éligible</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dossier_Coup_de_Pouce_ANAH__c</picklist>
+        <values>
+            <fullName>Coup de pouce 100%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coup de pouce 1400%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coup de pouce 2500%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coup de pouce 2800%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coup de pouce 4000%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coup de pouce 4500%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coup de pouce 50%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coup de pouce 700%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non éligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>à déterminer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Equipement__c</picklist>
+        <values>
+            <fullName>ADOUCISSEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre équipement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BALLON THERMODYNAMIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAUDIERE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAUFFE-EAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAUFFE-EAU ELECTRIQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIMATISEUR OU POMPE A CHALEUR AIR%2FAIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POMPE A CHALEUR AIR%2FEAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POMPE A CHALEUR EAU%2FEAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RADIATEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RADIATEUR ELECTRIQUE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>En cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fermée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maximum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Achat de fichiers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouche à oreille</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partenaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relations publiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Référence Employé%28e%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Référence externe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Séminaire - Partenaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MaPrimeRenov__c</picklist>
+        <values>
+            <fullName>10000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4003</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A déterminer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non éligible</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotifDePerteOpp__c</picklist>
+        <values>
+            <fullName>Abandon projet par EHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abandon projet par client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Choix de la concurrence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doublon CRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus Administratif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus souscription contrat d%27élec</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Raison__c</picklist>
+        <values>
+            <fullName>Aucune raison donnée par le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Budget client non adapté au projet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client injoignable malgré relances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client trop éloigné de l%E2%80%99agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis conseil sur initiative d%E2%80%99EHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis locataire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis reçu trop tard%2Fnon reçu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doublon CRM Fiche Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doublon CRM Opp Co%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Délai de pose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipement réparé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erreur - Mauvais geste métier CRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financement FranFinance refusé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financement banque client refusé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L%E2%80%99agence ne porte pas l%E2%80%99équipement souhaité par le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manque de réactivité - Lenteur du processus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meilleure solution technique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne souhaitait pas de RDV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nettoyage Masse DSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de disponibilité en agence pour traiter la demande client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projet de revente du logement ou logement vendu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projet non-mature %2F A relancer dans 12 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projet non-mature %2F A relancer dans 6 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Préfère un artisan local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RDV ou VT non honorée par EHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus dossier Anah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refus propriétaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance Devis ColorFil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réclamation non traitée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution technique impossible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suite avis négatifs autres clients</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Raisons_du_transfert__c</picklist>
+        <values>
+            <fullName>Création d%E2%80%99installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déjà client agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projet complexe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reponse_dossier_ANAH__c</picklist>
+        <values>
+            <fullName>Accepté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refusé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_statut__c</picklist>
+        <values>
+            <fullName>A reprogrammer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attente retour BI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis VT créé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis VT envoyé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis VT signé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis à réaliser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimation envoyée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instruction administrative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Programmé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Programmée à poser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RDV à positionner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signé à programmer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signé à sourcer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT planifiée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT réalisée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT réalisée%2C Devis BR à créer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT signée et programmée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_statut_suivi_dossier_ANAH__c</picklist>
+        <values>
+            <fullName>Problème ANAH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème CDC %E2%80%93 Mandat accepté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème DEVIS %E2%80%93 Mandat accepté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème DEVIS%2C CDC %E2%80%93 Mandat accepté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème DEVIS%2C RGE %E2%80%93 Mandat accepté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème DEVIS%2C RGE%2C CDC %E2%80%93 Mandat accepté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème RGE %E2%80%93 Mandat accepté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème RGE%2C CDC %E2%80%93 Mandat accepté</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Suivi_dossier_ANAH__c</picklist>
+        <values>
+            <fullName>Demande de paiement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En attente de désignation mandataire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En instruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instruction bloquée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandat Accepté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandat accepté avec les pièces chargées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paiement accepté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paiement effectué</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subvention accordée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subvention rejetée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Accessoire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accessoire et prestations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrat %2F option</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pièces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_d_quipement_vendu__c</picklist>
+        <values>
+            <fullName>Adoucisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ballon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière BT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière condensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAC R%2FO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAC R%2FR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_equipement_origine__c</picklist>
+        <values>
+            <fullName>Adoucisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre équipement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ballon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Borne de Recharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière bois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul murale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz murale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chauffe-eau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chauffe-eau thermodynamique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Climatiseur ou pompe à chaleur Air %2F Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybride</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photovoltaïque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur Air %2F Eau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur Eau %2F Eau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermostat connecté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_equipement_propose__c</picklist>
+        <values>
+            <fullName>Adoucisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre équipement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ballon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Borne de Recharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière bois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul murale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz murale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chauffe-eau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chauffe-eau thermodynamique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Climatiseur ou pompe à chaleur Air %2F Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybride</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inertage cuve fioul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photovoltaïque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur Air %2F Eau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur Eau %2F Eau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermostat connecté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_menage__c</picklist>
+        <values>
+            <fullName>Aisé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intermédiaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modeste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Très Modeste</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>devis_cr_la_demande_de__c</picklist>
+        <values>
+            <fullName>Demande EHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande client</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Del_KO_avec_prise_de_rdv__c</fullName>
+    <description>Champ qui compte les DepEnLigne KO avec Intervention pour rapport pilotage</description>
+    <externalId>false</externalId>
+    <formula>IF(
+AND( 
+TEXT(Type)=&quot;Dépannage&quot; ,
+NOT( ISBLANK( TEXT(Besoin_d_assistance__c ) ) ),
+TEXT( Resultat_depannage_en_ligne__c )=&quot;Echec&quot; ,
+TECH_InterventionExiste__c = true ) , 
+1, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Del KO avec prise de rdv</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

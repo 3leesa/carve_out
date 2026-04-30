@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_climatisation_Devis_1__c</fullName>
+    <label>Type de climatisation (Devis 1)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mono split</fullName>
+                <default>false</default>
+                <label>Mono split</label>
+            </value>
+            <value>
+                <fullName>Multi split</fullName>
+                <default>false</default>
+                <label>Multi split</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

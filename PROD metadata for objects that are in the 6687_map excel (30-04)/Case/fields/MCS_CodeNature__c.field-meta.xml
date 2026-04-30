@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCS_CodeNature__c</fullName>
+    <description>Sprint 58 - CRM-269 Vilogia Création BT depuis le CRM</description>
+    <externalId>false</externalId>
+    <formula>IF(RIGHT(Asset.TECH_PhenixAssetId__c, 5)=&quot;15-10&quot;, &quot;15-10-115-102&quot;, 
+IF(RIGHT(Asset.TECH_PhenixAssetId__c, 5)=&quot;15-29&quot;, &quot;15-29-118-102&quot;, 
+IF(RIGHT(Asset.TECH_PhenixAssetId__c, 5)=&quot;15-15&quot;, &quot;15-15-116-102&quot;, 
+IF(RIGHT(Asset.TECH_PhenixAssetId__c, 5)=&quot;15-28&quot;, &quot;15-28-117-102&quot;, 
+IF(RIGHT(Asset.TECH_PhenixAssetId__c, 5)=&quot;15-31&quot;, &quot;15-31-120-102&quot;, 
+IF(RIGHT(Asset.TECH_PhenixAssetId__c, 5)=&quot;15-30&quot;, &quot;15-30-119-102&quot;, 
+IF(RIGHT(Asset.TECH_PhenixAssetId__c, 5)=&quot;15-33&quot;, &quot;15-33-135-79&quot;,
+IF(RIGHT(Asset.TECH_PhenixAssetId__c, 5)=&quot;15-34&quot;, &quot;15-34-136-79&quot;,
+IF(RIGHT(Asset.TECH_PhenixAssetId__c, 5)=&quot;18-10&quot;, &quot;18-10-115-102&quot;,
+IF(RIGHT(Asset.TECH_PhenixAssetId__c, 5)=&quot;18-15&quot;, &quot;18-15-116-102&quot;,
+&quot;15-00-000-000&quot;))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MCS_CodeNature</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

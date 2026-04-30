@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Statut_de_la_piste__c</fullName>
+    <label>Statut de la piste</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Suspect - à qualifier</fullName>
+                <default>false</default>
+                <label>Suspect - à qualifier</label>
+            </value>
+            <value>
+                <fullName>Suspect - contacté</fullName>
+                <default>false</default>
+                <label>Suspect - contacté</label>
+            </value>
+            <value>
+                <fullName>Prospect - non intéressé</fullName>
+                <default>false</default>
+                <label>Prospect - non intéressé</label>
+            </value>
+            <value>
+                <fullName>Converti</fullName>
+                <default>false</default>
+                <label>Converti</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

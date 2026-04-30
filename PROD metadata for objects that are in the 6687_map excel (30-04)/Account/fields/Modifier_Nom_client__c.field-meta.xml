@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modifier_Nom_client__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 44 -CRM-2239- permet au conseiller de préciser ce qu&apos;il souhaite faire vraiment comme action.
+En cas de tentative (d&apos;effacement ou de modification) du nom du client sans avoir cocher, un message d&apos;alerte sera affiché indiquant au conseiller d&apos;aller dans la page dédier au modification d&apos;occupant.</description>
+    <inlineHelpText>Cocher uniquement si vous souhaitez corriger le nom du client. Le changement d&apos;occupant doit se faire via le bouton &apos;Modifier Occupant&apos; sur le logement.</inlineHelpText>
+    <label>Confirmer la correction du nom</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

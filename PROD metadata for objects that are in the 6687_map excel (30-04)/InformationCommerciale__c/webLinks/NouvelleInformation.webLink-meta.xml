@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NouvelleInformation</fullName>
+    <availability>online</availability>
+    <description>Sprint 11 - Bouton &quot;Nouveau&quot; forçant des valeurs par défaut dans les champs lookups : Client__c = Id compte-parent, Collaborateur__c = Id utilisateur actuel.</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Nouvelle information</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/{!$ObjectType.InformationCommerciale__c}/e?CF{!$Setup.CS002_Metadata__c.InfosCommercialesClientId__c}={!Account.Name}&amp;CF{!$Setup.CS002_Metadata__c.InfosCommercialesClientId__c}_lkid={!Account.Id}&amp;CF{!$Setup.CS002_Metadata__c.InfosCommercialesCollaborateurId__c}={!User.Name}&amp;CF{!$Setup.CS002_Metadata__c.InfosCommercialesCollaborateurId__c}_lkid={!User.Id}&amp;retURL=/{!Account.Id}</url>
+</WebLink>

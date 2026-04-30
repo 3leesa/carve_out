@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Identitie_Doit_Avoir_Coordonee</fullName>
+    <active>true</active>
+    <description>CRM-463 :
+Interdit de remplir &quot;Identité (Tél.mobile)&quot; si &quot;Téléphone mobile&quot; est vide
+Interdit de remplir &quot;Identité (Tél.fixe)&quot; si le champ &quot;Téléphone fixe&quot; est vide
+interdit de remplir &quot;Identité (Email)&quot; si &quot;Email&quot; est vide</description>
+    <errorConditionFormula>IF(ISNEW() &amp;&amp; NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c) &amp;&amp; RecordType.DeveloperName = &apos;PersonAccount&apos;,
+  IF(NOT(ISBlank(IdentiteMobile__c)) &amp;&amp; ISBLANK(PersonMobilePhone), true, false) ||
+  IF(NOT(ISBlank(IdentiteFixe__c)) &amp;&amp; ISBLANK(PersonHomePhone), true, false) ||
+  IF(NOT(ISBlank(IdentiteEmail__c)) &amp;&amp; ISBLANK(PersonEmail), true, false),
+  false)</errorConditionFormula>
+    <errorMessage>Il faut remplir les coordonnées téléphoniques ou emails associées aux identités fournies sur la fiche client.</errorMessage>
+</ValidationRule>

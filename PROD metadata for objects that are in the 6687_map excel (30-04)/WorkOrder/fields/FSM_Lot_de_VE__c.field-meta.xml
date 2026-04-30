@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Lot_de_VE__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field to link all WorkOrder records in a single lot to control record FSM_Lot_de_VE__c.</description>
+    <label>Lot de VE</label>
+    <referenceTo>FSM_Lot_de_VE__c</referenceTo>
+    <relationshipLabel>Work Orders</relationshipLabel>
+    <relationshipName>Work_Orders</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

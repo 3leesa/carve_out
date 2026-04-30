@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bailleur_notifie__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Compte bailleur souhaitant être notifié lorsqu&apos;un de ses locataires reçoit un devis ou a une intervention programmée / confirmée / réalisée</inlineHelpText>
+    <label>Bailleur notifié</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

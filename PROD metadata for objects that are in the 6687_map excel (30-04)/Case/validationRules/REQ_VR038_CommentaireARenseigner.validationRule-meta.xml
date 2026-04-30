@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR038_CommentaireARenseigner</fullName>
+    <active>true</active>
+    <description>champ commentaire à renseigner obligatoirement si la valeur &apos;autres&apos; sur &apos;raison du hors cible&apos; est renseigné</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Raison_du_hors_cible__c  ,&quot;autres&quot;),
+ISBLANK(CommentaireHorsCible__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>CommentaireHorsCible__c</errorDisplayField>
+    <errorMessage>Veuillez remplir le champ Commentaires</errorMessage>
+</ValidationRule>

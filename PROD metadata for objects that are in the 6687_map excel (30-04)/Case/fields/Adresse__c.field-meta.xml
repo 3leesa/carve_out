@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adresse__c</fullName>
+    <description>Sprint 1 - Affichage en texte de l&apos;adresse postale du contact. 
+Sprint 5 - Pour un Dépannage, afficher l&apos;adresse de l&apos;actif. Sprint 6 - Pour une demande autre que &quot;Réclamation&quot; ayant un équipement, afficher l&apos;adresse du logement de l&apos;actif sinon l&apos;adresse de facturation du compte.
+Sprint 14 - Retrait des annotations [INTERVENTION] et [FACTURATION].</description>
+    <externalId>false</externalId>
+    <formula>IF( 
+  NOT(ISPICKVAL(Type, &apos;Réclamation&apos;)) &amp;&amp; AssetId != null, Asset.Logement__r.Adresse__c,
+  Account.NumVoieFactu__c &amp;&quot; &quot;&amp;
+  TEXT(Account.ComplementNumVoieFactu__c) &amp;&quot; &quot;&amp;
+  LOWER(TEXT(Account.TypeVoieFactu__c)) &amp;&quot; &quot;&amp;
+  Account.BillingStreet &amp;BR()&amp;
+  Account.BillingPostalCode &amp;&quot; &quot;&amp; Account.BillingCity )</formula>
+    <label>Adresse destinataire</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

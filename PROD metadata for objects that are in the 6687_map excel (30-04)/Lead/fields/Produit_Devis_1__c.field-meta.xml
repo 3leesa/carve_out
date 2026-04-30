@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Produit_Devis_1__c</fullName>
+    <description>Evol - lot 1</description>
+    <label>Produit (Devis 1)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pack chauffage</fullName>
+                <default>false</default>
+                <label>Pack chauffage</label>
+            </value>
+            <value>
+                <fullName>Chaudière seule</fullName>
+                <default>false</default>
+                <label>Chaudière seule</label>
+            </value>
+            <value>
+                <fullName>Pack Chaudière</fullName>
+                <default>false</default>
+                <label>Pack Chaudière</label>
+            </value>
+            <value>
+                <fullName>Pack Eideris</fullName>
+                <default>false</default>
+                <label>Pack Eideris</label>
+            </value>
+            <value>
+                <fullName>Eideris</fullName>
+                <default>false</default>
+                <label>Eideris</label>
+            </value>
+            <value>
+                <fullName>Pack climatisation</fullName>
+                <default>false</default>
+                <label>Pack climatisation</label>
+            </value>
+            <value>
+                <fullName>Climatisation seule</fullName>
+                <default>false</default>
+                <label>Climatisation seule</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

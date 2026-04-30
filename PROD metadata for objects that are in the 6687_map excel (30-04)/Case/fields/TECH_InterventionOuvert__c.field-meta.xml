@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_InterventionOuvert__c</fullName>
+    <formula>OR(
+	AND (NOT(ISNULL(TECH_NombreRDVConfirme__c)), TECH_NombreRDVConfirme__c != 0),
+	AND (NOT(ISNULL(TECH_NombreRDVCree__c)), TECH_NombreRDVCree__c != 0),
+	AND (NOT(ISNULL(TECH_NombreRDVProgramme__c)), TECH_NombreRDVProgramme__c != 0),
+	AND (NOT(ISNULL(TECH_NombreRDVAvise__c)), TECH_NombreRDVAvise__c != 0)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_InterventionOuvert</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

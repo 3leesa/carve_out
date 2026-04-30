@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivation_changement_chaudiere__c</fullName>
+    <label>Motivation changement chaudière</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Changer en urgence ma chaudière en panne</fullName>
+                <default>false</default>
+                <label>Changer en urgence ma chaudière en panne</label>
+            </value>
+            <value>
+                <fullName>Changer ma chaudière vieillissante</fullName>
+                <default>false</default>
+                <label>Changer ma chaudière vieillissante</label>
+            </value>
+            <value>
+                <fullName>Changer de système de chauffage</fullName>
+                <default>false</default>
+                <label>Changer de système de chauffage</label>
+            </value>
+            <value>
+                <fullName>Etre mieux chauffé</fullName>
+                <default>false</default>
+                <label>Etre mieux chauffé</label>
+            </value>
+            <value>
+                <fullName>Avoir de l’eau chaude à tout moment</fullName>
+                <default>false</default>
+                <label>Avoir de l’eau chaude à tout moment</label>
+            </value>
+            <value>
+                <fullName>Réduire mes factures d’énergie</fullName>
+                <default>false</default>
+                <label>Réduire mes factures d’énergie</label>
+            </value>
+            <value>
+                <fullName>Avoir un système plus économique</fullName>
+                <default>false</default>
+                <label>Avoir un système plus économique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_qualifi_s</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>B2B_Interet__c</columns>
+    <columns>B2B_Departement__c</columns>
+    <columns>B2B_Region_liste__c</columns>
+    <columns>B2B_Date_de_detection_de_la_pisteb__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>B2B_Statut_de_la_piste__c</field>
+        <operation>equals</operation>
+        <value>Suspect - à qualifier,Suspect - contacté,Prospect - non intéressé</value>
+    </filters>
+    <filters>
+        <field>Secteur__c</field>
+        <operation>equals</operation>
+        <value>Habitat Social,Copropriété,Acteurs du neuf,Tertiaire privé,Collectivité locale &amp; tertiaire public</value>
+    </filters>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.CRM_B2B</value>
+    </filters>
+    <label>Leads qualifiés</label>
+    <sharedTo>
+        <role>B2B_DN</role>
+    </sharedTo>
+</ListView>

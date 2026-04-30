@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pilotes_Suivi_commercial_Intelcia</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Nom_complet_du_createur__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>SBQQ__PrimaryQuote__c</columns>
+    <columns>TECH_CpqDevisStatus__c</columns>
+    <columns>Date_de_la_prochaine_relance__c</columns>
+    <columns>DerniereDateDeSuivi__c</columns>
+    <columns>Date_de_remise_du_devis__c</columns>
+    <columns>n_du_telephone_du_client__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Devis remis au client</value>
+    </filters>
+    <filters>
+        <field>Primary_Quote_Pack__c</field>
+        <operation>equals</operation>
+        <value>Offre Borne Electrique</value>
+    </filters>
+    <filters>
+        <field>site_gestionnaire_createur__c</field>
+        <operation>equals</operation>
+        <value>TVE_INTELCIA_CASA</value>
+    </filters>
+    <label>Pilotes Suivi commercial - Intelcia</label>
+    <sharedTo>
+        <group>Mobilite_verte</group>
+    </sharedTo>
+</ListView>

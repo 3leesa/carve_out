@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR009_NePasEscaladerReclamationOrale</fullName>
+    <active>true</active>
+    <description>Sprint 13 - Une réclamation orale (c&apos;est-à-dire Canal &quot;Téléphone&quot; ou &quot;Visite en agence&quot;) ne doit pas être escaladée.</description>
+    <errorConditionFormula>AND( 
+NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ),
+NOT( CONTAINS(TEXT(NiveauDEscalade__c), &quot;Courante&quot;) ),
+OR( ISPICKVAL(Origin,&quot;Téléphone&quot;), 
+    ISPICKVAL(Origin,&quot;Visite en agence&quot;) ) )</errorConditionFormula>
+    <errorDisplayField>NiveauDEscalade__c</errorDisplayField>
+    <errorMessage>Une réclamation reçue par téléphone ou lors d&apos;une visite en agence est traitée au niveau d&apos;escalade courant uniquement.</errorMessage>
+</ValidationRule>

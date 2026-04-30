@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VIZ_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Type__c, &apos;10003&apos;), &apos;DEP&apos;, 
+IF(ISPICKVAL(Type__c, &apos;10005&apos;), &apos;ENT&apos;, 
+IF(ISPICKVAL(Type__c, &apos;10004&apos;), &apos;ENT&apos;, 
+IF(ISPICKVAL(Type__c, &apos;10007&apos;), &apos;TVX&apos;, 
+IF(ISPICKVAL(Type__c, &apos;10010&apos;), &apos;TVX&apos;, 
+&apos;&apos;)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>VIZ_Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR005_NePasEscaladerAUneFile</fullName>
+    <active>true</active>
+    <description>Sprint 1 - User ne peut pas directement escalader une demande à une file d&apos;attente en changeant le propriétaire, il doit passer par le champ Escalade. Sprint 8 - Fusion de 2 VR.</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c), 
+ISPICKVAL( Type ,&quot;Réclamation&quot;),
+(TECH_VerifierQuonVientDeGazelle__c=False), 
+NOT(ISBLANK(Owner:Queue.DeveloperName)),
+ISCHANGED(OwnerId),
+NOT(ISCHANGED(TECH_InterventionExiste__c)), 
+NOT($User.IDGazelleAgence__c = &apos;CRC&apos;), 
+OR( ISPICKVAL(Status,&quot;En cours&quot;), 
+AND(ISPICKVAL(Status,&quot;Terminé&quot;), 
+NOT(ISCHANGED(NiveauDEscalade__c))) 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Vous devez suivre le processus d&apos;escalade. Vous ne pouvez pas attribuer une demande à une file d&apos;attente ou à un niveau d&apos;escalade supérieur en changeant directement le gestionnaire.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interventions_suspendues</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Information_CRC__c</columns>
+    <columns>FSM_Requested_Slot__c</columns>
+    <columns>Date_de_Debut__c</columns>
+    <columns>Subject</columns>
+    <columns>Status</columns>
+    <columns>Priority</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EstSuspendue__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Interventions suspendues</label>
+</ListView>

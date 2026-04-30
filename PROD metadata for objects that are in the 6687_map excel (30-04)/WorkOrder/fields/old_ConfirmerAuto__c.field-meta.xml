@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>old_ConfirmerAuto__c</fullName>
+    <description>Si l&apos;utilisateur a un profil Community (espace client), alors on considère qu&apos;il veut auto confirmer ses replanifications de VE - MA-4471 - Remplacé finalement par un champ texte rempli par workflow (cf. MA-4656)</description>
+    <formula>IF(!ISPICKVAL($Profile.UserType,&apos;STANDARD&apos;),true,false)</formula>
+    <label>old_ConfirmerAuto</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

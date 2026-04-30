@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agences__c</fullName>
+    <description>Sprint 11 - Agences concernées par le client.</description>
+    <label>Agences concernées</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AGENCE AGEN</fullName>
+                <default>false</default>
+                <label>AGENCE AGEN</label>
+            </value>
+            <value>
+                <fullName>AGENCE AIX CELONY</fullName>
+                <default>false</default>
+                <label>AGENCE AIX CELONY</label>
+            </value>
+            <value>
+                <fullName>AGENCE AJACCIO</fullName>
+                <default>false</default>
+                <label>AGENCE AJACCIO</label>
+            </value>
+            <value>
+                <fullName>AGENCE ALBI</fullName>
+                <default>false</default>
+                <label>AGENCE ALBI</label>
+            </value>
+            <value>
+                <fullName>AGENCE ALENCON</fullName>
+                <default>false</default>
+                <label>AGENCE ALENCON</label>
+            </value>
+            <value>
+                <fullName>AGENCE ALES</fullName>
+                <default>false</default>
+                <label>AGENCE ALES</label>
+            </value>
+            <value>
+                <fullName>AGENCE AMIENS</fullName>
+                <default>false</default>
+                <label>AGENCE AMIENS</label>
+            </value>
+            <value>
+                <fullName>AGENCE ANGERS BEAUCOUZE</fullName>
+                <default>false</default>
+                <label>AGENCE ANGERS BEAUCOUZE</label>
+            </value>
+            <value>
+                <fullName>AGENCE ANGERS CHATENAY</fullName>
+                <default>false</default>
+                <label>AGENCE ANGERS CHATENAY</label>
+            </value>
+            <value>
+                <fullName>AGENCE ANGERS CHAUFFERIES</fullName>
+                <default>false</default>
+                <label>AGENCE ANGERS CHAUFFERIES</label>
+            </value>
+            <value>
+                <fullName>AGENCE ANGLET</fullName>
+                <default>false</default>
+                <label>AGENCE ANGLET</label>
+            </value>
+            <value>
+                <fullName>AGENCE ANGOULEME</fullName>
+                <default>false</default>
+                <label>AGENCE ANGOULEME</label>
+            </value>
+            <value>
+                <fullName>AGENCE ANNECY CRAN GEVRIER</fullName>
+                <default>false</default>
+                <label>AGENCE ANNECY CRAN GEVRIER</label>
+            </value>
+            <value>
+                <fullName>AGENCE ANNONAY</fullName>
+                <default>false</default>
+                <label>AGENCE ANNONAY</label>
+            </value>
+            <value>
+                <fullName>AGENCE ARCACHON</fullName>
+                <default>false</default>
+                <label>AGENCE ARCACHON</label>
+            </value>
+            <value>
+                <fullName>AGENCE ARGENTON SUR CREUSE</fullName>
+                <default>false</default>
+                <label>AGENCE ARGENTON SUR CREUSE</label>
+            </value>
+            <value>
+                <fullName>AGENCE ARLES</fullName>
+                <default>false</default>
+                <label>AGENCE ARLES</label>
+            </value>
+            <value>
+                <fullName>AGENCE ARRAS</fullName>
+                <default>false</default>
+                <label>AGENCE ARRAS</label>
+            </value>
+            <value>
+                <fullName>AGENCE AUCH</fullName>
+                <default>false</default>
+                <label>AGENCE AUCH</label>
+            </value>
+            <value>
+                <fullName>AGENCE AURILLAC</fullName>
+                <default>false</default>
+                <label>AGENCE AURILLAC</label>
+            </value>
+            <value>
+                <fullName>AGENCE AUXERRE</fullName>
+                <default>false</default>
+                <label>AGENCE AUXERRE</label>
+            </value>
+            <value>
+                <fullName>AGENCE AVIGNON</fullName>
+                <default>false</default>
+                <label>AGENCE AVIGNON</label>
+            </value>
+            <value>
+                <fullName>AGENCE BASTIA</fullName>
+                <default>false</default>
+                <label>AGENCE BASTIA</label>
+            </value>
+            <value>
+                <fullName>AGENCE BEAUVAIS</fullName>
+                <default>false</default>
+                <label>AGENCE BEAUVAIS</label>
+            </value>
+            <value>
+                <fullName>AGENCE BELFORT MONTBELIARD</fullName>
+                <default>false</default>
+                <label>AGENCE BELFORT MONTBELIARD</label>
+            </value>
+            <value>
+                <fullName>AGENCE BESANCON</fullName>
+                <default>false</default>
+                <label>AGENCE BESANCON</label>
+            </value>
+            <value>
+                <fullName>AGENCE BESANCON VMC</fullName>
+                <default>false</default>
+                <label>AGENCE BESANCON VMC</label>
+            </value>
+            <value>
+                <fullName>AGENCE BEZIERS</fullName>
+                <default>false</default>
+                <label>AGENCE BEZIERS</label>
+            </value>
+            <value>
+                <fullName>AGENCE BLOIS</fullName>
+                <default>false</default>
+                <label>AGENCE BLOIS</label>
+            </value>
+            <value>
+                <fullName>AGENCE BORDEAUX OUEST</fullName>
+                <default>false</default>
+                <label>AGENCE BORDEAUX OUEST</label>
+            </value>
+            <value>
+                <fullName>AGENCE BORDEAUX RIVE DROITE</fullName>
+                <default>false</default>
+                <label>AGENCE BORDEAUX RIVE DROITE</label>
+            </value>
+            <value>
+                <fullName>AGENCE BOULOGNE</fullName>
+                <default>false</default>
+                <label>AGENCE BOULOGNE</label>
+            </value>
+            <value>
+                <fullName>AGENCE BOURG DE PEAGE</fullName>
+                <default>false</default>
+                <label>AGENCE BOURG DE PEAGE</label>
+            </value>
+            <value>
+                <fullName>AGENCE BOURG EN BRESSE SAINT DENIS</fullName>
+                <default>false</default>
+                <label>AGENCE BOURG EN BRESSE SAINT DENIS</label>
+            </value>
+            <value>
+                <fullName>AGENCE BOURGES</fullName>
+                <default>false</default>
+                <label>AGENCE BOURGES</label>
+            </value>
+            <value>
+                <fullName>AGENCE BOURGOIN JALLIEU</fullName>
+                <default>false</default>
+                <label>AGENCE BOURGOIN JALLIEU</label>
+            </value>
+            <value>
+                <fullName>AGENCE BREST</fullName>
+                <default>false</default>
+                <label>AGENCE BREST</label>
+            </value>
+            <value>
+                <fullName>AGENCE BRIGNOLES</fullName>
+                <default>false</default>
+                <label>AGENCE BRIGNOLES</label>
+            </value>
+            <value>
+                <fullName>AGENCE BRIVE</fullName>
+                <default>false</default>
+                <label>AGENCE BRIVE</label>
+            </value>
+            <value>
+                <fullName>AGENCE BRUAY</fullName>
+                <default>false</default>
+                <label>AGENCE BRUAY</label>
+            </value>
+            <value>
+                <fullName>AGENCE CAEN CARPIQUET</fullName>
+                <default>false</default>
+                <label>AGENCE CAEN CARPIQUET</label>
+            </value>
+            <value>
+                <fullName>AGENCE CAEN MONDEVILLE</fullName>
+                <default>false</default>
+                <label>AGENCE CAEN MONDEVILLE</label>
+            </value>
+            <value>
+                <fullName>AGENCE CAHORS</fullName>
+                <default>false</default>
+                <label>AGENCE CAHORS</label>
+            </value>
+            <value>
+                <fullName>AGENCE CALAIS</fullName>
+                <default>false</default>
+                <label>AGENCE CALAIS</label>
+            </value>
+            <value>
+                <fullName>AGENCE CARCASSONNE</fullName>
+                <default>false</default>
+                <label>AGENCE CARCASSONNE</label>
+            </value>
+            <value>
+                <fullName>AGENCE CASTRES</fullName>
+                <default>false</default>
+                <label>AGENCE CASTRES</label>
+            </value>
+            <value>
+                <fullName>AGENCE CELLULE TRAVAUX EST</fullName>
+                <default>false</default>
+                <label>AGENCE CELLULE TRAVAUX EST</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHALONS EN CHAMPAGNE</fullName>
+                <default>false</default>
+                <label>AGENCE CHALONS EN CHAMPAGNE</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHALON SUR SAONE THALIE</fullName>
+                <default>false</default>
+                <label>AGENCE CHALON SUR SAONE THALIE</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHAMBERY</fullName>
+                <default>false</default>
+                <label>AGENCE CHAMBERY</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHARLEVILLE</fullName>
+                <default>false</default>
+                <label>AGENCE CHARLEVILLE</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHARTRES</fullName>
+                <default>false</default>
+                <label>AGENCE CHARTRES</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHATEAUBRIAND</fullName>
+                <default>false</default>
+                <label>AGENCE CHATEAUBRIAND</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHATEAUDUN</fullName>
+                <default>false</default>
+                <label>AGENCE CHATEAUDUN</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHATEAUROUX</fullName>
+                <default>false</default>
+                <label>AGENCE CHATEAUROUX</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHATELLERAULT</fullName>
+                <default>false</default>
+                <label>AGENCE CHATELLERAULT</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHAUMONT</fullName>
+                <default>false</default>
+                <label>AGENCE CHAUMONT</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHERBOURG</fullName>
+                <default>false</default>
+                <label>AGENCE CHERBOURG</label>
+            </value>
+            <value>
+                <fullName>AGENCE CHOLET</fullName>
+                <default>false</default>
+                <label>AGENCE CHOLET</label>
+            </value>
+            <value>
+                <fullName>AGENCE CLERMONT COURNON</fullName>
+                <default>false</default>
+                <label>AGENCE CLERMONT COURNON</label>
+            </value>
+            <value>
+                <fullName>AGENCE CLERMONT FERRAND BREZET</fullName>
+                <default>false</default>
+                <label>AGENCE CLERMONT FERRAND BREZET</label>
+            </value>
+            <value>
+                <fullName>AGENCE COLMAR</fullName>
+                <default>false</default>
+                <label>AGENCE COLMAR</label>
+            </value>
+            <value>
+                <fullName>AGENCE COMBS LA VILLE</fullName>
+                <default>false</default>
+                <label>AGENCE COMBS LA VILLE</label>
+            </value>
+            <value>
+                <fullName>AGENCE COUERON CAP RENOV 44</fullName>
+                <default>false</default>
+                <label>AGENCE COUERON CAP RENOV 44</label>
+            </value>
+            <value>
+                <fullName>AGENCE CREIL</fullName>
+                <default>false</default>
+                <label>AGENCE CREIL</label>
+            </value>
+            <value>
+                <fullName>AGENCE DIEPPE</fullName>
+                <default>false</default>
+                <label>AGENCE DIEPPE</label>
+            </value>
+            <value>
+                <fullName>AGENCE DIJON</fullName>
+                <default>false</default>
+                <label>AGENCE DIJON</label>
+            </value>
+            <value>
+                <fullName>AGENCE DOUAI</fullName>
+                <default>false</default>
+                <label>AGENCE DOUAI</label>
+            </value>
+            <value>
+                <fullName>AGENCE DREUX</fullName>
+                <default>false</default>
+                <label>AGENCE DREUX</label>
+            </value>
+            <value>
+                <fullName>AGENCE DUNKERQUE</fullName>
+                <default>false</default>
+                <label>AGENCE DUNKERQUE</label>
+            </value>
+            <value>
+                <fullName>AGENCE EPERNAY</fullName>
+                <default>false</default>
+                <label>AGENCE EPERNAY</label>
+            </value>
+            <value>
+                <fullName>AGENCE ESSONNE</fullName>
+                <default>false</default>
+                <label>AGENCE ESSONNE</label>
+            </value>
+            <value>
+                <fullName>AGENCE ETAMPES TECHNIC GAZ</fullName>
+                <default>false</default>
+                <label>AGENCE ETAMPES TECHNIC GAZ</label>
+            </value>
+            <value>
+                <fullName>AGENCE EVREUX</fullName>
+                <default>false</default>
+                <label>AGENCE EVREUX</label>
+            </value>
+            <value>
+                <fullName>AGENCE FEURS</fullName>
+                <default>false</default>
+                <label>AGENCE FEURS</label>
+            </value>
+            <value>
+                <fullName>AGENCE FIRMINY</fullName>
+                <default>false</default>
+                <label>AGENCE FIRMINY</label>
+            </value>
+            <value>
+                <fullName>AGENCE FONDETTES</fullName>
+                <default>false</default>
+                <label>AGENCE FONDETTES</label>
+            </value>
+            <value>
+                <fullName>AGENCE FOUGERES</fullName>
+                <default>false</default>
+                <label>AGENCE FOUGERES</label>
+            </value>
+            <value>
+                <fullName>AGENCE FREJUS</fullName>
+                <default>false</default>
+                <label>AGENCE FREJUS</label>
+            </value>
+            <value>
+                <fullName>AGENCE GAP</fullName>
+                <default>false</default>
+                <label>AGENCE GAP</label>
+            </value>
+            <value>
+                <fullName>AGENCE GAZ CONFORT</fullName>
+                <default>false</default>
+                <label>AGENCE GAZ CONFORT</label>
+            </value>
+            <value>
+                <fullName>AGENCE GRAY</fullName>
+                <default>false</default>
+                <label>AGENCE GRAY</label>
+            </value>
+            <value>
+                <fullName>AGENCE GRENOBLE</fullName>
+                <default>false</default>
+                <label>AGENCE GRENOBLE</label>
+            </value>
+            <value>
+                <fullName>AGENCE GUERANDE</fullName>
+                <default>false</default>
+                <label>AGENCE GUERANDE</label>
+            </value>
+            <value>
+                <fullName>AGENCE HAUTS DE SEINE NORD</fullName>
+                <default>false</default>
+                <label>AGENCE HAUTS DE SEINE NORD</label>
+            </value>
+            <value>
+                <fullName>AGENCE HAUTS DE SEINE SUD</fullName>
+                <default>false</default>
+                <label>AGENCE HAUTS DE SEINE SUD</label>
+            </value>
+            <value>
+                <fullName>AGENCE IDF CHAUFFERIES</fullName>
+                <default>false</default>
+                <label>AGENCE IDF CHAUFFERIES</label>
+            </value>
+            <value>
+                <fullName>AGENCE ISSOIRE</fullName>
+                <default>false</default>
+                <label>AGENCE ISSOIRE</label>
+            </value>
+            <value>
+                <fullName>AGENCE ISTRES</fullName>
+                <default>false</default>
+                <label>AGENCE ISTRES</label>
+            </value>
+            <value>
+                <fullName>AGENCE LA FERTE BERNARD</fullName>
+                <default>false</default>
+                <label>AGENCE LA FERTE BERNARD</label>
+            </value>
+            <value>
+                <fullName>AGENCE LA FLECHE</fullName>
+                <default>false</default>
+                <label>AGENCE LA FLECHE</label>
+            </value>
+            <value>
+                <fullName>AGENCE L AIGLE</fullName>
+                <default>false</default>
+                <label>AGENCE L AIGLE</label>
+            </value>
+            <value>
+                <fullName>AGENCE LANNION</fullName>
+                <default>false</default>
+                <label>AGENCE LANNION</label>
+            </value>
+            <value>
+                <fullName>AGENCE LAON</fullName>
+                <default>false</default>
+                <label>AGENCE LAON</label>
+            </value>
+            <value>
+                <fullName>AGENCE LA ROCHELLE</fullName>
+                <default>false</default>
+                <label>AGENCE LA ROCHELLE</label>
+            </value>
+            <value>
+                <fullName>AGENCE LA ROCHE SUR YON</fullName>
+                <default>false</default>
+                <label>AGENCE LA ROCHE SUR YON</label>
+            </value>
+            <value>
+                <fullName>AGENCE LAVAL</fullName>
+                <default>false</default>
+                <label>AGENCE LAVAL</label>
+            </value>
+            <value>
+                <fullName>AGENCE LE BLANC</fullName>
+                <default>false</default>
+                <label>AGENCE LE BLANC</label>
+            </value>
+            <value>
+                <fullName>AGENCE LE CANNET 2</fullName>
+                <default>false</default>
+                <label>AGENCE LE CANNET 2</label>
+            </value>
+            <value>
+                <fullName>AGENCE LE CANNET CHAUFFERIES</fullName>
+                <default>false</default>
+                <label>AGENCE LE CANNET CHAUFFERIES</label>
+            </value>
+            <value>
+                <fullName>AGENCE LE CREUSOT</fullName>
+                <default>false</default>
+                <label>AGENCE LE CREUSOT</label>
+            </value>
+            <value>
+                <fullName>AGENCE LE HAVRE</fullName>
+                <default>false</default>
+                <label>AGENCE LE HAVRE</label>
+            </value>
+            <value>
+                <fullName>AGENCE LE HAVRE DAHER</fullName>
+                <default>false</default>
+                <label>AGENCE LE HAVRE DAHER</label>
+            </value>
+            <value>
+                <fullName>AGENCE LE MANS</fullName>
+                <default>false</default>
+                <label>AGENCE LE MANS</label>
+            </value>
+            <value>
+                <fullName>AGENCE LE MANS CHAUFFERIES PAC CLIM</fullName>
+                <default>false</default>
+                <label>AGENCE LE MANS CHAUFFERIES PAC CLIM</label>
+            </value>
+            <value>
+                <fullName>AGENCE LENS</fullName>
+                <default>false</default>
+                <label>AGENCE LENS</label>
+            </value>
+            <value>
+                <fullName>AGENCE LES MEES</fullName>
+                <default>false</default>
+                <label>AGENCE LES MEES</label>
+            </value>
+            <value>
+                <fullName>AGENCE LESPARRE</fullName>
+                <default>false</default>
+                <label>AGENCE LESPARRE</label>
+            </value>
+            <value>
+                <fullName>AGENCE LES SABLES D OLONNE</fullName>
+                <default>false</default>
+                <label>AGENCE LES SABLES D OLONNE</label>
+            </value>
+            <value>
+                <fullName>AGENCE LILLE LESQUIN</fullName>
+                <default>false</default>
+                <label>AGENCE LILLE LESQUIN</label>
+            </value>
+            <value>
+                <fullName>AGENCE LILLE VILLENEUVE D ASCQ 1</fullName>
+                <default>false</default>
+                <label>AGENCE LILLE VILLENEUVE D ASCQ 1</label>
+            </value>
+            <value>
+                <fullName>AGENCE LILLE VILLENEUVE D ASCQ 2</fullName>
+                <default>false</default>
+                <label>AGENCE LILLE VILLENEUVE D ASCQ 2</label>
+            </value>
+            <value>
+                <fullName>AGENCE LIMOGES</fullName>
+                <default>false</default>
+                <label>AGENCE LIMOGES</label>
+            </value>
+            <value>
+                <fullName>AGENCE LONGWY</fullName>
+                <default>false</default>
+                <label>AGENCE LONGWY</label>
+            </value>
+            <value>
+                <fullName>AGENCE LORIENT</fullName>
+                <default>false</default>
+                <label>AGENCE LORIENT</label>
+            </value>
+            <value>
+                <fullName>AGENCE LYON BRIGNAIS</fullName>
+                <default>false</default>
+                <label>AGENCE LYON BRIGNAIS</label>
+            </value>
+            <value>
+                <fullName>AGENCE LYON CENTRE THERMIGAZ</fullName>
+                <default>false</default>
+                <label>AGENCE LYON CENTRE THERMIGAZ</label>
+            </value>
+            <value>
+                <fullName>AGENCE LYON CHAUFFERIES</fullName>
+                <default>false</default>
+                <label>AGENCE LYON CHAUFFERIES</label>
+            </value>
+            <value>
+                <fullName>AGENCE LYON DECINES</fullName>
+                <default>false</default>
+                <label>AGENCE LYON DECINES</label>
+            </value>
+            <value>
+                <fullName>AGENCE LYON TASSIN</fullName>
+                <default>false</default>
+                <label>AGENCE LYON TASSIN</label>
+            </value>
+            <value>
+                <fullName>AGENCE LYON THERMIGAZ</fullName>
+                <default>false</default>
+                <label>AGENCE LYON THERMIGAZ</label>
+            </value>
+            <value>
+                <fullName>AGENCE MACON CHARNAY</fullName>
+                <default>false</default>
+                <label>AGENCE MACON CHARNAY</label>
+            </value>
+            <value>
+                <fullName>AGENCE MANTES LA JOLIE</fullName>
+                <default>false</default>
+                <label>AGENCE MANTES LA JOLIE</label>
+            </value>
+            <value>
+                <fullName>AGENCE MARSEILLE GEMENOS</fullName>
+                <default>false</default>
+                <label>AGENCE MARSEILLE GEMENOS</label>
+            </value>
+            <value>
+                <fullName>AGENCE MARSEILLE LITTORAL</fullName>
+                <default>false</default>
+                <label>AGENCE MARSEILLE LITTORAL</label>
+            </value>
+            <value>
+                <fullName>AGENCE MAUBEUGE</fullName>
+                <default>false</default>
+                <label>AGENCE MAUBEUGE</label>
+            </value>
+            <value>
+                <fullName>AGENCE MAUREPAS GAZ PLUS</fullName>
+                <default>false</default>
+                <label>AGENCE MAUREPAS GAZ PLUS</label>
+            </value>
+            <value>
+                <fullName>AGENCE METZ NORD</fullName>
+                <default>false</default>
+                <label>AGENCE METZ NORD</label>
+            </value>
+            <value>
+                <fullName>AGENCE METZ SUD</fullName>
+                <default>false</default>
+                <label>AGENCE METZ SUD</label>
+            </value>
+            <value>
+                <fullName>AGENCE MONTAUBAN</fullName>
+                <default>false</default>
+                <label>AGENCE MONTAUBAN</label>
+            </value>
+            <value>
+                <fullName>AGENCE MONT DE MARSAN</fullName>
+                <default>false</default>
+                <label>AGENCE MONT DE MARSAN</label>
+            </value>
+            <value>
+                <fullName>AGENCE MONTELIMAR</fullName>
+                <default>false</default>
+                <label>AGENCE MONTELIMAR</label>
+            </value>
+            <value>
+                <fullName>AGENCE MONTMAGNY COLLECTIF</fullName>
+                <default>false</default>
+                <label>AGENCE MONTMAGNY COLLECTIF</label>
+            </value>
+            <value>
+                <fullName>AGENCE MONTMAGNY PARTICULIERS</fullName>
+                <default>false</default>
+                <label>AGENCE MONTMAGNY PARTICULIERS</label>
+            </value>
+            <value>
+                <fullName>AGENCE MONTPELLIER OCCITANIE</fullName>
+                <default>false</default>
+                <label>AGENCE MONTPELLIER OCCITANIE</label>
+            </value>
+            <value>
+                <fullName>AGENCE MONTPELLIER SUD</fullName>
+                <default>false</default>
+                <label>AGENCE MONTPELLIER SUD</label>
+            </value>
+            <value>
+                <fullName>AGENCE MORLAIX</fullName>
+                <default>false</default>
+                <label>AGENCE MORLAIX</label>
+            </value>
+            <value>
+                <fullName>AGENCE MOULINS</fullName>
+                <default>false</default>
+                <label>AGENCE MOULINS</label>
+            </value>
+            <value>
+                <fullName>AGENCE MULHOUSE</fullName>
+                <default>false</default>
+                <label>AGENCE MULHOUSE</label>
+            </value>
+            <value>
+                <fullName>AGENCE NANCY EST</fullName>
+                <default>false</default>
+                <label>AGENCE NANCY EST</label>
+            </value>
+            <value>
+                <fullName>AGENCE NANCY OUEST</fullName>
+                <default>false</default>
+                <label>AGENCE NANCY OUEST</label>
+            </value>
+            <value>
+                <fullName>AGENCE NANTES BOUGUENAIS</fullName>
+                <default>false</default>
+                <label>AGENCE NANTES BOUGUENAIS</label>
+            </value>
+            <value>
+                <fullName>AGENCE NANTES CHAUFFERIES CLIM</fullName>
+                <default>false</default>
+                <label>AGENCE NANTES CHAUFFERIES CLIM</label>
+            </value>
+            <value>
+                <fullName>AGENCE NANTES MARCHE COMMUN</fullName>
+                <default>false</default>
+                <label>AGENCE NANTES MARCHE COMMUN</label>
+            </value>
+            <value>
+                <fullName>AGENCE NANTES SAINT HERBLAIN</fullName>
+                <default>false</default>
+                <label>AGENCE NANTES SAINT HERBLAIN</label>
+            </value>
+            <value>
+                <fullName>AGENCE NEVERS</fullName>
+                <default>false</default>
+                <label>AGENCE NEVERS</label>
+            </value>
+            <value>
+                <fullName>AGENCE NICE</fullName>
+                <default>false</default>
+                <label>AGENCE NICE</label>
+            </value>
+            <value>
+                <fullName>AGENCE NIMES</fullName>
+                <default>false</default>
+                <label>AGENCE NIMES</label>
+            </value>
+            <value>
+                <fullName>AGENCE NIMES VMC</fullName>
+                <default>false</default>
+                <label>AGENCE NIMES VMC</label>
+            </value>
+            <value>
+                <fullName>AGENCE NIORT</fullName>
+                <default>false</default>
+                <label>AGENCE NIORT</label>
+            </value>
+            <value>
+                <fullName>AGENCE NORD CAP RENOV</fullName>
+                <default>false</default>
+                <label>AGENCE NORD CAP RENOV</label>
+            </value>
+            <value>
+                <fullName>AGENCE NOYERS SUR CHER</fullName>
+                <default>false</default>
+                <label>AGENCE NOYERS SUR CHER</label>
+            </value>
+            <value>
+                <fullName>AGENCE OLORON</fullName>
+                <default>false</default>
+                <label>AGENCE OLORON</label>
+            </value>
+            <value>
+                <fullName>AGENCE ORLEANS LES MONTEES</fullName>
+                <default>false</default>
+                <label>AGENCE ORLEANS LES MONTEES</label>
+            </value>
+            <value>
+                <fullName>AGENCE ORLEANS SAINT JEAN DE LA RUELLE</fullName>
+                <default>false</default>
+                <label>AGENCE ORLEANS SAINT JEAN DE LA RUELLE</label>
+            </value>
+            <value>
+                <fullName>AGENCE PAMIERS</fullName>
+                <default>false</default>
+                <label>AGENCE PAMIERS</label>
+            </value>
+            <value>
+                <fullName>AGENCE PARIS EST</fullName>
+                <default>false</default>
+                <label>AGENCE PARIS EST</label>
+            </value>
+            <value>
+                <fullName>AGENCE PARIS RIVE DROITE</fullName>
+                <default>false</default>
+                <label>AGENCE PARIS RIVE DROITE</label>
+            </value>
+            <value>
+                <fullName>AGENCE PARIS RIVE GAUCHE</fullName>
+                <default>false</default>
+                <label>AGENCE PARIS RIVE GAUCHE</label>
+            </value>
+            <value>
+                <fullName>AGENCE PAU</fullName>
+                <default>false</default>
+                <label>AGENCE PAU</label>
+            </value>
+            <value>
+                <fullName>AGENCE PAYS DE GEX</fullName>
+                <default>false</default>
+                <label>AGENCE PAYS DE GEX</label>
+            </value>
+            <value>
+                <fullName>AGENCE PERIGUEUX</fullName>
+                <default>false</default>
+                <label>AGENCE PERIGUEUX</label>
+            </value>
+            <value>
+                <fullName>AGENCE PERPIGNAN CABESTANY</fullName>
+                <default>false</default>
+                <label>AGENCE PERPIGNAN CABESTANY</label>
+            </value>
+            <value>
+                <fullName>AGENCE PITHIVIERS</fullName>
+                <default>false</default>
+                <label>AGENCE PITHIVIERS</label>
+            </value>
+            <value>
+                <fullName>AGENCE POITIERS</fullName>
+                <default>false</default>
+                <label>AGENCE POITIERS</label>
+            </value>
+            <value>
+                <fullName>AGENCE PONTIVY</fullName>
+                <default>false</default>
+                <label>AGENCE PONTIVY</label>
+            </value>
+            <value>
+                <fullName>AGENCE PORT GRIMAUD</fullName>
+                <default>false</default>
+                <label>AGENCE PORT GRIMAUD</label>
+            </value>
+            <value>
+                <fullName>AGENCE QUIMPER</fullName>
+                <default>false</default>
+                <label>AGENCE QUIMPER</label>
+            </value>
+            <value>
+                <fullName>AGENCE REIMS</fullName>
+                <default>false</default>
+                <label>AGENCE REIMS</label>
+            </value>
+            <value>
+                <fullName>AGENCE RENNES ACIGNE</fullName>
+                <default>false</default>
+                <label>AGENCE RENNES ACIGNE</label>
+            </value>
+            <value>
+                <fullName>AGENCE RENNES DONELIERE</fullName>
+                <default>false</default>
+                <label>AGENCE RENNES DONELIERE</label>
+            </value>
+            <value>
+                <fullName>AGENCE ROANNE</fullName>
+                <default>false</default>
+                <label>AGENCE ROANNE</label>
+            </value>
+            <value>
+                <fullName>AGENCE ROMORANTIN</fullName>
+                <default>false</default>
+                <label>AGENCE ROMORANTIN</label>
+            </value>
+            <value>
+                <fullName>AGENCE ROSBRUCK</fullName>
+                <default>false</default>
+                <label>AGENCE ROSBRUCK</label>
+            </value>
+            <value>
+                <fullName>AGENCE ROUEN DEVILLE</fullName>
+                <default>false</default>
+                <label>AGENCE ROUEN DEVILLE</label>
+            </value>
+            <value>
+                <fullName>AGENCE ROUEN GRAND QUEVILLY</fullName>
+                <default>false</default>
+                <label>AGENCE ROUEN GRAND QUEVILLY</label>
+            </value>
+            <value>
+                <fullName>AGENCE ROYAN</fullName>
+                <default>false</default>
+                <label>AGENCE ROYAN</label>
+            </value>
+            <value>
+                <fullName>AGENCE SAINT BRIEUC PLERIN</fullName>
+                <default>false</default>
+                <label>AGENCE SAINT BRIEUC PLERIN</label>
+            </value>
+            <value>
+                <fullName>AGENCE SAINT CLAUDE</fullName>
+                <default>false</default>
+                <label>AGENCE SAINT CLAUDE</label>
+            </value>
+            <value>
+                <fullName>AGENCE SAINT ETIENNE</fullName>
+                <default>false</default>
+                <label>AGENCE SAINT ETIENNE</label>
+            </value>
+            <value>
+                <fullName>AGENCE SAINT GAUDENS</fullName>
+                <default>false</default>
+                <label>AGENCE SAINT GAUDENS</label>
+            </value>
+            <value>
+                <fullName>AGENCE SAINT LO</fullName>
+                <default>false</default>
+                <label>AGENCE SAINT LO</label>
+            </value>
+            <value>
+                <fullName>AGENCE SAINT MALO ARMORICAINE</fullName>
+                <default>false</default>
+                <label>AGENCE SAINT MALO ARMORICAINE</label>
+            </value>
+            <value>
+                <fullName>AGENCE SAINT MALO EMERAUDE</fullName>
+                <default>false</default>
+                <label>AGENCE SAINT MALO EMERAUDE</label>
+            </value>
+            <value>
+                <fullName>AGENCE SAINT NAZAIRE</fullName>
+                <default>false</default>
+                <label>AGENCE SAINT NAZAIRE</label>
+            </value>
+            <value>
+                <fullName>AGENCE SAINT NICOLAS DE REDON</fullName>
+                <default>false</default>
+                <label>AGENCE SAINT NICOLAS DE REDON</label>
+            </value>
+            <value>
+                <fullName>AGENCE SAINT QUENTIN</fullName>
+                <default>false</default>
+                <label>AGENCE SAINT QUENTIN</label>
+            </value>
+            <value>
+                <fullName>AGENCE SALBRIS</fullName>
+                <default>false</default>
+                <label>AGENCE SALBRIS</label>
+            </value>
+            <value>
+                <fullName>AGENCE SALON</fullName>
+                <default>false</default>
+                <label>AGENCE SALON</label>
+            </value>
+            <value>
+                <fullName>AGENCE SALON VMC</fullName>
+                <default>false</default>
+                <label>AGENCE SALON VMC</label>
+            </value>
+            <value>
+                <fullName>AGENCE SAUMUR</fullName>
+                <default>false</default>
+                <label>AGENCE SAUMUR</label>
+            </value>
+            <value>
+                <fullName>AGENCE SEINE ET MARNE NORD</fullName>
+                <default>false</default>
+                <label>AGENCE SEINE ET MARNE NORD</label>
+            </value>
+            <value>
+                <fullName>AGENCE SEINE ET MARNE SUD</fullName>
+                <default>false</default>
+                <label>AGENCE SEINE ET MARNE SUD</label>
+            </value>
+            <value>
+                <fullName>AGENCE SEINE SAINT DENIS</fullName>
+                <default>false</default>
+                <label>AGENCE SEINE SAINT DENIS</label>
+            </value>
+            <value>
+                <fullName>AGENCE SENS</fullName>
+                <default>false</default>
+                <label>AGENCE SENS</label>
+            </value>
+            <value>
+                <fullName>AGENCE SETE</fullName>
+                <default>false</default>
+                <label>AGENCE SETE</label>
+            </value>
+            <value>
+                <fullName>AGENCE SOISSONS</fullName>
+                <default>false</default>
+                <label>AGENCE SOISSONS</label>
+            </value>
+            <value>
+                <fullName>AGENCE STRASBOURG</fullName>
+                <default>false</default>
+                <label>AGENCE STRASBOURG</label>
+            </value>
+            <value>
+                <fullName>AGENCE TARBES</fullName>
+                <default>false</default>
+                <label>AGENCE TARBES</label>
+            </value>
+            <value>
+                <fullName>AGENCE THIERS</fullName>
+                <default>false</default>
+                <label>AGENCE THIERS</label>
+            </value>
+            <value>
+                <fullName>AGENCE THIONVILLE</fullName>
+                <default>false</default>
+                <label>AGENCE THIONVILLE</label>
+            </value>
+            <value>
+                <fullName>AGENCE THOUARS</fullName>
+                <default>false</default>
+                <label>AGENCE THOUARS</label>
+            </value>
+            <value>
+                <fullName>AGENCE TONNAY</fullName>
+                <default>false</default>
+                <label>AGENCE TONNAY</label>
+            </value>
+            <value>
+                <fullName>AGENCE TOULON LA FARLEDE</fullName>
+                <default>false</default>
+                <label>AGENCE TOULON LA FARLEDE</label>
+            </value>
+            <value>
+                <fullName>AGENCE TOULON SIX FOURS</fullName>
+                <default>false</default>
+                <label>AGENCE TOULON SIX FOURS</label>
+            </value>
+            <value>
+                <fullName>AGENCE TOULON VMC</fullName>
+                <default>false</default>
+                <label>AGENCE TOULON VMC</label>
+            </value>
+            <value>
+                <fullName>AGENCE TOULOUSE L UNION</fullName>
+                <default>false</default>
+                <label>AGENCE TOULOUSE L UNION</label>
+            </value>
+            <value>
+                <fullName>AGENCE TOULOUSE OCCITANE</fullName>
+                <default>false</default>
+                <label>AGENCE TOULOUSE OCCITANE</label>
+            </value>
+            <value>
+                <fullName>AGENCE TOURCOING</fullName>
+                <default>false</default>
+                <label>AGENCE TOURCOING</label>
+            </value>
+            <value>
+                <fullName>AGENCE TOURS SAINT PIERRE</fullName>
+                <default>false</default>
+                <label>AGENCE TOURS SAINT PIERRE</label>
+            </value>
+            <value>
+                <fullName>AGENCE TROYES</fullName>
+                <default>false</default>
+                <label>AGENCE TROYES</label>
+            </value>
+            <value>
+                <fullName>AGENCE VAL DE MARNE</fullName>
+                <default>false</default>
+                <label>AGENCE VAL DE MARNE</label>
+            </value>
+            <value>
+                <fullName>AGENCE VAL D OISE</fullName>
+                <default>false</default>
+                <label>AGENCE VAL D OISE</label>
+            </value>
+            <value>
+                <fullName>AGENCE VALENCE</fullName>
+                <default>false</default>
+                <label>AGENCE VALENCE</label>
+            </value>
+            <value>
+                <fullName>AGENCE VALENCIENNES</fullName>
+                <default>false</default>
+                <label>AGENCE VALENCIENNES</label>
+            </value>
+            <value>
+                <fullName>AGENCE VANNES</fullName>
+                <default>false</default>
+                <label>AGENCE VANNES</label>
+            </value>
+            <value>
+                <fullName>AGENCE VERDUN</fullName>
+                <default>false</default>
+                <label>AGENCE VERDUN</label>
+            </value>
+            <value>
+                <fullName>AGENCE VESOUL</fullName>
+                <default>false</default>
+                <label>AGENCE VESOUL</label>
+            </value>
+            <value>
+                <fullName>AGENCE VICHY</fullName>
+                <default>false</default>
+                <label>AGENCE VICHY</label>
+            </value>
+            <value>
+                <fullName>AGENCE VIENNE</fullName>
+                <default>false</default>
+                <label>AGENCE VIENNE</label>
+            </value>
+            <value>
+                <fullName>AGENCE VIERZON</fullName>
+                <default>false</default>
+                <label>AGENCE VIERZON</label>
+            </value>
+            <value>
+                <fullName>AGENCE VILLEFRANCHE SUR SAONE</fullName>
+                <default>false</default>
+                <label>AGENCE VILLEFRANCHE SUR SAONE</label>
+            </value>
+            <value>
+                <fullName>AGENCE VILLEMANDEUR</fullName>
+                <default>false</default>
+                <label>AGENCE VILLEMANDEUR</label>
+            </value>
+            <value>
+                <fullName>AGENCE VILLENEUVE LOUBET</fullName>
+                <default>false</default>
+                <label>AGENCE VILLENEUVE LOUBET</label>
+            </value>
+            <value>
+                <fullName>AGENCE VILLENEUVE VMC</fullName>
+                <default>false</default>
+                <label>AGENCE VILLENEUVE VMC</label>
+            </value>
+            <value>
+                <fullName>AGENCE VMC IDF</fullName>
+                <default>false</default>
+                <label>AGENCE VMC IDF</label>
+            </value>
+            <value>
+                <fullName>AGENCE YVELINES NORD</fullName>
+                <default>false</default>
+                <label>AGENCE YVELINES NORD</label>
+            </value>
+            <value>
+                <fullName>AGENCE YVELINES SUD</fullName>
+                <default>false</default>
+                <label>AGENCE YVELINES SUD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

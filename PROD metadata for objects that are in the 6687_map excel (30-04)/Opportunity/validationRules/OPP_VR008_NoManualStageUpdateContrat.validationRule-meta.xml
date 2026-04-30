@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR008_NoManualStageUpdateContrat</fullName>
+    <active>false</active>
+    <description>Interdire le modification manuelle de l&apos;étape de l&apos;opportunité dans le cas d&apos;un contrat CMIste.</description>
+    <errorConditionFormula>NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c)
+&amp;&amp; NOT($User.ProfileId == &apos;00e24000000Ivmh&apos;)
+&amp;&amp; ISCHANGED( StageName )
+&amp;&amp; TECH_RecordTypeDeveloperName__c = &quot;Contrat&quot;
+&amp;&amp; CASE( StageName,
+&quot;Proposition créée&quot;, 1,
+&quot;Information précontractuelle remise au client&quot;, 2,
+&quot;Proposition remise au client&quot;, 3,
+&quot;A relancer&quot;, 6,
+&quot;Proposition signée&quot;, 4,
+&quot;Fermée / Perdue&quot;, 5,
+&quot;Annulée&quot;, 7,
+0
+) &lt;&gt;
+CASE ( SBQQ__PrimaryQuote__r.SBQQ__Status__c ,
+&quot;Draft&quot;, 1,
+&quot;Sent for pre-contractual information&quot;, 2,
+&quot;Sent for signature&quot;, 3,
+&quot;Accepted&quot;, 4,
+&quot;Rejected&quot;, 5,
+&quot;Out of date&quot;, 6,
+&quot;Abandoned&quot;,7,
+&quot;Contracted&quot;, 8,
+0
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas modifier manuellement le statut de l&apos;opportunité d&apos;un contrat CMIste.</errorMessage>
+</ValidationRule>

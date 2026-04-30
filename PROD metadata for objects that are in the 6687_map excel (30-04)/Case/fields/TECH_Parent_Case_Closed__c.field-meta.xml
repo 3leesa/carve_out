@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Parent_Case_Closed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>CRM-624-633 : La demande parent est-elle au status terminé ?
+(N&apos;est pas une formule pour cause de limitation Salesforce)</description>
+    <label>TECH_Parent_Case_Closed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

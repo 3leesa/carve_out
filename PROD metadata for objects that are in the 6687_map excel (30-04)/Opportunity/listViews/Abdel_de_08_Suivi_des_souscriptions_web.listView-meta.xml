@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Abdel_de_08_Suivi_des_souscriptions_web</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6)</booleanFilter>
+    <columns>LogementConcerne__c</columns>
+    <columns>Suspicion_doublon__c</columns>
+    <columns>DateDebutSouhaiteeCreneau__c</columns>
+    <columns>EContratDateEntretien__c</columns>
+    <columns>TechnicianName__c</columns>
+    <columns>Demande__c</columns>
+    <columns>Statut_demande_mere__c</columns>
+    <columns>DemandeSousStatut__c</columns>
+    <columns>TECH_GazelleId__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>SBQQ__PrimaryQuote__c</columns>
+    <columns>ContractStartDate__c</columns>
+    <columns>Condition_de_reglement__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut_demande_mere__c</field>
+        <operation>notEqual</operation>
+        <value>Terminé,Annulé (Client),Annulé (Interne),Annulée</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Contrat / option</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Besoin détecté,Proposition créée,Annulée</value>
+    </filters>
+    <filters>
+        <field>TECH_DemandeMotifSouscription__c</field>
+        <operation>equals</operation>
+        <value>Parcours Web</value>
+    </filters>
+    <filters>
+        <field>DemandeSousStatut__c</field>
+        <operation>equals</operation>
+        <value>Contrat à créer dans Gazelle</value>
+    </filters>
+    <filters>
+        <field>TECH_LastWOConfirm_ParcoursWeb__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Abdel de 08. Suivi des souscriptions web</label>
+</ListView>

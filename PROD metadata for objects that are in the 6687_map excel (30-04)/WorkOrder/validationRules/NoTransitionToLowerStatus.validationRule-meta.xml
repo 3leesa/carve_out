@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoTransitionToLowerStatus</fullName>
+    <active>true</active>
+    <description>MA-6306 Un BI ouvert ne peut pas retourner à un statut inférieur, sauf de édité à programmé</description>
+    <errorConditionFormula>AND(NOT(Est_clos__c), ISCHANGED(Status), NOT(ISNEW()), TEXT(Status) &lt; TEXT(PRIORVALUE(Status))) &amp;&amp;
+NOT(ISPICKVAL(Status, &quot;102&quot;) &amp;&amp; ISPICKVAL(PRIORVALUE(Status), &quot;107&quot;))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Un BI ouvert ne peut pas retourner à un statut inférieur, sauf de édité à programmé</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateDemandeFinMailing__c</fullName>
+    <description>Date a laquelle le client a demandé à ne plus recevoir de courrier de Engie Home Services. Initialisé depuis Gazelle.</description>
+    <label>Date de demande de fin d&apos;emailing</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

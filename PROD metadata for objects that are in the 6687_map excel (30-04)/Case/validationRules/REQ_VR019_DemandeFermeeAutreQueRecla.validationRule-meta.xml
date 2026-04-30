@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR019_DemandeFermeeAutreQueRecla</fullName>
+    <active>true</active>
+    <description>Sprint 6. L&apos;utilisateur ne peut pas modifier une demande fermée hors récla
+13/07/2020: bypass Vilogia
+MCOSF-409: bypass MES associée avec un devis PropContr
+MCOSF111: ajout dem information
+MCOSF-2824: Bypass NUM avancement AR
+MCOSF-4657: bypass PC</description>
+    <errorConditionFormula>AND(
+NOT(ISCHANGED(TECH_NbModifStatuts__c)),
+NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ),
+ISPICKVAL(Status,&quot;Terminé&quot;),
+$User.Id &lt;&gt; &apos;0051p00000Bivbg&apos;,
+$User.Id &lt;&gt; &apos;0050800000EjuM0&apos;,
+NOT(AND($User.Id = &apos;0051p000009mcLA&apos;, ISCHANGED(MotifARevoir__c))),
+NOT(AND(ISCHANGED(QuoteId__c), QuoteId__r.RecordType.DeveloperName = &apos;Devis_Pieces&apos;)),
+NOT(ISCHANGED(Status)),
+NOT(ISCHANGED(NbEscaladeTotal__c)),
+NOT(ISCHANGED(NbRelancesActuel__c)),
+NOT(ISCHANGED(NbRelanceEscCourante__c)),
+NOT(ISCHANGED(NbRelanceEscNiveau1__c)),
+NOT(ISCHANGED(NbRelanceEscNiveau2__c)),
+NOT(ISCHANGED(NbRelanceEscNiveau3__c)),
+NOT(ISCHANGED(NbRelanceTotal__c)),
+NOT(ISPICKVAL(Type, &apos;Réclamation&apos;)),
+NOT(ISPICKVAL(Type, &apos;Informations&apos;)),
+TECH_CreatedBySelfHelp__c = false,
+NOT(AND(OR(ISPICKVAL(Type, &apos;Mise en service&apos;),ISPICKVAL(Type, &apos;Dépannage&apos;),ISPICKVAL(Type, &apos;Visite / Entretien&apos;)), QuoteId__r.RecordType.DeveloperName = &apos;PropositionContrat&apos;)),
+NOT(ISCHANGED(NombrePiecesJointes__c )),
+NOT(ISPICKVAL( SousMotif__c , &apos;Délai de clôture dépassé&apos;)),
+NOT( TECH_AideAuDiagEC__c ),
+NOT(ISCHANGED(ToBeDeleted__c)),
+NOT(ISCHANGED(ToBeArchived__c))
+)</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas modifier cette demande  quand elle est terminée.</errorMessage>
+</ValidationRule>

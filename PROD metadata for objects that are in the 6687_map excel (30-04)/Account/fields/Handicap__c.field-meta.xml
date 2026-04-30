@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Handicap__c</fullName>
+    <description>Sprint 7 - A renseigner si le client est touché par un handicap.</description>
+    <label>Handicap</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aveugle</fullName>
+                <default>false</default>
+                <label>Aveugle</label>
+            </value>
+            <value>
+                <fullName>Sourd</fullName>
+                <default>false</default>
+                <label>Sourd</label>
+            </value>
+            <value>
+                <fullName>Muet</fullName>
+                <default>false</default>
+                <label>Muet</label>
+            </value>
+            <value>
+                <fullName>Immobilisé</fullName>
+                <default>false</default>
+                <label>Immobilisé</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

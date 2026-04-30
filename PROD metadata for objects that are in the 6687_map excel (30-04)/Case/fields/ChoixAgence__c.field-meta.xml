@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChoixAgence__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Sprint 7 - Site traitant la demande.
+Sprint 8 - Etiquette &quot;Requêtes&quot; de la liste associée renommée &quot;Demandes&quot;.</description>
+    <inlineHelpText>Site en charge du traitement de la demande</inlineHelpText>
+    <label>Site gestionnaire</label>
+    <referenceTo>Agence__c</referenceTo>
+    <relationshipLabel>Demandes</relationshipLabel>
+    <relationshipName>Requetes</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

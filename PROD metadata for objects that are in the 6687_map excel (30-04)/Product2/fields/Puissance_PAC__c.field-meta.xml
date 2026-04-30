@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Puissance_PAC__c</fullName>
+    <label>Puissance PAC</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>6/8 KW</fullName>
+                <default>false</default>
+                <label>6/8 KW</label>
+            </value>
+            <value>
+                <fullName>8/11 KW</fullName>
+                <default>false</default>
+                <label>8/11 KW</label>
+            </value>
+            <value>
+                <fullName>11/14 KW</fullName>
+                <default>false</default>
+                <label>11/14 KW</label>
+            </value>
+            <value>
+                <fullName>16 KW</fullName>
+                <default>false</default>
+                <label>16 KW</label>
+            </value>
+            <value>
+                <fullName>11 KW H.Temp</fullName>
+                <default>false</default>
+                <label>11 KW H.Temp</label>
+            </value>
+            <value>
+                <fullName>16 KW H.Temp</fullName>
+                <default>false</default>
+                <label>16 KW H.Temp</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

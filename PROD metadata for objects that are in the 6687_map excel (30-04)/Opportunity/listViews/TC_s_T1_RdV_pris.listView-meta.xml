@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TC_s_T1_RdV_pris</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6)</booleanFilter>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <columns>ChoixAgence__c</columns>
+    <columns>Type_equipement_propose__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Sous_statut__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>n_du_telephone_du_client__c</columns>
+    <columns>TECH_DateRealisationInterventionAssociee__c</columns>
+    <columns>EContratDateEntretien__c</columns>
+    <columns>TechnicianName__c</columns>
+    <columns>Date_de_pose_previsionnelle__c</columns>
+    <columns>LogementConcerne__c</columns>
+    <columns>TECH_NomOpportunite__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Equipement</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Besoin détecté</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2025 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Sous_statut__c</field>
+        <operation>equals</operation>
+        <value>Programmé,Attente retour BI</value>
+    </filters>
+    <filters>
+        <field>Nom_du_technicien__c</field>
+        <operation>contains</operation>
+        <value>ARNALDI,AUBRY,CAU,DELPORTE,DUBOST,MOITIE,SALINAS,GRAND,LAMOTTE,LEYNAUD,MEGNIOT,CAYLAK,PARLA,ROUMEAS,ROYNARD,FAUCHEZ,LIMOT</value>
+    </filters>
+    <filters>
+        <field>TechnicianName__c</field>
+        <operation>contains</operation>
+        <value>ARNALDI,AUBRY,CAU,DELPORTE,DUBOST,MOITIE,SALINAS,GRAND,LAMOTTE,LEYNAUD,MEGNIOT,CAYLAK,PARLA,ROUMEAS,ROYNARD,FAUCHEZ,LIMOT,PARNAUD,LIPARI</value>
+    </filters>
+    <label>TC&apos;s T1 (RdV pris)</label>
+    <sharedTo>
+        <group>TC_Sud_Est</group>
+    </sharedTo>
+</ListView>

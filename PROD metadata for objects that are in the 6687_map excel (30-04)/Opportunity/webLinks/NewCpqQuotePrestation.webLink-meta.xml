@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewCpqQuotePrestation</fullName>
+    <availability>online</availability>
+    <description>New button for the creation of a quote</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Nouveau Devis</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/DEV_VWF023_CpqQuotePrestationCreation?oppRecordId={!Opportunity.Id}&amp;retURL=/apex/VFP_CPQ_FlowRedirection?Id={!Opportunity.Id}{!NOW()}{!$User.Id}</url>
+</WebLink>

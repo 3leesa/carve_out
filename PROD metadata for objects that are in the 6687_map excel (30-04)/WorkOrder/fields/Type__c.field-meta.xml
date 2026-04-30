@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <description>Sprint 8 - Type d&apos;intervention
+Sprint 8 - Ajout des valeurs Gazelle (à voir si toutes les valeurs sont à prendre)</description>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10002</fullName>
+                <default>false</default>
+                <label>BV Vierge</label>
+            </value>
+            <value>
+                <fullName>10003</fullName>
+                <default>false</default>
+                <label>Dépannage</label>
+            </value>
+            <value>
+                <fullName>10004</fullName>
+                <default>false</default>
+                <label>Dépannage+Entretien</label>
+            </value>
+            <value>
+                <fullName>10005</fullName>
+                <default>false</default>
+                <label>Entretien</label>
+            </value>
+            <value>
+                <fullName>10006</fullName>
+                <default>false</default>
+                <label>Devis et Prop. Ciale</label>
+            </value>
+            <value>
+                <fullName>10007</fullName>
+                <default>false</default>
+                <label>Travaux sur chantier</label>
+            </value>
+            <value>
+                <fullName>10008</fullName>
+                <default>false</default>
+                <label>Remplacement</label>
+            </value>
+            <value>
+                <fullName>10009</fullName>
+                <default>false</default>
+                <label>Mise en service</label>
+            </value>
+            <value>
+                <fullName>10010</fullName>
+                <default>false</default>
+                <label>Chantier autres</label>
+            </value>
+            <value>
+                <fullName>10013</fullName>
+                <default>false</default>
+                <label>Vente guichet</label>
+            </value>
+            <value>
+                <fullName>10014</fullName>
+                <default>false</default>
+                <label>Démarchage Tel successeur/CRC</label>
+            </value>
+            <value>
+                <fullName>10015</fullName>
+                <default>false</default>
+                <label>Envoi cadeau parrainage</label>
+            </value>
+            <value>
+                <fullName>10016</fullName>
+                <default>false</default>
+                <label>Démarchage Dom. successeur/AG</label>
+            </value>
+            <value>
+                <fullName>10017</fullName>
+                <default>false</default>
+                <label>Résiliation déménagé</label>
+            </value>
+            <value>
+                <fullName>10038</fullName>
+                <default>false</default>
+                <label>Réclamation-Qual.prestation</label>
+            </value>
+            <value>
+                <fullName>10039</fullName>
+                <default>false</default>
+                <label>Réclamation-Gest. Commerciale</label>
+            </value>
+            <value>
+                <fullName>10040</fullName>
+                <default>false</default>
+                <label>Réclamation-Rendez-vous</label>
+            </value>
+            <value>
+                <fullName>10041</fullName>
+                <default>false</default>
+                <label>Réclamation-Fact.Prix</label>
+            </value>
+            <value>
+                <fullName>10042</fullName>
+                <default>false</default>
+                <label>Réclamation-Accueil</label>
+            </value>
+            <value>
+                <fullName>10098</fullName>
+                <default>false</default>
+                <label>VAD - Visite Préalable</label>
+            </value>
+            <value>
+                <fullName>10058</fullName>
+                <default>false</default>
+                <label>Relance Tel Devis par agence</label>
+            </value>
+            <value>
+                <fullName>10059</fullName>
+                <default>false</default>
+                <label>Démarchage tel.bailleur / CRC</label>
+            </value>
+            <value>
+                <fullName>10060</fullName>
+                <default>false</default>
+                <label>Rappel tel. déménageant / CRC</label>
+            </value>
+            <value>
+                <fullName>10103</fullName>
+                <default>false</default>
+                <label>Relance Ret.Contrat succ./CRC</label>
+            </value>
+            <value>
+                <fullName>10124</fullName>
+                <default>false</default>
+                <label>Contrôle de conformité gaz</label>
+            </value>
+            <value>
+                <fullName>10146</fullName>
+                <default>false</default>
+                <label>Visite étude Technique:Forfait</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

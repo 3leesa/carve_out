@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AdresseFacturationComplete__c</fullName>
+    <description>Sprint 11 - Affichage en texte de l&apos;adresse de facturation complète, champs personnalisés inclus.</description>
+    <externalId>false</externalId>
+    <formula>NumVoieFactu__c &amp;&quot; &quot;&amp;
+TEXT(ComplementNumVoieFactu__c) &amp;&quot; &quot;&amp;
+TEXT(TypeVoieFactu__c)&amp;&quot; &quot;&amp;BillingStreet &amp;BR()&amp;
+IF (NOT(ISBLANK(ResBatZIFactu__c)), &quot;Rés/Bât &quot;&amp; ResBatZIFactu__c &amp;&quot; &quot;, &quot;&quot;)&amp; BillingState &amp; IF ((NOT(ISBLANK(ResBatZIFactu__c)) || NOT(ISBLANK(BillingState))), BR(), &quot;&quot;)&amp;
+BillingPostalCode &amp;&quot; &quot;&amp; BillingCity</formula>
+    <label>Adresse de facturation complète</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

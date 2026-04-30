@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MT_NPS_received_at__c</fullName>
+    <description>Sprint 28 - Champs nécessaires pour avoir le NPS du client dans le CRM</description>
+    <label>Date de réception du NPS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

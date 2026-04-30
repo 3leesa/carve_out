@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_de_la_DemandeInfo__c</fullName>
+    <label>Motif de la demande</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mes Contrats</fullName>
+                <default>false</default>
+                <label>Mes Contrats</label>
+            </value>
+            <value>
+                <fullName>Heure de passage du technicien</fullName>
+                <default>false</default>
+                <label>Heure de passage du technicien</label>
+            </value>
+            <value>
+                <fullName>Mes points de fidélité</fullName>
+                <default>false</default>
+                <label>Mes points de fidélité</label>
+            </value>
+            <value>
+                <fullName>Mon espace client</fullName>
+                <default>false</default>
+                <label>Mon espace client</label>
+            </value>
+            <value>
+                <fullName>Mon courrier DGI</fullName>
+                <default>false</default>
+                <label>Mon courrier DGI</label>
+            </value>
+            <value>
+                <fullName>Mes devis</fullName>
+                <default>false</default>
+                <label>Mes devis</label>
+            </value>
+            <value>
+                <fullName>Ma facture</fullName>
+                <default>false</default>
+                <label>Ma facture</label>
+            </value>
+            <value>
+                <fullName>Mes équipements</fullName>
+                <default>false</default>
+                <label>Mes équipements</label>
+            </value>
+            <value>
+                <fullName>Contrat énergie ( gaz ou/et Elec )</fullName>
+                <default>false</default>
+                <label>Contrat énergie ( gaz ou/et Elec )</label>
+            </value>
+            <value>
+                <fullName>Les offres Engie Home Services</fullName>
+                <default>false</default>
+                <label>Les offres Engie Home Services</label>
+            </value>
+            <value>
+                <fullName>Dossier Anah</fullName>
+                <default>false</default>
+                <label>Dossier Anah</label>
+            </value>
+            <value>
+                <fullName>Confirmation de règlement</fullName>
+                <default>false</default>
+                <label>Confirmation de règlement</label>
+            </value>
+            <value>
+                <fullName>Contestation/litiges</fullName>
+                <default>false</default>
+                <label>Contestation/litiges</label>
+            </value>
+            <value>
+                <fullName>Résiliation (Contentia)</fullName>
+                <default>false</default>
+                <label>Résiliation (Contentia)</label>
+            </value>
+            <value>
+                <fullName>Geste Commercial</fullName>
+                <default>false</default>
+                <label>Geste Commercial</label>
+            </value>
+            <value>
+                <fullName>Attente VE</fullName>
+                <default>false</default>
+                <label>Attente VE</label>
+            </value>
+            <value>
+                <fullName>Prêt financier (BNP PF)</fullName>
+                <default>false</default>
+                <label>Prêt financier (BNP PF)</label>
+            </value>
+            <value>
+                <fullName>Duplicata facture</fullName>
+                <default>false</default>
+                <label>Duplicata facture</label>
+            </value>
+            <value>
+                <fullName>Rematerialisation BI</fullName>
+                <default>false</default>
+                <label>Rematerialisation BI</label>
+            </value>
+            <value>
+                <fullName>Mon dépannage</fullName>
+                <default>false</default>
+                <label>Mon dépannage</label>
+            </value>
+            <value>
+                <fullName>Mon entretien</fullName>
+                <default>false</default>
+                <label>Mon entretien</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Je déménage</fullName>
+                <default>false</default>
+                <label>Je déménage</label>
+            </value>
+            <value>
+                <fullName>Remboursement</fullName>
+                <default>false</default>
+                <label>Remboursement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

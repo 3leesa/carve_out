@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR018_LeadB2B_Motif_de_non_conversion</fullName>
+    <active>true</active>
+    <description>Motif à sélectionner lorsque le prospect est non intéressé</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Status , &apos;Prospect - non intéressé&apos;),
+ISPICKVAL( Motif_de_non_conversion_B2B__c , &apos;&apos;)
+)</errorConditionFormula>
+    <errorMessage>Veuillez sélectionner un motif de non conversion car le prospect est non intéressé</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApprobationRejetee__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 10. Permet d&apos;indiquer si la réponse a été rejeté (ou non) à l&apos;issue du processus d&apos;approbation. 
+Alimenté par le processus d&apos;approbation</description>
+    <label>Approbation rejetée</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

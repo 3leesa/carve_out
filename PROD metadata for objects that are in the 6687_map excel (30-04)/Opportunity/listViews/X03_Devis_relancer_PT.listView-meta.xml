@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X03_Devis_relancer_PT</fullName>
+    <columns>Date_de_remise_du_devis__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>SBQQ__PrimaryQuote__c</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <columns>Type_equipement_propose__c</columns>
+    <columns>DateDeDemandDeRappelClient__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CommentaireSuiviCommercial__c</columns>
+    <columns>DerniereDateDeSuivi__c</columns>
+    <columns>Createur_du_suivi_commercial__c</columns>
+    <columns>Niveau_de_relance__c</columns>
+    <columns>ChoixAgence__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Equipement</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Devis remis au client</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.CRM_B2C,Opportunity.Contrat</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>notEqual</operation>
+        <value>Opportunity.Appareil_Agence_Digitale</value>
+    </filters>
+    <filters>
+        <field>MonSite__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Type_equipement_propose__c</field>
+        <operation>equals</operation>
+        <value>Chaudière,Climatiseur ou pompe à chaleur Air / Air,Pompe à chaleur Eau / Eau,Pompe à chaleur Air / Eau,Hybride,Chaudière gaz murale,Chaudière gaz sol,Chaudière fioul murale</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2023 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>ChoixAgence__c</field>
+        <operation>contains</operation>
+        <value>mees</value>
+    </filters>
+    <label>03. Devis à relancer (PT)</label>
+    <sharedTo>
+        <group>TC_Sud_Est</group>
+    </sharedTo>
+</ListView>

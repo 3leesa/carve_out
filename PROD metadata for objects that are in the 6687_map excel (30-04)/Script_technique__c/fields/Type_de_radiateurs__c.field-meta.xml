@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_radiateurs__c</fullName>
+    <label>Type de radiateurs</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acier</fullName>
+                <default>false</default>
+                <label>Acier</label>
+            </value>
+            <value>
+                <fullName>Fonte</fullName>
+                <default>false</default>
+                <label>Fonte</label>
+            </value>
+            <value>
+                <fullName>Aluminium</fullName>
+                <default>false</default>
+                <label>Aluminium</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

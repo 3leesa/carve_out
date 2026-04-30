@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SegmentationClient__c</fullName>
+    <description>Sprint 11: Segmentation client</description>
+    <label>Segmentation client</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>COLLECTIF SOCIAL</fullName>
+                <default>false</default>
+                <label>COLLECTIF SOCIAL</label>
+            </value>
+            <value>
+                <fullName>CONSTRUCTEUR</fullName>
+                <default>false</default>
+                <label>CONSTRUCTEUR</label>
+            </value>
+            <value>
+                <fullName>DEBITEUR DIVERS</fullName>
+                <default>false</default>
+                <label>DEBITEUR DIVERS</label>
+            </value>
+            <value>
+                <fullName>INDIVIDUEL</fullName>
+                <default>false</default>
+                <label>INDIVIDUEL</label>
+            </value>
+            <value>
+                <fullName>PUBLIC SECTOR COMPANIES</fullName>
+                <default>false</default>
+                <label>PUBLIC SECTOR COMPANIES</label>
+            </value>
+            <value>
+                <fullName>COLLECTIF PRIVE</fullName>
+                <default>false</default>
+                <label>COLLECTIF PRIVE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Horaires_et_tel__c</fullName>
+    <description>Sprint 8. Permet d&apos;afficher dans les modèles d&apos;emails ou de publipostage, les horaires d&apos;ouverture suivis du numéro de téléphone de l&apos;agence.</description>
+    <externalId>false</externalId>
+    <formula>ChoixAgence__r.Horaires_d_ouverture__c + &quot; au &quot; +  ChoixAgence__r.TelephoneAgence__c</formula>
+    <label>TECH_HorairesEtTel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

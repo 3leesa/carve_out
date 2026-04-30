@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FormuleProposee__c</fullName>
+    <label>Formule proposée</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>KI_P2_LIBERTE</fullName>
+                <default>false</default>
+                <label>KI_P2_LIBERTE</label>
+            </value>
+            <value>
+                <fullName>KI_P2_LIBERTE_PAC</fullName>
+                <default>false</default>
+                <label>KI_P2_LIBERTE_PAC</label>
+            </value>
+            <value>
+                <fullName>KI_P2_LIBERTE_BIENNAL_PAC</fullName>
+                <default>false</default>
+                <label>KI_P2_LIBERTE_BIENNAL_PAC</label>
+            </value>
+            <value>
+                <fullName>KI_P2_SECURITE</fullName>
+                <default>false</default>
+                <label>KI_P2_SECURITE</label>
+            </value>
+            <value>
+                <fullName>KI_P2_SECURITE_PAC_AE</fullName>
+                <default>false</default>
+                <label>KI_P2_SECURITE_PAC_AE</label>
+            </value>
+            <value>
+                <fullName>KI_P2_SECURITE_PAC_AA /BT</fullName>
+                <default>false</default>
+                <label>KI_P2_SECURITE_PAC_AA /BT</label>
+            </value>
+            <value>
+                <fullName>KI_P2_SECURITE_CLIENT</fullName>
+                <default>false</default>
+                <label>KI_P2_SECURITE_CLIENT</label>
+            </value>
+            <value>
+                <fullName>KI_P2_INTEGRAL</fullName>
+                <default>false</default>
+                <label>KI_P2_INTEGRAL</label>
+            </value>
+            <value>
+                <fullName>KI_P3_INTEGRAL</fullName>
+                <default>false</default>
+                <label>KI_P3_INTEGRAL</label>
+            </value>
+            <value>
+                <fullName>KI_P2_ESSENTIEL</fullName>
+                <default>false</default>
+                <label>KI_P2_ESSENTIEL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

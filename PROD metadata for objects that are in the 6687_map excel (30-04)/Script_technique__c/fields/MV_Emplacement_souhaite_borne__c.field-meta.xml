@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV_Emplacement_souhaite_borne__c</fullName>
+    <label>Emplacement souhaité de la borne</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dans le garage</fullName>
+                <default>false</default>
+                <label>Dans le garage</label>
+            </value>
+            <value>
+                <fullName>En façade</fullName>
+                <default>false</default>
+                <label>En façade</label>
+            </value>
+            <value>
+                <fullName>En allée</fullName>
+                <default>false</default>
+                <label>En allée</label>
+            </value>
+            <value>
+                <fullName>Sous abri voiture</fullName>
+                <default>false</default>
+                <label>Sous abri voiture</label>
+            </value>
+            <value>
+                <fullName>Sur parking extérieur privé</fullName>
+                <default>false</default>
+                <label>Sur parking extérieur privé</label>
+            </value>
+            <value>
+                <fullName>Dans parking en sous-sol</fullName>
+                <default>false</default>
+                <label>Dans parking en sous-sol</label>
+            </value>
+            <value>
+                <fullName>Même pièce ou pièce adjacente</fullName>
+                <default>false</default>
+                <label>Même pièce ou pièce adjacente</label>
+            </value>
+            <value>
+                <fullName>Pièce éloignée</fullName>
+                <default>false</default>
+                <label>Pièce éloignée</label>
+            </value>
+            <value>
+                <fullName>Cas spécifique</fullName>
+                <default>false</default>
+                <label>Cas spécifique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

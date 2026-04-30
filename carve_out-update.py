@@ -739,13 +739,13 @@ def main():
             f"- {', '.join(CSV_HEADERS)}\n\n"
             "Examples:\n"
             "- Field description: Lead,My_Field__c,description,,{{My_Label}}\n"
-            "- Formula field: Lead,My_Formula__c,formula,,IF(... '{{My_Label}}' ...)\n"
+            "- Formula field: Lead,My_Formula__c,formula,,TEXT(Status__c) = '{{My_Label}}'\n"
             "- Picklist label: Lead,Status__c,picklistLabel,Closed_Won,{{My_Label}}\n"
             "- Related list label: Lead,Account__c,relatedListLabel,,{{My_Label}}\n"
             "- List view label: Lead,MyView,listViewLabel,,{{My_Label}}\n"
             "- List view filter value: Lead,MyView,listViewFilterValue,B2B_Region_liste__c|contains|1,{{My_Label}}\n"
             "- Web link URL: Lead,MyButton,webLinkUrl,,/apex/Page?id={{My_Label}}\n"
-            "- Validation rule formula: Lead,MyRule,validationRuleFormula,,AND(... '{{My_Label}}' ...)"
+            "- Validation rule formula: Lead,MyRule,validationRuleFormula,,AND(TEXT(Status__c) = '{{My_Label}}', TRUE)"
         ),
         formatter_class=argparse.RawTextHelpFormatter,
     )

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR027_DemandesReclNoAnnulable</fullName>
+    <active>true</active>
+    <description>Autoriser l’annulation d’une demande de réclamation dans le CRM uniquement par son créateur
+MCOSF-2034:Opportunité: Mettre à jour les automatismes de devis, d&apos;opportunité et de demande</description>
+    <errorConditionFormula>AND(
+NOT(RecordType.DeveloperName = &apos;PoseEquipement&apos;),
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ),
+OR(ISPICKVAL( Origin,&quot;Email&quot;),
+ISPICKVAL( Origin,&quot;Courrier&quot;),
+ISPICKVAL( Origin,&quot;Espace Client&quot;),
+ISPICKVAL( Origin,&quot;Application mobile&quot;),
+ISPICKVAL( Origin,&quot;Réseaux sociaux&quot;),
+ISPICKVAL( Origin,&quot;Site web&quot;),
+ISPICKVAL( Origin,&quot;Site web réclamation&quot;),
+ISPICKVAL( Origin,&quot;Site web Contact&quot;),
+ISPICKVAL( Origin,&quot;Site web Chat&quot;)),
+!ISBLANK(PRIORVALUE(Status)),
+ISCHANGED(Status),
+OR(ISPICKVAL(Status,&quot;Annulé (Client)&quot;),ISPICKVAL(Status,&quot;Annulé (Interne)&quot;)) ,
+ISPICKVAL(Type,&quot;Réclamation&quot;),
+$User.Id!= CreatedById
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Une réclamation écrite peut être annulée uniquement par son créateur</errorMessage>
+</ValidationRule>

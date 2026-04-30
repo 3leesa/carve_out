@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SousTypeClient__c</fullName>
+    <description>Sprint 8. Permet d&apos;indiquer s&apos;il s&apos;agit d&apos;un client petit professionnel ou d&apos;une organisation</description>
+    <label>Sous-type de client</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>TypeDeClient__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Petit professionnel</fullName>
+                <default>false</default>
+                <label>Petit professionnel</label>
+            </value>
+            <value>
+                <fullName>Organisation</fullName>
+                <default>false</default>
+                <label>Organisation</label>
+            </value>
+            <value>
+                <fullName>Particulier</fullName>
+                <default>false</default>
+                <label>Particulier</label>
+            </value>
+            <value>
+                <fullName>Collectivité</fullName>
+                <default>false</default>
+                <label>Collectivité</label>
+            </value>
+            <value>
+                <fullName>Collège</fullName>
+                <default>false</default>
+                <label>Collège</label>
+            </value>
+            <value>
+                <fullName>Ecole</fullName>
+                <default>false</default>
+                <label>Ecole</label>
+            </value>
+            <value>
+                <fullName>Caserne Pompier</fullName>
+                <default>false</default>
+                <label>Caserne Pompier</label>
+            </value>
+            <value>
+                <fullName>Gendarmerie</fullName>
+                <default>false</default>
+                <label>Gendarmerie</label>
+            </value>
+            <value>
+                <fullName>La Poste</fullName>
+                <default>false</default>
+                <label>La Poste</label>
+            </value>
+            <value>
+                <fullName>Entreprise tertiaire</fullName>
+                <default>false</default>
+                <label>Entreprise tertiaire</label>
+            </value>
+            <value>
+                <fullName>Lycée</fullName>
+                <default>false</default>
+                <label>Lycée</label>
+            </value>
+            <value>
+                <fullName>Industrie</fullName>
+                <default>false</default>
+                <label>Industrie</label>
+            </value>
+            <value>
+                <fullName>Grande surface de distribution</fullName>
+                <default>false</default>
+                <label>Grande surface de distribution</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Individuel</controllingFieldValue>
+            <valueName>Petit professionnel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Individuel</controllingFieldValue>
+            <valueName>Organisation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Individuel</controllingFieldValue>
+            <valueName>Particulier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDUSTRIE</controllingFieldValue>
+            <valueName>Entreprise tertiaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDUSTRIE</controllingFieldValue>
+            <valueName>Lycée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDUSTRIE</controllingFieldValue>
+            <valueName>Industrie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INDUSTRIE</controllingFieldValue>
+            <valueName>Grande surface de distribution</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

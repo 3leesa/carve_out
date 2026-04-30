@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INT_VR002_Non_Conformite_DGI_CRC</fullName>
+    <active>true</active>
+    <description>CRM-699 : Empêche les CRCs de prendre des interventions sur un équipement ayant une non conformité de type DGI en cours.</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c),
+$User.IDGazelleAgence__c = &quot;CRC&quot;,
+ISNEW(),
+NOT(ISBLANK(Asset.Non_conformite_DGI_en_cours__c)),
+Asset.Non_conformite_DGI_en_cours__c &gt; 0
+)</errorConditionFormula>
+    <errorMessage>Présence d’au moins 1 non-conformité en cours de niveau DGI.
+CRC : RDV à prendre impérativement par l’agence.
+Pour plus d’informations se référer à la PRO DT 001 de gestion des NC gaz.</errorMessage>
+</ValidationRule>

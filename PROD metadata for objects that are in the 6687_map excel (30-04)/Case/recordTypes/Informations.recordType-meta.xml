@@ -1,0 +1,2091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Informations</fullName>
+    <active>true</active>
+    <businessProcess>REQ_TraitementAutreQueReclamation</businessProcess>
+    <description>Traitement des informations</description>
+    <label>Informations</label>
+    <picklistValues>
+        <picklist>AppelTransfertAgence_HO__c</picklist>
+        <values>
+            <fullName>KO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Besoin_d_assistance__c</picklist>
+        <values>
+            <fullName>Assistance passage thermostat position hiver%2Fmode été</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistance purge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre souci thermostat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise à l%27 arrêt prolongé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pression inférieure à 1 bar%2C pas de fuite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pression supérieure à 2 bars%2C pas de fuite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remise en route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermostat - Assistance changement piles</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CMI_Avancement_MES__c</picklist>
+        <values>
+            <fullName>Facturé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MES faite%2C à facturer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MES à revoir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-facturable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rdv confirmé pris%2C MES à faire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rdv confirmé pris%2C intervention à faire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rdv à prendre</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CategorieDemande__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CodeProbleme__c</picklist>
+        <values>
+            <fullName>AB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Condition_reglement__c</picklist>
+        <values>
+            <fullName>1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1041</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1043</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1246</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CreneauSouhaite__c</picklist>
+        <values>
+            <fullName>après-midi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>matin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DemandeUrgente__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Urgence technique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgence technique Appel KO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Duree_du_contrat__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EtapeApprobation__c</picklist>
+        <values>
+            <fullName>Demande approuvée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande refusée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En cours d%E2%80%99approbation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remboursement effectué</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Facturation__c</picklist>
+        <values>
+            <fullName>Facturable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non facturable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FormuleProposee__c</picklist>
+        <values>
+            <fullName>KI_P2_ESSENTIEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KI_P2_INTEGRAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KI_P2_LIBERTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KI_P2_LIBERTE_BIENNAL_PAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KI_P2_LIBERTE_PAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KI_P2_SECURITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KI_P2_SECURITE_CLIENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KI_P2_SECURITE_PAC_AA %2FBT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KI_P2_SECURITE_PAC_AE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KI_P3_INTEGRAL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>InformationCRC__c</picklist>
+        <values>
+            <fullName>Pas de disponibilité d%27agenda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rdv non autorisé-illigo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance devis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rendez-vous forcé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rendez-vous forcé %28emménageant%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rendez-vous non autorisé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rendez-vous non autorisé-DGI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réclamation technicien non venu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmission affludia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmission repondeur agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmisson Bal PermAst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT HO Appel KO N%C2%B0Urgence technique Agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT HO Appel OK N%C2%B0Urgence technique Agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgence technique Trans%2E Agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgence technique Trans%2EAffludia</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotifARevoir__c</picklist>
+        <values>
+            <fullName>Pièce reçue - RDV pris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pièce reçue - Relance client 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pièce reçue - Relance client 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotifResiliation__c</picklist>
+        <values>
+            <fullName>Indéterminé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motif_Dossier_Detracteur__c</picklist>
+        <values>
+            <fullName>A revoir nécessaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accueil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attitude technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonne note pour le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas mon rôle de recommander</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prestation technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rapport qualité%2Fprix</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motif_Souscription__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensualisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification de mode de paiement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack chauffage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motif_de_la_DemandeInfo__c</picklist>
+        <values>
+            <fullName>Attente VE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmation de règlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contestation%2Flitiges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrat énergie %28 gaz ou%2Fet Elec %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dossier Anah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicata facture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geste Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heure de passage du technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Je déménage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Les offres Engie Home Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ma facture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mes Contrats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mes devis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mes points de fidélité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mes équipements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mon courrier DGI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mon dépannage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mon entretien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mon espace client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prêt financier %28BNP PF%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rematerialisation BI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remboursement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation %28Contentia%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motif_de_la_DemandeRecl__c</picklist>
+        <values>
+            <fullName>Accueil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Données personnelles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dossier Anah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dépannage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entretien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Espace Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facturation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Je déménage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prestation technique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relation commerciale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remboursement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rendez-vous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motif_de_remboursement__c</picklist>
+        <values>
+            <fullName>Acompte devis annulé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double règlement %2F Trop perçu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facture erronée %2F erreur TVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geste commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPAI- N%27habite pas l%27adresse indiquée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prestation non faite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prélèvement à tort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remplacement appareil par EHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repris en collectif ou CIG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation Intervention impossible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation changement énergie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation concurrence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation décès</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation déménagé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation loi Châtel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation prix contesté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation qualité prestation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service consommateurs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinistre</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NiveauDEscalade__c</picklist>
+        <values>
+            <fullName>Courante</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Application mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QR-Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réseaux sociaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléphone</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Visite en agence</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origine_de_la_demande__c</picklist>
+        <values>
+            <fullName>Client</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Electroren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mondial Assistance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origine_detaillee_2__c</picklist>
+        <values>
+            <fullName>Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Batiweb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCMPERFORMANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMNECT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COVEAGMF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COVEAMAAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COVEAMMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compleo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confluent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Darty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dataopp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DevisPlus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dunkerque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENGIEPART</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edilead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energiefutee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FBADS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fioulreduc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forumconstruire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GADS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRDF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Getupmedia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groupon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HabitatPresto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hellowatt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hipto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JDALP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jechange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Konecta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kwanko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MNC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSADS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesdepanneurs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OpeCom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OpeComP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAP DGP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PagesJaunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Popupstore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quelleenergie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reworldmedia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEOTraficDirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saunier Duval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SeLoger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selectra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simplymove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site web DGP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storelocator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiktok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type d%27affiliation %3A CRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type d%27affiliation %3A Emulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type d%27affiliation %3A Landing Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VERTIGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veepee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origine_detaillee_3__c</picklist>
+        <values>
+            <fullName>Affinitaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cashback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coupon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Display</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadstrap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NativeAds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pushreseaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retargeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SalonEvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SocialMedia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Televente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiktok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eCouponeur</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origine_detaillee__c</picklist>
+        <values>
+            <fullName>CRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constructeurs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Darty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energiefutee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fioulreduc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groupon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HabitatPresto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jechange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kwanko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multicanal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Média</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OpeCom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAP DGP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ParcoursCroise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partenaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Popupstore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon%2FEvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selectra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site web DCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site web DGP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storelocator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VRP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veepee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Faible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyenne</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Raison_du_hors_cible__c</picklist>
+        <values>
+            <fullName>Demande d%27information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipement non éligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuite sur équipement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauvaise compréhension des procédures ou erreur de transfert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panne eau chaude avec pression entre 1 et 2 bars</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remise en route sans énergie %28eau%2C gaz%2C électricité%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réclamation qualité prestation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>autres</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Attente VE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmation de règlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contestation%2Flitiges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrat énergie %28 gaz ou%2Fet Elec %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dossier Anah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicata facture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geste Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heure de passage du technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Je déménage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Les offres Engie Home Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ma facture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mes Contrats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mes devis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mes points de fidélité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mes équipements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mon courrier DGI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mon dépannage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mon entretien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mon espace client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prêt financier %28BNP PF%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rematerialisation BI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remboursement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation %28Contentia%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resultat_depannage_en_ligne__c</picklist>
+        <values>
+            <fullName>Assistance client réussie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Echec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hors cible</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SelfCare_Client__c</picklist>
+        <values>
+            <fullName>Prise de RDV autonome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résolution autonome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sans prise de RDV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SousMotif__c</picklist>
+        <values>
+            <fullName>Demande d%27avoir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande rappel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facture à refaire au bon destinataire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux non terminés</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_motif_de_la_demande_info__c</picklist>
+        <values>
+            <fullName>Absence de prise de rdv suite à un devis signé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annulation du RDV non communiquée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arrêt des prestations lors du préavis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Augmentation tarifaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avis de passage ou absence injustifiée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cadeau non transmis ou non conforme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comportement incorrect %2F Mauvaise attitude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comportement incorrect %2F Mauvaise attitude du CRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conseil inapproprié ou manque de conseil du technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contestation contenu devis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contestation non conformité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date de résiliation erronée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande d%27avoir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande rappel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis accepté non réalisé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis erroné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis non reçu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis non reçu suite à une VT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis visite technique physique mais réalisée à distance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagnostic erroné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Difficulté d%27accès</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Difficulté à joindre l%27agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Difficulté à joindre le CRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document non reçu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document non valide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents manquants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double facturation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dysfonctionnement installation électrique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dysfonctionnement équipement installé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Défaut de conseil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dégradation du matériel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Délai d%27intervention dépassé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Délai de clôture dépassé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facture erronée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facture non reçue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facture à refaire au bon destinataire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manque de ponctualité ou retard du technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauvais accueil physique en agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauvais accueil téléphonique en agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification du RDV non communiquée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non respect des conditions contractuelles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paiement impossible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pièces en attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poursuite du prélèvement après résiliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prestation non conforme au contrat%2Fdevis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prise et modification de RDV impossible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème non résolu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotion non effective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance indue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance indue %28client dit qu%27il n%27a pas souscrit%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remboursement non perçu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remboursement partiel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation non prise en compte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signature du devis en ligne impossible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technicien non présenté chez le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux non terminés</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VE non effectuée durant l%27année de contrat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vente forcée ou abusive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_motif_de_la_demande_recl__c</picklist>
+        <values>
+            <fullName>Absence de prise de rdv suite à un devis signé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annulation du RDV non communiquée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arrêt des prestations lors du préavis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Augmentation tarifaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avis de passage ou absence injustifiée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cadeau non transmis ou non conforme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comportement incorrect %2F Mauvaise attitude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comportement incorrect %2F Mauvaise attitude du CRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conseil inapproprié ou manque de conseil du technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contestation contenu devis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contestation non conformité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date de résiliation erronée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande d%27avoir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande rappel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis accepté non réalisé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis erroné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis non reçu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis non reçu suite à une VT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis visite technique physique mais réalisée à distance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagnostic erroné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Difficulté d%27accès</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Difficulté à joindre l%27agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Difficulté à joindre le CRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document non reçu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document non valide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents manquants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double facturation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dysfonctionnement installation électrique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dysfonctionnement équipement installé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Défaut de conseil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dégradation du matériel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Délai d%27intervention dépassé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Délai de clôture dépassé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déménagé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facture erronée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facture non reçue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facture à refaire au bon destinataire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manque de ponctualité ou retard du technicien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauvais accueil physique en agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauvais accueil téléphonique en agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification du RDV non communiquée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non respect des conditions contractuelles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paiement impossible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pièces en attente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poursuite du prélèvement après résiliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prestation non conforme au contrat%2Fdevis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prise et modification de RDV impossible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème non résolu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotion non effective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance indue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relance indue %28client dit qu%27il n%27a pas souscrit%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remboursement non perçu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remboursement partiel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résiliation non prise en compte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signature du devis en ligne impossible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technicien non présenté chez le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux non terminés</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VE non effectuée durant l%27année de contrat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vente forcée ou abusive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_statut__c</picklist>
+        <values>
+            <fullName>Client à appeler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrat à créer dans Gazelle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis créé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis signé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mise en service réalisée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perdue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pose réalisée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_interaction_client_EmailToCase__c</picklist>
+        <values>
+            <fullName>Achevée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non démarrée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TECH_Dossier_Detracteur_Case_Status__c</picklist>
+        <values>
+            <fullName>DemandeAssociéeOuverte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DemandeAssociéeTerminé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SansDemandeAssociée</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Informations</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeInteraction__c</picklist>
+        <values>
+            <fullName>Interaction entrante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interaction sortante</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypePieceComptable__c</picklist>
+        <values>
+            <fullName>Avoir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Note de débit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Règlement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_equipement_propose__c</picklist>
+        <values>
+            <fullName>Adoucisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre équipement</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ballon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Borne de Recharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chauffe-eau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chauffe-eau thermodynamique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Climatiseur ou pompe à chaleur Air %2F Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybride</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photovoltaïque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur Air %2F Eau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur Eau %2F Eau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermostat connecté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

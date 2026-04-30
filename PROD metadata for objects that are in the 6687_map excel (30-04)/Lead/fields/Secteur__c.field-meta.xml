@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secteur__c</fullName>
+    <label>Secteur</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Habitat Social</fullName>
+                <default>false</default>
+                <label>Habitat Social</label>
+            </value>
+            <value>
+                <fullName>Copropriété</fullName>
+                <default>false</default>
+                <label>Copropriété</label>
+            </value>
+            <value>
+                <fullName>Acteurs du neuf</fullName>
+                <default>false</default>
+                <label>Acteurs du neuf</label>
+            </value>
+            <value>
+                <fullName>Tertiaire privé</fullName>
+                <default>false</default>
+                <label>Tertiaire privé</label>
+            </value>
+            <value>
+                <fullName>Collectivité locale &amp; tertiaire public</fullName>
+                <default>false</default>
+                <label>Collectivité locale &amp; tertiaire public</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

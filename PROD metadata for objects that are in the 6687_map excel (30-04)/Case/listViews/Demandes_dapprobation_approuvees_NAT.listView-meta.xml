@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demandes_dapprobation_approuvees_NAT</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>EtapeApprobation__c</columns>
+    <columns>CASES.REASON</columns>
+    <columns>NAME</columns>
+    <columns>NumeroClient__c</columns>
+    <columns>TypePieceComptable__c</columns>
+    <columns>RemboursementARembourser__c</columns>
+    <columns>Remboursement_effectue__c</columns>
+    <columns>Numero_de_piece_comptable__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.REASON</field>
+        <operation>equals</operation>
+        <value>Remboursement</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Informations</value>
+    </filters>
+    <filters>
+        <field>EtapeApprobation__c</field>
+        <operation>equals</operation>
+        <value>Demande approuvée</value>
+    </filters>
+    <label>Demandes d&apos;approbation approuvées (NAT)</label>
+</ListView>

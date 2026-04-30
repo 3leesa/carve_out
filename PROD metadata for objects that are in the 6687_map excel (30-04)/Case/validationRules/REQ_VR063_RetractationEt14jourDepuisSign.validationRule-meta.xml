@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR063_RetractationEt14jourDepuisSign</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(MotifResiliation__c ,&apos;Rétractation&apos;),
+NOT(ISBLANK(DateRetractation__c)),
+NOT(ISBLANK(DateSignature__c)),
+(DateRetractation__c - DateSignature__c) &gt; 16
+)</errorConditionFormula>
+    <errorMessage>Rétractation impossible, contrat signé depuis plus de 14 jours, utiliser un autre motif de résiliation.</errorMessage>
+</ValidationRule>

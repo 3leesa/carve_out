@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CMI_Avancement__c</fullName>
+    <description>CRM-547 : TimeLine Avancement MES CMI
+MCOSF-195: Remplacement CMI_Demande_CMI__c par Origine_de_la_demande__c</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Origine_de_la_demande__c, &apos;CMI&apos;),
+				Case(CMI_Avancement_MES__c,  
+&quot;Rdv à prendre&quot;, IMAGE(&quot;/resource/TimelineMES/timelineRdvAPrendre.png&quot;, &quot;&quot;, 26, 656),
+&quot;Rdv confirmé pris, MES à faire&quot;, IMAGE(&quot;/resource/TimelineMES/timelineRdvConfirmer.png&quot;, &quot;&quot;, 26, 656),
+&quot;MES faite, à facturer&quot;, IMAGE(&quot;/resource/TimelineMES/timelineMESFaite.png&quot;, &quot;&quot;, 26, 656),	
+&quot;MES à revoir&quot;, IMAGE(&quot;/resource/TimelineMES/timelineARevoir.png&quot;, &quot;&quot;, 26, 656),
+&quot;Facturé&quot;, IMAGE(&quot;/resource/TimelineMES/timelineMESFacturer.png&quot;, &quot;&quot;, 26, 656),	
+&quot;Non-facturable&quot;, IMAGE(&quot;/resource/TimelineMES/timelineMESNonFacturer.png&quot;, &quot;&quot;, 26, 656),	
+IMAGE(&quot;/resource/TimelineMES/timelineRdvAPrendre.png&quot;, &quot;&quot;, 26, 656))
+					,null
+				)</formula>
+    <label>Avancement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

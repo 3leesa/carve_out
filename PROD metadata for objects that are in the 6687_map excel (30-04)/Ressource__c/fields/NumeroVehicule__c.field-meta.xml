@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumeroVehicule__c</fullName>
+    <description>Sprint 12: numéro d&apos;immatriculation du véhicule. Synchronisé depuis Gazelle</description>
+    <externalId>false</externalId>
+    <label>Numéro du véhicule</label>
+    <length>10</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

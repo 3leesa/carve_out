@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_de_remboursement__c</fullName>
+    <label>Motif de remboursement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Résiliation loi Châtel</fullName>
+                <default>false</default>
+                <label>Résiliation loi Châtel</label>
+            </value>
+            <value>
+                <fullName>Résiliation déménagé</fullName>
+                <default>false</default>
+                <label>Résiliation déménagé</label>
+            </value>
+            <value>
+                <fullName>Résiliation changement énergie</fullName>
+                <default>false</default>
+                <label>Résiliation changement énergie</label>
+            </value>
+            <value>
+                <fullName>Résiliation prix contesté</fullName>
+                <default>false</default>
+                <label>Résiliation prix contesté</label>
+            </value>
+            <value>
+                <fullName>Résiliation qualité prestation</fullName>
+                <default>false</default>
+                <label>Résiliation qualité prestation</label>
+            </value>
+            <value>
+                <fullName>Résiliation concurrence</fullName>
+                <default>false</default>
+                <label>Résiliation concurrence</label>
+            </value>
+            <value>
+                <fullName>Résiliation décès</fullName>
+                <default>false</default>
+                <label>Résiliation décès</label>
+            </value>
+            <value>
+                <fullName>NPAI- N&apos;habite pas l&apos;adresse indiquée</fullName>
+                <default>false</default>
+                <label>NPAI- N&apos;habite pas l&apos;adresse indiquée</label>
+            </value>
+            <value>
+                <fullName>Geste commercial</fullName>
+                <default>false</default>
+                <label>Geste commercial</label>
+            </value>
+            <value>
+                <fullName>DGI</fullName>
+                <default>false</default>
+                <label>DGI</label>
+            </value>
+            <value>
+                <fullName>Résiliation Intervention impossible</fullName>
+                <default>false</default>
+                <label>Résiliation Intervention impossible</label>
+            </value>
+            <value>
+                <fullName>Facture erronée / erreur TVA</fullName>
+                <default>false</default>
+                <label>Facture erronée / erreur TVA</label>
+            </value>
+            <value>
+                <fullName>Sinistre</fullName>
+                <default>false</default>
+                <label>Sinistre</label>
+            </value>
+            <value>
+                <fullName>Double règlement / Trop perçu</fullName>
+                <default>false</default>
+                <label>Double règlement / Trop perçu</label>
+            </value>
+            <value>
+                <fullName>Prélèvement à tort</fullName>
+                <default>false</default>
+                <label>Prélèvement à tort</label>
+            </value>
+            <value>
+                <fullName>Prestation non faite</fullName>
+                <default>false</default>
+                <label>Prestation non faite</label>
+            </value>
+            <value>
+                <fullName>Acompte devis annulé</fullName>
+                <default>false</default>
+                <label>Acompte devis annulé</label>
+            </value>
+            <value>
+                <fullName>Remplacement appareil par EHS</fullName>
+                <default>false</default>
+                <label>Remplacement appareil par EHS</label>
+            </value>
+            <value>
+                <fullName>Service consommateurs</fullName>
+                <default>false</default>
+                <label>Service consommateurs</label>
+            </value>
+            <value>
+                <fullName>Repris en collectif ou CIG</fullName>
+                <default>false</default>
+                <label>Repris en collectif ou CIG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

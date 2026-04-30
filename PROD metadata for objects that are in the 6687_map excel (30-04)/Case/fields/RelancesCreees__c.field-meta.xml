@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelancesCreees__c</fullName>
+    <description>Sprint 2 besoin non confirmé. Affichage en texte du nombre total de relances pour activer le suivi d&apos;historique (Historique de champ sur Requête) sur ses valeurs. Champ alimenté par workflow avec : TEXT(NbRelanceTotal__c).</description>
+    <externalId>false</externalId>
+    <label>Relances créées</label>
+    <length>3</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

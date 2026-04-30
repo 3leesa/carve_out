@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_OSI_ChaudiereGazMurale__c</fullName>
+    <formula>IF(  ProduitGenerique__r.ProductCode__c = &apos;G1&apos;, TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_OSI_ChaudiereGazMurale</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

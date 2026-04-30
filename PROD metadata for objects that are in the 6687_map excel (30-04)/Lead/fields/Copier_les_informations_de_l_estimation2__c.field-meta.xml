@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copier_les_informations_de_l_estimation2__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Evol - lot 1 &gt; permet de copier les infos de l estimation 2 dans le devis 2</description>
+    <label>Copier les informations de l&apos;estimation2</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

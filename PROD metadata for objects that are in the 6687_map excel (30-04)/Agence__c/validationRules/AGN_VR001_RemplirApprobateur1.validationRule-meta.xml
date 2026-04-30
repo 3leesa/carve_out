@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AGN_VR001_RemplirApprobateur1</fullName>
+    <active>true</active>
+    <description>Sprint 9 - Pour renseigner les approbateurs d&apos;un site, il faut commencer par remplir Approbateur 1 (pré-requis pour un processus d&apos;approbation sur Requête).</description>
+    <errorConditionFormula>!$Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c
+&amp;&amp; ( ( !ISBLANK ( Approbateur_2__c ) &amp;&amp; ISBLANK ( Approbateur_1__c ) )
+     || ( !ISBLANK ( Approbateur_3__c ) &amp;&amp; ISBLANK ( Approbateur_2__c ) )
+     || ( !ISBLANK ( Approbateur_4__c ) &amp;&amp; ISBLANK ( Approbateur_3__c ) )
+     || ( !ISBLANK ( Approbateur_5__c ) &amp;&amp; ISBLANK ( Approbateur_4__c ) )
+     || ( !ISBLANK ( Approbateur_6__c ) &amp;&amp; ISBLANK ( Approbateur_5__c ) )
+     || ( !ISBLANK ( Approbateur_7__c ) &amp;&amp; ISBLANK ( Approbateur_6__c ) )
+     || ( !ISBLANK ( Approbateur_8__c ) &amp;&amp; ISBLANK ( Approbateur_7__c ) )
+     || ( !ISBLANK ( Approbateur_9__c ) &amp;&amp; ISBLANK ( Approbateur_8__c ) )
+     || ( !ISBLANK ( Approbateur_10__c ) &amp;&amp; ISBLANK ( Approbateur_9__c ) )
+     || ( !ISBLANK ( Approbateur_11__c ) &amp;&amp; ISBLANK ( Approbateur_10__c ) )
+     || ( !ISBLANK ( Approbateur_12__c ) &amp;&amp; ISBLANK ( Approbateur_11__c ) ) )</errorConditionFormula>
+    <errorMessage>Si vous souhaitez définir les approbateurs d&apos;un site, merci de renseigner Approbateur 1, puis Approbateur 2 et ainsi de suite.</errorMessage>
+</ValidationRule>

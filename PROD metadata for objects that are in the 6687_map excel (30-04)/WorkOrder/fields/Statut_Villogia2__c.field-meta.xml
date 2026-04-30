@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statut_Villogia2__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Status, &apos;102&apos;), &apos;Planifié&apos;, 
+IF(ISPICKVAL(Status, &apos;103&apos;), &apos;Planifié&apos;, 
+IF(ISPICKVAL(Status, &apos;2&apos;), &apos;Résolu&apos;, 
+IF(ISPICKVAL(Status, &apos;106&apos;), &apos;Report de Rendez-vous&apos;, 
+IF(ISPICKVAL(Status, &apos;104&apos;), &apos;Report de Rendez-vous&apos;,
+IF(ISPICKVAL(Status, &apos;115&apos;), &apos;Réparation provisoire&apos;,
+IF(ISPICKVAL(Status, &apos;114&apos;), &apos;décision Vilogia suite à intervention impossible&apos;,
+IF( AND (OR(ISPICKVAL(Status, &apos;108&apos;),ISPICKVAL(Status, &apos;101&apos;)), ISPICKVAL(MotifVilogia__c, &apos;Non Résolu (hors périmètre multiservice)&apos;)) , &apos;Non Résolu (hors périmètre multiservice)&apos;, 
+IF( AND (OR(ISPICKVAL(Status, &apos;101&apos;),ISPICKVAL(Status, &apos;108&apos;)), ISPICKVAL(MotifVilogia__c, &apos;Annulation affaire&apos;)) , &apos;Annulation affaire&apos;, 
+IF(ISPICKVAL(Status, &apos;110&apos;), &apos;Avis de passage&apos;, 
+IF( OR(ISPICKVAL(Status, &apos;51&apos;), ISPICKVAL(MotifARevoir__c, &apos;10&apos;)) , &apos;Commande de Pièces&apos;, 
+IF( OR(ISPICKVAL(Status, &apos;51&apos;), ISPICKVAL(MotifARevoir__c, &apos;70&apos;)) , &apos;Escalade technique&apos;, 
+&apos;&apos;))))))))))))</formula>
+    <label>Statut_Villogia2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compte_multi_fiche__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Champ utilisé par community pour savoir quel compte client est en multi-fiche avec quel autre compte client.
+Cf US : CC-87, CC-143, CC-144</description>
+    <label>Espace client rattaché</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Accounts (Compte multi-fiche)</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

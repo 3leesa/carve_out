@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_OSI_ChaudiereEligible__c</fullName>
+    <formula>IF( FabricantName__c = &apos;CHAFFOTEAUX&apos;, TRUE,
+IF( FabricantName__c = &apos;VIESSMANN&apos;, TRUE,
+IF( FabricantName__c = &apos;ELM LEBLANC&apos;, TRUE,
+IF( FabricantName__c = &apos;SAUNIER DUVAL&apos;, TRUE, FALSE))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_OSI_ChaudiereEligible</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

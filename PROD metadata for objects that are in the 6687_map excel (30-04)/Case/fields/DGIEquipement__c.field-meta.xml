@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DGIEquipement__c</fullName>
+    <description>Sprint 9 - Indique si l&apos;équipement de la demande est en DGI (picto rouge) ou non.</description>
+    <externalId>false</externalId>
+    <formula>IF(Asset.NonConformeDGI__c = TRUE, 
+   IMAGE(&quot;/resource/Pictogramme/dgi_rouge.png&quot;,&quot;DGI&quot;),&quot;&quot;)</formula>
+    <inlineHelpText>Renseigné lorsque l&apos;équipement de la demande est en DGI.</inlineHelpText>
+    <label>DGI</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

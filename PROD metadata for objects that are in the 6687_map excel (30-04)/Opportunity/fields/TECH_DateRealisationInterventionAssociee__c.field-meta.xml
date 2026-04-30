@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_DateRealisationInterventionAssociee__c</fullName>
+    <description>Sprint 68 - Champ technique permettant de savoir la date à laquelle l&apos;intervention a été réalisée.</description>
+    <label>Date réalisation intervention associée</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

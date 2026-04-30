@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_CodeProduit__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Type_equipement_propose__c)=&apos;Adoucisseur&apos;,&apos;A7&apos;,
+IF(TEXT(Type_equipement_propose__c)=&apos;Pompe à chaleur Air / Eau&apos;,&apos;P5&apos;,
+IF(TEXT(Type_equipement_propose__c)=&apos;Chauffe-bain gaz&apos;,&apos;G1&apos;,
+IF(TEXT(Type_equipement_propose__c)=&apos;Chauffe-eau&apos;,&apos;G1&apos;,
+IF(TEXT(Type_equipement_propose__c)=&apos;Climatiseur ou pompe à chaleur Air / Air&apos;,&apos;S5&apos;,
+IF(TEXT(Type_equipement_propose__c)=&apos;Hybride&apos;,&apos;Y1&apos;,
+IF(TEXT(Type_equipement_propose__c)=&apos;Chaudière gaz murale&apos;,&apos;G1&apos;,
+IF(TEXT(Type_equipement_propose__c)=&apos;Chaudière gaz sol&apos;,&apos;F1&apos;,
+IF(TEXT(Type_equipement_propose__c)=&apos;Chaudière fioul murale&apos;,&apos;G3&apos;,
+IF(TEXT(Type_equipement_propose__c)=&apos;Chaudière fioul sol&apos;,&apos;F3&apos;,&apos;&apos;
+))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_CodeProduit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

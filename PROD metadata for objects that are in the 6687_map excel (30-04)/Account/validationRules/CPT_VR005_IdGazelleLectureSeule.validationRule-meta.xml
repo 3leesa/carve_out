@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR005_IdGazelleLectureSeule</fullName>
+    <active>true</active>
+    <description>CRM-433 - Le champ TECH_GazelleId__c peut être initialisé mais ne doit jamais être modifié</description>
+    <errorConditionFormula>AND(!ISBLANK(PRIORVALUE(TECH_GazelleId__c)), ISCHANGED(TECH_GazelleId__c),OR(RecordType.DeveloperName=&apos;PersonAccount&apos;,RecordType.DeveloperName=&apos;Entreprise&apos;))</errorConditionFormula>
+    <errorMessage>Il est interdit de modifier le champ TECH_GazelleId__c sur un tiers</errorMessage>
+</ValidationRule>

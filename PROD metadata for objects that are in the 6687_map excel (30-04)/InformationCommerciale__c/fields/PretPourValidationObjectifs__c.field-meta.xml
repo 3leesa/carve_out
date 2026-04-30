@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PretPourValidationObjectifs__c</fullName>
+    <description>Sprint 11 - La demande de validation des objectifs commerciaux ne peut s&apos;effectuer que si : objectifs renseignés et pas encore validés ainsi que champs Responsable et Rôle renseignés sur la fiche de l&apos;utilisateur.</description>
+    <externalId>false</externalId>
+    <formula>IF( Client__r.IsPersonAccount = TRUE, &quot;Approbation non requise&quot;,
+ IF( ObjectifsValides__c = TRUE, &quot;Objectifs déjà validés&quot;,
+  IF( AND( NOT(ISBLANK($User.ManagerId)), 
+           NOT(ISBLANK($User.UserRoleId)), 
+           TECH_ObjectifsModifies__c = TRUE ), 
+      IMAGE(&quot;../img/msg_icons/confirm16.png&quot;, &quot;prêt&quot;),
+  IF( OR( ISBLANK($User.ManagerId), 
+          ISBLANK($User.UserRoleId), 
+          TECH_ObjectifsModifies__c = FALSE ),
+      IMAGE(&quot;../img/msg_icons/warning16.png&quot;, &quot;non prêt&quot;)&amp;&quot; Champs à renseigner : &quot; 
+      +IF( TECH_ObjectifsModifies__c = FALSE, BR()&amp;&quot;- Objectifs (non modifiés)&quot;, &quot;&quot;)
+      +IF( ISBLANK($User.ManagerId), BR()&amp;&quot;- Responsable de l&apos;utilisateur&quot;, &quot;&quot;)
+      +IF( ISBLANK($User.UserRoleId), BR()&amp;&quot;- Rôle de l&apos;utilisateur&quot;, &quot;&quot;),
+&quot;Approbation non requise&quot;) ) ) )</formula>
+    <inlineHelpText>Indique les champs manquants pour soumettre à approbation.</inlineHelpText>
+    <label>Prêt pour validation des objectifs</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

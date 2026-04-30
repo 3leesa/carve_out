@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Interet__c</fullName>
+    <label>Type de projet</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Devis contrat</fullName>
+                <default>false</default>
+                <label>Devis contrat</label>
+            </value>
+            <value>
+                <fullName>Devis travaux</fullName>
+                <default>false</default>
+                <label>Devis travaux</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Entretien</fullName>
+                <default>false</default>
+                <label>Entretien</label>
+            </value>
+            <value>
+                <fullName>Dépannage</fullName>
+                <default>false</default>
+                <label>Dépannage</label>
+            </value>
+            <value>
+                <fullName>Mis en service</fullName>
+                <default>false</default>
+                <label>Mis en service</label>
+            </value>
+            <value>
+                <fullName>Remplacement et installation d&apos;équipement</fullName>
+                <default>false</default>
+                <label>Remplacement et installation d&apos;équipement</label>
+            </value>
+            <value>
+                <fullName>Rénovation énergétique</fullName>
+                <default>false</default>
+                <label>Rénovation énergétique</label>
+            </value>
+            <value>
+                <fullName>Aides et financement</fullName>
+                <default>false</default>
+                <label>Aides et financement</label>
+            </value>
+            <value>
+                <fullName>Création d’un portail web</fullName>
+                <default>false</default>
+                <label>Création d’un portail web</label>
+            </value>
+            <value>
+                <fullName>Etablissement d&apos;un accord de partenariat</fullName>
+                <default>false</default>
+                <label>Etablissement d&apos;un accord de partenariat</label>
+            </value>
+            <value>
+                <fullName>Création d’un portail web &amp; établissement d&apos;un Accord de partenariat</fullName>
+                <default>false</default>
+                <label>Création d’un portail web &amp; établissement d&apos;un Accord de partenariat</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateDemandeClient__c</fullName>
+    <defaultValue>Now()</defaultValue>
+    <description>Sprint 8 - Date de la demande par le client (fichier mapping GZL-SF)</description>
+    <label>Date demande client</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

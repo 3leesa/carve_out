@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LastModifiedDateByUser__c</fullName>
+    <description>CRM-613 : Création d&apos;un champ sur l&apos;opportunité permettant d&apos;optimiser la pertinence des rapports</description>
+    <label>LastModifiedDateByUser</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

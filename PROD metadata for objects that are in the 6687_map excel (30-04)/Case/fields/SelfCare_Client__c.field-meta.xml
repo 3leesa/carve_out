@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SelfCare_Client__c</fullName>
+    <description>MCOSF-5826</description>
+    <label>SelfCare Client</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Résolution autonome</fullName>
+                <default>false</default>
+                <label>Résolution autonome</label>
+            </value>
+            <value>
+                <fullName>Prise de RDV autonome</fullName>
+                <default>false</default>
+                <label>Prise de RDV autonome</label>
+            </value>
+            <value>
+                <fullName>Sans prise de RDV</fullName>
+                <default>false</default>
+                <label>Sans prise de RDV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tous_les_comptes_B2B</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Client_B2B</value>
+    </filters>
+    <label>Tous les comptes B2B</label>
+    <language>fr</language>
+    <sharedTo>
+        <roleAndSubordinatesInternal>B2B_DN</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

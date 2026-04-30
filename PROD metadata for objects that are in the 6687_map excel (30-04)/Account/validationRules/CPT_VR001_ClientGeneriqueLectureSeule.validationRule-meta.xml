@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR001_ClientGeneriqueLectureSeule</fullName>
+    <active>true</active>
+    <description>Sprint 9. Permet de ne pas modifier ces trois clients issus de Gazelle</description>
+    <errorConditionFormula>AND( 
+NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ), 
+NOT( $Setup.CS001_NeutraliserRegles__c.TECH_Neutraliser_Synchro__c ), 
+OR( 
+NumeroGazelle__c = &quot;657557&quot;, 
+NumeroGazelle__c = &quot;657556&quot;, 
+NumeroGazelle__c = &quot;657555&quot; 
+) 
+)</errorConditionFormula>
+    <errorMessage>Les informations de ce client ne peuvent pas être modifiées</errorMessage>
+</ValidationRule>

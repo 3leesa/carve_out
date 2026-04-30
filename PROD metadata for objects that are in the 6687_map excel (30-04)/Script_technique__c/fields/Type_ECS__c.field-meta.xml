@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_ECS__c</fullName>
+    <label>Type ECS</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Instantané</fullName>
+                <default>false</default>
+                <label>Instantané</label>
+            </value>
+            <value>
+                <fullName>Micro accu</fullName>
+                <default>false</default>
+                <label>Micro accu</label>
+            </value>
+            <value>
+                <fullName>Ballon</fullName>
+                <default>false</default>
+                <label>Ballon</label>
+            </value>
+            <value>
+                <fullName>Chauffage seul</fullName>
+                <default>false</default>
+                <label>Chauffage seul</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

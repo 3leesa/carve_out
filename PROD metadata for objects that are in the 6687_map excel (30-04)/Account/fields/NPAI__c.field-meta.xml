@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPAI__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 9. Case à cocher par la conseillère pour indiquer que le client N&apos;habite Pas à l&apos;Adresse Indiquée.</description>
+    <inlineHelpText>A cocher si : N’habite Plus à l’Adresse Indiquée, Pli Non Distribuable, Parti Sans laisser d’Adresse</inlineHelpText>
+    <label>NPAI / PND</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

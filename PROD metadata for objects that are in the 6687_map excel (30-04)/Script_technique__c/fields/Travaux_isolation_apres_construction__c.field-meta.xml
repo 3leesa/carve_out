@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Travaux_isolation_apres_construction__c</fullName>
+    <label>Travaux isolation après construction</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ITE</fullName>
+                <default>false</default>
+                <label>ITE</label>
+            </value>
+            <value>
+                <fullName>Comble</fullName>
+                <default>false</default>
+                <label>Comble</label>
+            </value>
+            <value>
+                <fullName>Fenêtres</fullName>
+                <default>false</default>
+                <label>Fenêtres</label>
+            </value>
+            <value>
+                <fullName>Porte d&apos;entrée</fullName>
+                <default>false</default>
+                <label>Porte d&apos;entrée</label>
+            </value>
+            <value>
+                <fullName>Sol</fullName>
+                <default>false</default>
+                <label>Sol</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

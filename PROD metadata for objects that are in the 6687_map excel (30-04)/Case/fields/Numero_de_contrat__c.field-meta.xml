@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Numero_de_contrat__c</fullName>
+    <description>CRM-243 : Projet &quot;Aiguillon Habitat&quot;- Echange de données SFDC vers Intent 
+Servicecontract.NumeroContrat__c
+CRM-323 : Projet &quot;Aiguillon Habitat&quot;- INTENT - 3F (Envoi de demande (case)).</description>
+    <externalId>false</externalId>
+    <label>Numero_de_contrat</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

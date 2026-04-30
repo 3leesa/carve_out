@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NUM_Eligible_BI__c</fullName>
+    <description>NUM-3781 - Statut mobilité BI_Reçu ou Non_Reçu 
+NUM-3943 - Statut backend clos (retour BI)
+NUM-4126 - Exclusion des BI affectés à des fournisseurs
+18/03/2019 - Solution temporaire de contournement d&apos;un bug: exclusion des équipes
+18/04/2019 - Réinclusion des fournisseurs
+23/04/2019 - Réinclusion des équipes</description>
+    <formula>OR(ISPICKVAL(StatutMobilite__c, &quot;BI_RECU&quot;),ISPICKVAL(StatutMobilite__c, &quot;NON_RECU&quot;),Est_clos__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Eligible</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

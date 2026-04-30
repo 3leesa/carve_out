@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateRetractation__c</fullName>
+    <description>MCOSF-2575 : Creer</description>
+    <inlineHelpText>Si résiliation par courrier, prendre le cachet de la Poste, si résiliation par mail, prendre la date du mail</inlineHelpText>
+    <label>Date rétractation contrat</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

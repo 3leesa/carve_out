@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_statut__c</fullName>
+    <description>MCOSF-2034:MAJ Opp
+MCOSF- 3388: Add to dependency</description>
+    <label>Sous-statut</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Devis créé</fullName>
+                <default>false</default>
+                <label>Devis créé</label>
+            </value>
+            <value>
+                <fullName>Devis signé</fullName>
+                <default>false</default>
+                <label>Devis signé</label>
+            </value>
+            <value>
+                <fullName>Pose réalisée</fullName>
+                <default>false</default>
+                <label>Pose réalisée</label>
+            </value>
+            <value>
+                <fullName>Perdue</fullName>
+                <default>false</default>
+                <label>Perdue</label>
+            </value>
+            <value>
+                <fullName>Mise en service réalisée</fullName>
+                <default>false</default>
+                <label>Mise en service réalisée</label>
+            </value>
+            <value>
+                <fullName>Client à appeler</fullName>
+                <default>false</default>
+                <label>Client à appeler</label>
+            </value>
+            <value>
+                <fullName>Contrat à créer dans Gazelle</fullName>
+                <default>false</default>
+                <label>Contrat à créer dans Gazelle</label>
+            </value>
+            <value>
+                <fullName>Rdv à reprogrammer</fullName>
+                <default>false</default>
+                <label>Rdv à reprogrammer</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Nouveau</controllingFieldValue>
+            <controllingFieldValue>En cours</controllingFieldValue>
+            <valueName>Contrat à créer dans Gazelle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En cours</controllingFieldValue>
+            <valueName>Devis créé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En cours</controllingFieldValue>
+            <valueName>Devis signé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En cours</controllingFieldValue>
+            <valueName>Pose réalisée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En cours</controllingFieldValue>
+            <valueName>Client à appeler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En cours</controllingFieldValue>
+            <valueName>Rdv à reprogrammer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Terminé</controllingFieldValue>
+            <valueName>Perdue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Terminé</controllingFieldValue>
+            <valueName>Mise en service réalisée</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_circuit_de_chauffage__c</fullName>
+    <label>Type de circuit de chauffage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Radiateurs</fullName>
+                <default>false</default>
+                <label>Radiateurs</label>
+            </value>
+            <value>
+                <fullName>Plancher chauffant</fullName>
+                <default>false</default>
+                <label>Plancher chauffant</label>
+            </value>
+            <value>
+                <fullName>Radiateurs et plancher chauffant</fullName>
+                <default>false</default>
+                <label>Radiateurs et plancher chauffant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

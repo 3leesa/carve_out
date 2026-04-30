@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR010_NePasChangerProprietaireFermee</fullName>
+    <active>true</active>
+    <description>Sprint 1. L&apos;utilisateur ne peut pas changer le gestionnaire d&apos;une demande fermée.</description>
+    <errorConditionFormula>AND( 
+NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ), 
+NOT( TECH_AideAuDiagEC__c ),
+IsClosed = TRUE,
+NOT(ISCHANGED(NiveauDEscalade__c)), 
+ISCHANGED(OwnerId)
+)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas changer le gestionnaire d&apos;une demande fermée.</errorMessage>
+</ValidationRule>

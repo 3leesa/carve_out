@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CodeAPE__c</fullName>
+    <description>Sprint 8 - Le code APE est attribué par l&apos;INSEE et caractérise l&apos;activité principale de l&apos;entreprise.
+Sprint 11 - Nouveau champ inexistant dans Gazelle.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Code caractérisant l&apos;activité principale de l&apos;entreprise</inlineHelpText>
+    <label>Code NAF</label>
+    <length>5</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

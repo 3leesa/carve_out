@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EA_Type_equipement__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case (Type_equipement_propose__c,
+&quot;Chaudière&quot;, &quot;01.Chaudière&quot;,
+&quot;Pompe à chaleur Air / Eau&quot;, &quot;02.Pompe à chaleur Air / Eau&quot;,
+&quot;Pompe à chaleur Eau / Eau&quot;, &quot;03.Pompe à chaleur Eau / Eau&quot;,
+&quot;Climatiseur ou pompe à chaleur Air / Air&quot;, &quot;04.Climatiseur ou pompe à chaleur Air / Air&quot;,
+&quot;Chauffe-eau&quot;, &quot;05.Chauffe-eau&quot;,
+&quot;Ballon &quot;, &quot;06.Ballon&quot;,
+&quot;Adoucisseur&quot;, &quot;07.Adoucisseur&quot;,
+&quot;Radiateur&quot;, &quot;08.Radiateur&quot;,
+&quot;Thermostat connecté&quot;, &quot;09.Thermostat connecté&quot;,
+&quot;Photovoltaïque&quot;, &quot;10.Photovoltaïque&quot;, 
+&quot;11.Autre équipement&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>EA_Type d&apos;équipement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

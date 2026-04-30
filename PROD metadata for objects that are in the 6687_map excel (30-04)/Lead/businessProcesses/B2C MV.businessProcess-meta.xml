@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2C MV</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>A traiter</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Clôturé</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Converti</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Script technique réalisé</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

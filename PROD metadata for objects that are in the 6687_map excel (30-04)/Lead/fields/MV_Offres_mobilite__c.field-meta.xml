@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV_Offres_mobilite__c</fullName>
+    <label>Offres mobilité</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Elec_Charge</fullName>
+                <default>false</default>
+                <label>Elec&apos;Charge</label>
+            </value>
+            <value>
+                <fullName>Elec_Charge Premium</fullName>
+                <default>false</default>
+                <label>Elec&apos;Charge Premium</label>
+            </value>
+            <value>
+                <fullName>Pass de recharge</fullName>
+                <default>false</default>
+                <label>Pass de recharge</label>
+            </value>
+            <value>
+                <fullName>Elec_Car</fullName>
+                <default>false</default>
+                <label>Elec&apos;Car</label>
+            </value>
+            <value>
+                <fullName>Charge&amp;Move</fullName>
+                <default>false</default>
+                <label>Charge&amp;Move</label>
+            </value>
+            <value>
+                <fullName>FCA</fullName>
+                <default>false</default>
+                <label>FCA</label>
+            </value>
+            <value>
+                <fullName>Ne sait pas - borne</fullName>
+                <default>false</default>
+                <label>Ne sait pas - borne</label>
+            </value>
+            <value>
+                <fullName>Ne sait pas</fullName>
+                <default>false</default>
+                <label>Ne sait pas</label>
+            </value>
+            <value>
+                <fullName>Carte_de_recharge</fullName>
+                <default>false</default>
+                <label>Carte de recharge</label>
+            </value>
+            <value>
+                <fullName>Elec_Charge-ABB</fullName>
+                <default>false</default>
+                <label>Elec&apos;Charge ABB</label>
+            </value>
+            <value>
+                <fullName>Borne_de_recharge</fullName>
+                <default>false</default>
+                <label>Borne de recharge</label>
+            </value>
+            <value>
+                <fullName>Borne_de_recharge_délestage</fullName>
+                <default>false</default>
+                <label>Borne de recharge délestage</label>
+            </value>
+            <value>
+                <fullName>Borne_de recharge_conseils</fullName>
+                <default>false</default>
+                <label>Borne de recharge conseils</label>
+            </value>
+            <value>
+                <fullName>Cable_de_recharge</fullName>
+                <default>false</default>
+                <label>Cable de recharge</label>
+            </value>
+            <value>
+                <fullName>Pied_de_borne</fullName>
+                <default>false</default>
+                <label>Pied_de_borne</label>
+            </value>
+            <value>
+                <fullName>Borne_Wallbox_MaRechargeIntelligente</fullName>
+                <default>false</default>
+                <label>Borne_Wallbox_MaRechargeIntelligente</label>
+            </value>
+            <value>
+                <fullName>Servicedepilotage_MaRechargeIntelligente</fullName>
+                <default>false</default>
+                <label>Servicedepilotage_MaRechargeIntelligente</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

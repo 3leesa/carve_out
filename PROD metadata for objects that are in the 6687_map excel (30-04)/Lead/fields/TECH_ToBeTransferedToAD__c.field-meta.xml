@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_ToBeTransferedToAD__c</fullName>
+    <formula>AND(
+	ISPICKVAL(LeadSource, &apos;EHS&apos;),
+	!ISPICKVAL(Type_devis__c, &apos;CRC&apos;),
+	ISPICKVAL(Objet_de_la_demande__c, &apos;Devis&apos;),
+        ISBLANK(TEXT(Statut_de_la_conversion__c)),
+	TECH_RecordTypeDeveloperName__c = &apos;Appel_Sortant&apos;,
+	OR(
+		ISPICKVAL(Type_equipement_souhaite__c, &apos;Chaudière gaz murale&apos;), 
+		ISPICKVAL(Type_equipement_souhaite__c, &apos;Climatisation&apos;), 
+		ISPICKVAL(Type_equipement_souhaite__c, &apos;Pompe à chaleur&apos;)
+	),
+	OR(
+		AND(ISPICKVAL(Origine_detaillee__c, &apos;SEA&apos;), 
+			OR(
+			   ISPICKVAL(Origine_detaillee_2__c, &apos;GADS&apos;), 
+			   ISPICKVAL(Origine_detaillee_2__c, &apos;MSADS&apos;)
+		   ), 
+		   OR(
+		   	   ISBLANK(Nom_operation_commerciale__c),
+		   	   AND(NOT(ISBLANK(Nom_operation_commerciale__c)), 
+		   	   NOT(BEGINS(Nom_operation_commerciale__c, &apos;SEAMarque&apos;)))
+	   	   )
+		),
+		ISPICKVAL(Origine_detaillee__c, &apos;SEO&apos;),
+		AND(
+			ISPICKVAL(Origine_detaillee__c, &apos;Partenaire&apos;),
+			OR(ISPICKVAL(Origine_detaillee_2__c, &apos;ReworldMedia&apos;),
+			   ISPICKVAL(Origine_detaillee_2__c, &apos;Kwanko&apos;),
+			   ISPICKVAL(Origine_detaillee_2__c, &apos;HabitatPresto&apos;),
+			   ISPICKVAL(Origine_detaillee_2__c, &apos;Compleo&apos;),
+			   ISPICKVAL(Origine_detaillee_2__c, &apos;Batiweb&apos;),
+			   ISPICKVAL(Origine_detaillee_2__c, &apos;DevisPlus&apos;)
+		   )
+	   )
+   )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_ToBeTransferedToAD</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

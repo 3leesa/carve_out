@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NUM_Eligible_BI_historique__c</fullName>
+    <description>NUM-2577
+BI historiques éligibles à la synchronisation dans KFS :
+- statut clos (réalisé (2), à revoir (51), à revoir-VE faite (115), Ter. DGI (116), Absent (110), Absent définitif (111), Refus d&apos;intervention (114))
+ET
+- date de début réelle dans les 3 dernières années
+21/03/2019: limitation à 1 an d&apos;historique pour les BI Travaux sur chantier</description>
+    <formula>OR(AND(ISPICKVAL(Type__c, &quot;10007&quot;), DATEVALUE(StartDate) &gt;= ADDMONTHS(TODAY(),-12)),
+AND(NOT(ISPICKVAL(Type__c, &quot;10007&quot;)), DATEVALUE(StartDate) &gt;= ADDMONTHS(TODAY(),-36)))
+ &amp;&amp;
+OR(ISPICKVAL(Status, &quot;2&quot;),ISPICKVAL(Status, &quot;51&quot;),ISPICKVAL(Status, &quot;115&quot;),ISPICKVAL(Status, &quot;116&quot;),ISPICKVAL(Status, &quot;110&quot;),ISPICKVAL(Status, &quot;111&quot;),ISPICKVAL(Status, &quot;114&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Eligible BI historique</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EstSuspendue__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 106 CRM-915 Flag en complément du statut. Une intervention suspendue a été programmée mais n&apos;est provisoirement plus attribuée dans le planning à un technicien.</description>
+    <inlineHelpText>Intervention en cours de re-planification par l’agence suite à absence imprévue d’un technicien, événement exceptionnel, …. Peut être re-planifiée mais ne peut pas etre confirmée dans cette situation</inlineHelpText>
+    <label>Suspendue</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Devis_BR_Sign_SMS_J_20_Tous</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>TECH_CpqDevisStatus__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Date_de_signature_du_devis__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Primary_Quote_Pack__c</field>
+        <operation>equals</operation>
+        <value>Offre Borne Electrique</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Devis signé</value>
+    </filters>
+    <filters>
+        <field>Date_de_signature_du_devis__c</field>
+        <operation>lessThan</operation>
+        <value>LAST_N_DAYS:19</value>
+    </filters>
+    <filters>
+        <field>Date_de_signature_du_devis__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_N_DAYS:28</value>
+    </filters>
+    <label>Devis BR - Signé SMS J+20 (Tous)</label>
+    <sharedTo>
+        <group>Administration_MV</group>
+        <group>MobiliteVerte_ManagerCo</group>
+    </sharedTo>
+</ListView>

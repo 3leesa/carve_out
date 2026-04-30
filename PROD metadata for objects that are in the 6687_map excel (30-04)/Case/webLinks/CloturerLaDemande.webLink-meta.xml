@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CloturerLaDemande</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Clôturer</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/{!Case.Id}/s?cas7=Terminé&amp;retURL=/{!IF($Profile.Name=&apos;Service Client Lightning&apos;,&apos;lightning/r/Case/&apos;,&apos;&apos;)}{!Case.Id}{!IF($Profile.Name=&apos;Service Client Lightning&apos;,&apos;/view&apos;,&apos;&apos;)}</url>
+</WebLink>

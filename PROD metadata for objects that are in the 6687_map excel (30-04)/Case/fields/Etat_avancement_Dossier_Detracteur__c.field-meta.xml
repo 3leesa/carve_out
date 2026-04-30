@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Etat_avancement_Dossier_Detracteur__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Pas_de_demande_associee_DDetracteur__c,
+IF(ISPICKVAL(Status, &apos;Nouveau&apos;),
+&quot;Client à rappeler&quot;,
+IF(ISPICKVAL(Status, &apos;En cours&apos;) &amp;&amp;  ISBLANK(TEXT(Motif_Dossier_Detracteur__c)), 
+&quot;Motif à renseigner&quot;,
+IF(ISPICKVAL(Status, &apos;En cours&apos;),
+&quot;Dossier à clore&quot;,
+&quot;Terminé&quot;
+))),
+IF(ISPICKVAL(Status, &apos;Nouveau&apos;),
+&quot;Client à rappeler&quot;,
+IF(ISPICKVAL(Status, &apos;En cours&apos;) &amp;&amp;  ISBLANK(TEXT(Motif_Dossier_Detracteur__c)), 
+&quot;Motif à renseigner&quot;,
+IF(ISPICKVAL(Status, &apos;En cours&apos;) &amp;&amp; ISPICKVAL(TECH_Dossier_Detracteur_Case_Status__c, &apos;DemandeAssociéeOuverte&apos;), 
+&quot;En attente de clôture de la demande associée&quot;,
+IF(ISPICKVAL(Status, &apos;En cours&apos;) &amp;&amp; (ISPICKVAL(TECH_Dossier_Detracteur_Case_Status__c, &apos;DemandeAssociéeTerminé&apos;) || ISPICKVAL(TECH_Dossier_Detracteur_Case_Status__c, &apos;SansDemandeAssociée&apos;)),
+&quot;Dossier à clore&quot;,
+&quot;Terminé&quot;
+))))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Etat d&apos;avancement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

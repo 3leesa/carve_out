@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsSimulated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Marks the WO as temporary for the sake of Boomi API getWorkOrderSlotSimulate. If true, WO is to be deleted by a nighttime flow.</description>
+    <label>IsSimulated</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

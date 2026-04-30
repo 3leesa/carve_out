@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avancement__c</fullName>
+    <description>représentation graphique de l&apos;avancement du traitement du dossier.</description>
+    <externalId>false</externalId>
+    <formula>Case(Status, 
+&quot;A traiter&quot;, IMAGE(&quot;/resource/TimelineLead/decouverte.JPG&quot;, &quot;decouverte&quot;, 30, 800), 
+&quot;Préqualification&quot;, IMAGE(&quot;/resource/TimelineLead/decouverte.JPG&quot;, &quot;decouverte&quot;, 30, 800), 
+&quot;Script technique réalisé&quot;, IMAGE(&quot;/resource/TimelineLead/estimation.jpg&quot;, &quot;estimation&quot;, 30, 800), 
+&quot;Estimation envoyée&quot;, IMAGE(&quot;/resource/TimelineLead/estimation.jpg&quot;, &quot;estimation&quot;, 30, 800), 
+&quot;Visite préalable planifiée&quot;, IMAGE(&quot;/resource/TimelineLead/faisabilite.jpg&quot;, &quot;faisabilite&quot;, 30, 800), 
+&quot;Visite préalable réalisée&quot;, IMAGE(&quot;/resource/TimelineLead/faisabilite.jpg&quot;, &quot;faisabilite&quot;, 30, 800), 
+&quot;Devis envoyé&quot;, IMAGE(&quot;/resource/TimelineLead/devis.jpg&quot;, &quot;devis&quot;, 30, 800), 
+&quot;Devis accepté&quot;, IMAGE(&quot;/resource/TimelineLead/devis.jpg&quot;, &quot;devis&quot;, 30, 800), 
+&quot;Dossier de financement en attente&quot;, IMAGE(&quot;/resource/TimelineLead/financement.jpg&quot;, &quot;financement&quot;, 30, 800), 
+&quot;Dossier de financement accepté&quot;, IMAGE(&quot;/resource/TimelineLead/financement.jpg&quot;, &quot;financement&quot;, 30, 800), 
+&quot;Installation programmée&quot;, IMAGE(&quot;/resource/TimelineLead/pose.jpg&quot;, &quot;pose&quot;, 30, 800), 
+&quot;Installation réalisée&quot;, IMAGE(&quot;/resource/TimelineLead/pose.jpg&quot;, &quot;pose&quot;, 30, 800), 
+&quot;En attente de solde&quot;, IMAGE(&quot;/resource/TimelineLead/paiement.jpg&quot;, &quot;pose&quot;, 30, 800), 
+&quot;Solde reçu&quot;, IMAGE(&quot;/resource/TimelineLead/paiement.jpg&quot;, &quot;pose&quot;, 30, 800), 
+&quot;Annulé&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Avancement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

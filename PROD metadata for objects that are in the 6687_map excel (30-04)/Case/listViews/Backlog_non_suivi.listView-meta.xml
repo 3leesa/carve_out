@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Backlog_non_suivi</fullName>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>InformationCRC__c</columns>
+    <columns>NAME</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Formule_du_contrat_demande__c</columns>
+    <columns>Options_du_contrat_de_la_demande__c</columns>
+    <columns>NbRelanceTotal__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>InformationCRC__c</field>
+        <operation>equals</operation>
+        <value>Pas de disponibilité d&apos;agenda</value>
+    </filters>
+    <filters>
+        <field>TECH_RDVProgramme__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Backlog non suivi</label>
+    <language>fr</language>
+    <queue>Backlog_non_suivi</queue>
+    <sharedTo>
+        <group>AdministrateursSysteme</group>
+    </sharedTo>
+</ListView>

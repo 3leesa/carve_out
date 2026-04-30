@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_DateNonPrisEnCharge__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TODAY() - DATEVALUE(CreatedDate) &lt; 3, &apos;Moins de 72H&apos;, &apos;Plus de 72H&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_DateNonPrisEnCharge</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

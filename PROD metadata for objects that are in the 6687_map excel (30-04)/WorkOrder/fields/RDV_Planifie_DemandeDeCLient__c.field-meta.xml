@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RDV_Planifie_DemandeDeCLient__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>DESK-79127: Ajout case à cocher report à la demande du client</description>
+    <label>RDV planifié à la demande du client</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

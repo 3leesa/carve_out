@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoTransitionToFirstMobilityStatus</fullName>
+    <active>true</active>
+    <description>MA-6752 Un BI ne peut pas retourner au statut mobilité &quot;non reçu&quot;</description>
+    <errorConditionFormula>ISCHANGED(StatutMobilite__c) &amp;&amp; ISPICKVAL(StatutMobilite__c, &quot;NON_RECU&quot;)</errorConditionFormula>
+    <errorDisplayField>StatutMobilite__c</errorDisplayField>
+    <errorMessage>Un BI ne peut pas retourner au statut mobilité &quot;non reçu&quot;</errorMessage>
+</ValidationRule>

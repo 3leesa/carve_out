@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommentairesFinIntervention__c</fullName>
+    <description>Sprint 8 - Commentaire de fin d&apos;intervention (retour BI) (mapping GZL-SF)</description>
+    <externalId>false</externalId>
+    <label>Commentaires Fin Intervention</label>
+    <length>150</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

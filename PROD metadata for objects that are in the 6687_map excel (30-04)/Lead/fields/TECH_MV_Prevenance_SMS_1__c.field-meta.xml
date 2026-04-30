@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_MV_Prevenance_SMS_1__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>TECH_MV_Prevenance_SMS_1</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

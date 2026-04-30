@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR001_RemplirAutreMotif</fullName>
+    <active>false</active>
+    <description>Sprint 1. Le texte &quot;Autre à préciser&quot; doit être renseigné lorsque le motif &quot;Autre&quot; est sélectionné et doit être effacé lorsque la valeur &quot;Autre&quot; n&apos;est plus le motif sélectionné.</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c), 
+OR(
+   AND(TEXT(Type) = &quot;Réclamation&quot;, ISPICKVAL( Reason, &quot;Autre&quot; ), LEN(AutreAPreciser__c) &lt; 4 ),
+   AND(TEXT(Type) = &quot;Réclamation&quot;, NOT(ISPICKVAL( Reason, &quot;Autre&quot; )), AutreAPreciser__c &lt;&gt; &quot;&quot;),
+   AND(TEXT(Type) = &quot;Résiliation&quot;, ISPICKVAL( MotifResiliation__c, &quot;Autre à préciser&quot; ), LEN(AutreAPreciser__c) &lt; 4 ),
+   AND(TEXT(Type) = &quot;Résiliation&quot;, NOT(ISPICKVAL( MotifResiliation__c, &quot;Autre à préciser&quot; )), AutreAPreciser__c &lt;&gt; &quot;&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>AutreAPreciser__c</errorDisplayField>
+    <errorMessage>Le texte &apos;Autre à préciser&apos; doit être renseigné lorsque le motif  &apos;Autre&apos; est sélectionné et doit être effacé lorsqu&apos;un motif différent est sélectionné.</errorMessage>
+</ValidationRule>

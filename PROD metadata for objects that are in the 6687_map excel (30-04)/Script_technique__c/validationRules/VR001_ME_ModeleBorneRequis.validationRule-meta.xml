@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR001_ME_ModeleBorneRequis</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(TEXT(MV_Modele_de_la_borne__c)) &amp;&amp; RecordType.DeveloperName = &apos;Borne_electrique&apos; &amp;&amp; NOT(ISNEW())</errorConditionFormula>
+    <errorMessage>Le modèle de la borne est requis dans les Scripts Techniques Borne électrique.</errorMessage>
+</ValidationRule>

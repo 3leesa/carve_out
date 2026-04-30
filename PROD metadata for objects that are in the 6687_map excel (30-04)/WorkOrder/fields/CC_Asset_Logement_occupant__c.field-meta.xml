@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CC_Asset_Logement_occupant__c</fullName>
+    <description>CC-151 : Utilisé pour les template d&apos;email Community.
+Rempli avec une trigger ne s&apos;activant que pour les users Community.
+Correspond à Asset.Logement__r.Occupant_du_Logement__c.</description>
+    <externalId>false</externalId>
+    <label>CC Asset Logement occupant</label>
+    <length>250</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CMI_Conducteur_de_travaux__c</fullName>
+    <description>CRM-547</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Les informations sont modifiables sur le logement seulement</inlineHelpText>
+    <label>Conducteur de travaux</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Performant__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 13: indique si le produit est performant d&apos;un point de vu énergétique. Utilisé pour le calcul  du taux de TVA sur les contrats / devis. Synchronisé depuis Gazelle.</description>
+    <inlineHelpText>Attention, pour les appareils, c&apos;est le code nature qui prime</inlineHelpText>
+    <label>Eligible à la TVA réduite</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

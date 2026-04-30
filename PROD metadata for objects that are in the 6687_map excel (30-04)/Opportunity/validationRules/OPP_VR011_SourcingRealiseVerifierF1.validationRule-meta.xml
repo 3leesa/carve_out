@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR011_SourcingRealiseVerifierF1</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISBLANK(Fournisseur_1__c),
+ISBLANK(Site_de_fournisseur_1__c),
+ISBLANK(DelaiFournisseur1__c)
+),
+SourcingRealise__c
+)</errorConditionFormula>
+    <errorDisplayField>SourcingRealise__c</errorDisplayField>
+    <errorMessage>Veuillez renseigner les informations liées au fournisseur 1 afin de cocher ce champ.</errorMessage>
+</ValidationRule>

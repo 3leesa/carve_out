@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR023_StatutEnCours</fullName>
+    <active>true</active>
+    <description>Empecher la modification du statut &quot;En cours&quot; vers &quot;Nouveau&quot;
+MCOSF-407: Demandes provenant de SelfHelp à &quot;Nouveau&quot;</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c),
+TECH_CreatedBySelfHelp__c = false,
+ISPICKVAL(PRIORVALUE(Status),&quot;En cours&quot;),
+CONTAINS(TEXT(Status),&quot;Nouveau&quot;),
+NOT(ISCHANGED(ChoixAgence__c)) 
+)</errorConditionFormula>
+    <errorMessage>Veuillez annuler cette action. Les statuts &quot;En cours&quot; ne peuvent pas repasser au statut &quot;Nouveau&quot;</errorMessage>
+</ValidationRule>

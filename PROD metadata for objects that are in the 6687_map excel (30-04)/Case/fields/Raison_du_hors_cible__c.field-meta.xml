@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Raison_du_hors_cible__c</fullName>
+    <label>Raison du hors cible</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Resultat_depannage_en_ligne__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Panne eau chaude avec pression entre 1 et 2 bars</fullName>
+                <default>false</default>
+                <label>Panne eau chaude avec pression entre 1 et 2 bars</label>
+            </value>
+            <value>
+                <fullName>Remise en route sans énergie (eau, gaz, électricité)</fullName>
+                <default>false</default>
+                <label>Remise en route sans énergie (eau, gaz, électricité)</label>
+            </value>
+            <value>
+                <fullName>Fuite sur équipement</fullName>
+                <default>false</default>
+                <label>Fuite sur équipement</label>
+            </value>
+            <value>
+                <fullName>Equipement non éligible</fullName>
+                <default>false</default>
+                <label>Equipement non éligible</label>
+            </value>
+            <value>
+                <fullName>Demande d&apos;information</fullName>
+                <default>false</default>
+                <label>Demande d&apos;information</label>
+            </value>
+            <value>
+                <fullName>Mauvaise compréhension des procédures ou erreur de transfert</fullName>
+                <default>false</default>
+                <label>Mauvaise compréhension des procédures ou erreur de transfert</label>
+            </value>
+            <value>
+                <fullName>Urgence</fullName>
+                <default>false</default>
+                <label>Urgence</label>
+            </value>
+            <value>
+                <fullName>Réclamation qualité prestation</fullName>
+                <default>false</default>
+                <label>Réclamation qualité prestation</label>
+            </value>
+            <value>
+                <fullName>autres</fullName>
+                <default>false</default>
+                <label>autres</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Hors cible</controllingFieldValue>
+            <valueName>Panne eau chaude avec pression entre 1 et 2 bars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hors cible</controllingFieldValue>
+            <valueName>Remise en route sans énergie (eau, gaz, électricité)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hors cible</controllingFieldValue>
+            <valueName>Fuite sur équipement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hors cible</controllingFieldValue>
+            <valueName>Equipement non éligible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hors cible</controllingFieldValue>
+            <valueName>Demande d&apos;information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hors cible</controllingFieldValue>
+            <valueName>Mauvaise compréhension des procédures ou erreur de transfert</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hors cible</controllingFieldValue>
+            <valueName>Urgence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hors cible</controllingFieldValue>
+            <valueName>Réclamation qualité prestation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hors cible</controllingFieldValue>
+            <valueName>autres</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

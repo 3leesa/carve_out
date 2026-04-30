@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Signataire_Des_Communications__c</fullName>
+    <description>Nom et titre de la personne apparaissant comme signataire des communications faites au client.</description>
+    <externalId>false</externalId>
+    <formula>ChoixAgence__r.Signataire_Des_Communications__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_Signataire_Des_Communications</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

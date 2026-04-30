@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR009_StageNotEditable</fullName>
+    <active>true</active>
+    <description>MCOSF-2034:Opportunité: Mettre à jour les automatismes de devis, d&apos;opportunité et de demande</description>
+    <errorConditionFormula>AND(
+OR(RecordType.DeveloperName = &apos;CRM_B2C&apos;,RecordType.DeveloperName = &apos;Contrat&apos;),
+NOT(ISPICKVAL(Type , &apos;Pièces&apos;)), 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c), 
+NOT(ISNEW()), 
+NOT(ISCHANGED(TECH_NbModifStages__c)), 
+ISCHANGED(StageName)
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Les statuts de la demande et de l&apos;opportunité ne peuvent être modifiés manuellement. Merci de mettre à jour le statut du devis principal afin de mouvementer automatiquement le statut de l&apos;opportunité et de la demande liées.</errorMessage>
+</ValidationRule>

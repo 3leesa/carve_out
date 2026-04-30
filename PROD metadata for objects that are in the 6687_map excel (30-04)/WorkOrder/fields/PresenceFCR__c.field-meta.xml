@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PresenceFCR__c</fullName>
+    <description>MA-4660</description>
+    <externalId>false</externalId>
+    <formula>IF( OR(BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;A-1&apos;),
+BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;A-2&apos;),
+BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;B-1&apos;),
+BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;B-2&apos;),
+BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;D-1&apos;),
+BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;D-2&apos;),
+BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;F-1&apos;),
+BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;F-2&apos;),
+BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;F-3&apos;),
+BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;G-1&apos;),
+BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;G-2&apos;),
+BEGINS(Asset.Product2.CodeNatureAppareil__r.Name,&apos;G-3&apos;)),
+
+IF (Asset.Product2.DerniereAnneeAvecFCR__c&gt;=Asset.Product2.DerniereAnneeSansFCR__c,
+  IF (!OR(Asset.Product2.DerniereAnneeAvecFCR__c=0, Asset.Product2.DerniereAnneeSansFCR__c=0),
+    IF (IF(YEAR(Asset.InstallDate) &gt;= MAX(Asset.Product2.DerniereAnneeAvecFCR__c,Asset.Product2.DerniereAnneeSansFCR__c), 1,
+IF(YEAR(Asset.InstallDate) &lt; MIN(Asset.Product2.DerniereAnneeAvecFCR__c,Asset.Product2.DerniereAnneeSansFCR__c), -1,
+0))!=0, &quot;oui&quot;, &quot;non&quot;),
+    &quot;oui&quot;),
+  IF (IF(YEAR(Asset.InstallDate) &gt;= MAX(Asset.Product2.DerniereAnneeAvecFCR__c,Asset.Product2.DerniereAnneeSansFCR__c), 1,
+IF(YEAR(Asset.InstallDate) &lt; MIN(Asset.Product2.DerniereAnneeAvecFCR__c,Asset.Product2.DerniereAnneeSansFCR__c), -1,
+0))&gt;0, &quot;non&quot;, &quot;oui&quot;)
+),
+
+&quot;N/A&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Présence de FCR</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

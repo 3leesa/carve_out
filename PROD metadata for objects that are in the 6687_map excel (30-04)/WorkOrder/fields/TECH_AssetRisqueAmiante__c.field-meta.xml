@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_AssetRisqueAmiante__c</fullName>
+    <description>CRM-740 vue de liste amiante</description>
+    <externalId>false</externalId>
+    <formula>IF(
+NOT(OR(BEGINS(Asset.CodeNature__c, &apos;G&apos;), BEGINS(Asset.CodeNature__c, &apos;F&apos;), BEGINS(Asset.CodeNature__c, &apos;C&apos;), BEGINS(Asset.CodeNature__c, &apos;M&apos;))),
+&apos;grey&apos;,
+IF(OR(YEAR(Asset.InstallDate)=1900, Asset.MarqueProduit__c = &quot;10015&quot;, Asset.MarqueProduit__c = &quot;10235&quot;,ISBLANK(Asset.MarqueProduit__c), 
+AND(((TODAY() - Asset.InstallDate)/ 365 ) &gt; 25, BEGINS(Asset.CodeNature__c, &apos;G&apos;))), &apos;orange&apos;, 
+IF(
+Asset.InstallDate &lt; Asset.Product2.Date_fin_de_risque_amiante__c, &apos;red&apos;, 
+IF(Asset.InstallDate &gt;= Asset.Product2.Date_fin_de_risque_amiante__c, &apos;green&apos;, null)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_AssetRisqueAmiante</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

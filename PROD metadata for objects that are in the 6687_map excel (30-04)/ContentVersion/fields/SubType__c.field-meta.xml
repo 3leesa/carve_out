@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubType__c</fullName>
+    <label>Sous-Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Facturation déplacement et main-d&apos;oeuvre</fullName>
+                <default>false</default>
+                <label>Facturation déplacement et main-d&apos;oeuvre</label>
+            </value>
+            <value>
+                <fullName>Relevés supplémentaires CAISSON VMC pour GIRONDE HABITAT</fullName>
+                <default>false</default>
+                <label>Relevés supplémentaires CAISSON VMC pour GIRONDE HABITAT</label>
+            </value>
+            <value>
+                <fullName>VE - DEUX SEVRES HABITAT</fullName>
+                <default>false</default>
+                <label>VE - DEUX SEVRES HABITAT</label>
+            </value>
+            <value>
+                <fullName>REL - DEUX SEVRES HABITAT</fullName>
+                <default>false</default>
+                <label>REL - DEUX SEVRES HABITAT</label>
+            </value>
+            <value>
+                <fullName>Relevé VMC et EC H2P</fullName>
+                <default>false</default>
+                <label>Relevé VMC et EC H2P</label>
+            </value>
+            <value>
+                <fullName>Relevés supplémentaires GIRONDE HABITAT</fullName>
+                <default>false</default>
+                <label>Relevés supplémentaires GIRONDE HABITAT</label>
+            </value>
+            <value>
+                <fullName>RELEVE TECH. PAC - air/eau - eau/eau</fullName>
+                <default>false</default>
+                <label>RELEVE TECH. PAC - air/eau - eau/eau</label>
+            </value>
+            <value>
+                <fullName>VQ - FICHE C2 : CONTROLE RESEAU</fullName>
+                <default>false</default>
+                <label>VQ - FICHE C2 : CONTROLE RESEAU</label>
+            </value>
+            <value>
+                <fullName>VQ - Fiche C3 : EXTRACTEUR</fullName>
+                <default>false</default>
+                <label>VQ - Fiche C3 : EXTRACTEUR</label>
+            </value>
+            <value>
+                <fullName>AUBE IMMOBILIER</fullName>
+                <default>false</default>
+                <label>AUBE IMMOBILIER</label>
+            </value>
+            <value>
+                <fullName>VQ-Fiche C1 : INTERIEUR LOGEMENT</fullName>
+                <default>false</default>
+                <label>VQ-Fiche C1 : INTERIEUR LOGEMENT</label>
+            </value>
+            <value>
+                <fullName>RELEVE TECH. CLIM - air/air</fullName>
+                <default>false</default>
+                <label>RELEVE TECH. CLIM - air/air</label>
+            </value>
+            <value>
+                <fullName>LOGIEST Chaudières et chaufferies</fullName>
+                <default>false</default>
+                <label>LOGIEST Chaudières et chaufferies</label>
+            </value>
+            <value>
+                <fullName>Client éligible à l’offre Energylis</fullName>
+                <default>false</default>
+                <label>Client éligible à l’offre Energylis</label>
+            </value>
+            <value>
+                <fullName>CERFA 15497*02</fullName>
+                <default>false</default>
+                <label>CERFA 15497*02</label>
+            </value>
+            <value>
+                <fullName>Client éligible à l’offre DAACO</fullName>
+                <default>false</default>
+                <label>Client éligible à l’offre DAACO</label>
+            </value>
+            <value>
+                <fullName>Refus de pose du DAACO</fullName>
+                <default>false</default>
+                <label>Refus de pose du DAACO</label>
+            </value>
+            <value>
+                <fullName>Mise en Service Chaudière connectée Eideris et Illigo</fullName>
+                <default>false</default>
+                <label>Mise en Service Chaudière connectée Eideris et Illigo</label>
+            </value>
+            <value>
+                <fullName>Relevés AQUITANIS</fullName>
+                <default>false</default>
+                <label>Relevés AQUITANIS</label>
+            </value>
+            <value>
+                <fullName>Relevés supplémentaires AGEN HABITAT</fullName>
+                <default>false</default>
+                <label>Relevés supplémentaires AGEN HABITAT</label>
+            </value>
+            <value>
+                <fullName>Visa Qualité usage interne EHS</fullName>
+                <default>false</default>
+                <label>Visa Qualité usage interne EHS</label>
+            </value>
+            <value>
+                <fullName>DAACO offert contrat internet</fullName>
+                <default>false</default>
+                <label>DAACO offert contrat internet</label>
+            </value>
+            <value>
+                <fullName>Relevé rendement et CO Fumée</fullName>
+                <default>false</default>
+                <label>Relevé rendement et CO Fumée</label>
+            </value>
+            <value>
+                <fullName>Formulaire de Mise En Service (Appareil Gaz)</fullName>
+                <default>false</default>
+                <label>Formulaire de Mise En Service (Appareil Gaz)</label>
+            </value>
+            <value>
+                <fullName>CERFA 15497*03</fullName>
+                <default>false</default>
+                <label>CERFA 15497*03</label>
+            </value>
+            <value>
+                <fullName>Rapport de fin de travaux</fullName>
+                <default>false</default>
+                <label>Rapport de fin de travaux</label>
+            </value>
+            <value>
+                <fullName>CERFA 15497*04</fullName>
+                <default>false</default>
+                <label>CERFA 15497*04</label>
+            </value>
+            <value>
+                <fullName>Contrôle du disconnecteur</fullName>
+                <default>false</default>
+                <label>Contrôle du disconnecteur</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Facturation déplacement et main-d&apos;oeuvre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Relevés supplémentaires CAISSON VMC pour GIRONDE HABITAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>VE - DEUX SEVRES HABITAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>REL - DEUX SEVRES HABITAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Relevé VMC et EC H2P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Relevés supplémentaires GIRONDE HABITAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>RELEVE TECH. PAC - air/eau - eau/eau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>VQ - FICHE C2 : CONTROLE RESEAU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>VQ - Fiche C3 : EXTRACTEUR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>AUBE IMMOBILIER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>VQ-Fiche C1 : INTERIEUR LOGEMENT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>RELEVE TECH. CLIM - air/air</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>LOGIEST Chaudières et chaufferies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Client éligible à l’offre Energylis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>CERFA 15497*02</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Client éligible à l’offre DAACO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Refus de pose du DAACO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Mise en Service Chaudière connectée Eideris et Illigo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Relevés AQUITANIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Relevés supplémentaires AGEN HABITAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Visa Qualité usage interne EHS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>DAACO offert contrat internet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Relevé rendement et CO Fumée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Formulaire de Mise En Service (Appareil Gaz)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>CERFA 15497*03</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Rapport de fin de travaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>CERFA 15497*04</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Form</controllingFieldValue>
+            <valueName>Contrôle du disconnecteur</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

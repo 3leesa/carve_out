@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FOR_SuspicionPersonnePorteuse__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Est-ce que le client a indiqué qu&apos;il y avait une personne suspectée d&apos;être porteuse du covid dans son foyer, depuis le formulaire dont le lien était dans le SMS préalable à la visite ?</inlineHelpText>
+    <label>Suspicion personne porteuse covid foyer</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

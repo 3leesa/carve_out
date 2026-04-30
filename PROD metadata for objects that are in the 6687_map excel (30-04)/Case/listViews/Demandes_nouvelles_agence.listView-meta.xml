@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demandes_nouvelles_agence</fullName>
+    <booleanFilter>(1 AND 2 AND 3 AND 7 AND 8 )  AND ( (4 AND 5 AND 6 ) OR ( 9 AND 10 ))</booleanFilter>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>FSM_Requested_Slot__c</columns>
+    <columns>NAME</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.REASON</columns>
+    <columns>SousMotif__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>PARENT.CASE_NUMBER</columns>
+    <columns>NbRelanceTotal__c</columns>
+    <columns>isClaimSensitive__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Nouveau</value>
+    </filters>
+    <filters>
+        <field>MonAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>InformationCRC__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>notEqual</operation>
+        <value>Dépannage,Visite / Entretien,Dossier détracteur</value>
+    </filters>
+    <filters>
+        <field>CASES.REASON</field>
+        <operation>notEqual</operation>
+        <value>Confirmation de règlement,Contestation/litiges,Geste Commercial</value>
+    </filters>
+    <filters>
+        <field>CASES.REASON</field>
+        <operation>notEqual</operation>
+        <value>Attente VE,Prêt financier (BNP PF),Duplicata facture,Rematerialisation BI</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>notEqual</operation>
+        <value>Gazelle</value>
+    </filters>
+    <filters>
+        <field>CASES.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_N_DAYS:180</value>
+    </filters>
+    <filters>
+        <field>CASES.ORIGIN</field>
+        <operation>equals</operation>
+        <value>Téléphone</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Réclamation</value>
+    </filters>
+    <label>2- Demandes nouvelles de mon agence</label>
+    <queue>Equipe_Demandes_courantes</queue>
+    <sharedTo>
+        <role>CentreRelationClient</role>
+        <role>ChefEquipe_Conseillere</role>
+        <role>DirecteurAgence_ConseillerePrincipale</role>
+        <role>DirecteurOperationnelSecteur</role>
+        <role>DirecteurRegional</role>
+        <role>DirectionRelationClient</role>
+    </sharedTo>
+</ListView>

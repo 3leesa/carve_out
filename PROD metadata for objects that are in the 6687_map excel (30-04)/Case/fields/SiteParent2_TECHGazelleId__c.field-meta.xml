@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SiteParent2_TECHGazelleId__c</fullName>
+    <description>To store : ChoixAgence__r.SiteParent__r.TECH_GazelleId__c</description>
+    <externalId>true</externalId>
+    <label>SiteParent2_TECHGazelleId</label>
+    <length>22</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

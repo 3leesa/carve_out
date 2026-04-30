@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_VR005_EnvoiMailOrCourrierObligatoire</fullName>
+    <active>true</active>
+    <description>Sprint 58 - CRM-288 Des lors que l&apos;étape de l&apos;opportunité est remise à &quot;devis remis au client&quot;, au moins un des champs &quot;Envoi par courrier&quot; ou &quot;envoi par mail&quot; doit être renseigné obligatoirement pour valider l&apos;enregistrement.</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c), $User.LastName&lt;&gt;&apos;Kony&apos;,
+OR(
+AND (ISPICKVAL(StageName, &apos;Devis remis au client&apos;),
+					 Envoi_par_courrier__c = false,
+					   Envoi_par_mail__c = false
+			)))</errorConditionFormula>
+    <errorMessage>Au moins un des champs &quot;Envoi par courrier&quot; ou &quot;Envoi par mail / Remis sur place&quot; doit être renseigné obligatoirement pour valider l&apos;enregistrement</errorMessage>
+</ValidationRule>

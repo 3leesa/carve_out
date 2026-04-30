@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Typologie__c</fullName>
+    <label>Typologie</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Administrateur de bien</fullName>
+                <default>false</default>
+                <label>Administrateur de bien</label>
+            </value>
+            <value>
+                <fullName>Artisan, commerçant &amp; PME</fullName>
+                <default>false</default>
+                <label>Artisan, commerçant &amp; PME</label>
+            </value>
+            <value>
+                <fullName>Assistant maîtrise d&apos;ouvrage</fullName>
+                <default>false</default>
+                <label>Assistant maîtrise d&apos;ouvrage</label>
+            </value>
+            <value>
+                <fullName>Autre professionnel</fullName>
+                <default>false</default>
+                <label>Autre professionnel</label>
+            </value>
+            <value>
+                <fullName>Bailleur privé</fullName>
+                <default>false</default>
+                <label>Bailleur privé</label>
+            </value>
+            <value>
+                <fullName>Bailleur social</fullName>
+                <default>false</default>
+                <label>Bailleur social</label>
+            </value>
+            <value>
+                <fullName>Bureau d’étude</fullName>
+                <default>false</default>
+                <label>Bureau d’étude</label>
+            </value>
+            <value>
+                <fullName>Collectivité locale</fullName>
+                <default>false</default>
+                <label>Collectivité locale</label>
+            </value>
+            <value>
+                <fullName>Constructeur de maison individuelle</fullName>
+                <default>false</default>
+                <label>Constructeur de maison individuelle</label>
+            </value>
+            <value>
+                <fullName>Distributeur</fullName>
+                <default>false</default>
+                <label>Distributeur</label>
+            </value>
+            <value>
+                <fullName>Economiste</fullName>
+                <default>false</default>
+                <label>Economiste</label>
+            </value>
+            <value>
+                <fullName>EHPAD</fullName>
+                <default>false</default>
+                <label>EHPAD</label>
+            </value>
+            <value>
+                <fullName>Établissement scolaire</fullName>
+                <default>false</default>
+                <label>Établissement scolaire</label>
+            </value>
+            <value>
+                <fullName>Gendarmerie</fullName>
+                <default>false</default>
+                <label>Gendarmerie</label>
+            </value>
+            <value>
+                <fullName>Gestionnaire de location</fullName>
+                <default>false</default>
+                <label>Gestionnaire de location</label>
+            </value>
+            <value>
+                <fullName>Hôtellerie &amp; Loisir</fullName>
+                <default>false</default>
+                <label>Hôtellerie &amp; Loisir</label>
+            </value>
+            <value>
+                <fullName>Hôtellerie de plein air</fullName>
+                <default>false</default>
+                <label>Hôtellerie de plein air</label>
+            </value>
+            <value>
+                <fullName>Installateur</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Installateur</label>
+            </value>
+            <value>
+                <fullName>Mairie</fullName>
+                <default>false</default>
+                <label>Mairie</label>
+            </value>
+            <value>
+                <fullName>Promoteur Immobilier</fullName>
+                <default>false</default>
+                <label>Promoteur Immobilier</label>
+            </value>
+            <value>
+                <fullName>Service à la personne</fullName>
+                <default>false</default>
+                <label>Service à la personne</label>
+            </value>
+            <value>
+                <fullName>Société d&apos;installation</fullName>
+                <default>false</default>
+                <label>Société d&apos;installation</label>
+            </value>
+            <value>
+                <fullName>Structure médicale publique</fullName>
+                <default>false</default>
+                <label>Structure médicale publique</label>
+            </value>
+            <value>
+                <fullName>Syndic</fullName>
+                <default>false</default>
+                <label>Syndic</label>
+            </value>
+            <value>
+                <fullName>Syndicat de copropriété</fullName>
+                <default>false</default>
+                <label>Syndicat de copropriété</label>
+            </value>
+            <value>
+                <fullName>Syndicat des copropriétaires</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Syndicat des copropriétaires</label>
+            </value>
+            <value>
+                <fullName>Tertiaire</fullName>
+                <default>false</default>
+                <label>Tertiaire</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

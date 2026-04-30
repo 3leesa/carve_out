@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Fonction__c</fullName>
+    <label>Fonction</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AMO</fullName>
+                <default>false</default>
+                <label>AMO</label>
+            </value>
+            <value>
+                <fullName>Assistante</fullName>
+                <default>false</default>
+                <label>Assistante</label>
+            </value>
+            <value>
+                <fullName>Assistant maîtrise d&apos;ouvrage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Assistant maîtrise d&apos;ouvrage</label>
+            </value>
+            <value>
+                <fullName>Attaché de gestion</fullName>
+                <default>false</default>
+                <label>Attaché de gestion</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Chef d&apos;agence</fullName>
+                <default>false</default>
+                <label>Chef d&apos;agence</label>
+            </value>
+            <value>
+                <fullName>Comptable</fullName>
+                <default>false</default>
+                <label>Comptable</label>
+            </value>
+            <value>
+                <fullName>Conducteur travaux</fullName>
+                <default>false</default>
+                <label>Conducteur travaux</label>
+            </value>
+            <value>
+                <fullName>Directeur</fullName>
+                <default>false</default>
+                <label>Directeur</label>
+            </value>
+            <value>
+                <fullName>Directeur de patrimoine</fullName>
+                <default>false</default>
+                <label>Directeur de patrimoine</label>
+            </value>
+            <value>
+                <fullName>Directeur de programme</fullName>
+                <default>false</default>
+                <label>Directeur de programme</label>
+            </value>
+            <value>
+                <fullName>Directeur des achats</fullName>
+                <default>false</default>
+                <label>Directeur des achats</label>
+            </value>
+            <value>
+                <fullName>Directeur général</fullName>
+                <default>false</default>
+                <label>Directeur général</label>
+            </value>
+            <value>
+                <fullName>Directeur technique</fullName>
+                <default>false</default>
+                <label>Directeur technique</label>
+            </value>
+            <value>
+                <fullName>Directeur travaux</fullName>
+                <default>false</default>
+                <label>Directeur travaux</label>
+            </value>
+            <value>
+                <fullName>Économiste</fullName>
+                <default>false</default>
+                <label>Économiste</label>
+            </value>
+            <value>
+                <fullName>Gestion immobilière</fullName>
+                <default>false</default>
+                <label>Gestion immobilière</label>
+            </value>
+            <value>
+                <fullName>Gestionnaire immobilier</fullName>
+                <default>false</default>
+                <label>Gestionnaire immobilier</label>
+            </value>
+            <value>
+                <fullName>Maitre d’œuvre</fullName>
+                <default>false</default>
+                <label>Maitre d’œuvre</label>
+            </value>
+            <value>
+                <fullName>MOTR</fullName>
+                <default>false</default>
+                <label>MOTR</label>
+            </value>
+            <value>
+                <fullName>Non défini</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non défini</label>
+            </value>
+            <value>
+                <fullName>Pilote de chantier</fullName>
+                <default>false</default>
+                <label>Pilote de chantier</label>
+            </value>
+            <value>
+                <fullName>Président</fullName>
+                <default>false</default>
+                <label>Président</label>
+            </value>
+            <value>
+                <fullName>Président de la copropriété</fullName>
+                <default>false</default>
+                <label>Président de la copropriété</label>
+            </value>
+            <value>
+                <fullName>Président du conseil syndical</fullName>
+                <default>false</default>
+                <label>Président du conseil syndical</label>
+            </value>
+            <value>
+                <fullName>Principal syndic</fullName>
+                <default>false</default>
+                <label>Principal syndic</label>
+            </value>
+            <value>
+                <fullName>Responsable achats</fullName>
+                <default>false</default>
+                <label>Responsable achats</label>
+            </value>
+            <value>
+                <fullName>Responsable administratif</fullName>
+                <default>false</default>
+                <label>Responsable administratif</label>
+            </value>
+            <value>
+                <fullName>Responsable comptabilité</fullName>
+                <default>false</default>
+                <label>Responsable comptabilité</label>
+            </value>
+            <value>
+                <fullName>Responsable de programme</fullName>
+                <default>false</default>
+                <label>Responsable de programme</label>
+            </value>
+            <value>
+                <fullName>Responsable technique</fullName>
+                <default>false</default>
+                <label>Responsable technique</label>
+            </value>
+            <value>
+                <fullName>Responsable travaux</fullName>
+                <default>false</default>
+                <label>Responsable travaux</label>
+            </value>
+            <value>
+                <fullName>Service marché</fullName>
+                <default>false</default>
+                <label>Service marché</label>
+            </value>
+            <value>
+                <fullName>Syndic bénévole</fullName>
+                <default>false</default>
+                <label>Syndic bénévole</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

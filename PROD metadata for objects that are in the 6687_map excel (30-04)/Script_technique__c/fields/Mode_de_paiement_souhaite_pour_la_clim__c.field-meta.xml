@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mode_de_paiement_souhaite_pour_la_clim__c</fullName>
+    <label>Mode de paiement souhaité pour la clim</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clim sèche comptant</fullName>
+                <default>false</default>
+                <label>Clim sèche comptant</label>
+            </value>
+            <value>
+                <fullName>Clim sèche avec financement</fullName>
+                <default>false</default>
+                <label>Clim sèche avec financement</label>
+            </value>
+            <value>
+                <fullName>Pack confort clim comptant</fullName>
+                <default>false</default>
+                <label>Pack confort clim comptant</label>
+            </value>
+            <value>
+                <fullName>Pack confort clim avec financement</fullName>
+                <default>false</default>
+                <label>Pack confort clim avec financement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

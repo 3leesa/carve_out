@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commentaire__c</fullName>
+    <description>Sprint 1. Commentaire sur le traitement de cette demande. Sprint 46</description>
+    <inlineHelpText>Merci d&apos;ajouter le motif &quot;A revoir&quot;, et/ou la référence article.</inlineHelpText>
+    <label>Informations complémentaires avancement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annee__c</fullName>
+    <description>Sprint 11 - Affichage en texte de l&apos;année pour lesquels les objectifs sont définis (tri décroissant lorsque les informations commerciales sont en liste associée).</description>
+    <externalId>false</externalId>
+    <formula>YEAR( Periode__c )</formula>
+    <label>Année</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

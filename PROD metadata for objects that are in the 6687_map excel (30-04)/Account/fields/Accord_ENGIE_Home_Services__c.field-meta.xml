@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accord_ENGIE_Home_Services__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>label a modifier</description>
+    <inlineHelpText>Accord du client pour recevoir des propositions commerciales par Email de la part de ENGIE Home Services.</inlineHelpText>
+    <label>Accord actions Co. EHS via Mail</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

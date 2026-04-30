@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Email_Agence__c</fullName>
+    <description>Champ technique pour l&apos;US CRM-576. Contient l&apos;email de l&apos;agence rattachée à l&apos;équipement.</description>
+    <externalId>false</externalId>
+    <label>TECH Email Agence</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

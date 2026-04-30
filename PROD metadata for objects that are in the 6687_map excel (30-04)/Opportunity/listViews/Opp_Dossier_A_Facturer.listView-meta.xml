@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Dossier_A_Facturer</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR (7 AND 8))</booleanFilter>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>n_du_telephone_du_client__c</columns>
+    <columns>date_Edition_de_facture__c</columns>
+    <columns>Date_de_pose_previsionnelle__c</columns>
+    <columns>LogementConcerne__c</columns>
+    <columns>Type_equipement_propose__c</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MonSite__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Equipement</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>&quot;Pose réalisée, à facturer&quot;</value>
+    </filters>
+    <filters>
+        <field>Date_de_pose_previsionnelle__c</field>
+        <operation>lessThan</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>date_Edition_de_facture__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.CRM_B2C,Opportunity.Contrat</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Appareil_Agence_Digitale</value>
+    </filters>
+    <filters>
+        <field>ATransfererAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>07. Dossier à facturer</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>ChefEquipe_Conseillere</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>DirecteurAgence_ConseillerePrincipale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

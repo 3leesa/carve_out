@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CC_Case_Numero_Gazelle__c</fullName>
+    <description>CC-151 : Utilisé pour les template d&apos;email Community.
+Rempli avec une trigger ne s&apos;activant que pour les users Community.
+Correspond à Case.NumeroGazelleContact__c.</description>
+    <externalId>false</externalId>
+    <label>CC Case Numéro Gazelle</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

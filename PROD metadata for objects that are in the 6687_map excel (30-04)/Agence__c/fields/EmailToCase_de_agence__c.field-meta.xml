@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EmailToCase_de_agence__c</fullName>
+    <description>CRM-571 : Email de l&apos;agence utilisé dans le cadre d&apos;EmailToCase pour lié les emails entrants et les agences.</description>
+    <externalId>false</externalId>
+    <label>EmailToCase de agence</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

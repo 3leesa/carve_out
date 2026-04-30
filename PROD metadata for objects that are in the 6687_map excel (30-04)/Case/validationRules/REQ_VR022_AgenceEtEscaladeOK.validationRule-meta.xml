@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR022_AgenceEtEscaladeOK</fullName>
+    <active>true</active>
+    <description>Vérifie que lors de l&apos;escalade, l&apos;utilisateur a bien choisi une agence qui traite les demandes de ce niveau.</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ),
+TEXT( NiveauDEscalade__c ) &lt;&gt;  TEXT( ChoixAgence__r.Niveau_d_escalade_trait_par_ce_site__c ),
+ISPICKVAL(Type, &apos;Réclamation&apos;) )</errorConditionFormula>
+    <errorDisplayField>ChoixAgence__c</errorDisplayField>
+    <errorMessage>Veuillez choisir un site habilité à traiter les demandes de ce niveau d&apos;escalade.</errorMessage>
+</ValidationRule>

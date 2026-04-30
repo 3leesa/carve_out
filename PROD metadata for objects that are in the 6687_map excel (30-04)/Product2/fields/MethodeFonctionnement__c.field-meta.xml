@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MethodeFonctionnement__c</fullName>
+    <description>déduit de la description longue</description>
+    <label>Méthode de fonctionnement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Basse température</fullName>
+                <default>false</default>
+                <label>Basse température</label>
+            </value>
+            <value>
+                <fullName>Moyenne température</fullName>
+                <default>false</default>
+                <label>Moyenne température</label>
+            </value>
+            <value>
+                <fullName>Haute température</fullName>
+                <default>false</default>
+                <label>Haute température</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

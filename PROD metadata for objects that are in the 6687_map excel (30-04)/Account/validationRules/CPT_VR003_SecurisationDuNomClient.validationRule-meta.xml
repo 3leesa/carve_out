@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR003_SecurisationDuNomClient</fullName>
+    <active>true</active>
+    <description>Le nom du client ne peut pas être modifié dans le cas ou on souhaite effectuer une modification d&apos;un changement d&apos;occupant. Il faut aller dans une autre page dédiée.
+MCOSF-4657: bypass pour Privacy Center</description>
+    <errorConditionFormula>AND( 
+$User.Id &lt;&gt; &apos;0051p000009mcLA&apos;,
+NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ), 
+!ISBLANK(PRIORVALUE( LastName )),
+ISCHANGED( LastName ),
+Modifier_Nom_client__c  = false,
+(ISPICKVAL(Statut__c, &apos;A&apos;)),
+NOT(ISCHANGED(ToBeDeleted__c)),
+NOT(ISCHANGED(ToBeArchived__c)),
+NOT(ISCHANGED(HasBeenCustomer__c))
+)</errorConditionFormula>
+    <errorMessage>Le nom du client ne peut pas être modifié dans le cas où on souhaite effectuer une modification d&apos;un changement d&apos;occupant. Il faut aller dans une autre page dédiée.
+Bypass pour le user Jumanji</errorMessage>
+</ValidationRule>

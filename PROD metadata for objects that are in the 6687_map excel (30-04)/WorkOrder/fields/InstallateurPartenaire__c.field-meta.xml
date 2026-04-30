@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InstallateurPartenaire__c</fullName>
+    <description>Sprint 18: installateur partenaire (champs texte non synchronisé avec GZL) pour que la conseillère  renseigne l&apos;installateur.</description>
+    <externalId>false</externalId>
+    <label>Installateur partenaire</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

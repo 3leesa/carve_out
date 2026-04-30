@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_GenericProduct_Chaudiere__c</fullName>
+    <formula>IF((ISPICKVAL(ProduitGenerique__r.Fonction__c, &apos;D&apos;))
+||(ISPICKVAL(ProduitGenerique__r.Fonction__c, &apos;F&apos;))
+|| (ISPICKVAL(ProduitGenerique__r.Fonction__c, &apos;G&apos;)),
+TRUE,
+FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_GenericProduct_Chaudière</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

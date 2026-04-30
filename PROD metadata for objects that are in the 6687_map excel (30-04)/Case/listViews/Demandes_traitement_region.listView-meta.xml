@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demandes_traitement_region</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>NAME</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.REASON</columns>
+    <columns>SousMotif__c</columns>
+    <columns>CategorieDemande__c</columns>
+    <columns>NbRelancesActuel__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>ChoixAgence__c</columns>
+    <columns>PARENT.CASE_NUMBER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>MonAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Nouveau</value>
+    </filters>
+    <filters>
+        <field>NiveauDEscalade__c</field>
+        <operation>equals</operation>
+        <value>Courante</value>
+    </filters>
+    <filters>
+        <field>NumLot__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>notEqual</operation>
+        <value>Visite / Entretien</value>
+    </filters>
+    <label>Demandes en traitement de ma région</label>
+    <language>fr</language>
+    <sharedTo>
+        <role>DirecteurRegional</role>
+        <role>ReferentRelationClient</role>
+    </sharedTo>
+</ListView>

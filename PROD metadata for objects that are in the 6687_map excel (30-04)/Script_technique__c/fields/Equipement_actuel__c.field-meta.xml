@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipement_actuel__c</fullName>
+    <label>Equipement actuel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chaudière gaz hors condensation</fullName>
+                <default>false</default>
+                <label>Chaudière gaz hors condensation</label>
+            </value>
+            <value>
+                <fullName>Chaudière gaz à condensation</fullName>
+                <default>false</default>
+                <label>Chaudière gaz à condensation</label>
+            </value>
+            <value>
+                <fullName>Chaudière à charbon</fullName>
+                <default>false</default>
+                <label>Chaudière à charbon</label>
+            </value>
+            <value>
+                <fullName>Pompe à chaleur</fullName>
+                <default>false</default>
+                <label>Pompe à chaleur</label>
+            </value>
+            <value>
+                <fullName>Chaudière fioul hors condensation</fullName>
+                <default>false</default>
+                <label>Chaudière fioul hors condensation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

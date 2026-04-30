@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NbRelanceEscNiveau2__c</fullName>
+    <description>Sprint 2 - nombre de relances au niveau d&apos;escalade &apos;Niveau 2&apos;</description>
+    <inlineHelpText>Nombre de relances de niveau 2</inlineHelpText>
+    <label>Nombre de relances Niveau 2</label>
+    <summaryFilterItems>
+        <field>Relance__c.NiveauEscalade__c</field>
+        <operation>equals</operation>
+        <value>Niveau 2</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Relance__c.NumeroDemandeMere__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

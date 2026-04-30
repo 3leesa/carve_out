@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AFL_ServiceContract_Number__c</fullName>
+    <description>MCOSF-62 : Numéro de contrat - utilisé dans le template de mail de retard Afludia</description>
+    <externalId>false</externalId>
+    <label>AFL_ServiceContract_Number</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

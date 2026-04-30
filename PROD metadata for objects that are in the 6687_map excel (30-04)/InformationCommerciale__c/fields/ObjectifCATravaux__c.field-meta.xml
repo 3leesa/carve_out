@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObjectifCATravaux__c</fullName>
+    <description>Sprint 11 - Objectif de l&apos;utilisateur associé en termes de chiffre d&apos;affaires sur les travaux.</description>
+    <inlineHelpText>8 caractères</inlineHelpText>
+    <label>Objectif de CA - Travaux (€)</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

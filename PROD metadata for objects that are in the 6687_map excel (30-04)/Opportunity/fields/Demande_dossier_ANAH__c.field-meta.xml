@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demande_dossier_ANAH__c</fullName>
+    <description>Gestion Plan 600 sur l&apos;opportunité - CRM-559</description>
+    <label>Demande dossier ANAH</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>25 % (du devis HT)</fullName>
+                <default>false</default>
+                <label>25%</label>
+            </value>
+            <value>
+                <fullName>30 % (du devis HT)</fullName>
+                <default>false</default>
+                <label>30%</label>
+            </value>
+            <value>
+                <fullName>35 % (du devis HT)</fullName>
+                <default>false</default>
+                <label>35% du devis HT (modeste)</label>
+            </value>
+            <value>
+                <fullName>40 % (du devis HT)</fullName>
+                <default>false</default>
+                <label>40%</label>
+            </value>
+            <value>
+                <fullName>45 % (du devis HT)</fullName>
+                <default>false</default>
+                <label>45%</label>
+            </value>
+            <value>
+                <fullName>50 % (du devis HT)</fullName>
+                <default>false</default>
+                <label>50% du devis HT (très modeste)</label>
+            </value>
+            <value>
+                <fullName>55 % (du devis HT)</fullName>
+                <default>false</default>
+                <label>55%</label>
+            </value>
+            <value>
+                <fullName>60 % (du devis HT)</fullName>
+                <default>false</default>
+                <label>60%</label>
+            </value>
+            <value>
+                <fullName>Potentiellement éligible / à déterminer</fullName>
+                <default>false</default>
+                <label>A déterminer</label>
+            </value>
+            <value>
+                <fullName>Non éligible</fullName>
+                <default>false</default>
+                <label>Non éligible</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

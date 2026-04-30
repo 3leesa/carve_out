@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_equipement_souhaite_2__c</fullName>
+    <label>Type d&apos;équipement souhaité n°2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adoucisseur</fullName>
+                <default>false</default>
+                <label>Adoucisseur</label>
+            </value>
+            <value>
+                <fullName>Chaudière gaz</fullName>
+                <default>false</default>
+                <label>Chaudière gaz</label>
+            </value>
+            <value>
+                <fullName>Chaudière fioul</fullName>
+                <default>false</default>
+                <label>Chaudière fioul</label>
+            </value>
+            <value>
+                <fullName>Chaudière bois</fullName>
+                <default>false</default>
+                <label>Chaudière bois</label>
+            </value>
+            <value>
+                <fullName>Climatisation</fullName>
+                <default>false</default>
+                <label>Climatisation</label>
+            </value>
+            <value>
+                <fullName>Pompe à chaleur</fullName>
+                <default>false</default>
+                <label>Pompe à chaleur</label>
+            </value>
+            <value>
+                <fullName>Ballon électrique</fullName>
+                <default>false</default>
+                <label>Ballon électrique</label>
+            </value>
+            <value>
+                <fullName>Radiateur électrique</fullName>
+                <default>false</default>
+                <label>Radiateur électrique</label>
+            </value>
+            <value>
+                <fullName>Radiateur gaz</fullName>
+                <default>false</default>
+                <label>Radiateur gaz</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>Chaudière à granulés</fullName>
+                <default>false</default>
+                <label>Chaudière à granulés</label>
+            </value>
+            <value>
+                <fullName>Pompe à chaleur hybride gaz</fullName>
+                <default>false</default>
+                <label>Pompe à chaleur hybride gaz</label>
+            </value>
+            <value>
+                <fullName>Thermostat Connecté</fullName>
+                <default>false</default>
+                <label>Thermostat Connecté</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

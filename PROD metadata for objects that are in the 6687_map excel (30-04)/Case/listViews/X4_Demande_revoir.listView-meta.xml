@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X4_Demande_revoir</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>StatutInterventions__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>AdresseIntervention__c</columns>
+    <columns>ServiceContract__c</columns>
+    <columns>AdresseDeFacturation__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>MonAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>En cours</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Dépannage,Mise en service,Pose d&apos;équipement,Visite / Entretien,Dépannage+VE</value>
+    </filters>
+    <filters>
+        <field>TECH_NombreInterventionARevoir__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.SUBJECT</field>
+        <operation>contains</operation>
+        <value>rdv,RDV,RENDEZ VOUS,RENDEZ-VOUS,rendez-vous,rendez vous</value>
+    </filters>
+    <label>4. Mes demandes réattribuées Reprog RDV</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>AdministrateursSysteme</group>
+    </sharedTo>
+</ListView>

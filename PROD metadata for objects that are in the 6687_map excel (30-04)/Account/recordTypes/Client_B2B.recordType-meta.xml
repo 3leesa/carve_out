@@ -1,0 +1,4791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_B2B</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>B2B_Pr_sentation_compacte_du_compte</compactLayoutAssignment>
+    <label>Client B2B</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Achat de fichiers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouche à oreille</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partenaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relations publiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Référence Employé%28e%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Référence externe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Séminaire - Interne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Séminaire - Partenaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Action_realisee__c</picklist>
+        <values>
+            <fullName>RDV pris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfert LEE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Age_du_logement__c</picklist>
+        <values>
+            <fullName>Moins de 2 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plus de 2 ans</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Agence__c</picklist>
+        <values>
+            <fullName>Liste des agences à définir</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Agences__c</picklist>
+        <values>
+            <fullName>AGENCE AGEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE AIX CELONY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE AJACCIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ALBI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ALENCON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ALES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE AMIENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ANGERS BEAUCOUZE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ANGERS CHATENAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ANGERS CHAUFFERIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ANGLET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ANGOULEME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ANNECY CRAN GEVRIER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ANNONAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ARCACHON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ARGENTON SUR CREUSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ARLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ARRAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE AUCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE AURILLAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE AUXERRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE AVIGNON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BASTIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BEAUVAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BELFORT MONTBELIARD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BESANCON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BESANCON VMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BEZIERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BLOIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BORDEAUX OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BORDEAUX RIVE DROITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BOULOGNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BOURG DE PEAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BOURG EN BRESSE SAINT DENIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BOURGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BOURGOIN JALLIEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BREST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BRIGNOLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BRIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE BRUAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CAEN CARPIQUET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CAEN MONDEVILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CAHORS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CALAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CARCASSONNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CASTRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CELLULE TRAVAUX EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHALON SUR SAONE THALIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHALONS EN CHAMPAGNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHAMBERY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHARLEVILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHARTRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHATEAUBRIAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHATEAUDUN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHATEAUROUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHATELLERAULT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHAUMONT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHERBOURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CHOLET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CLERMONT COURNON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CLERMONT FERRAND BREZET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE COLMAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE COMBS LA VILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE COUERON CAP RENOV 44</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE CREIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE DIEPPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE DIJON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE DOUAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE DREUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE DUNKERQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE EPERNAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ESSONNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ETAMPES TECHNIC GAZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE EVREUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE FEURS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE FIRMINY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE FONDETTES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE FOUGERES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE FREJUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE GAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE GAZ CONFORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE GRAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE GRENOBLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE GUERANDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE HAUTS DE SEINE NORD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE HAUTS DE SEINE SUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE IDF CHAUFFERIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ISSOIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ISTRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE L AIGLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LA FERTE BERNARD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LA FLECHE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LA ROCHE SUR YON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LA ROCHELLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LANNION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LAON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LAVAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LE BLANC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LE CANNET 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LE CANNET CHAUFFERIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LE CREUSOT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LE HAVRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LE HAVRE DAHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LE MANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LE MANS CHAUFFERIES PAC CLIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LES MEES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LES SABLES D OLONNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LESPARRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LILLE LESQUIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LILLE VILLENEUVE D ASCQ 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LILLE VILLENEUVE D ASCQ 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LIMOGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LONGWY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LORIENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LYON BRIGNAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LYON CENTRE THERMIGAZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LYON CHAUFFERIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LYON DECINES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LYON TASSIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE LYON THERMIGAZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MACON CHARNAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MANTES LA JOLIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MARSEILLE GEMENOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MARSEILLE LITTORAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MAUBEUGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MAUREPAS GAZ PLUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE METZ NORD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE METZ SUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MONT DE MARSAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MONTAUBAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MONTELIMAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MONTMAGNY COLLECTIF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MONTMAGNY PARTICULIERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MONTPELLIER OCCITANIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MONTPELLIER SUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MORLAIX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MOULINS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE MULHOUSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NANCY EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NANCY OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NANTES BOUGUENAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NANTES CHAUFFERIES CLIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NANTES MARCHE COMMUN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NANTES SAINT HERBLAIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NEVERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NIMES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NIMES VMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NIORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NORD CAP RENOV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE NOYERS SUR CHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE OLORON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ORLEANS LES MONTEES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ORLEANS SAINT JEAN DE LA RUELLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE PAMIERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE PARIS EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE PARIS RIVE DROITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE PARIS RIVE GAUCHE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE PAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE PAYS DE GEX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE PERIGUEUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE PERPIGNAN CABESTANY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE PITHIVIERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE POITIERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE PONTIVY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE PORT GRIMAUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE QUIMPER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE REIMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE RENNES ACIGNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE RENNES DONELIERE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ROANNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ROMORANTIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ROSBRUCK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ROUEN DEVILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ROUEN GRAND QUEVILLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE ROYAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SAINT BRIEUC PLERIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SAINT CLAUDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SAINT ETIENNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SAINT GAUDENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SAINT LO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SAINT MALO ARMORICAINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SAINT MALO EMERAUDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SAINT NAZAIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SAINT NICOLAS DE REDON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SAINT QUENTIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SALBRIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SALON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SALON VMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SAUMUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SEINE ET MARNE NORD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SEINE ET MARNE SUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SEINE SAINT DENIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SETE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE SOISSONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE STRASBOURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE TARBES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE THIERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE THIONVILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE THOUARS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE TONNAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE TOULON LA FARLEDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE TOULON SIX FOURS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE TOULON VMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE TOULOUSE L UNION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE TOULOUSE OCCITANE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE TOURCOING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE TOURS SAINT PIERRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE TROYES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VAL D OISE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VAL DE MARNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VALENCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VALENCIENNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VANNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VERDUN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VESOUL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VICHY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VIENNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VIERZON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VILLEFRANCHE SUR SAONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VILLEMANDEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VILLENEUVE LOUBET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VILLENEUVE VMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE VMC IDF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE YVELINES NORD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGENCE YVELINES SUD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Agent_de_traitement__c</picklist>
+        <values>
+            <fullName>Agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arvato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comdata</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Departement__c</picklist>
+        <values>
+            <fullName>1 - Ain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 - Aube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11 - Aude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 - Aveyron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13 - Bouches-du-Rhône</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 - Calvados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15 - Cantal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16 - Charente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17 - Charente-Maritime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18 - Cher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19 - Corrèze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Aisne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20 - Corse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21 - Côte-d%27Or</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22 - Côtes d%27Armor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23 - Creuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 - Dordogne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25 - Doubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26 - Drôme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27 - Eure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28 - Eure-et-Loir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>29 - Finistère</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Allier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 - Gard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31 - Haute-Garonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32 - Gers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33 - Gironde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>34 - Hérault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35 - Ille-et-Vilaine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36 - Indre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>37 - Indre-et-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>38 - Isère</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>39 - Jura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Alpes de Hautes-Provence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40 - Landes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>41 - Loir-et-Cher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42 - Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>43 - Haute-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44 - Loire-Atlantique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 - Loiret</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46 - Lot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>47 - Lot-et-Garonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48 - Lozère</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>49 - Maine-et-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Hautes-Alpes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50 - Manche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51 - Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>52 - Haute-Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>53 - Mayenne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54 - Meurthe-et-Moselle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55 - Meuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>56 - Morbihan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>57 - Moselle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>58 - Nièvre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>59 - Nord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - Alpes-Maritimes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 - Oise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>61 - Orne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>62 - Pas-de-Calais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>63 - Puy-de-Dôme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>64 - Pyrénées-Atlantiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>65 - Hautes-Pyrénées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>66 - Pyrénées-Orientales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>67 - Bas-Rhin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>68 - Haut-Rhin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>69 - Rhône</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>69 - Rhône %28Lyon chaufferie%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 - Ardèche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70 - Haute-Saône</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>71 - Saône-et-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72 - Sarthe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>73 - Savoie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>74 - Haute-Savoie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75 - Paris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>76 - Seine-Maritime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>77 - Seine-et-Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>78 - Yvelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>79 - Deux-Sèvres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8 - Ardennes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80 - Somme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>81 - Tarn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>82 - Tarn-et-Garonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>83 - Var</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>84 - Vaucluse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>85 - Vendée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>86 - Vienne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>87 - Haute-Vienne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>88 - Vosges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>89 - Yonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9 - Ariège</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 - Territoire-de-Belfort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>91 - Essonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>92 - Hauts-de-Seine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>93 - Seine-Saint-Denis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>94 - Val-de-Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>95 - Val-d%27Oise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_N_DR__c</picklist>
+        <values>
+            <fullName>T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T8</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Region__c</picklist>
+        <values>
+            <fullName>CENTRE-IDF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORD-EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUD-EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUD-OUEST</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Statut__c</picklist>
+        <values>
+            <fullName>Chaud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Froid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiède</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Type_de_segment__c</picklist>
+        <values>
+            <fullName>Privé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2B_Typologie__c</picklist>
+        <values>
+            <fullName>Administrateur de bien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Artisan%2C commerçant %26 PME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre professionnel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bailleur privé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bailleur social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collectivité locale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constructeur de maison individuelle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributeur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EHPAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Economiste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gendarmerie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hôtellerie %26 Loisir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hôtellerie de plein air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mairie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promoteur Immobilier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service à la personne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structure médicale publique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syndic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syndicat des copropriétaires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Établissement scolaire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>B2C_Region__c</picklist>
+        <values>
+            <fullName>T1_Méditerranée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2_Centre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T3_Rhône-Alpes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T4_Ouest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T5_Est</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T6_Sud-Ouest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T7_IDF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CSP__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CanalPrivilegie__c</picklist>
+        <values>
+            <fullName>Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Espace Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléphone</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Canal_de_reception__c</picklist>
+        <values>
+            <fullName>Appel entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commande en ligne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formulaire en ligne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfert à chaud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClasseProfilClient__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1041</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1042</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1043</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1044</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1045</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClassificationClient__c</picklist>
+        <values>
+            <fullName>En attente des valeurs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ComplementNumVoieFactu__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUATER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TER</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CompositionFoyer__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 ou %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ConfidentialiteInformations__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléphone %2B Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléphone autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléphone fixe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléphone mobile</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Creneau_de_rappel_souhaite__c</picklist>
+        <values>
+            <fullName>11h-13h</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13h-15h</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15h-17h</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17h-19h</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9h-11h</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Echeance_de_traitement__c</picklist>
+        <values>
+            <fullName>P1 %3A Dans la journée %288h max%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2 %3A 48h</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3 %3A 72h</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P4 %3A Au créneau et à la date définis par le client</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Echeance_du_projet__c</picklist>
+        <values>
+            <fullName>1 à 3 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 à 6 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le plus rapidement possible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moins de 6 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plus de 6 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>immédiat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>supérieur 6 mois</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Handicap__c</picklist>
+        <values>
+            <fullName>Aveugle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immobilisé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sourd</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agroalimentaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automobile et équipement automobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aéronautique et Défense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bois - Papier - Carton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce et artisanat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communication et Médias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction %28BTP et Génie Civil%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Divertissement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie et eau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entité à but non lucratif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environnement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expédition et logistique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hôtellerie - Restauration - Tourisme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immobilier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imprimerie et édition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie %28autre%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie chimique et pharmaceutique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie du Luxe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informatique et services informatiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingénierie et technologie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loisirs et équipements de loisirs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secteur public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services de conseils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textile et habillement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Télécommunications et Internet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LastCashingStatus__c</picklist>
+        <values>
+            <fullName>KO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_AD_RaisonCloture__c</picklist>
+        <values>
+            <fullName>Demande de contrat d%E2%80%99énergie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis perdu %E2%80%93 Abandon du projet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis perdu %E2%80%93 Choix de la concurrence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis refusé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis sans suite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dossier ANAH refusé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dossier de financement refusé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doublon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimation perdue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faux numéro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hors cible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inscription forcée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de projet de remplacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projet abandonné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projet pas mûr - Délai %3E 6 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Script technique sans suite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test %E2%80%93 Fausse demande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfert agence %E2%80%93déjà client EHS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfert agence %E2%80%93hors périmètre AD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visite annulée cause agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visite annulée cause client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visite non réalisée %E2%80%93 Annulée cause agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visite non réalisée %E2%80%93 Annulée cause client</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_AD_Source__c</picklist>
+        <values>
+            <fullName>Appel entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bien chez moi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quelle énergie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Clim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ModeReglement__c</picklist>
+        <values>
+            <fullName>1006</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1023</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1051</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1062</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1069</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1079</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1088</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1097</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1115</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1124</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1133</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1136</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1151</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3155</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motif_non_conversion__c</picklist>
+        <values>
+            <fullName>Contact polluant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faux numéro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horaires trop contraignants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injoignable permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interlocuteur non décisionnaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de projet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas intéressé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prix trop élevé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projet déjà réalisé %28appareil %2F VE %2F dépannage%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projet non mature %3C 6 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projet non mature %3E 6 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect déjà sous contrat avec un concurrent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Préfère un artisan local</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Objet_de_la_demande__c</picklist>
+        <values>
+            <fullName>Contrat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dépannage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Objet_de_la_demande_final__c</picklist>
+        <values>
+            <fullName>Contrat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dépannage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Offre_souhaitee__c</picklist>
+        <values>
+            <fullName>Diagnostic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Essentiel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intégral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCTI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack Eideris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack PAC conversion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack PAC renouvellement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack confort Clim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sécurité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vente sèche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visite forfaitaire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Offre_souhaitee_final__c</picklist>
+        <values>
+            <fullName>Diagnostic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Essentiel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intégral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCTI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack Eideris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack PAC conversion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack PAC renouvellement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack confort Clim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sécurité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vente sèche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visite forfaitaire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunite_commerciale__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OptinGroupeEngie__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nspp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OptinPartenairesEHS__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nspp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Option_souhaitee_final__c</picklist>
+        <values>
+            <fullName>7%2F7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aucune</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suivi à distance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Option_souhaitee_sur_contrat__c</picklist>
+        <values>
+            <fullName>7%2F7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aucune</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suivi à distance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OriginClient__c</picklist>
+        <values>
+            <fullName>ENGIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prescription</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rachat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origine_detaillee_2__c</picklist>
+        <values>
+            <fullName>Dunkerque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type d%27affiliation %3A CRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type d%27affiliation %3A Emulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Type d%27affiliation %3A Landing Page</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origine_detaillee_3__c</picklist>
+        <values>
+            <fullName>BOT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cashback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coupon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Display</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SalonEvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Televente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eCouponeur</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origine_detaillee__c</picklist>
+        <values>
+            <fullName>CRC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energiefutee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fioulreduc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groupon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HabitatPresto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jechange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kwanko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Média</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon%2FEvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selectra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site web DCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site web DGP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storelocator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Télévente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veepee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>CUMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GEIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F102</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F103</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1030</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F104</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1041</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F105</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F107</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F108</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F109</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F110</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F111</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F112</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F113</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F114</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F115</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F116</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F117</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F118</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F119</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1201</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1202</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1203</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1204</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F121</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1210</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1211</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1212</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F122</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F125</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F126</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F127</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F128</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F129</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F130</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F131</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F132</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F133</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F134</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F135</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F136</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F137</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F140</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F142</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F143</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F144</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F145</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F146</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F147</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F148</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F150</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F151</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F152</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F153</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F154</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F155</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F156</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F157</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F160</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F161</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F162</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F163</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F164</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F166</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F167</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F168</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F169</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F170</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F171</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F180</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F185</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F186</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F190</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F1999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F2001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F2002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F2003</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F2004</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F2005</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F2006</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F2007</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F2008</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F2009</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F2010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F203</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F204</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F210</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F211</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F220</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F230</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F240</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F250</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F260</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F270</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F280</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F290</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3003</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3004</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3005</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3006</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3007</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3008</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3009</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F301</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3011</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3012</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3013</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3016</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3017</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3025</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3027</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3029</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3031</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3032</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3041</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3042</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3043</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3044</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3045</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3046</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3047</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3048</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3049</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3050</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3051</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3052</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3053</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3054</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3061</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3062</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3063</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3064</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3065</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3066</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3067</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3068</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3069</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3070</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3071</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3072</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3073</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3074</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3075</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3076</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3077</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3078</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F3079</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F310</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F320</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F330</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F340</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F350</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F360</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F370</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F380</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F390</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F410</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F420</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F430</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F440</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F450</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F460</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F470</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F480</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F490</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F502</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F51</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F510</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F52</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F520</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F530</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F540</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F550</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F560</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F570</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F580</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F590</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F610</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F620</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F630</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F640</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F650</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F660</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F670</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F680</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F690</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F70</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F700</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F710</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F720</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F730</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F740</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F750</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F760</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F770</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F780</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F790</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F80</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F810</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F813</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F814</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F820</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F830</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F840</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F850</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F860</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F870</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F880</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F890</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F900</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F910</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F920</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F930</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F940</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F950</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F960</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F970</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F971</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F972</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F973</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F974</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F975</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F976</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F977</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F978</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F980</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F983</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F990</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSC%2F999</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPHLM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAFER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SARL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCOP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SICA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SICAV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SICOMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIVOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIVU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priorite__c</picklist>
+        <values>
+            <fullName>Chaud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Froid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Chaud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Froid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiède</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>RG1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RG2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RG3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RG4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RG5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RG6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RG7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RG8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RG9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RegionsZoneComplete__c</picklist>
+        <values>
+            <fullName>T1_MEDITERRANEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2_CENTRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T3_RHONE_ALPES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T4_OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T5_EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T6_SUD_OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T7_IDF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T8_NORD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__CoTerminationEvent__c</picklist>
+        <values>
+            <fullName>Add-on</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ContractCoTermination__c</picklist>
+        <values>
+            <fullName>Always</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Prompt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__RenewalModel__c</picklist>
+        <values>
+            <fullName>Asset Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Based</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__RenewalPricingMethod__c</picklist>
+        <values>
+            <fullName>List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Uplift</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__TaxExempt__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SegmentationClient__c</picklist>
+        <values>
+            <fullName>COLLECTIF PRIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COLLECTIF SOCIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONSTRUCTEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEBITEUR DIVERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDIVIDUEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PUBLIC SECTOR COMPANIES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SousTypeClient__c</picklist>
+        <values>
+            <fullName>Caserne Pompier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collectivité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collège</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entreprise tertiaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gendarmerie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grande surface de distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La Poste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lycée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Particulier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petit professionnel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sous_statut_conversion__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RDV Pris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfert Agence Digitale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfert Service Client EHS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StatutCompte__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>I</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_de_la_conversion__c</picklist>
+        <values>
+            <fullName>A traiter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traité et converti en projet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traité et transféré</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traité non converti</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_du_menage__c</picklist>
+        <values>
+            <fullName>Modeste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non modeste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Très modeste</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Ancien client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client contrat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client travaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect avec projet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect sans projet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeDeClient__c</picklist>
+        <values>
+            <fullName>COLL_LOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collectif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HLM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDUSTRIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individuel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PUBLIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYNDIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TERTIAIRE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeOrganisation__c</picklist>
+        <values>
+            <fullName>Agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cabinet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Société</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeVoieFactu__c</picklist>
+        <values>
+            <fullName>Allée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avenue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boulevard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaussée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Château</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloître</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corniche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cottage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Côte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domaine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecluse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eglise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Esplanade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faubourg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hameau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impasse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jardin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lotissement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moulin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Place</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Placis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promenade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quartier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rempart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rocade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rond point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ruelle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résidence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sentier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traverse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Val</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venelle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Via</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Villa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voie</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_equipement__c</picklist>
+        <values>
+            <fullName>Adoucisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ballon électrique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière bois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul murale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz murale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Climatisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur gaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur électrique</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_equipement_souhaite_2__c</picklist>
+        <values>
+            <fullName>Adoucisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ballon électrique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière bois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Climatisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur gaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur électrique</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_equipement_souhaite__c</picklist>
+        <values>
+            <fullName>Adoucisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ballon électrique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière bois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul murale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz murale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Climatisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur gaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur électrique</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_equipement_souhaite_final_2__c</picklist>
+        <values>
+            <fullName>Adoucisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ballon électrique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière bois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Climatisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur gaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur électrique</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_equipement_souhaite_final__c</picklist>
+        <values>
+            <fullName>Adoucisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ballon électrique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière bois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul murale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière fioul sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz murale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Climatisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur gaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateur électrique</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_parcours__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Typologie_de_contact__c</picklist>
+        <values>
+            <fullName>Contact non utile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact utile Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact utile Relation Client</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

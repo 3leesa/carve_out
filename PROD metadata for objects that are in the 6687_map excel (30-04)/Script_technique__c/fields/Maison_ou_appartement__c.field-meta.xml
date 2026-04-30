@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maison_ou_appartement__c</fullName>
+    <label>Maison ou appartement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Maison &lt; 2 ans</fullName>
+                <default>false</default>
+                <label>Maison &lt; 2 ans</label>
+            </value>
+            <value>
+                <fullName>Maison &gt; 2 ans</fullName>
+                <default>false</default>
+                <label>Maison &gt; 2 ans</label>
+            </value>
+            <value>
+                <fullName>Appartement &lt; 2 ans Syndic OK</fullName>
+                <default>false</default>
+                <label>Appartement &lt; 2 ans Syndic OK</label>
+            </value>
+            <value>
+                <fullName>Appartement &lt; 2 ans Syndic PAS OK</fullName>
+                <default>false</default>
+                <label>Appartement &lt; 2 ans Syndic PAS OK</label>
+            </value>
+            <value>
+                <fullName>Appartement &gt; 2 ans Syndic OK</fullName>
+                <default>false</default>
+                <label>Appartement &gt; 2 ans Syndic OK</label>
+            </value>
+            <value>
+                <fullName>Appartement &gt; 2 ans Syndic PAS OK</fullName>
+                <default>false</default>
+                <label>Appartement &gt; 2 ans Syndic PAS OK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

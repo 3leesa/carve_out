@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformationCRC__c</fullName>
+    <description>Sprint 14 : Information CRC pour les interactions CRC / Agence</description>
+    <inlineHelpText>Pas de disponibilité d&apos;agenda - Le CRC n&apos;a pas les droits de prendre ce rendez-vous
+Rendez-vous non autorisé - le CRC n&apos;a pas autorité à prendre ce rendez-vous
+Réclamation technicien non venu - le technicien n&apos;est pas passé chez le client</inlineHelpText>
+    <label>Information CRC</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pas de disponibilité d&apos;agenda</fullName>
+                <default>false</default>
+                <label>Pas de disponibilité d&apos;agenda</label>
+            </value>
+            <value>
+                <fullName>Urgence technique Trans. Agence</fullName>
+                <default>false</default>
+                <label>Urgence technique Trans. Agence</label>
+            </value>
+            <value>
+                <fullName>UT HO Appel OK N°Urgence technique Agence</fullName>
+                <default>false</default>
+                <label>UT HO Appel OK N°Urgence technique Agence</label>
+            </value>
+            <value>
+                <fullName>UT HO Appel KO N°Urgence technique Agence</fullName>
+                <default>false</default>
+                <label>UT HO Appel KO N°Urgence technique Agence</label>
+            </value>
+            <value>
+                <fullName>Rendez-vous non autorisé</fullName>
+                <default>false</default>
+                <label>Rendez-vous non autorisé</label>
+            </value>
+            <value>
+                <fullName>Rendez-vous forcé</fullName>
+                <default>false</default>
+                <label>Rendez-vous forcé</label>
+            </value>
+            <value>
+                <fullName>Réclamation technicien non venu</fullName>
+                <default>false</default>
+                <label>Réclamation technicien non venu</label>
+            </value>
+            <value>
+                <fullName>Transmission repondeur agence</fullName>
+                <default>false</default>
+                <label>Transmission repondeur agence</label>
+            </value>
+            <value>
+                <fullName>Transmisson Bal PermAst</fullName>
+                <default>false</default>
+                <label>Transmisson Bal PermAst</label>
+            </value>
+            <value>
+                <fullName>Rendez-vous forcé (emménageant)</fullName>
+                <default>false</default>
+                <label>Rendez-vous forcé (emménageant)</label>
+            </value>
+            <value>
+                <fullName>Rendez-vous impossible (PB technique)</fullName>
+                <default>false</default>
+                <label>Rendez-vous impossible (PB technique)</label>
+            </value>
+            <value>
+                <fullName>Rendez-vous non autorisé-DGI</fullName>
+                <default>false</default>
+                <label>Rendez-vous non autorisé-DGI</label>
+            </value>
+            <value>
+                <fullName>Espace client - Pas de disponibilité agenda</fullName>
+                <default>false</default>
+                <label>Espace client - Pas de disponibilité agenda</label>
+            </value>
+            <value>
+                <fullName>Rdv non autorisé-illigo</fullName>
+                <default>false</default>
+                <label>Rdv non autorisé-illigo</label>
+            </value>
+            <value>
+                <fullName>Transmission affludia</fullName>
+                <default>false</default>
+                <label>Transmission affludia</label>
+            </value>
+            <value>
+                <fullName>Urgence technique Trans.Affludia</fullName>
+                <default>false</default>
+                <label>Urgence technique Trans.Affludia</label>
+            </value>
+            <value>
+                <fullName>Relance devis</fullName>
+                <default>false</default>
+                <label>Relance devis</label>
+            </value>
+            <value>
+                <fullName>RDV multi équipement</fullName>
+                <default>false</default>
+                <label>RDV multi équipement</label>
+            </value>
+            <value>
+                <fullName>Agence Digitale - Visite Technique à positionner</fullName>
+                <default>false</default>
+                <label>Agence Digitale - Visite Technique à positionner</label>
+            </value>
+            <value>
+                <fullName>Problème technique</fullName>
+                <default>false</default>
+                <label>Problème technique</label>
+            </value>
+            <value>
+                <fullName>Mobilité Verte - Devis VT signé - RDV à planifier</fullName>
+                <default>false</default>
+                <label>Mobilité Verte - Devis VT signé - RDV à planifier</label>
+            </value>
+            <value>
+                <fullName>Mobilité Verte - Devis BR signé - RDV à planifier</fullName>
+                <default>false</default>
+                <label>Mobilité Verte - Devis BR signé - RDV à planifier</label>
+            </value>
+            <value>
+                <fullName>Borne Entreprise - RDV à planifier</fullName>
+                <default>false</default>
+                <label>Borne Entreprise - RDV à planifier</label>
+            </value>
+            <value>
+                <fullName>Urgence technique</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Urgence technique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

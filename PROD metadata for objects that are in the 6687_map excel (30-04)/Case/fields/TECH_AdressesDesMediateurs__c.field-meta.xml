@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_AdressesDesMediateurs__c</fullName>
+    <description>Sprint 5 - Champ technique pour afficher, sur les modèles de clôture d&apos;une réclamation (email, courrier), les coordonnées du Médiateur en fonction du niveau d&apos;escalade.</description>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(NiveauDEscalade__c)=&quot;Courante&quot;, &quot;Si vous n’êtes pas satisfait de cette réponse, vous pouvez écrire à : &quot;&amp;BR()&amp;&quot;ENGIE Home Services, Service Consommateurs - CS 90125 - 27091 EVREUX Cedex&quot;, 
+IF(TEXT(NiveauDEscalade__c)=&quot;Niveau 1&quot;, &quot;Si vous n’êtes pas satisfait de cette réponse, vous pouvez écrire à : &quot;&amp;BR()&amp;&quot;ENGIE, Courrier du Médiateur - TSA 27601– 59973 Tourcoing Cedex&quot;, 
+null
+)
+)</formula>
+    <label>TECH_AdressesDesMediateurs</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

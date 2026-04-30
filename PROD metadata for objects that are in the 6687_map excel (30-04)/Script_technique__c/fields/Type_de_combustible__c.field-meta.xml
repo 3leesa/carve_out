@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_de_combustible__c</fullName>
+    <label>Type de combustible pour votre chaudière</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gaz de ville</fullName>
+                <default>false</default>
+                <label>Gaz de ville</label>
+            </value>
+            <value>
+                <fullName>Butane propane</fullName>
+                <default>false</default>
+                <label>Butane propane</label>
+            </value>
+            <value>
+                <fullName>Fioul</fullName>
+                <default>false</default>
+                <label>Fioul</label>
+            </value>
+            <value>
+                <fullName>Electricité</fullName>
+                <default>false</default>
+                <label>Electricité</label>
+            </value>
+            <value>
+                <fullName>Bois</fullName>
+                <default>false</default>
+                <label>Bois</label>
+            </value>
+            <value>
+                <fullName>PAC</fullName>
+                <default>false</default>
+                <label>PAC</label>
+            </value>
+            <value>
+                <fullName>Géothermie</fullName>
+                <default>false</default>
+                <label>Géothermie</label>
+            </value>
+            <value>
+                <fullName>Autres</fullName>
+                <default>false</default>
+                <label>Autres</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

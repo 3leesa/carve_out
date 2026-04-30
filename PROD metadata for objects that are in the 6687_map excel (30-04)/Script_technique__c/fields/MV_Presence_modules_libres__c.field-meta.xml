@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV_Presence_modules_libres__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Besoin de 3 modules libres côte à côte (+ 2 modules libres côte à côte si l’installation nécessite un parafoudre)</inlineHelpText>
+    <label>Présence modules libres sur tableau (VT)</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installation_radiateur_plancher__c</fullName>
+    <inlineHelpText>Installation avec radiateur, plancher chauffant ou les deux</inlineHelpText>
+    <label>Installation radiateur/plancher</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Radiateurs</fullName>
+                <default>false</default>
+                <label>Radiateurs</label>
+            </value>
+            <value>
+                <fullName>Plancher</fullName>
+                <default>false</default>
+                <label>Plancher</label>
+            </value>
+            <value>
+                <fullName>Radiateurs et plancher</fullName>
+                <default>false</default>
+                <label>Radiateurs et plancher</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

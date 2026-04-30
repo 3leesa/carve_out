@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Offre__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR(Code_produit__c = &apos;ACP&apos;, Code_operation_commerciale__c = &apos;ACP&apos;), &apos;PEPA&apos;,
+IF( OR(Code_produit__c = &apos;AD1&apos;, Code_operation_commerciale__c = &apos;AD1&apos;), &apos;ADOUCISSEUR&apos;,
+IF( OR(Code_produit__c = &apos;BL1&apos;, Code_operation_commerciale__c = &apos;BL1&apos;), &apos;BALLON&apos;,
+IF( OR(Code_produit__c = &apos;CL1&apos;, Code_operation_commerciale__c = &apos;CL1&apos;), &apos;CLIM&apos;,
+IF( OR(Code_produit__c = &apos;CL2&apos;, Code_operation_commerciale__c = &apos;CL2&apos;), &apos;PACK CLIM&apos;,
+IF( OR(Code_produit__c = &apos;CL3&apos;, Code_operation_commerciale__c = &apos;CL3&apos;), &apos;CLIM MULTI SPLIT&apos;,
+IF( OR(Code_produit__c = &apos;DC&apos;, Code_produit__c = &apos;DC1&apos;,Code_operation_commerciale__c = &apos;DC&apos;, Code_operation_commerciale__c = &apos;DC1&apos;), &apos;DEPANNAGE CHAUDIERE&apos;,
+IF( OR(Code_produit__c = &apos;PC1&apos;, Code_operation_commerciale__c = &apos;PC1&apos;), &apos;PCTI&apos;,
+IF( OR(Code_produit__c = &apos;PC3&apos;, Code_operation_commerciale__c = &apos;PC3&apos;), &apos;PCTC&apos;,
+IF( OR(Code_produit__c = &apos;PC4&apos;, Code_operation_commerciale__c = &apos;PC4&apos;), &apos;EIDERIS&apos;,
+IF( OR(Code_produit__c = &apos;PC5&apos;, Code_operation_commerciale__c = &apos;PC5&apos;), &apos;PEPA&apos;,
+IF( OR(Code_produit__c = &apos;PO&apos;, Code_produit__c = &apos;P0&apos;, Code_operation_commerciale__c = &apos;PO&apos;, Code_operation_commerciale__c = &apos;P0&apos;), &apos;PAC&apos;,
+IF( OR(Code_produit__c = &apos;PO1&apos;, Code_produit__c = &apos;P01&apos;, Code_produit__c = &apos;PO1&apos;, Code_operation_commerciale__c = &apos;PO1&apos;), &apos;OFFRE PAC TRANSITION&apos;,
+IF( OR(Code_produit__c = &apos;PO2&apos;, Code_operation_commerciale__c = &apos;PO2&apos;), &apos;OFFRE PAC TRANSITION&apos;,
+IF( OR(Code_produit__c = &apos;PO3&apos;, Code_operation_commerciale__c = &apos;PO3&apos;), &apos;OFFRE PAC TRANSITION&apos;,
+IF( OR(Code_produit__c = &apos;PC7&apos;, Code_operation_commerciale__c = &apos;PC7&apos;), &apos;CONTRAT (Sérénite, Essentiel)&apos;,
+IF( OR(Code_produit__c = &apos;RE1&apos;, Code_operation_commerciale__c = &apos;RE1&apos;), &apos;Radiateurs&apos;,
+IF( OR(Code_produit__c = &apos;SC1&apos;, Code_operation_commerciale__c = &apos;SC1&apos;), &apos;Sécurité PAC DGP&apos;,
+IF( OR(Code_produit__c = &apos;SC2&apos;, Code_operation_commerciale__c = &apos;SC2&apos;), &apos;Liberté biennale PAC DGP&apos;,
+IF( OR(Code_produit__c = &apos;SC3&apos;, Code_operation_commerciale__c = &apos;SC3&apos;), &apos;Sérénité chaudière&apos;,
+IF( OR(Code_produit__c = &apos;RE2&apos;, Code_operation_commerciale__c = &apos;RE2&apos;), &apos;Radiateurs&apos;,
+IF( OR(Code_produit__c = &apos;ER01&apos;, Code_operation_commerciale__c = &apos;ER01&apos;), &apos;Chaudières à granulés&apos;,
+IF( OR(Code_produit__c = &apos;PO4&apos;, Code_operation_commerciale__c = &apos;PO4&apos;), &apos;PAC Hybride&apos;,
+IF( OR(Code_produit__c = &apos;SC4&apos;, Code_operation_commerciale__c = &apos;SC4&apos;), &apos;LIBERTE&apos;, &apos;&apos;))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Code offre</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

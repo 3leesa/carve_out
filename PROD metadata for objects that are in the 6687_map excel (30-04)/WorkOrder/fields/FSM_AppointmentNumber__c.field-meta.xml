@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_AppointmentNumber__c</fullName>
+    <description>OP-242 : Créer les champs nécessaires aux flux et à la synchro WO &lt;-&gt; SA sur le WorkOrder
+OP-242 : Create the fields required for WO &lt;-&gt; SA flows and synchronization on the WorkOrder</description>
+    <externalId>false</externalId>
+    <label>Numéro de rendez-vous</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

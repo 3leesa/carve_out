@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resultat_depannage_en_ligne__c</fullName>
+    <label>Résultat dépannage en ligne</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Echec</fullName>
+                <default>false</default>
+                <label>Echec</label>
+            </value>
+            <value>
+                <fullName>Hors cible</fullName>
+                <default>false</default>
+                <label>Hors cible</label>
+            </value>
+            <value>
+                <fullName>Assistance client réussie</fullName>
+                <default>false</default>
+                <label>Assistance client réussie</label>
+            </value>
+            <value>
+                <fullName>Client essaye et rappelle si besoin</fullName>
+                <default>false</default>
+                <label>Client essaye et rappelle si besoin</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

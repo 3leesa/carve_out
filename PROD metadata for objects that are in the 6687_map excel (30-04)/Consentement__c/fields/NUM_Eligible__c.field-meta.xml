@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NUM_Eligible__c</fullName>
+    <description>La question Q4.3 &quot;offres EHS analogues&quot; n&apos;est pas posée dans NUM</description>
+    <formula>Question__r.NUM_Eligible__c=true</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Eligible à NUM</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Est_clos__c</fullName>
+    <description>NUM-2886 
+Statuts terminés = (select * from CS_INCIDENT_STATUSES_B where close_flag=&apos;Y&apos;)</description>
+    <formula>OR(ISPICKVAL(Status,&quot;115&quot;),
+ISPICKVAL(Status,&quot;116&quot;),
+ISPICKVAL(Status,&quot;2&quot;),
+ISPICKVAL(Status,&quot;4&quot;),
+ISPICKVAL(Status,&quot;101&quot;),
+ISPICKVAL(Status,&quot;51&quot;),
+ISPICKVAL(Status,&quot;104&quot;),
+ISPICKVAL(Status,&quot;106&quot;),
+ISPICKVAL(Status,&quot;108&quot;),
+ISPICKVAL(Status,&quot;109&quot;),
+ISPICKVAL(Status,&quot;110&quot;),
+ISPICKVAL(Status,&quot;111&quot;),
+ISPICKVAL(Status,&quot;112&quot;),
+ISPICKVAL(Status,&quot;113&quot;),
+ISPICKVAL(Status,&quot;114&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Est clos</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Longueur_cable_compteur_LNKY_BR_ml_VT__c</fullName>
+    <label>Longueur câble compteur LNKY-BR (ml)(VT)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Entre O et 5 ml</fullName>
+                <default>false</default>
+                <label>Entre O et 5 ml</label>
+            </value>
+            <value>
+                <fullName>Entre 5 et 10 ml</fullName>
+                <default>false</default>
+                <label>Entre 5 et 10 ml</label>
+            </value>
+            <value>
+                <fullName>Entre 10 et 15 ml</fullName>
+                <default>false</default>
+                <label>Entre 10 et 15 ml</label>
+            </value>
+            <value>
+                <fullName>Entre 15 et 25 ml</fullName>
+                <default>false</default>
+                <label>Entre 15 et 25 ml</label>
+            </value>
+            <value>
+                <fullName>Supérieure à 25 ml</fullName>
+                <default>false</default>
+                <label>Supérieure à 25 ml</label>
+            </value>
+            <value>
+                <fullName>Ne sait pas</fullName>
+                <default>false</default>
+                <label>Ne sait pas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

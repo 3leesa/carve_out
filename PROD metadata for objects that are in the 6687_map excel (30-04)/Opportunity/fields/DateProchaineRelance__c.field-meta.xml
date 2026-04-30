@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateProchaineRelance__c</fullName>
+    <description>Sprint 7. Permet de renseigner la date de la prochaine relance de l&apos;opportunité</description>
+    <label>Date de la prochaine relance-A SUPPRIMER</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

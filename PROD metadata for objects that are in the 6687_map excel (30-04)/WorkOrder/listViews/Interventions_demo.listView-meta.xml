@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interventions_demo</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Subject</columns>
+    <columns>Status</columns>
+    <columns>Priority</columns>
+    <columns>TECH_CreateQuote__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner</field>
+        <operation>equals</operation>
+        <value>francois-xavier leblanc</value>
+    </filters>
+    <label>Interventions demo</label>
+    <sharedTo>
+        <group>FX</group>
+    </sharedTo>
+</ListView>

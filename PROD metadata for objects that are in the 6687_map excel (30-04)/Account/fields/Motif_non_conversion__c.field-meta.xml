@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_non_conversion__c</fullName>
+    <label>Motif de non-conversion</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Statut_de_la_conversion__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Injoignable permanent</fullName>
+                <default>false</default>
+                <label>IP – injoignable permanent</label>
+            </value>
+            <value>
+                <fullName>Faux numéro</fullName>
+                <default>false</default>
+                <label>IP – Faux numéro</label>
+            </value>
+            <value>
+                <fullName>Contact polluant</fullName>
+                <default>false</default>
+                <label>HCi – Contact polluant</label>
+            </value>
+            <value>
+                <fullName>Pas intéressé</fullName>
+                <default>false</default>
+                <label>R – Pas intéressé</label>
+            </value>
+            <value>
+                <fullName>Prospect déjà sous contrat avec un concurrent</fullName>
+                <default>false</default>
+                <label>HCi – Prospect déjà sous contrat avec un concurrent</label>
+            </value>
+            <value>
+                <fullName>Projet déjà réalisé (appareil / VE / dépannage)</fullName>
+                <default>false</default>
+                <label>HCi - Projet déjà réalisé (appareil / VE / dépannage)</label>
+            </value>
+            <value>
+                <fullName>Projet non mature &gt; 6 mois</fullName>
+                <default>false</default>
+                <label>HCi - Projet non mature &gt; 6 mois</label>
+            </value>
+            <value>
+                <fullName>Projet non mature &lt; 6 mois</fullName>
+                <default>false</default>
+                <label>HCi - Projet non mature &lt; 6 mois</label>
+            </value>
+            <value>
+                <fullName>Prix trop élevé</fullName>
+                <default>false</default>
+                <label>R - Prix trop élevé</label>
+            </value>
+            <value>
+                <fullName>Interlocuteur non décisionnaire</fullName>
+                <default>false</default>
+                <label>HCi - Interlocuteur non décisionnaire</label>
+            </value>
+            <value>
+                <fullName>Préfère un artisan local</fullName>
+                <default>false</default>
+                <label>R - Préfère un artisan local</label>
+            </value>
+            <value>
+                <fullName>Horaires trop contraignants</fullName>
+                <default>false</default>
+                <label>R - Horaires trop contraignants</label>
+            </value>
+            <value>
+                <fullName>Pas de projet</fullName>
+                <default>false</default>
+                <label>HCi - Pas de projet</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>RDV déjà pris (cas multi-demandes)</fullName>
+                <default>false</default>
+                <label>HCi - RDV déjà pris (cas multi-demandes)</label>
+            </value>
+            <value>
+                <fullName>Collectif ou social</fullName>
+                <default>false</default>
+                <label>HCi - Cas non éligible (locataire, collectif ou social…)</label>
+            </value>
+            <value>
+                <fullName>Client sous contrat collectif ou social</fullName>
+                <default>false</default>
+                <label>Client sous contrat collectif ou social</label>
+            </value>
+            <value>
+                <fullName>Raccroché client</fullName>
+                <default>false</default>
+                <label>IP - Raccroché client</label>
+            </value>
+            <value>
+                <fullName>Produit non vendu par EHS</fullName>
+                <default>false</default>
+                <label>HCi - Produit non vendu par EHS</label>
+            </value>
+            <value>
+                <fullName>Refus d&apos;entretien</fullName>
+                <default>false</default>
+                <label>R - Refus d&apos;entretien</label>
+            </value>
+            <value>
+                <fullName>Installation ou habitat non adapté à l&apos;offre</fullName>
+                <default>false</default>
+                <label>HCi - Installation ou habitat non adapté à l&apos;offre</label>
+            </value>
+            <value>
+                <fullName>Doublon</fullName>
+                <default>false</default>
+                <label>HCi - Doublon</label>
+            </value>
+            <value>
+                <fullName>Demande_informations</fullName>
+                <default>false</default>
+                <label>R – demande d’informations</label>
+            </value>
+            <value>
+                <fullName>Cas suspicion C-19</fullName>
+                <default>false</default>
+                <label>Cas suspicion C-19</label>
+            </value>
+            <value>
+                <fullName>Test – Fausse demande</fullName>
+                <default>false</default>
+                <label>HCi – Test – fausse demande</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>A traiter</controllingFieldValue>
+            <controllingFieldValue>Traité et converti en projet</controllingFieldValue>
+            <controllingFieldValue>Traité et transféré</controllingFieldValue>
+            <valueName>NA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Injoignable permanent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Faux numéro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Contact polluant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Pas intéressé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Prospect déjà sous contrat avec un concurrent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Projet déjà réalisé (appareil / VE / dépannage)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Projet non mature &gt; 6 mois</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Projet non mature &lt; 6 mois</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Prix trop élevé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Interlocuteur non décisionnaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Préfère un artisan local</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Horaires trop contraignants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Pas de projet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Collectif ou social</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Client sous contrat collectif ou social</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Raccroché client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Produit non vendu par EHS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Refus d&apos;entretien</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Installation ou habitat non adapté à l&apos;offre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Doublon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Demande_informations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Cas suspicion C-19</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

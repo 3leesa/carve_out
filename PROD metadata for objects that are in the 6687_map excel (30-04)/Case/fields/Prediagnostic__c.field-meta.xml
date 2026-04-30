@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prediagnostic__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 5 - savoir si un pré-diagnostic a été effectué pour les demandes de dépannage
+Sprint 11 - changement du libellé &apos;Pré-diagnostic&apos; en &apos;Assistance téléphonique&apos;</description>
+    <label>Assistance téléphonique</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

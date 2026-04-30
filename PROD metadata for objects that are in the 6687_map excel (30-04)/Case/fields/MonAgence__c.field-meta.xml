@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MonAgence__c</fullName>
+    <description>Sprint 3 - Indique si l&apos;agence renseignée sur la demande est celle de l&apos;utilisateur.
+MCOSF-78: Remplace ChoixAgence__c par SiteDeRattachement__c
+MCOSF-6234</description>
+    <formula>SiteParent1_TECHGazelleId__c = $User.IDGazelleAgence__c
+|| SiteParent2_TECHGazelleId__c = $User.IDGazelleAgence__c
+|| SiteParent3_TECHGazelleId__c = $User.IDGazelleAgence__c</formula>
+    <label>Mon Site</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

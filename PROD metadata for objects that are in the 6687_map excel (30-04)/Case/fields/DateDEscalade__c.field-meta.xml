@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateDEscalade__c</fullName>
+    <description>Sprint 2. Date de passage d&apos;une demande à son niveau d&apos;escalade actuel (date du passage au statut &quot;Nouveau&quot;). Champ alimenté par workflow avec : NOW().</description>
+    <inlineHelpText>Date de passage au niveau d&apos;escalade actuel.</inlineHelpText>
+    <label>Date d&apos;escalade</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Systeme_de_chauffage_actuel__c</fullName>
+    <label>Système de chauffage actuel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Une pompe à chaleur</fullName>
+                <default>false</default>
+                <label>Une pompe à chaleur</label>
+            </value>
+            <value>
+                <fullName>Une chaudière fioul</fullName>
+                <default>false</default>
+                <label>Une chaudière fioul</label>
+            </value>
+            <value>
+                <fullName>Une chaudière gaz</fullName>
+                <default>false</default>
+                <label>Une chaudière gaz</label>
+            </value>
+            <value>
+                <fullName>Une chaudière bois</fullName>
+                <default>false</default>
+                <label>Une chaudière bois</label>
+            </value>
+            <value>
+                <fullName>Des radiateurs éléctriques</fullName>
+                <default>false</default>
+                <label>Des radiateurs éléctriques</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

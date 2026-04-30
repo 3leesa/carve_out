@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appel_sortant_Donnees_equipement</fullName>
+    <description>Cet ensemble de champs va être utilisé sur la visualforce page d&apos;un Account provenant d&apos;un Lead de type &quot;Appel Sortant&quot; pour la section &quot;Données équipement&quot;.</description>
+    <displayedFields>
+        <field>Age_du_logement__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Type_equipement__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Appel_sortant_Donnees_equipement</label>
+</FieldSet>

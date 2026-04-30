@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventUserWOUpdateBeforeFSLActivation</fullName>
+    <active>false</active>
+    <description>OP-265, OP-513</description>
+    <errorConditionFormula>AND(
+NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ),
+NOT(Asset.Site__r.OT_IsScheduleUpdatable__c),
+NOT(Asset.Site__r.IsSalesforceFieldServiceActive__c),
+AssetId!=&apos;&apos;,
+$User.LastName !=&apos;Gazelle&apos;,
+$User.LastName !=&apos;Jumanji&apos;,
+$User.LastName !=&apos;NUM CE&apos;,
+$User.LastName !=&apos;Opti-Time&apos;)</errorConditionFormula>
+    <errorMessage>Seuls les comptes techniques ont le droit de faire des modifications sur les WorkOrders de cette agence</errorMessage>
+</ValidationRule>

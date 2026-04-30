@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origine_de_la_demande__c</fullName>
+    <description>MCOSF-195: Ajout de la valeur &apos;CMI&apos; pour gérer les demandes MES de CMI
+MCOSF-3997: Ajout de la valeur &quot;Autre (bailleur collectif)&quot;</description>
+    <inlineHelpText>Information concernant la provenance de la demande</inlineHelpText>
+    <label>Origine de la demande</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client</fullName>
+                <default>false</default>
+                <label>Client</label>
+            </value>
+            <value>
+                <fullName>Mondial Assistance</fullName>
+                <default>false</default>
+                <label>Mondial Assistance</label>
+            </value>
+            <value>
+                <fullName>Electroren</fullName>
+                <default>false</default>
+                <label>Electroren</label>
+            </value>
+            <value>
+                <fullName>Mesdepanneurs.fr</fullName>
+                <default>false</default>
+                <label>Mesdepanneurs.fr</label>
+            </value>
+            <value>
+                <fullName>CMI</fullName>
+                <default>false</default>
+                <label>CMIste</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre (Distributeur, Installateurs EHS/Partenaires, Promoteur)</label>
+            </value>
+            <value>
+                <fullName>Autre_bailleur_collectif</fullName>
+                <default>false</default>
+                <label>Autre (bailleur collectif)</label>
+            </value>
+            <value>
+                <fullName>FioulReduc</fullName>
+                <default>false</default>
+                <label>FioulReduc</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsForcedSlot__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Represents the WO updated by the landing page or website through Boomi API upsertWorkOrderSlotted. Force updates the SA dates.</description>
+    <label>IsForcedSlot</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

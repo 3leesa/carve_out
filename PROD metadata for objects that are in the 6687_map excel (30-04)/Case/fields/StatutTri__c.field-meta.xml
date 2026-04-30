@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatutTri__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Status), &quot;Nouveau&quot;, &quot;01- Nouveau&quot;,
+&quot;En cours&quot;, &quot;02- En cours&quot;,
+&quot;En attente d&apos;approbation&quot;, &quot;03- En attente d&apos;approbation&quot;,
+&quot;Délai de clôture dépassé&quot;, &quot;04- Délai de clôture dépassé&quot;,
+&quot;Terminé&quot;, &quot;04- Terminé&quot;,
+&quot;Annulé (Interne)&quot;, &quot;05- Annulé (Interne)&quot;,
+&quot;Annulé (Client)&quot;, &quot;06- Annulé (Client)&quot;,
+&quot;Client à appeler&quot;, &quot;07- Client à appeler&quot;,
+&quot;Contrat à créer dans GZL&quot;, &quot;08- Contrat à créer dans GZL&quot;,
+&quot;Contrat envoyé&quot;, &quot;09- Contrat envoyé&quot;,
+&quot;Facture contrat à envoyer&quot;, &quot;10- Facture contrat à envoyer&quot;,
+&quot;11- Statut inconnu&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Statut</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

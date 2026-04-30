@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CD_Fonctionnement_heure_creuse__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Possibilité de fonctionner en heures creuses</inlineHelpText>
+    <label>Possibilité de fonctionner en HC</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

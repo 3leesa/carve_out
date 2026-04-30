@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NiveauDEscalade__c</fullName>
+    <description>Sprint 1. Permet de situer le niveau auquel la demande se trouve.</description>
+    <inlineHelpText>Permet d&apos;indiquer le niveau auquel la demande se trouve.</inlineHelpText>
+    <label>Escalade</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Courante</fullName>
+                <default>true</default>
+                <label>Courante</label>
+            </value>
+            <value>
+                <fullName>Niveau 1</fullName>
+                <default>false</default>
+                <label>Service Conso</label>
+            </value>
+            <value>
+                <fullName>Niveau 2</fullName>
+                <default>false</default>
+                <label>RGPD</label>
+            </value>
+            <value>
+                <fullName>Niveau 3</fullName>
+                <default>false</default>
+                <label>Médiation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

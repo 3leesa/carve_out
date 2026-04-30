@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>MCOSF-4004 : Exclure les devis piece du lookup
+MCOSF-4657 : Ajout bypass user Automated Process (pour Privacy Center)</description>
+    <label>Devis Accepté</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(2 AND (1 OR 3 OR 4 OR 5 OR 6) AND 7) OR 8</booleanFilter>
+        <errorMessage>La valeur n&apos;existe pas ou ne correspond pas aux critères de filtre.</errorMessage>
+        <filterItems>
+            <field>SBQQ__Quote__c.SBQQ__Status__c</field>
+            <operation>equals</operation>
+            <value>Accepted, Accepté</value>
+        </filterItems>
+        <filterItems>
+            <field>SBQQ__Quote__c.SBQQ__Account__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.AccountId</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$User.Id</field>
+            <operation>equals</operation>
+            <value>00524000003m42ZAAQ</value>
+        </filterItems>
+        <filterItems>
+            <field>$User.Id</field>
+            <operation>equals</operation>
+            <value>00524000001lwPlAAI</value>
+        </filterItems>
+        <filterItems>
+            <field>$User.Id</field>
+            <operation>equals</operation>
+            <value>0051p000009mcLAAAY</value>
+        </filterItems>
+        <filterItems>
+            <field>$User.Id</field>
+            <operation>equals</operation>
+            <value>0050800000EjuM0AAJ</value>
+        </filterItems>
+        <filterItems>
+            <field>SBQQ__Quote__c.Record_type_developer_name__c</field>
+            <operation>notEqual</operation>
+            <value>Devis_Pieces</value>
+        </filterItems>
+        <filterItems>
+            <field>$User.Id</field>
+            <operation>equals</operation>
+            <value>00524000001JzYNAA0</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>SBQQ__Quote__c</referenceTo>
+    <relationshipLabel>Work Orders</relationshipLabel>
+    <relationshipName>Work_Orders</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

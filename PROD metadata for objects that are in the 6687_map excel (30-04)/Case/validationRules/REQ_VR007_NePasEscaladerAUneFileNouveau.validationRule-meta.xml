@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR007_NePasEscaladerAUneFileNouveau</fullName>
+    <active>true</active>
+    <description>Sprint 1. L&apos;utilisateur ne peut pas directement escalader une demande à une file d&apos;attente (en changeant le propriétaire), il doit passer par le champ Escalade. Règle pour le Statut &quot;Nouveau&quot;.</description>
+    <errorConditionFormula>AND(
+NOT(TECH_VerifierQuonVientDeGazelle__c),
+NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c
+), ISPICKVAL( Status, &quot;Nouveau&quot;), 
+OR( 
+AND( 
+NOT( CONTAINS( TEXT( NiveauDEscalade__c), &quot;Niveau 1&quot; ) ), 
+CONTAINS(Owner:Queue.DeveloperName, &quot;Escalades_N1&quot;) ), 
+AND( 
+NOT( CONTAINS( TEXT( NiveauDEscalade__c), &quot;Niveau 2&quot; ) ), 
+CONTAINS(Owner:Queue.DeveloperName, &quot;Escalades_N2&quot;) ), 
+AND( 
+NOT( CONTAINS( TEXT( NiveauDEscalade__c), &quot;Niveau 3&quot; ) ), 
+CONTAINS(Owner:Queue.DeveloperName, &quot;Escalades_N3&quot;) ), 
+AND( 
+NOT( CONTAINS( TEXT(NiveauDEscalade__c), &quot;Courante&quot; ) ), 
+CONTAINS(Owner:Queue.DeveloperName, &quot;Demandes_courantes&quot;)) ) )</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Vous devez suivre le processus d&apos;escalade. Vous ne pouvez pas attribuer une demande à un niveau d&apos;escalade supérieur en changeant directement le gestionnaire.</errorMessage>
+</ValidationRule>

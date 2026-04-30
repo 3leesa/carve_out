@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR008_Lead_Date_D_Installation_Planifiee</fullName>
+    <active>false</active>
+    <description>Agence Digitale  - Evol  - Lot 1 : la date d&apos;installation planifiée doit etre renseignée quand le statut = installation planifiée</description>
+    <errorConditionFormula>NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c) 
+&amp;&amp; AND(ISPICKVAL(Status, &quot;Installation programmée&quot;),ISBLANK(Date_installation__c) )</errorConditionFormula>
+    <errorMessage>Veuillez indiquer la date d&apos;installation planifiée.</errorMessage>
+</ValidationRule>

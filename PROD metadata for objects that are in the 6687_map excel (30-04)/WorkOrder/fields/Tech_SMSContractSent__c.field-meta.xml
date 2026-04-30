@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_SMSContractSent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Vérifier le sms relance de contrat est bien enoyé</description>
+    <label>Tech_SMSContractSent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

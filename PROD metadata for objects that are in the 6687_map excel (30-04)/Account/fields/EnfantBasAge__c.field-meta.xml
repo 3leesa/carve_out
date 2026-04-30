@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EnfantBasAge__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 8. Permet d&apos;indiquer si des enfants en bas âge font parti du foyer du client</description>
+    <label>Enfant en bas âge</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

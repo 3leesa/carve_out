@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_SIRET_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.Name =&apos;Client B2B&apos;, LEN(NumeroSIRET__c)!= 14, TEXT(B2B_Typologie__c) != &apos;Syndicat des copropriétaires&apos;, !ISPICKVAL(B2B_Typologie__c,&apos;Autre Professionnel&apos;))</errorConditionFormula>
+    <errorDisplayField>NumeroSIRET__c</errorDisplayField>
+    <errorMessage>Le SIRET doit être composé de 14 chiffres sans espace</errorMessage>
+</ValidationRule>

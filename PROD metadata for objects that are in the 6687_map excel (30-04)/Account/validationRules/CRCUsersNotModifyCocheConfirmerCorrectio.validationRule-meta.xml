@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRCUsersNotModifyCocheConfirmerCorrectio</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($UserRole.Name =&apos;Centre Relation Client&apos;,ISCHANGED(Modifier_Nom_client__c))</errorConditionFormula>
+    <errorDisplayField>Modifier_Nom_client__c</errorDisplayField>
+    <errorMessage>Les utilisateurs CRC ne peuvent pas modifier ce champ.</errorMessage>
+</ValidationRule>

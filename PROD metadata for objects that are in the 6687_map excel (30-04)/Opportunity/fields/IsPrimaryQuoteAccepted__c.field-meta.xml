@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPrimaryQuoteAccepted__c</fullName>
+    <formula>IF(ISPICKVAL(  SBQQ__PrimaryQuote__r.SBQQ__Status__c  , &quot;Accepted&quot;),
+TRUE , FALSE )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Devis principal accepté</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

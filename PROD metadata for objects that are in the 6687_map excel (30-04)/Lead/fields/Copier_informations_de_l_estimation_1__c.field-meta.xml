@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copier_informations_de_l_estimation_1__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Evol - Lot 1 &gt; permet de préremplir les champs de devis 1 en fonction des données de estimation 1 automatiquement</description>
+    <label>Copier les informations de l&apos;estimation1</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

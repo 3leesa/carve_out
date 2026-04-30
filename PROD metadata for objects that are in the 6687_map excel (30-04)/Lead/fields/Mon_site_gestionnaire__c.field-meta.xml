@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mon_site_gestionnaire__c</fullName>
+    <formula>IF ( Site_gestionnaire__c =  $User.Nom_du_site_de_rattachement__c , TRUE , FALSE )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mon site gestionnaire</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

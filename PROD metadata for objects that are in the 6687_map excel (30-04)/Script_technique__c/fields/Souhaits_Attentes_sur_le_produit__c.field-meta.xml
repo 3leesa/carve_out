@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Souhaits_Attentes_sur_le_produit__c</fullName>
+    <inlineHelpText>Comment souhaitez-vous piloter votre climatisation ? Avez-vous des attentes particulières sur le produit</inlineHelpText>
+    <label>Souhaits / Attentes sur le produit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Connecté blanc</fullName>
+                <default>false</default>
+                <label>Connecté blanc</label>
+            </value>
+            <value>
+                <fullName>Connecté autre couleur</fullName>
+                <default>false</default>
+                <label>Connecté autre couleur</label>
+            </value>
+            <value>
+                <fullName>Autre (CF. commentaires)</fullName>
+                <default>false</default>
+                <label>Autre (CF. commentaires)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

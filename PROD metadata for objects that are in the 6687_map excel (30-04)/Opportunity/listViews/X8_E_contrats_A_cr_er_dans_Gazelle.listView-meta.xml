@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X8_E_contrats_A_cr_er_dans_Gazelle</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+    <columns>TECH_CreatedByUserSite__c</columns>
+    <columns>OPPORTUNITY.LAST_STAGE_CHANGE</columns>
+    <columns>TECH_DemandeMotifSouscription__c</columns>
+    <columns>EContratDateEntretien__c</columns>
+    <columns>Demande__c</columns>
+    <columns>Statut_demande_mere__c</columns>
+    <columns>DemandeSousStatut__c</columns>
+    <columns>CommentaireSuiviCommercial__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>SBQQ__PrimaryQuote__c</columns>
+    <columns>ContractStartDate__c</columns>
+    <columns>Condition_de_reglement__c</columns>
+    <columns>ChoixAgence__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Statut_demande_mere__c</field>
+        <operation>notContain</operation>
+        <value>Annulé</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Contrat / option</value>
+    </filters>
+    <filters>
+        <field>TECH_DemandeMotifSouscription__c</field>
+        <operation>notEqual</operation>
+        <value>Parcours Web</value>
+    </filters>
+    <filters>
+        <field>Statut_demande_mere__c</field>
+        <operation>notEqual</operation>
+        <value>Terminé</value>
+    </filters>
+    <filters>
+        <field>DemandeSousStatut__c</field>
+        <operation>equals</operation>
+        <value>Contrat à créer dans Gazelle</value>
+    </filters>
+    <filters>
+        <field>MonSite__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>8.E-contrats -&gt; A créer dans Gazelle AG</label>
+</ListView>

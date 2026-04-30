@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approbateur_10__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>approbateur de l&apos;agence</description>
+    <label>Approbateur 10</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Agences10</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

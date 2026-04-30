@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EntrepriseMobilePhone__c</fullName>
+    <description>Sprint 15: telephone mobile de l&apos;entreprise. synchronisé avec les points de contact des tiers de type organization depuis Gazelle.</description>
+    <label>Téléphone mobile entreprise</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Phone</type>
+</CustomField>

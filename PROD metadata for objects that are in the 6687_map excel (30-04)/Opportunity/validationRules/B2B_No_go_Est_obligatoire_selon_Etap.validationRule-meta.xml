@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_No_go_Est_obligatoire_selon_Etap</fullName>
+    <active>true</active>
+    <description>Le champs MOTIF DU NO GO est obligatoire si le champs ETAPE = No go</description>
+    <errorConditionFormula>AND(  ISPICKVAL( StageName , &quot;No go&quot;)  ,  ISPICKVAL( B2B_Motif_du_no_go__c , &quot;&quot;) , ( OR( RecordType.Name = &quot;Gré à gré&quot;,RecordType.Name = &quot;Appel d’offres&quot;) ) )</errorConditionFormula>
+    <errorDisplayField>B2B_Motif_du_no_go__c</errorDisplayField>
+    <errorMessage>Veuillez renseigner ce champ en cas de &quot;No go&quot;</errorMessage>
+</ValidationRule>

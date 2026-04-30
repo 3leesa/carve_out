@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A_revoir</fullName>
+    <columns>Type__c</columns>
+    <columns>Name</columns>
+    <columns>Contact</columns>
+    <columns>AdresseEquipement__c</columns>
+    <columns>Status</columns>
+    <columns>StartDate</columns>
+    <columns>Case</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>contains</operation>
+        <value>A revoir</value>
+    </filters>
+    <filters>
+        <field>EstSiteUser__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>A revoir</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>AdministrateursSysteme</group>
+    </sharedTo>
+</ListView>

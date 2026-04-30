@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dossier_Coup_de_Pouce_ANAH__c</fullName>
+    <description>CRM-559</description>
+    <label>Demande dossier Coup de Pouce</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coup de pouce 700€</fullName>
+                <default>false</default>
+                <label>Coup de pouce Chaudière 700</label>
+            </value>
+            <value>
+                <fullName>Coup de pouce 1400€</fullName>
+                <default>false</default>
+                <label>Coup de pouce Chaudière 1400 (modeste et très modeste)</label>
+            </value>
+            <value>
+                <fullName>Coup de pouce 2500€</fullName>
+                <default>false</default>
+                <label>Coup de pouce PAC 2500 (Hybride ou aisé et intermédiaire)</label>
+            </value>
+            <value>
+                <fullName>Coup de pouce 4000€</fullName>
+                <default>false</default>
+                <label>Coup de pouce PAC 4000 (Hybride ou modeste et très modeste)</label>
+            </value>
+            <value>
+                <fullName>Coup de pouce 50€</fullName>
+                <default>false</default>
+                <label>Coup de pouce radiateurs électriques 50</label>
+            </value>
+            <value>
+                <fullName>Coup de pouce 100€</fullName>
+                <default>false</default>
+                <label>Coup de pouce radiateurs électriques 100 (modestes et très modestes)</label>
+            </value>
+            <value>
+                <fullName>à déterminer</fullName>
+                <default>false</default>
+                <label>A déterminer</label>
+            </value>
+            <value>
+                <fullName>Non éligible</fullName>
+                <default>false</default>
+                <label>Non éligible</label>
+            </value>
+            <value>
+                <fullName>Coup de pouce 4500€</fullName>
+                <default>false</default>
+                <label>Coup de pouce 4500€</label>
+            </value>
+            <value>
+                <fullName>Coup de pouce 2800€</fullName>
+                <default>false</default>
+                <label>Coup de pouce 2800€</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

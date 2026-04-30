@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mes_demandes_r_attribu_es_v2</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>StatutInterventions__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ASSET.NAME</columns>
+    <columns>AdresseIntervention__c</columns>
+    <columns>ServiceContract__c</columns>
+    <columns>AdresseDeFacturation__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>En cours</value>
+    </filters>
+    <filters>
+        <field>Reattribuee__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Mes demandes réattribuées</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DirecteurRegional</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

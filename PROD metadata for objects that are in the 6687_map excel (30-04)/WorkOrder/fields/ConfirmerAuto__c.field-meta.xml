@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConfirmerAuto__c</fullName>
+    <defaultValue>&apos;false&apos;</defaultValue>
+    <description>Si coché (ce qui sera le cas pour les demandes d&apos;origine Community), alors le statut final du workorder sera confirmé (même après une replanification). Equivalent du flag auto_confirm utilisé dans le mode synchrone</description>
+    <externalId>false</externalId>
+    <label>Confirmer Auto</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

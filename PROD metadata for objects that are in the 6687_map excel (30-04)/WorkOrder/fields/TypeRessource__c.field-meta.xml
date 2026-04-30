@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeRessource__c</fullName>
+    <description>Sprint 11 - création suite au mapping SFDC-Gazelle</description>
+    <label>Type de ressource</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RS_EMPLOYEE</fullName>
+                <default>false</default>
+                <label>RS_EMPLOYEE</label>
+            </value>
+            <value>
+                <fullName>RS_SUPPLIER_CONTACT</fullName>
+                <default>false</default>
+                <label>RS_SUPPLIER_CONTACT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

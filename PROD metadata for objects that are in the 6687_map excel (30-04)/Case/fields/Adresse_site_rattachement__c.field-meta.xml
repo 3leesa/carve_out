@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adresse_site_rattachement__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( SiteDeRattachement__r.ComplementRue__c ),
+SiteDeRattachement__r.Rue__c &amp; &quot; - &quot; &amp; SiteDeRattachement__r.CodePostal__c &amp; &quot; - &quot; &amp; SiteDeRattachement__r.Ville__c,
+SiteDeRattachement__r.Rue__c &amp; &quot; - &quot; &amp; SiteDeRattachement__r.ComplementRue__c &amp; &quot; - &quot; &amp; SiteDeRattachement__r.CodePostal__c &amp; &quot; &quot; &amp; SiteDeRattachement__r.Ville__c)</formula>
+    <label>Adresse du site de rattachement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

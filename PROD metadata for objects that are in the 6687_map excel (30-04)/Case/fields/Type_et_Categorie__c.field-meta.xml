@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_et_Categorie__c</fullName>
+    <description>Type et catégorie de la demande</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Type) &amp; &quot; - &quot; &amp;
+CASE(TEXT(CategorieDemande__c),
+&quot;1&quot;,&quot;Panne Totale&quot;,
+&quot;10&quot;,&quot;Gros entretien&quot;,
+&quot;11&quot;,&quot;Visite de Contrôle&quot;,
+&quot;12&quot;,&quot;Visite complémentaire&quot;,
+&quot;2&quot;,&quot;Panne Partielle&quot;,
+&quot;3&quot;,&quot;N/A&quot;,
+&quot;4&quot;,&quot;Entretien périodique&quot;,
+&quot;5&quot;,&quot;Visite forfaitaire&quot;,
+&quot;6&quot;,&quot;Visite d&apos;allumage&quot;,
+&quot;7&quot;,&quot;Visit de contrôle été&quot;,
+&quot;8&quot;,&quot;Visite de contrôle hiver&quot;,
+&quot;9&quot;,&quot;Visite d&apos;arrêt&quot;,
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Type et Catégorie</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

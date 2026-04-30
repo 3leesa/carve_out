@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lot_de_VE_en_echec</fullName>
+    <columns>Name</columns>
+    <columns>NumLot__c</columns>
+    <columns>Subject</columns>
+    <columns>Case</columns>
+    <columns>Account</columns>
+    <columns>Priority</columns>
+    <columns>Type__c</columns>
+    <columns>Status</columns>
+    <columns>CreatedDate</columns>
+    <columns>OperatingStartDate__c</columns>
+    <columns>OperatingEndDate__c</columns>
+    <columns>Millesime__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NumLot__c</field>
+        <operation>contains</operation>
+        <value>108816190</value>
+    </filters>
+    <label>Lots de VE</label>
+</ListView>

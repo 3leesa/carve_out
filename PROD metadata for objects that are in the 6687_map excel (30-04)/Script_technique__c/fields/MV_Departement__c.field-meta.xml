@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV_Departement__c</fullName>
+    <description>Champs miroir</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Dans les départements suivants, la norme NF C 15-100 impose d’installer un parafoudre si l’alimentation électrique est aérienne :
+
+01 ; 20 ; 04 ; 05 ; 06 ; 07 ; 12; 13; 24; 25; 26; 30; 33; 34; 38; 39; 40; 42; 43; 47; 48; 63; 66; 69; 71; 73; 74; 83; 84</inlineHelpText>
+    <label>Département</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

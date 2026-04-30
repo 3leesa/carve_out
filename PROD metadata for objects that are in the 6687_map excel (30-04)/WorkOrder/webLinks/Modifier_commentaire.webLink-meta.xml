@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modifier_commentaire</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Modifier commentaire</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/VFP_ModifCommentaire?InterventionId={!WorkOrder.Id}&amp;&amp;retURL={!WorkOrder.Id}</url>
+</WebLink>

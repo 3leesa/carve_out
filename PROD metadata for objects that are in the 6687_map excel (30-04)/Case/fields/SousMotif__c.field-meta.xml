@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SousMotif__c</fullName>
+    <description>Sprint 1. Sous-motif de la demande.</description>
+    <label>Sous-motif de la demande</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conseil inapproprié ou manque de conseil du technicien</fullName>
+                <default>false</default>
+                <label>Conseil inapproprié ou manque de conseil du technicien</label>
+            </value>
+            <value>
+                <fullName>Comportement incorrect / Mauvaise attitude</fullName>
+                <default>false</default>
+                <label>Comportement incorrect / Mauvaise attitude</label>
+            </value>
+            <value>
+                <fullName>Difficulté à joindre l&apos;agence</fullName>
+                <default>false</default>
+                <label>Difficulté à joindre l&apos;agence</label>
+            </value>
+            <value>
+                <fullName>Mauvais accueil physique en agence</fullName>
+                <default>false</default>
+                <label>Mauvais accueil physique en agence</label>
+            </value>
+            <value>
+                <fullName>Mauvais accueil téléphonique en agence</fullName>
+                <default>false</default>
+                <label>Mauvais accueil téléphonique en agence</label>
+            </value>
+            <value>
+                <fullName>VE non effectuée durant l&apos;année de contrat</fullName>
+                <default>false</default>
+                <label>VE non effectuée durant l&apos;année de contrat</label>
+            </value>
+            <value>
+                <fullName>Non respect des conditions contractuelles</fullName>
+                <default>false</default>
+                <label>Non respect des conditions contractuelles</label>
+            </value>
+            <value>
+                <fullName>Augmentation tarifaire</fullName>
+                <default>false</default>
+                <label>Augmentation tarifaire</label>
+            </value>
+            <value>
+                <fullName>Relance indue (client dit qu&apos;il n&apos;a pas souscrit)</fullName>
+                <default>false</default>
+                <label>Relance indue (client dit qu&apos;il n&apos;a pas souscrit)</label>
+            </value>
+            <value>
+                <fullName>Document non reçu</fullName>
+                <default>false</default>
+                <label>Document non reçu</label>
+            </value>
+            <value>
+                <fullName>Document non valide</fullName>
+                <default>false</default>
+                <label>Document non valide</label>
+            </value>
+            <value>
+                <fullName>Devis erroné</fullName>
+                <default>false</default>
+                <label>Devis erroné</label>
+            </value>
+            <value>
+                <fullName>Devis non reçu</fullName>
+                <default>false</default>
+                <label>Devis non reçu</label>
+            </value>
+            <value>
+                <fullName>Devis accepté non réalisé</fullName>
+                <default>false</default>
+                <label>Devis accepté non réalisé</label>
+            </value>
+            <value>
+                <fullName>Difficulté d&apos;accès</fullName>
+                <default>false</default>
+                <label>Difficulté d&apos;accès</label>
+            </value>
+            <value>
+                <fullName>Documents manquants</fullName>
+                <default>false</default>
+                <label>Documents manquants</label>
+            </value>
+            <value>
+                <fullName>Prise et modification de RDV impossible</fullName>
+                <default>false</default>
+                <label>Prise et modification de RDV impossible</label>
+            </value>
+            <value>
+                <fullName>Paiement impossible</fullName>
+                <default>false</default>
+                <label>Paiement impossible</label>
+            </value>
+            <value>
+                <fullName>Double facturation</fullName>
+                <default>false</default>
+                <label>Double facturation</label>
+            </value>
+            <value>
+                <fullName>Relance indue</fullName>
+                <default>false</default>
+                <label>Relance indue</label>
+            </value>
+            <value>
+                <fullName>Facture erronée</fullName>
+                <default>false</default>
+                <label>Facture erronée</label>
+            </value>
+            <value>
+                <fullName>Facture non reçue</fullName>
+                <default>false</default>
+                <label>Facture non reçue</label>
+            </value>
+            <value>
+                <fullName>Contestation non conformité</fullName>
+                <default>false</default>
+                <label>Contestation non conformité</label>
+            </value>
+            <value>
+                <fullName>Dégradation du matériel</fullName>
+                <default>false</default>
+                <label>Dégradation du matériel</label>
+            </value>
+            <value>
+                <fullName>Problème non résolu</fullName>
+                <default>false</default>
+                <label>Problème non résolu</label>
+            </value>
+            <value>
+                <fullName>Diagnostic erroné</fullName>
+                <default>false</default>
+                <label>Diagnostic erroné</label>
+            </value>
+            <value>
+                <fullName>Prestation non conforme au contrat/devis</fullName>
+                <default>false</default>
+                <label>Prestation non conforme au contrat/devis</label>
+            </value>
+            <value>
+                <fullName>Cadeau non transmis ou non conforme</fullName>
+                <default>false</default>
+                <label>Cadeau non transmis ou non conforme</label>
+            </value>
+            <value>
+                <fullName>Promotion non effective</fullName>
+                <default>false</default>
+                <label>Promotion non effective</label>
+            </value>
+            <value>
+                <fullName>Vente forcée ou abusive</fullName>
+                <default>false</default>
+                <label>Vente forcée ou abusive</label>
+            </value>
+            <value>
+                <fullName>Remboursement non perçu</fullName>
+                <default>false</default>
+                <label>Remboursement non perçu</label>
+            </value>
+            <value>
+                <fullName>Remboursement partiel</fullName>
+                <default>false</default>
+                <label>Remboursement partiel</label>
+            </value>
+            <value>
+                <fullName>Avis de passage ou absence injustifiée</fullName>
+                <default>false</default>
+                <label>Avis de passage ou absence injustifiée</label>
+            </value>
+            <value>
+                <fullName>Annulation du RDV non communiquée</fullName>
+                <default>false</default>
+                <label>Annulation du RDV non communiquée</label>
+            </value>
+            <value>
+                <fullName>Modification du RDV non communiquée</fullName>
+                <default>false</default>
+                <label>Modification du RDV non communiquée</label>
+            </value>
+            <value>
+                <fullName>Manque de ponctualité ou retard du technicien</fullName>
+                <default>false</default>
+                <label>Manque de ponctualité ou retard du technicien</label>
+            </value>
+            <value>
+                <fullName>Technicien non présenté chez le client</fullName>
+                <default>false</default>
+                <label>Technicien non présenté chez le client</label>
+            </value>
+            <value>
+                <fullName>Arrêt des prestations lors du préavis</fullName>
+                <default>false</default>
+                <label>Arrêt des prestations lors du préavis</label>
+            </value>
+            <value>
+                <fullName>Date de résiliation erronée</fullName>
+                <default>false</default>
+                <label>Date de résiliation erronée</label>
+            </value>
+            <value>
+                <fullName>Résiliation non prise en compte</fullName>
+                <default>false</default>
+                <label>Résiliation non prise en compte</label>
+            </value>
+            <value>
+                <fullName>Poursuite du prélèvement après résiliation</fullName>
+                <default>false</default>
+                <label>Poursuite du prélèvement après résiliation</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Pièces en attente</fullName>
+                <default>false</default>
+                <label>Pièces en attente</label>
+            </value>
+            <value>
+                <fullName>Demande d&apos;avoir</fullName>
+                <default>false</default>
+                <label>Demande d&apos;avoir</label>
+            </value>
+            <value>
+                <fullName>Demande rappel</fullName>
+                <default>false</default>
+                <label>Demande rappel</label>
+            </value>
+            <value>
+                <fullName>Travaux non terminés</fullName>
+                <default>false</default>
+                <label>Travaux non terminés</label>
+            </value>
+            <value>
+                <fullName>Facture à refaire au bon destinataire</fullName>
+                <default>false</default>
+                <label>Facture à refaire au bon destinataire</label>
+            </value>
+            <value>
+                <fullName>Déménagé</fullName>
+                <default>false</default>
+                <label>Déménagé</label>
+            </value>
+            <value>
+                <fullName>Délai de clôture dépassé</fullName>
+                <default>false</default>
+                <label>Délai de clôture dépassé</label>
+            </value>
+            <value>
+                <fullName>Comportement incorrect / Mauvaise attitude du CRC</fullName>
+                <default>false</default>
+                <label>Comportement incorrect / Mauvaise attitude du CRC</label>
+            </value>
+            <value>
+                <fullName>Difficulté à joindre le CRC</fullName>
+                <default>false</default>
+                <label>Difficulté à joindre le CRC</label>
+            </value>
+            <value>
+                <fullName>Contestation contenu devis</fullName>
+                <default>false</default>
+                <label>Contestation contenu devis</label>
+            </value>
+            <value>
+                <fullName>Signature du devis en ligne impossible</fullName>
+                <default>false</default>
+                <label>Signature du devis en ligne impossible</label>
+            </value>
+            <value>
+                <fullName>Délai d&apos;intervention dépassé</fullName>
+                <default>false</default>
+                <label>Délai d&apos;intervention dépassé</label>
+            </value>
+            <value>
+                <fullName>Devis visite technique physique mais réalisée à distance</fullName>
+                <default>false</default>
+                <label>Devis visite technique physique mais réalisée à distance</label>
+            </value>
+            <value>
+                <fullName>Défaut de conseil</fullName>
+                <default>false</default>
+                <label>Défaut de conseil</label>
+            </value>
+            <value>
+                <fullName>Absence de prise de rdv suite à un devis signé</fullName>
+                <default>false</default>
+                <label>Absence de prise de rdv suite à un devis signé</label>
+            </value>
+            <value>
+                <fullName>Devis non reçu suite à une VT</fullName>
+                <default>false</default>
+                <label>Devis non reçu suite à une VT</label>
+            </value>
+            <value>
+                <fullName>Dysfonctionnement équipement installé</fullName>
+                <default>false</default>
+                <label>Dysfonctionnement équipement installé</label>
+            </value>
+            <value>
+                <fullName>Dysfonctionnement installation électrique</fullName>
+                <default>false</default>
+                <label>Dysfonctionnement installation électrique</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Contestation/litiges</controllingFieldValue>
+            <valueName>Demande d&apos;avoir</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contestation/litiges</controllingFieldValue>
+            <valueName>Demande rappel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contestation/litiges</controllingFieldValue>
+            <valueName>Travaux non terminés</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contestation/litiges</controllingFieldValue>
+            <valueName>Facture à refaire au bon destinataire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contestation/litiges</controllingFieldValue>
+            <valueName>Déménagé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Devis</controllingFieldValue>
+            <valueName>Devis erroné</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Devis</controllingFieldValue>
+            <valueName>Devis non reçu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Devis</controllingFieldValue>
+            <valueName>Devis accepté non réalisé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Devis</controllingFieldValue>
+            <valueName>Contestation contenu devis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Devis</controllingFieldValue>
+            <valueName>Devis non reçu suite à une VT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facturation</controllingFieldValue>
+            <valueName>Double facturation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facturation</controllingFieldValue>
+            <valueName>Relance indue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facturation</controllingFieldValue>
+            <valueName>Facture erronée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facturation</controllingFieldValue>
+            <valueName>Facture non reçue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <valueName>Difficulté d&apos;accès</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <valueName>Documents manquants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <valueName>Prise et modification de RDV impossible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <valueName>Paiement impossible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <valueName>Signature du devis en ligne impossible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prestation technique</controllingFieldValue>
+            <valueName>Contestation non conformité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prestation technique</controllingFieldValue>
+            <valueName>Dégradation du matériel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prestation technique</controllingFieldValue>
+            <valueName>Problème non résolu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prestation technique</controllingFieldValue>
+            <valueName>Diagnostic erroné</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prestation technique</controllingFieldValue>
+            <valueName>Prestation non conforme au contrat/devis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prestation technique</controllingFieldValue>
+            <valueName>Pièces en attente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prestation technique</controllingFieldValue>
+            <valueName>Délai d&apos;intervention dépassé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prestation technique</controllingFieldValue>
+            <valueName>Devis visite technique physique mais réalisée à distance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relation commerciale</controllingFieldValue>
+            <valueName>Cadeau non transmis ou non conforme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relation commerciale</controllingFieldValue>
+            <valueName>Promotion non effective</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relation commerciale</controllingFieldValue>
+            <valueName>Vente forcée ou abusive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relation commerciale</controllingFieldValue>
+            <valueName>Défaut de conseil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Remboursement</controllingFieldValue>
+            <valueName>Remboursement non perçu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Remboursement</controllingFieldValue>
+            <valueName>Remboursement partiel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rendez-vous</controllingFieldValue>
+            <valueName>Avis de passage ou absence injustifiée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rendez-vous</controllingFieldValue>
+            <valueName>Annulation du RDV non communiquée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rendez-vous</controllingFieldValue>
+            <valueName>Modification du RDV non communiquée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rendez-vous</controllingFieldValue>
+            <valueName>Manque de ponctualité ou retard du technicien</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rendez-vous</controllingFieldValue>
+            <valueName>Technicien non présenté chez le client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rendez-vous</controllingFieldValue>
+            <valueName>Absence de prise de rdv suite à un devis signé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Arrêt des prestations lors du préavis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Date de résiliation erronée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Résiliation non prise en compte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Résiliation</controllingFieldValue>
+            <valueName>Poursuite du prélèvement après résiliation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accueil</controllingFieldValue>
+            <valueName>Conseil inapproprié ou manque de conseil du technicien</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accueil</controllingFieldValue>
+            <valueName>Comportement incorrect / Mauvaise attitude</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accueil</controllingFieldValue>
+            <valueName>Difficulté à joindre l&apos;agence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accueil</controllingFieldValue>
+            <valueName>Mauvais accueil physique en agence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accueil</controllingFieldValue>
+            <valueName>Mauvais accueil téléphonique en agence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accueil</controllingFieldValue>
+            <valueName>Comportement incorrect / Mauvaise attitude du CRC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accueil</controllingFieldValue>
+            <valueName>Difficulté à joindre le CRC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrat</controllingFieldValue>
+            <valueName>VE non effectuée durant l&apos;année de contrat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrat</controllingFieldValue>
+            <valueName>Non respect des conditions contractuelles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrat</controllingFieldValue>
+            <valueName>Augmentation tarifaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrat</controllingFieldValue>
+            <valueName>Relance indue (client dit qu&apos;il n&apos;a pas souscrit)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contrat</controllingFieldValue>
+            <valueName>Autre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Documents</controllingFieldValue>
+            <valueName>Document non reçu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Documents</controllingFieldValue>
+            <valueName>Document non valide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dépannage</controllingFieldValue>
+            <valueName>Dysfonctionnement équipement installé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dépannage</controllingFieldValue>
+            <valueName>Dysfonctionnement installation électrique</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

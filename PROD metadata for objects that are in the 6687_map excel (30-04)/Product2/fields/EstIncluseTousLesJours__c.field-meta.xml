@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EstIncluseTousLesJours__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>pour les prestations KI</description>
+    <label>Est de type 7/7</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

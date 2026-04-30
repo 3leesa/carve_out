@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Groupe__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Sprint 13: Groupe en charge de la réalisation de l&apos;intervention. Synchronisé depuis Optitime via gazelle.</description>
+    <label>Groupe</label>
+    <referenceTo>Groupe__c</referenceTo>
+    <relationshipLabel>Work Orders</relationshipLabel>
+    <relationshipName>Work_Orders</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

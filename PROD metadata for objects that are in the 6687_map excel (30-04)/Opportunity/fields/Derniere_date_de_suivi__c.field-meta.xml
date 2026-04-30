@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Derniere_date_de_suivi__c</fullName>
+    <description>Sprint 54 - Vue de liste - Suivi commercial des opportunités : CRM-184</description>
+    <label>Dernière date de suivi (RSF)</label>
+    <summarizedField>Suivi_commercial__c.date_du_suivi_commercial__c</summarizedField>
+    <summaryForeignKey>Suivi_commercial__c.opportunite_de_reference__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

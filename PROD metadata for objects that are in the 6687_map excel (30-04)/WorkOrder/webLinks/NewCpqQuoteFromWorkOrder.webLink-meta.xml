@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewCpqQuoteFromWorkOrder</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Nouveau Devis_old</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/DEV_VWF003_CpqQuoteCreationFromWorkOrder?inputUniqueId={!Opportunity.Id}{!NOW()}{!$User.Id}&amp;inputWorkOrderId={!WorkOrder.Id}&amp;inputAccountId={!WorkOrder.AccountId}&amp;inputCaseId={!WorkOrder.CaseId}&amp;retURL=/apex/VFP_CPQ_FlowRedirection?Id={!Opportunity.Id}{!NOW()}{!$User.Id}</url>
+</WebLink>

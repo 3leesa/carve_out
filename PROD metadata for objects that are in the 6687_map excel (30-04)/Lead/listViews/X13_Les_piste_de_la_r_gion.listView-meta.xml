@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X13_Les_piste_de_la_r_gion</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.CRM_B2B</value>
+    </filters>
+    <label>13-Les pistes de la région MEDITERRANEE</label>
+    <sharedTo>
+        <role>B2B_DN_CMI</role>
+        <role>DirectionRelationClient</role>
+        <role>Direction_Marketing_et_Commercial</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateDebutReelleWOVillogia__c</fullName>
+    <formula>IF( ISPICKVAL( Status , &apos;2&apos;) , StartDate + (6/24) , 
+IF( ISPICKVAL( Status , &apos;110&apos;) , EndDate + (6/24) , 
+IF( ISPICKVAL( Status , &apos;114&apos;) , EndDate + (6/24) ,
+IF( ISPICKVAL( Status , &apos;115&apos;) , EndDate + (6/24) ,
+IF( OR(ISPICKVAL(Status, &apos;51&apos;), ISPICKVAL(MotifARevoir__c, &apos;10&apos;)) ,EndDate + (6/24) ,
+null)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DateDebutReelleWOVillogia</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

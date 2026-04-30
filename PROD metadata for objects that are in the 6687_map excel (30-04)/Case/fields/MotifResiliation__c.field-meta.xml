@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotifResiliation__c</fullName>
+    <description>Sprint 7. Champ permettant de sélectionner le motif d&apos;une résiliation de contrat.
+MCOSF-2575 : Ajout du valeur Rétractation.</description>
+    <inlineHelpText>Veuillez sélectionner un motif de résiliation de contrat.</inlineHelpText>
+    <label>Motif de résiliation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Origin</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Modification contrat</fullName>
+                <default>false</default>
+                <label>Modification contrat</label>
+            </value>
+            <value>
+                <fullName>Déménagé</fullName>
+                <default>false</default>
+                <label>Déménagé</label>
+            </value>
+            <value>
+                <fullName>Déménagé (Arrêt mensu)</fullName>
+                <default>false</default>
+                <label>Déménagé (Arrêt mensu)</label>
+            </value>
+            <value>
+                <fullName>Déménagé (Remb. Fin Contrat)</fullName>
+                <default>false</default>
+                <label>Déménagé (Remb. Fin Contrat)</label>
+            </value>
+            <value>
+                <fullName>NPAI</fullName>
+                <default>false</default>
+                <label>NPAI</label>
+            </value>
+            <value>
+                <fullName>Remplacement d&apos;appareil Engie Home Services</fullName>
+                <default>false</default>
+                <label>Remplacement d&apos;appareil Engie Home Services</label>
+            </value>
+            <value>
+                <fullName>Remplacement d&apos;appareil par la concurrence</fullName>
+                <default>false</default>
+                <label>Remplacement d&apos;appareil par la concurrence</label>
+            </value>
+            <value>
+                <fullName>Impayé</fullName>
+                <default>false</default>
+                <label>Impayé</label>
+            </value>
+            <value>
+                <fullName>Prix</fullName>
+                <default>false</default>
+                <label>Prix</label>
+            </value>
+            <value>
+                <fullName>Changement de mode de paiement</fullName>
+                <default>false</default>
+                <label>Changement de mode de paiement</label>
+            </value>
+            <value>
+                <fullName>Qualité prestation</fullName>
+                <default>false</default>
+                <label>Qualité prestation</label>
+            </value>
+            <value>
+                <fullName>Changement d&apos;énergie</fullName>
+                <default>false</default>
+                <label>Changement d&apos;énergie</label>
+            </value>
+            <value>
+                <fullName>Repris en collectif</fullName>
+                <default>false</default>
+                <label>Repris en collectif</label>
+            </value>
+            <value>
+                <fullName>Décédé</fullName>
+                <default>false</default>
+                <label>Décédé</label>
+            </value>
+            <value>
+                <fullName>Décédé (Arrêt mensu)</fullName>
+                <default>false</default>
+                <label>Décédé (Arrêt mensu)</label>
+            </value>
+            <value>
+                <fullName>Impayé automatique</fullName>
+                <default>false</default>
+                <label>Impayé automatique</label>
+            </value>
+            <value>
+                <fullName>Sur portefeuille racheté</fullName>
+                <default>false</default>
+                <label>Sur portefeuille racheté</label>
+            </value>
+            <value>
+                <fullName>Indéterminé</fullName>
+                <default>false</default>
+                <label>Indéterminé</label>
+            </value>
+            <value>
+                <fullName>Résiliation siège</fullName>
+                <default>false</default>
+                <label>Résiliation siège</label>
+            </value>
+            <value>
+                <fullName>Option Therm.Connecté illigo</fullName>
+                <default>false</default>
+                <label>Option Therm.Connecté illigo</label>
+            </value>
+            <value>
+                <fullName>Autre à préciser</fullName>
+                <default>false</default>
+                <label>Autre à préciser</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Déménagé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Déménagé (Arrêt mensu)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Déménagé (Remb. Fin Contrat)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Remplacement d&apos;appareil par la concurrence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Prix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Qualité prestation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Changement d&apos;énergie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Repris en collectif</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Décédé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Décédé (Arrêt mensu)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Sur portefeuille racheté</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Indéterminé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Option Therm.Connecté illigo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Téléphone</controllingFieldValue>
+            <controllingFieldValue>Application mobile</controllingFieldValue>
+            <controllingFieldValue>Réseaux sociaux</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Visite en agence</controllingFieldValue>
+            <controllingFieldValue>Courrier</controllingFieldValue>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <controllingFieldValue>Espace Client</controllingFieldValue>
+            <controllingFieldValue>Site web</controllingFieldValue>
+            <valueName>Autre à préciser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <valueName>Modification contrat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <valueName>NPAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <valueName>Remplacement d&apos;appareil Engie Home Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <valueName>Impayé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <valueName>Changement de mode de paiement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interne</controllingFieldValue>
+            <valueName>Impayé automatique</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

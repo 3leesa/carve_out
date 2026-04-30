@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nombre_d_opportunit_s__c</fullName>
+    <description>Sprint 59 - CRM-279 création rapport</description>
+    <label>Nombre d&apos;opportunités</label>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>Devis remis au client, Collecte documents financement, Dossier financement envoyé, Fermée / Gagnée, Fermée / Perdue, Clôturée</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

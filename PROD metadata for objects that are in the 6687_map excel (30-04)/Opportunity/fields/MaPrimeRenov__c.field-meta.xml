@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MaPrimeRenov__c</fullName>
+    <description>Sprint 19 - CPQ-536 : Devis Appareil: Implémenter la nouvelle Prime Renov sur opportunité pour le 15/09 (PEPA V2)
+MCOSF-3048 : Modification MPR au 01/01/2024</description>
+    <label>Montant d&apos;aide prévisionnel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>4001</fullName>
+                <default>false</default>
+                <label>4000€ max et 40% de reste à charge (chaudière à granules)</label>
+            </value>
+            <value>
+                <fullName>8000</fullName>
+                <default>false</default>
+                <label>8000€ max et 25% de reste à charge (chaudière à granules)</label>
+            </value>
+            <value>
+                <fullName>10000</fullName>
+                <default>false</default>
+                <label>10000€ max et 10% de reste à charge (chaudière à granules)</label>
+            </value>
+            <value>
+                <fullName>5002</fullName>
+                <default>false</default>
+                <label>5000€ max et 10% de reste à charge (PAC A/E)</label>
+            </value>
+            <value>
+                <fullName>4003</fullName>
+                <default>false</default>
+                <label>4000€ max et 25% de reste à charge (PAC A/E)</label>
+            </value>
+            <value>
+                <fullName>3002</fullName>
+                <default>false</default>
+                <label>3000€ max et 40% de reste à charge (PAC A/E)</label>
+            </value>
+            <value>
+                <fullName>800</fullName>
+                <default>false</default>
+                <label>800€ max et 25% de reste à charge (chaudière THPE)</label>
+            </value>
+            <value>
+                <fullName>1200</fullName>
+                <default>false</default>
+                <label>1200€ max et 10% de reste à charge (chaudière THPE)</label>
+            </value>
+            <value>
+                <fullName>3001</fullName>
+                <default>false</default>
+                <label>3000€ max et 40% de reste à charge (PAC A/E jusqu&apos;au 01/04/2023)</label>
+            </value>
+            <value>
+                <fullName>4002</fullName>
+                <default>false</default>
+                <label>4000€ max et 25% de reste à charge (PAC A/E jusqu&apos;au 01/04/2023)</label>
+            </value>
+            <value>
+                <fullName>5000</fullName>
+                <default>false</default>
+                <label>5000€ max et 10% de reste à charge (PAC A/E jusqu&apos;au 01/04/2023)</label>
+            </value>
+            <value>
+                <fullName>5001</fullName>
+                <default>false</default>
+                <label>5000€ max et 40% de reste à charge (chaudière à granules jusqu&apos;au 01/04/2023)</label>
+            </value>
+            <value>
+                <fullName>9000</fullName>
+                <default>false</default>
+                <label>9000€ max et 25% de reste à charge (chaudière à granules jusqu&apos;au 01/04/2023)</label>
+            </value>
+            <value>
+                <fullName>11000</fullName>
+                <default>false</default>
+                <label>11000€ max et 10% de reste à charge (chaudière à granules jusqu&apos;au 01/04/2023)</label>
+            </value>
+            <value>
+                <fullName>2000</fullName>
+                <default>false</default>
+                <label>2000€ max et 40% de reste à charge (PAC A/E + chaudières à granulés jusqu’au 01/01/2024)</label>
+            </value>
+            <value>
+                <fullName>3000</fullName>
+                <default>false</default>
+                <label>3000€ max et 25% de reste à charge (PAC A/E + chaudières à granulés jusqu’au 01/01/2024)</label>
+            </value>
+            <value>
+                <fullName>4000</fullName>
+                <default>false</default>
+                <label>4000€ max et 10% de reste à charge (PAC A/E jusqu’au 01/01/2024)</label>
+            </value>
+            <value>
+                <fullName>Non éligible</fullName>
+                <default>false</default>
+                <label>Non éligible</label>
+            </value>
+            <value>
+                <fullName>A déterminer</fullName>
+                <default>false</default>
+                <label>A déterminer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

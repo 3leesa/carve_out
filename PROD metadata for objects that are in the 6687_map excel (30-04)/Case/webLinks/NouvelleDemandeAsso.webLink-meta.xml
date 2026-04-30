@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NouvelleDemandeAsso</fullName>
+    <availability>online</availability>
+    <description>Sprint 26: Permet de créer une demande associe avec possibilité de choisir le record type et d&apos;avoir des champs pré-remplis.</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Nouvelle demande associée (old)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/{!IF(CONTAINS($Profile.Name,&apos;Lightning&apos;),&apos;lightning&apos;,&apos;setup&apos;)}/{!IF(CONTAINS($Profile.Name,&apos;Lightning&apos;),&apos;cmp&apos;,&apos;ui&apos;)}/{!IF(CONTAINS($Profile.Name,&apos;Lightning&apos;),&apos;c__NewChildCase&apos;,&apos;recordtypeselect.jsp&apos;)}?{!IF(CONTAINS($Profile.Name,&apos;Lightning&apos;),&apos;c__id&apos;,&apos;ent&apos;)}={!IF(CONTAINS($Profile.Name,&apos;Lightning&apos;),Case.Id,&apos;Case&apos;)}&amp;retURL=%2F{!Case.Id}&amp;save_new_url=%2F500%2Fe%3FretURL%3D%252F{!Case.Id}%26
+def_parent_id={!Case.Id}%26
+{!IF(Asset.Id!=null,&apos;def_asset_id=&apos;+Asset.Id, &apos;&apos;)}%26
+{!IF(Account.Id!=null, &apos;def_account_id=&apos;+Account.Id,&apos;&apos;)}%26
+{!IF(Contact.Id!=null,&apos;def_contact_id=&apos;+Contact.Id,&apos;&apos;)} %26
+{!IF(Product2.Id!=null,&apos;def_product_id=&apos;+Product2.Id,&apos;&apos;)}%26
+{!IF(Case.ServiceContract__c!=null,$Setup.CS002_Metadata__c.ServiceContract__c+&apos;=&apos;+Case.ServiceContract__c, &apos;&apos;)}%26
+{!IF(Case.ServiceContractId__c!=null ,$Setup.CS002_Metadata__c.ServiceContract__c+&apos;_lkid=&apos;+Case.ServiceContractId__c, &apos;&apos;)}%26
+{!IF(Asset.Site__c!=null,$Setup.CS002_Metadata__c.DemandeSiteGestionnaire__c+&apos;=&apos;+Asset.Site__c , $Setup.CS002_Metadata__c.DemandeSiteGestionnaire__c+&apos;=&apos;+Case.ChoixAgence__c)}%26
+{!IF(Asset.SiteId__c!=null,$Setup.CS002_Metadata__c.DemandeSiteGestionnaire__c+&apos;_lkid=&apos;+Asset.SiteId__c , &apos;&apos;)}%26
+{!IF(Asset.Site__c!=null,$Setup.CS002_Metadata__c.DemandeSiteDeRattachement__c+&apos;=&apos;+Asset.Site__c, $Setup.CS002_Metadata__c.DemandeSiteDeRattachement__c+&apos;=&apos;+Case.SiteDeRattachement__c)}%26
+{!IF(Asset.SiteId__c!=null,$Setup.CS002_Metadata__c.DemandeSiteDeRattachement__c+&apos;_lkid=&apos;+Asset.SiteId__c, &apos;&apos;)}</url>
+</WebLink>

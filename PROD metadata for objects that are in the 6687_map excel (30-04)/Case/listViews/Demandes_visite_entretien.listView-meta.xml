@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demandes_visite_entretien</fullName>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>InformationCRC__c</columns>
+    <columns>FSM_Requested_Slot__c</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Formule_du_contrat_demande__c</columns>
+    <columns>Options_du_contrat_de_la_demande__c</columns>
+    <columns>NbRelanceTotal__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>Visite / Entretien</value>
+    </filters>
+    <filters>
+        <field>InformationCRC__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>MonAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <label>Demandes visite entretien</label>
+    <queue>Equipe_Demandes_courantes</queue>
+</ListView>

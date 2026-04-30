@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_SIRET</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.Name = &apos;Client B2B&apos;, AND(TEXT(B2B_Typologie__c) != &apos;Syndicat des copropriétaires&apos;, !ISPICKVAL(B2B_Typologie__c,&apos;Autre Professionnel&apos;)), ISBLANK(NumeroSIRET__c))</errorConditionFormula>
+    <errorDisplayField>NumeroSIRET__c</errorDisplayField>
+    <errorMessage>Le n° siret doit être renseigné pour ce client</errorMessage>
+</ValidationRule>

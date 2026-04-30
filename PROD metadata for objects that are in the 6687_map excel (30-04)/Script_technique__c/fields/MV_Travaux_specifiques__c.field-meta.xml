@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV_Travaux_specifiques__c</fullName>
+    <inlineHelpText>Visite technique si Travaux spécifiques à prévoir</inlineHelpText>
+    <label>Travaux spécifiques</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Câble non apparent</fullName>
+                <default>false</default>
+                <label>Câble non apparent</label>
+            </value>
+            <value>
+                <fullName>Tranchée à réaliser</fullName>
+                <default>false</default>
+                <label>Tranchée à réaliser</label>
+            </value>
+            <value>
+                <fullName>Travaux en hauteur (&gt;2m) ou dans les combles</fullName>
+                <default>false</default>
+                <label>Travaux en hauteur (&gt;2m) ou dans les combles</label>
+            </value>
+            <value>
+                <fullName>Travaux en environnement confiné</fullName>
+                <default>false</default>
+                <label>Travaux en environnement confiné</label>
+            </value>
+            <value>
+                <fullName>Terre non conforme</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Terre non conforme</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

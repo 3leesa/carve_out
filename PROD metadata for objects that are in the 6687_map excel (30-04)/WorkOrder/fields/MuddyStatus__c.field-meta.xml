@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MuddyStatus__c</fullName>
+    <label>Etat d&apos;embouement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BAD</fullName>
+                <default>false</default>
+                <label>Mauvais</label>
+            </value>
+            <value>
+                <fullName>GOOD</fullName>
+                <default>false</default>
+                <label>Bon</label>
+            </value>
+            <value>
+                <fullName>NOT_APPLICABLE</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

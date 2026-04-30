@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR002_Lead_Estimation</fullName>
+    <active>false</active>
+    <description>Une fois l’estimation envoyée, le chargé d’affaires doit obligatoirement cocher la case « Estimation acceptée ». Une fois la case cochée, le statut passe automatiquement à la valeur « Visite de préparation à organiser ».</description>
+    <errorConditionFormula>NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c) &amp;&amp;
+NOT(ISPICKVAL(Status,&quot;Nouveau dossier&quot;)) &amp;&amp;
+NOT(ISPICKVAL(Status,&quot;Prospect à appeler&quot;)) &amp;&amp;
+NOT(ISPICKVAL(Status,&quot;Estimation à envoyer au client&quot;)) &amp;&amp;
+NOT(ISPICKVAL(Status,&quot;Estimation envoyée&quot;)) &amp;&amp;
+NOT(ISPICKVAL(Status,&quot;Annulé&quot;)) &amp;&amp;
+Estimation_acceptee__c = FALSE</errorConditionFormula>
+    <errorDisplayField>Estimation_acceptee__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas passer à ce statut sans que l&apos;estimation ait été accepté.</errorMessage>
+</ValidationRule>

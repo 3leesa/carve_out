@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsEmailEntrant__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>CRM-571: Pilote: Mise en place d&apos;un pilote sur une agence, permettant un échange bi-directionnele par mail avec les clients</description>
+    <label>IsEmailEntrant</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

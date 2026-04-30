@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_previsible_affichage__c</fullName>
+    <description>CRM-550 : utiliser dans le rapport. faire apparaitre dans le rapport si on est à J-14 de la date de livraison du logement</description>
+    <formula>IF(NOT(ISNULL(CMI_Date_previsible_livraison_energies__c)),
+			IF(TODAY() &gt;=  DATEVALUE(CMI_Date_previsible_livraison_energies__c) - 14 &amp;&amp; ISPICKVAL(CMI_Avancement_MES__c,&quot;Rdv à prendre&quot;) , TRUE ,FALSE),
+			IF (NOT(ISNULL(CMI_Date_previsible_livraison_logement__c)),
+			IF(TODAY() &gt;=  DATEVALUE(CMI_Date_previsible_livraison_logement__c) - 14  &amp;&amp; ISPICKVAL(CMI_Avancement_MES__c,&quot;Rdv à prendre&quot;), TRUE ,FALSE),FALSE))</formula>
+    <label>Date prévisible affichage</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalutationPicklistRestricted</fullName>
+    <active>true</active>
+    <description>La picklist des civilités doit être vide ou restreinte aux valeurs du référentiel Gazelle</description>
+    <errorConditionFormula>NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c) &amp;&amp; OR(RecordType.DeveloperName=&quot;Entreprise&quot;, RecordType.DeveloperName=&quot;PersonAccount&quot;) &amp;&amp;  NOT(OR(ISPICKVAL(Salutation, &quot;AGCE&quot;),
+ISPICKVAL(Salutation, &quot;CAB&quot;),
+ISPICKVAL(Salutation, &quot;DR.&quot;),
+ISPICKVAL(Salutation, &quot;MR.&quot;),
+ISPICKVAL(Salutation, &quot;M. MME&quot;),
+ISPICKVAL(Salutation, &quot;MS.&quot;),
+ISPICKVAL(Salutation, &quot;MME&quot;),
+ISPICKVAL(Salutation, &quot;MRS.&quot;),
+ISPICKVAL(Salutation, &quot;MISS&quot;),
+ISPICKVAL(Salutation, &quot;SIR&quot;),
+ISBLANK(TEXT(Salutation))
+))</errorConditionFormula>
+    <errorDisplayField>Salutation</errorDisplayField>
+    <errorMessage>Veuillez sélectionner une civilité de la liste, ou aucune</errorMessage>
+</ValidationRule>

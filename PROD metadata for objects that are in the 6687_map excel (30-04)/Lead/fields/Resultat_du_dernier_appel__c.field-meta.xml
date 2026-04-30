@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resultat_du_dernier_appel__c</fullName>
+    <label>Résultat du dernier appel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>appel abandonné après temps d&apos;attente</fullName>
+                <default>false</default>
+                <label>appel abandonné après temps d&apos;attente</label>
+            </value>
+            <value>
+                <fullName>occupé</fullName>
+                <default>false</default>
+                <label>occupé</label>
+            </value>
+            <value>
+                <fullName>faux numéro</fullName>
+                <default>false</default>
+                <label>faux numéro</label>
+            </value>
+            <value>
+                <fullName>absent</fullName>
+                <default>false</default>
+                <label>absent</label>
+            </value>
+            <value>
+                <fullName>répondeur</fullName>
+                <default>false</default>
+                <label>répondeur</label>
+            </value>
+            <value>
+                <fullName>rappel personnel</fullName>
+                <default>false</default>
+                <label>rappel personnel</label>
+            </value>
+            <value>
+                <fullName>relance</fullName>
+                <default>false</default>
+                <label>relance</label>
+            </value>
+            <value>
+                <fullName>indisponible</fullName>
+                <default>false</default>
+                <label>indisponible</label>
+            </value>
+            <value>
+                <fullName>transfert</fullName>
+                <default>false</default>
+                <label>transfert</label>
+            </value>
+            <value>
+                <fullName>Prospect joint</fullName>
+                <default>false</default>
+                <label>Prospect joint</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

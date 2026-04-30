@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR018_Champs_Obligatoire_AvantConversion</fullName>
+    <active>true</active>
+    <description>MCOSF-126- Les champs Statut occupant, Rue, Ville et Code postal sont obligatoire avant conversion
+MCOSF-3069 - Ajout bypass user Dataware</description>
+    <errorConditionFormula>AND(
+(NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c)),
+$User.Id &lt;&gt; &apos;0050800000BPg7m&apos;,
+TECH_RecordTypeName__c = &apos;CRM_B2C_MV&apos;,
+TEXT(Status) = &apos;Converti&apos;,
+OR(
+ISBLANK(Street),
+ISBLANK(PostalCode),
+ISBLANK(City),
+ISBLANK(TEXT(Statut_occupant__c))
+)
+)</errorConditionFormula>
+    <errorMessage>Les champs Statut occupant, Rue, Ville et Code postal sont obligatoire.</errorMessage>
+</ValidationRule>

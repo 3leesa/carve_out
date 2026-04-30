@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BypassFilterPHP1__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>MCOSF-2895 : Devis évolutions devis préconfiguré &quot;Chaudières gaz hors pack&quot;
+Permet au produit d&apos;être ignoré par le filtre du devis Chaudières gaz hors pack.</description>
+    <label>BypassFilterPHP1</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

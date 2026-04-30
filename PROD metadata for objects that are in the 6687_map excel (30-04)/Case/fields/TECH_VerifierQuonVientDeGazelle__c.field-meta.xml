@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_VerifierQuonVientDeGazelle__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 15 - Ce champ a été créé pour empêcher le déclenchement de certaines règles de validation quand la demande est créée suite à la reception d&apos;une intervention venant de Gazelle</description>
+    <inlineHelpText>Si la demande est créée relativement à une intervention qui vient de Gazelle la case est alors cochée</inlineHelpText>
+    <label>TECH_VerifierQuonVientDeGazelle</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

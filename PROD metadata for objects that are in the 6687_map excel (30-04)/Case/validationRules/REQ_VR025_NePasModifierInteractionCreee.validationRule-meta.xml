@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR025_NePasModifierInteractionCreee</fullName>
+    <active>true</active>
+    <description>Sprint 44 - Empêche l&apos;utilisateur modifiant une demande de modifier le bouléen sur lequel on se base pour créer l&apos;échange client, ainsi que le type d&apos;interaction</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c),
+OR(ISCHANGED( CreerEchangeClient__c),ISCHANGED( TypeInteraction__c )),
+NOT(ISNEW())
+)</errorConditionFormula>
+    <errorMessage>Les échanges clients sont générés à la création de la demande. Les caractéristiques de l&apos;échange client ne sont plus modifiables une fois la demande créée.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR026_TypeInteractionPasRenseigne</fullName>
+    <active>true</active>
+    <description>Sprint 44 - Empêche l&apos;utilisateur de créer une demande avec la génération automatique d&apos;un échange client si le type d&apos;interaction n&apos;est pas renseigné.</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c), 
+ISNEW(),
+CreerEchangeClient__c,
+ISBLANK(Text(TypeInteraction__c)) 
+)</errorConditionFormula>
+    <errorDisplayField>TypeInteraction__c</errorDisplayField>
+    <errorMessage>Veuillez choisir un type d&apos;interaction ou annuler la génération automatique d&apos;un échange client.</errorMessage>
+</ValidationRule>

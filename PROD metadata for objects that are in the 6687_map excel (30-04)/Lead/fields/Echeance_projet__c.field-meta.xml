@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Echeance_projet__c</fullName>
+    <label>Echéance du projet</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Le plus rapidement possible</fullName>
+                <default>false</default>
+                <label>Le plus rapidement possible</label>
+            </value>
+            <value>
+                <fullName>Moins de 6 mois</fullName>
+                <default>false</default>
+                <label>Moins de 6 mois</label>
+            </value>
+            <value>
+                <fullName>Plus de 6 mois</fullName>
+                <default>false</default>
+                <label>Plus de 6 mois</label>
+            </value>
+            <value>
+                <fullName>immédiat</fullName>
+                <default>false</default>
+                <label>Immédiat</label>
+            </value>
+            <value>
+                <fullName>1 à 3 mois</fullName>
+                <default>false</default>
+                <label>1 à 3 mois</label>
+            </value>
+            <value>
+                <fullName>3 à 6 mois</fullName>
+                <default>false</default>
+                <label>3 à 6 mois</label>
+            </value>
+            <value>
+                <fullName>supérieur 6 mois</fullName>
+                <default>false</default>
+                <label>supérieur 6 mois</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

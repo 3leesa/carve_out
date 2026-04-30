@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CanalPrivilegie__c</fullName>
+    <description>Sprint 8. Permet de choisir parmi les valeurs proposées le canal privilégié par le client</description>
+    <label>Canal privilégié</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Téléphone</fullName>
+                <default>true</default>
+                <label>Téléphone</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Courrier</fullName>
+                <default>false</default>
+                <label>Courrier</label>
+            </value>
+            <value>
+                <fullName>SMS</fullName>
+                <default>false</default>
+                <label>SMS</label>
+            </value>
+            <value>
+                <fullName>Chat</fullName>
+                <default>false</default>
+                <label>Chat</label>
+            </value>
+            <value>
+                <fullName>Espace Client</fullName>
+                <default>false</default>
+                <label>Espace Client</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

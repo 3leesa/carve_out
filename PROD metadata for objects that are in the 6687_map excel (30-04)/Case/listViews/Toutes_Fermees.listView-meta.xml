@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toutes_Fermees</fullName>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>NAME</columns>
+    <columns>CASES.CLOSED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ChoixAgence__c</columns>
+    <columns>NiveauDEscalade__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.REASON</columns>
+    <columns>SousMotif__c</columns>
+    <columns>CategorieDemande__c</columns>
+    <columns>AdresseIntervention__c</columns>
+    <columns>AdresseDeFacturation__c</columns>
+    <columns>PARENT.CASE_NUMBER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Toutes_Fermées</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>AdministrateursSysteme</group>
+    </sharedTo>
+</ListView>

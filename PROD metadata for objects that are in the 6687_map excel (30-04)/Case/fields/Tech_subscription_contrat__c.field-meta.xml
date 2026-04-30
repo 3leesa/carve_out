@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_subscription_contrat__c</fullName>
+    <formula>IF( 
+AND(
+ISPICKVAL(Type, &quot;Souscription&quot;),
+OR(
+ISPICKVAL(Motif_Souscription__c,&quot;Contrat offert suite MES&quot;),
+ISPICKVAL(Motif_Souscription__c,&quot;Contrat offert suite Dépannage HC facturé&quot;),
+ISPICKVAL(Motif_Souscription__c,&quot;Contrat offert suite VF facturée&quot;),
+ISPICKVAL(Motif_Souscription__c,&quot;Offre CMISTE&quot;),
+ISPICKVAL(Motif_Souscription__c,&quot;Client souhaite un contrat&quot;)
+)), true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH contrat souscription</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

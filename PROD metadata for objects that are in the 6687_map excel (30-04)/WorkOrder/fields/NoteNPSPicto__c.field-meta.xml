@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoteNPSPicto__c</fullName>
+    <description>Sprint 13 - Affichage du NPS de l&apos;intervention sous forme de pictogramme.</description>
+    <externalId>false</externalId>
+    <formula>IF(MT_NPS__c &gt;= 8, IMAGE(&quot;/resource/Pictogramme/happy_smiley.png&quot;, TEXT(MT_NPS__c)),
+IF(MT_NPS__c &gt;= 6, IMAGE(&quot;/resource/Pictogramme/neutral_smiley.png&quot;, TEXT(MT_NPS__c)),
+IF(MT_NPS__c &gt; 0, IMAGE(&quot;/resource/Pictogramme/mad_smiley.png&quot;, TEXT(MT_NPS__c)), IMAGE(&quot;/resource/Pictogramme/Smiley_no_mouth.png&quot;,&quot;aucun NPS&quot;))))</formula>
+    <label>Note NPS</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

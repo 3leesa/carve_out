@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_DateDeTraitement__c</fullName>
+    <defaultValue>NOW()</defaultValue>
+    <description>Sprint 2. Champ technique pour avoir la date de traitement d&apos;une demande à son niveau d&apos;escalade actuel (date de passage du statut &quot;Nouveau&quot; au statut &quot;En cours&quot;). Champ alimenté par workflow avec : NOW().</description>
+    <label>TECH_Date de traitement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

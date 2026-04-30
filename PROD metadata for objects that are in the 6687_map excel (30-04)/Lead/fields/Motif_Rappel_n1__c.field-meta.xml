@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_Rappel_n1__c</fullName>
+    <label>Résultat de l’appel n°1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>89</fullName>
+                <default>false</default>
+                <label>appel abandonné après temps d&apos;attente</label>
+            </value>
+            <value>
+                <fullName>90</fullName>
+                <default>false</default>
+                <label>occupé</label>
+            </value>
+            <value>
+                <fullName>91</fullName>
+                <default>false</default>
+                <label>faux numéro</label>
+            </value>
+            <value>
+                <fullName>92</fullName>
+                <default>false</default>
+                <label>absent</label>
+            </value>
+            <value>
+                <fullName>93</fullName>
+                <default>false</default>
+                <label>répondeur</label>
+            </value>
+            <value>
+                <fullName>94</fullName>
+                <default>false</default>
+                <label>rappel personnel</label>
+            </value>
+            <value>
+                <fullName>95</fullName>
+                <default>false</default>
+                <label>relance</label>
+            </value>
+            <value>
+                <fullName>96</fullName>
+                <default>false</default>
+                <label>indisponible</label>
+            </value>
+            <value>
+                <fullName>97</fullName>
+                <default>false</default>
+                <label>transfert</label>
+            </value>
+            <value>
+                <fullName>98</fullName>
+                <default>false</default>
+                <label>Prospect joint</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

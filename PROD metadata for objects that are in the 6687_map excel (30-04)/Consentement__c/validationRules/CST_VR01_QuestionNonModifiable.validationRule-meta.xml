@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CST_VR01_QuestionNonModifiable</fullName>
+    <active>true</active>
+    <description>MA-4727 - Il faut empêcher un utilisateur du CRM de modifier la question d’un consentement existant. En effet, ça ne mettrait pas à jour le consentement sur la question précédente, dans xData.</description>
+    <errorConditionFormula>AND(
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c),
+NOT(ISNEW()),
+ISCHANGED(Question__c)
+)</errorConditionFormula>
+    <errorDisplayField>Question__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas modifier la question d&apos;un consentement existant. Veuillez créer un nouveau consentement sur ce client.</errorMessage>
+</ValidationRule>

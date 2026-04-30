@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>devis_cr_la_demande_de__c</fullName>
+    <label>Devis créé à la demande de</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Demande client</fullName>
+                <default>false</default>
+                <label>Demande client</label>
+            </value>
+            <value>
+                <fullName>Demande EHS</fullName>
+                <default>false</default>
+                <label>Demande EHS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

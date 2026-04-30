@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Raisons__c</fullName>
+    <label>Raisons de la clôture</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Test – Fausse demande</fullName>
+                <default>false</default>
+                <label>Test – Fausse demande</label>
+            </value>
+            <value>
+                <fullName>Doublon</fullName>
+                <default>false</default>
+                <label>Doublon</label>
+            </value>
+            <value>
+                <fullName>Faux numéro</fullName>
+                <default>false</default>
+                <label>Faux numéro</label>
+            </value>
+            <value>
+                <fullName>Hors périmètre EHS</fullName>
+                <default>false</default>
+                <label>Hors périmètre EHS</label>
+            </value>
+            <value>
+                <fullName>Injoignable</fullName>
+                <default>false</default>
+                <label>Injoignable</label>
+            </value>
+            <value>
+                <fullName>Script technique sans suite</fullName>
+                <default>false</default>
+                <label>Script technique sans suite</label>
+            </value>
+            <value>
+                <fullName>Projet abandonné</fullName>
+                <default>false</default>
+                <label>Projet abandonné</label>
+            </value>
+            <value>
+                <fullName>Projet déjà réalisé</fullName>
+                <default>false</default>
+                <label>Projet déjà réalisé</label>
+            </value>
+            <value>
+                <fullName>Projet pas mûr - Délai &gt; 6 mois</fullName>
+                <default>false</default>
+                <label>Projet pas mûr - Délai &gt; 6 mois</label>
+            </value>
+            <value>
+                <fullName>Projet pas mur – demande d’informations</fullName>
+                <default>false</default>
+                <label>Projet pas mûr – demande d’informations</label>
+            </value>
+            <value>
+                <fullName>Pas de projet de remplacement</fullName>
+                <default>false</default>
+                <label>Pas de projet de remplacement</label>
+            </value>
+            <value>
+                <fullName>Inscription forcée</fullName>
+                <default>false</default>
+                <label>Inscription forcée</label>
+            </value>
+            <value>
+                <fullName>Hors cible</fullName>
+                <default>false</default>
+                <label>Hors cible</label>
+            </value>
+            <value>
+                <fullName>Devis perdu – Abandon du projet</fullName>
+                <default>false</default>
+                <label>Devis perdu – Abandon du projet</label>
+            </value>
+            <value>
+                <fullName>Devis sans suite</fullName>
+                <default>false</default>
+                <label>Devis sans suite</label>
+            </value>
+            <value>
+                <fullName>Dossier de financement refusé</fullName>
+                <default>false</default>
+                <label>Dossier de financement refusé</label>
+            </value>
+            <value>
+                <fullName>Script technique refusé</fullName>
+                <default>false</default>
+                <label>Script technique refusé</label>
+            </value>
+            <value>
+                <fullName>NA Copro</fullName>
+                <default>false</default>
+                <label>NA Copro</label>
+            </value>
+            <value>
+                <fullName>NA Pro</fullName>
+                <default>false</default>
+                <label>NA Pro</label>
+            </value>
+            <value>
+                <fullName>KO Offre</fullName>
+                <default>false</default>
+                <label>KO Offre</label>
+            </value>
+            <value>
+                <fullName>En réflexion</fullName>
+                <default>false</default>
+                <label>En réflexion</label>
+            </value>
+            <value>
+                <fullName>Transfert agence –déjà client EHS</fullName>
+                <default>false</default>
+                <label>Transfert agence –déjà client EHS</label>
+            </value>
+            <value>
+                <fullName>Infaisabilité technique</fullName>
+                <default>false</default>
+                <label>KO - Infaisabilité technique</label>
+            </value>
+            <value>
+                <fullName>Hors-cible - Demande Copro</fullName>
+                <default>false</default>
+                <label>Hors-cible - Demande Copro</label>
+            </value>
+            <value>
+                <fullName>Hors-cible - Demande Pro</fullName>
+                <default>false</default>
+                <label>Hors-cible - Demande Pro</label>
+            </value>
+            <value>
+                <fullName>Hors-cible - Doublon / test</fullName>
+                <default>false</default>
+                <label>Hors-cible - Doublon / test</label>
+            </value>
+            <value>
+                <fullName>Hors-cible - Erreur de N°</fullName>
+                <default>false</default>
+                <label>Hors-cible - Erreur de N°</label>
+            </value>
+            <value>
+                <fullName>KO - Choix prise renforcée</fullName>
+                <default>false</default>
+                <label>KO - Choix prise renforcée</label>
+            </value>
+            <value>
+                <fullName>KO - BR trop cher</fullName>
+                <default>false</default>
+                <label>KO - BR trop cher</label>
+            </value>
+            <value>
+                <fullName>KO - VT payante</fullName>
+                <default>false</default>
+                <label>KO - VT payante</label>
+            </value>
+            <value>
+                <fullName>KO - Délai d&apos;intervention</fullName>
+                <default>false</default>
+                <label>KO - Délai d&apos;intervention</label>
+            </value>
+            <value>
+                <fullName>En réflexion - Projet reporté/immature</fullName>
+                <default>false</default>
+                <label>En réflexion - Projet reporté/immature</label>
+            </value>
+            <value>
+                <fullName>En réflexion - Projet annulé</fullName>
+                <default>false</default>
+                <label>En réflexion - Projet annulé</label>
+            </value>
+            <value>
+                <fullName>En réflexion - Prise de renseignements</fullName>
+                <default>false</default>
+                <label>En réflexion - Prise de renseignements</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Test – Fausse demande</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Doublon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Faux numéro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Hors périmètre EHS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Injoignable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Script technique sans suite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Projet abandonné</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Projet déjà réalisé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Projet pas mûr - Délai &gt; 6 mois</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Projet pas mur – demande d’informations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Pas de projet de remplacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Inscription forcée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Hors cible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Script technique refusé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>NA Copro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>NA Pro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>KO Offre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Transfert agence –déjà client EHS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Infaisabilité technique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Hors-cible - Demande Copro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Hors-cible - Demande Pro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Hors-cible - Doublon / test</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>Hors-cible - Erreur de N°</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>KO - Choix prise renforcée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>KO - VT payante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>KO - Délai d&apos;intervention</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>En réflexion - Projet reporté/immature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>En réflexion - Projet annulé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Annulé</controllingFieldValue>
+            <valueName>En réflexion - Prise de renseignements</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

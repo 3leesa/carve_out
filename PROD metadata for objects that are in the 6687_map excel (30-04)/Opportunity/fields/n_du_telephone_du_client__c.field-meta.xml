@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>n_du_telephone_du_client__c</fullName>
+    <description>Sprint 54 -Vue de liste - Suivi commercial des opportunités : CRM-184</description>
+    <externalId>false</externalId>
+    <formula>Account.PersonContact.MobilePhone</formula>
+    <label>N° du téléphone du client</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

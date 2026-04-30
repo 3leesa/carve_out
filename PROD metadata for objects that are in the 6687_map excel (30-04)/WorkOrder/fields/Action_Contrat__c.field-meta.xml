@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Contrat__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/flow/DEV_VWF007_CpqQuoteCreationFromWorkOrder?inputUniqueId=&quot;&amp;Id&amp;TEXT(NOW())&amp;$User.Id&amp;&quot;&amp;inputWorkOrderId=&quot;&amp;Id&amp;&quot;&amp;inputAccountId=&quot;&amp;AccountId&amp;&quot;&amp;inputCaseId=&quot;&amp;CaseId&amp;&quot;&amp;retURL=/apex/VFP_CPQ_FlowRedirection?Id=&quot;&amp;Id&amp;TEXT(NOW())&amp;$User.Id, &quot;Créer contrat&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Action Contrat</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

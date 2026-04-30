@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Isolation_des_combles__c</fullName>
+    <inlineHelpText>Il y a moins de 10 ans</inlineHelpText>
+    <label>Isolation des combles</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Oui</fullName>
+                <default>false</default>
+                <label>Oui</label>
+            </value>
+            <value>
+                <fullName>Non</fullName>
+                <default>false</default>
+                <label>Non</label>
+            </value>
+            <value>
+                <fullName>Nsp</fullName>
+                <default>false</default>
+                <label>Nsp</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

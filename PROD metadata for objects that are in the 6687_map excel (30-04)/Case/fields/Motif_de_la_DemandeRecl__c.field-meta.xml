@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motif_de_la_DemandeRecl__c</fullName>
+    <label>Motif de la Demande</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accueil</fullName>
+                <default>false</default>
+                <label>Accueil</label>
+            </value>
+            <value>
+                <fullName>Contrat</fullName>
+                <default>false</default>
+                <label>Contrat</label>
+            </value>
+            <value>
+                <fullName>Documents</fullName>
+                <default>false</default>
+                <label>Documents</label>
+            </value>
+            <value>
+                <fullName>Devis</fullName>
+                <default>false</default>
+                <label>Devis</label>
+            </value>
+            <value>
+                <fullName>Facturation</fullName>
+                <default>false</default>
+                <label>Facturation</label>
+            </value>
+            <value>
+                <fullName>Espace Client</fullName>
+                <default>false</default>
+                <label>Espace Client</label>
+            </value>
+            <value>
+                <fullName>Prestation technique</fullName>
+                <default>false</default>
+                <label>Prestation technique</label>
+            </value>
+            <value>
+                <fullName>Relation commerciale</fullName>
+                <default>false</default>
+                <label>Relation commerciale</label>
+            </value>
+            <value>
+                <fullName>Remboursement</fullName>
+                <default>false</default>
+                <label>Remboursement</label>
+            </value>
+            <value>
+                <fullName>Rendez-vous</fullName>
+                <default>false</default>
+                <label>Rendez-vous</label>
+            </value>
+            <value>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+                <label>Résiliation</label>
+            </value>
+            <value>
+                <fullName>Dossier Anah</fullName>
+                <default>false</default>
+                <label>Dossier Anah</label>
+            </value>
+            <value>
+                <fullName>Entretien</fullName>
+                <default>false</default>
+                <label>Entretien</label>
+            </value>
+            <value>
+                <fullName>Dépannage</fullName>
+                <default>false</default>
+                <label>Dépannage</label>
+            </value>
+            <value>
+                <fullName>Données personnelles</fullName>
+                <default>false</default>
+                <label>Données personnelles</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Je déménage</fullName>
+                <default>false</default>
+                <label>Je déménage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

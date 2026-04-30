@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpenPlanning</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Ouvrir le planning</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>https://extranet-professionnel.engie-homeservices.fr/v2/planning?token=309b421e494b3376263425fb40f0619da186f5a7157aa139bf400b61ed9b031df9491495e69feac397783727267f17fffaabed5ca9a757c373194c1cc7d99b6215e3091a6a2ebba379a59cd8608a05c14a801aced1c7dbb8be6c38ff13bf26fc4471e39d8041b8875fa13bafae6988dfe431c7f17eb030d9fffb5694b6446d1f&amp;ressourceId={!Ressource__c.Id}</url>
+</WebLink>

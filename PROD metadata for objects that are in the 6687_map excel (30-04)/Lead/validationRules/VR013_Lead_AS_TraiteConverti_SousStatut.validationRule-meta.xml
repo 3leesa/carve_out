@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR013_Lead_AS_TraiteConverti_SousStatut</fullName>
+    <active>true</active>
+    <description>Cette règle de validation oblige l&apos;utilisateur a rentrer une valeur de sous-statut de la conversion lorsque le statut de la conversion est à &quot;Traité et converti en projet&quot; sur un lead de type &quot;Appel Sortant&quot;  ou &quot;Appel Entrant&quot;</description>
+    <errorConditionFormula>NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c) &amp;&amp;
+(TECH_RecordTypeDeveloperName__c = &apos;Appel_Sortant&apos; || TECH_RecordTypeDeveloperName__c = &apos;Appel_Entrant&apos;) &amp;&amp;
+AND( OR(ISPICKVAL(Statut_de_la_conversion__c, &apos;Traité et converti en projet&apos;), ISPICKVAL(Statut_de_la_conversion__c, &apos;Traité et transféré&apos;)), ISPICKVAL(Sous_statut_conversion__c, &apos;&apos;))</errorConditionFormula>
+    <errorMessage>Veuillez remplir le sous-statut de la conversion.</errorMessage>
+</ValidationRule>

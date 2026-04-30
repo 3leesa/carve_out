@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiceContract__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Sprint 5 - Lien vers Contrat de service pour les demandes de type Dépannage.
+Sprint 6 - Lien vers Contrat de service pour les demandes de type VE.
+Sprint 8 - Etiquette &quot;Cases&quot; de la liste associée renommée &quot;Demandes&quot;.</description>
+    <label>Contrat</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.AssetId</field>
+            <operation>equals</operation>
+            <valueField>ServiceContract.Equipement__r.Id</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Type</field>
+            <operation>equals</operation>
+            <value>Résiliation</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>ServiceContract</referenceTo>
+    <relationshipLabel>Demandes</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

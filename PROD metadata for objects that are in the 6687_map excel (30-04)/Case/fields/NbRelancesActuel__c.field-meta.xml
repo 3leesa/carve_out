@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NbRelancesActuel__c</fullName>
+    <description>Sprint 2 - nombre de relances au niveau d&apos;escalade actuel</description>
+    <externalId>false</externalId>
+    <formula>CASE(NiveauDEscalade__c,
+  &apos;Courante&apos;, NbRelanceEscCourante__c,
+  &apos;Niveau 1&apos;, NbRelanceEscNiveau1__c,
+  &apos;Niveau 2&apos;, NbRelanceEscNiveau2__c,
+  &apos;Niveau 3&apos;, NbRelanceEscNiveau3__c,
+  0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Nombre de relances au niveau d&apos;escalade actuel.</inlineHelpText>
+    <label>Nombre de relances actuel</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

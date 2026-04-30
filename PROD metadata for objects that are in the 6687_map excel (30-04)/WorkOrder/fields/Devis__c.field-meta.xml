@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Devis__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Sprint 8 - Devis lié (mapping GZL-SF)</description>
+    <label>Devis</label>
+    <referenceTo>Quote</referenceTo>
+    <relationshipLabel>Work Orders</relationshipLabel>
+    <relationshipName>Work_Orders</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

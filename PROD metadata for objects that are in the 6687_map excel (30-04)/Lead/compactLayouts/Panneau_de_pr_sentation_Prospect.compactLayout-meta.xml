@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Panneau_de_pr_sentation_Prospect</fullName>
+    <fields>Name</fields>
+    <fields>Company</fields>
+    <fields>B2B_Date_de_detection_de_la_pisteb__c</fields>
+    <fields>B2B_Typologie__c</fields>
+    <label>Panneau de présentation Prospect</label>
+</CompactLayout>

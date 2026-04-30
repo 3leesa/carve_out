@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cloture_automatique__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Si cochée, indique que la demande doit être automatiquement close à l&apos;enregistrement</description>
+    <label>Clôture automatique</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

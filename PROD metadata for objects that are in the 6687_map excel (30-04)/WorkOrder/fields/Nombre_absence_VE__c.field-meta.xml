@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nombre_absence_VE__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>MCOSF 4351 : Ce champ référence le nombre d&apos;interventions de visite d&apos;entretien au statut absent sur les 6 derniers mois.</description>
+    <externalId>false</externalId>
+    <label>Nombre d&apos;absence VE</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

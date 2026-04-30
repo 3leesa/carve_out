@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mes_demandes_closes</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>NAME</columns>
+    <columns>NumeroGazelleContact__c</columns>
+    <columns>CASES.CLOSED_DATE</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.REASON</columns>
+    <columns>SousMotif__c</columns>
+    <columns>CategorieDemande__c</columns>
+    <columns>NbRelancesActuel__c</columns>
+    <columns>PARENT.CASE_NUMBER</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.CLOSED_DATE</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:30</value>
+    </filters>
+    <label>Mes demandes closes</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>AdministrateursSysteme</group>
+    </sharedTo>
+</ListView>

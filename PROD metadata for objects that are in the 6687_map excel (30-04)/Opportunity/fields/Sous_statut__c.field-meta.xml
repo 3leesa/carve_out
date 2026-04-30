@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_statut__c</fullName>
+    <description>MCOSF-2034 : Ajout nouveau valeurs
+MCOSF-2514 : Ajout nouveau valeurs</description>
+    <label>Sous-statut</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dossier financement envoyé</fullName>
+                <default>false</default>
+                <label>Dossier financement envoyé</label>
+            </value>
+            <value>
+                <fullName>RDV à positionner</fullName>
+                <default>false</default>
+                <label>RDV à positionner</label>
+            </value>
+            <value>
+                <fullName>A reprogrammer</fullName>
+                <default>false</default>
+                <label>A reprogrammer</label>
+            </value>
+            <value>
+                <fullName>Programmé</fullName>
+                <default>false</default>
+                <label>Programmé</label>
+            </value>
+            <value>
+                <fullName>Attente retour BI</fullName>
+                <default>false</default>
+                <label>Attente retour BI</label>
+            </value>
+            <value>
+                <fullName>Devis à réaliser</fullName>
+                <default>false</default>
+                <label>Devis à réaliser</label>
+            </value>
+            <value>
+                <fullName>Instruction administrative</fullName>
+                <default>false</default>
+                <label>Instruction administrative</label>
+            </value>
+            <value>
+                <fullName>Collecte documents financement</fullName>
+                <default>false</default>
+                <label>Collecte documents financement</label>
+            </value>
+            <value>
+                <fullName>Dossier ANAH en cours</fullName>
+                <default>false</default>
+                <label>Dossier ANAH en cours</label>
+            </value>
+            <value>
+                <fullName>Problème instruction dossier</fullName>
+                <default>false</default>
+                <label>Problème instruction dossier</label>
+            </value>
+            <value>
+                <fullName>VT confirmée</fullName>
+                <default>false</default>
+                <label>VT confirmée</label>
+            </value>
+            <value>
+                <fullName>Programmée à poser</fullName>
+                <default>false</default>
+                <label>Programmée à poser</label>
+            </value>
+            <value>
+                <fullName>Signé à programmer</fullName>
+                <default>false</default>
+                <label>Signé à programmer</label>
+            </value>
+            <value>
+                <fullName>Devis VT créé</fullName>
+                <default>false</default>
+                <label>Devis VT créé</label>
+            </value>
+            <value>
+                <fullName>Devis VT envoyé</fullName>
+                <default>false</default>
+                <label>Devis VT envoyé</label>
+            </value>
+            <value>
+                <fullName>Devis VT signé</fullName>
+                <default>false</default>
+                <label>Devis VT signé</label>
+            </value>
+            <value>
+                <fullName>VT signée et programmée</fullName>
+                <default>false</default>
+                <label>VT signée et programmée</label>
+            </value>
+            <value>
+                <fullName>VT réalisée, Devis BR à créer</fullName>
+                <default>false</default>
+                <label>VT réalisée, Devis BR à créer</label>
+            </value>
+            <value>
+                <fullName>Estimation envoyée</fullName>
+                <default>false</default>
+                <label>Estimation envoyée</label>
+            </value>
+            <value>
+                <fullName>VT planifiée</fullName>
+                <default>false</default>
+                <label>VT planifiée</label>
+            </value>
+            <value>
+                <fullName>VT réalisée</fullName>
+                <default>false</default>
+                <label>VT réalisée</label>
+            </value>
+            <value>
+                <fullName>Signé à sourcer</fullName>
+                <default>false</default>
+                <label>Signé à sourcer</label>
+            </value>
+            <value>
+                <fullName>Collecte dossier ANAH / TEKSIAL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Collecte dossier ANAH / TEKSIAL</label>
+            </value>
+            <value>
+                <fullName>Dossier ANAH envoyé</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dossier ANAH envoyé</label>
+            </value>
+            <value>
+                <fullName>Dossier ANAH envoyé / TEKSIAL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dossier ANAH envoyé / TEKSIAL</label>
+            </value>
+            <value>
+                <fullName>En attente désignation mandataire</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>En attente désignation mandataire</label>
+            </value>
+            <value>
+                <fullName>Gagnée à poser</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gagnée à poser</label>
+            </value>
+            <value>
+                <fullName>VT débriefée</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VT débriefée</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Devis signé</controllingFieldValue>
+            <valueName>Instruction administrative</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Devis signé</controllingFieldValue>
+            <valueName>Programmée à poser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Devis signé</controllingFieldValue>
+            <valueName>Signé à programmer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Devis signé</controllingFieldValue>
+            <valueName>Signé à sourcer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Instructions Administratives</controllingFieldValue>
+            <valueName>Dossier financement envoyé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Instructions Administratives</controllingFieldValue>
+            <valueName>Collecte documents financement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Instructions Administratives</controllingFieldValue>
+            <valueName>Dossier ANAH en cours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Instructions Administratives</controllingFieldValue>
+            <valueName>Problème instruction dossier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VT planifiée</controllingFieldValue>
+            <valueName>VT confirmée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>RDV à positionner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>A reprogrammer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>Programmé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>Attente retour BI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>Devis à réaliser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>Devis VT créé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>Devis VT envoyé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>Devis VT signé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>VT signée et programmée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>VT réalisée, Devis BR à créer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>Estimation envoyée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>VT planifiée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Besoin détecté</controllingFieldValue>
+            <valueName>VT réalisée</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

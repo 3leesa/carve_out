@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR20_LeadB2B_Motif_de_transfert</fullName>
+    <active>false</active>
+    <description>Motif à sélectionner lorsque le lead est transféré à l&apos;agence</description>
+    <errorConditionFormula>AND
+( ISPICKVAL( Status , &quot;Transféré à l&apos;agence&quot;),  
+ISPICKVAL( B2B_Motif_de_Transfert__c , &quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>B2B_Motif_de_Transfert__c</errorDisplayField>
+    <errorMessage>Veuillez sélectionner un motif de transfert à l&apos;agence</errorMessage>
+</ValidationRule>

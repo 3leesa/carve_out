@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateDebut__c</fullName>
+    <description>Sprint 12: Date de début de la ressource. Synchronisé depuis Gazelle.</description>
+    <label>Date de debut</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

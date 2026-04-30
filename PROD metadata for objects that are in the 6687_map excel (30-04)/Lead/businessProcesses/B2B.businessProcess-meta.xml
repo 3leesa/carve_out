@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B</fullName>
+    <description>Ce processus contient les valeurs de la version B2B</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Converti</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Prospect - non intéressé</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Suspect - contacté</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Suspect - à qualifier</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Transféré à l%27agence</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

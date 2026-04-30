@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OppMiseEnConcurrence__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 10 - Alimente le champ obligatoire MiseEnConcurrence de l&apos;opportunité créée automatiquement à la création d&apos;une demande de pose.</description>
+    <label>Mise en concurrence</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

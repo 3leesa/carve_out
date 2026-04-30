@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copie_de_Leads_T3_Site_EHS_B2B</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>B2B_Interet__c</columns>
+    <columns>B2B_Departement__c</columns>
+    <columns>B2B_Region_liste__c</columns>
+    <columns>B2B_Date_de_detection_de_la_pisteb__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Suspect - à qualifier</value>
+    </filters>
+    <filters>
+        <field>Secteur__c</field>
+        <operation>equals</operation>
+        <value>Habitat Social,Copropriété,Tertiaire privé,Collectivité locale &amp; tertiaire public</value>
+    </filters>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.CRM_B2B</value>
+    </filters>
+    <filters>
+        <field>B2B_Region_liste__c</field>
+        <operation>contains</operation>
+        <value>RHONES-ALPES</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2023 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>contains</operation>
+        <value>Suspect - à qualifier</value>
+    </filters>
+    <label>Leads T3-Site EHS B2B</label>
+    <sharedTo>
+        <group>CRM_B2B</group>
+    </sharedTo>
+</ListView>

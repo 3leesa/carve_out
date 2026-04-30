@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPT_VR004_InactifClient</fullName>
+    <active>true</active>
+    <description>CRM-229 : Tiers Inactif- Interdire la modification
+MCOSF-3709: bypass pour les comptes de facturation
+MCOSF-4657: bypass pour Privacy Center</description>
+    <errorConditionFormula>AND( 
+NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c ), 
+NOT(ISPICKVAL(Statut__c, &apos;A&apos;)),
+RecordType.DeveloperName  &lt;&gt; &apos;CompteFacturation&apos;,
+NOT(ISCHANGED(ToBeDeleted__c)),
+NOT(ISCHANGED(ToBeArchived__c)),
+NOT(ISCHANGED(HasBeenCustomer__c)))</errorConditionFormula>
+    <errorMessage>La modification n&apos;est pas autorisée sur un tiers inactif</errorMessage>
+</ValidationRule>

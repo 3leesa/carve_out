@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR003_Lead_Visite_Date</fullName>
+    <active>false</active>
+    <description>Lorsque le statut est « visite à organiser », le chargé d’affaires doit obligatoirement saisir une date de visite et cocher la case « visite confirmée ». Une fois ces actions faites, le statut passe automatiquement à la valeur « Visite effectuée ».</description>
+    <errorConditionFormula>NOT( $Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c) &amp;&amp; 
+NOT(ISPICKVAL(Status,&quot;Nouveau dossier&quot;)) &amp;&amp; 
+NOT(ISPICKVAL(Status,&quot;Prospect à appeler&quot;)) &amp;&amp; 
+NOT(ISPICKVAL(Status,&quot;Estimation à envoyer au client&quot;)) &amp;&amp; 
+NOT(ISPICKVAL(Status,&quot;Estimation envoyée&quot;)) &amp;&amp; 
+NOT(ISPICKVAL(Status,&quot;Visite de préparation à organiser&quot;)) &amp;&amp; 
+NOT(ISPICKVAL(Status,&quot;Annulé&quot;)) &amp;&amp; 
+ISBLANK(Date_de_visite_prealable__c)</errorConditionFormula>
+    <errorDisplayField>Date_de_visite_prealable__c</errorDisplayField>
+    <errorMessage>Vous ne pouvez pas passer à ce statut sans avoir renseigné la date de visite préalable.</errorMessage>
+</ValidationRule>

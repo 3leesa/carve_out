@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canal_de_remise_du_devis__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Envoi_par_courrier__c, &apos;Envoi par courrier&apos;, IF(Envoi_par_mail__c, &apos;Envoi par email&apos;, &apos;&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Canal de remise du devis</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

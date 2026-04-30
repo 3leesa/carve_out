@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Les_pistes_appeler</fullName>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.CITY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Sous_statut_de_la_piste__c</columns>
+    <columns>Source__c</columns>
+    <columns>Site_de_rattachement__c</columns>
+    <columns>Date_de_rappel_souhaite_par_le_client__c</columns>
+    <columns>Date_de_dernier_appel_par_le_charge_d_af__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>A traiter</value>
+    </filters>
+    <filters>
+        <field>Date_de_dernier_appel_par_le_charge_d_af__c</field>
+        <operation>notEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.CRM_B2C</value>
+    </filters>
+    <label>1 - Les pistes à appeler</label>
+    <language>fr</language>
+    <sharedTo>
+        <group>Urgentime</group>
+        <roleAndSubordinatesInternal>DirectionRelationClient</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

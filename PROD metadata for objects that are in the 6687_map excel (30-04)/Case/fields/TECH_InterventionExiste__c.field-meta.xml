@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_InterventionExiste__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Sprint 10 - Champ technique coché lorsqu&apos;au moins une intervention existe sur une demande. Champ alimenté par Process Builder.</description>
+    <label>TECH_Intervention existe</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

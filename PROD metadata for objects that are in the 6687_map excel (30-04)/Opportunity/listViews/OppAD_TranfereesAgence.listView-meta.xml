@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OppAD_TranfereesAgence</fullName>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>TECH_CpqDevisStatus__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>n_du_telephone_du_client__c</columns>
+    <columns>LogementConcerne__c</columns>
+    <columns>Type_equipement_propose__c</columns>
+    <columns>Nom_du_technicien__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ATransfererAgence__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Appareil_Agence_Digitale</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>MonSite__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Opportunités AD transférées en agence</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>ChefEquipe_Conseillere</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>DirecteurAgence_ConseillerePrincipale</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

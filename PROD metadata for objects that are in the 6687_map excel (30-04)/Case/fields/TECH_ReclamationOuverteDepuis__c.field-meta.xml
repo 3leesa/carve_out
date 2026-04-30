@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_ReclamationOuverteDepuis__c</fullName>
+    <description>Sprint 13. Permet de calculer le nombre de jours d&apos;ouverture d&apos;une demande (Rapports)</description>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL( DATEVALUE (ClosedDate) ),  TODAY() - DATEVALUE (CreatedDate), DATEVALUE (ClosedDate) - DATEVALUE (CreatedDate))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Réclamation ouverte depuis (jours)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

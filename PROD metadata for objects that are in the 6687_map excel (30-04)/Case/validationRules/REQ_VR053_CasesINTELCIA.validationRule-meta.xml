@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR053_CasesINTELCIA</fullName>
+    <active>true</active>
+    <description>Les demandes créées par le CRC de Quimper et de Sitel ne peuvent être créés que pour des demandes de Devis et pose, et uniquement sur des équipements de type Borne électriques.</description>
+    <errorConditionFormula>$UserRole.DeveloperName = &apos;MV_Supervision&apos;
+&amp;&amp; ( NOT ( Asset.ProduitGenerique__r.Name = &apos;BORNE DE RECHARGE&apos; )
+     || ( NOT ( ISPICKVAL ( Type, &quot;Pose d&apos;équipement&quot; ) )
+          &amp;&amp; NOT ( ISPICKVAL ( Type, &quot;Réclamation&quot; ) )
+          &amp;&amp; NOT ( ISPICKVAL ( Type, &quot;Dépannage&quot; ) ) ) )</errorConditionFormula>
+    <errorMessage>Les demandes créées par le CRC de Sitel ne peuvent être créées que pour des demandes de Devis et pose, de Dépannage et de Réclamations, et uniquement sur des équipements de type Borne électrique.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProduitGeneriqueFonction__c</fullName>
+    <description>CRM-323 : Projet &quot;Aiguillon Habitat&quot;- INTENT - 3F (Envoi de demande (case)).  ProduitGenerique Fonction pour différencier le flux entre INTENT et INTENT 3F et utilisé pour transco de champs Code de la prestation.</description>
+    <externalId>false</externalId>
+    <label>ProduitGeneriqueFonction</label>
+    <length>25</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CMI_Avancement_MES__c</fullName>
+    <description>CRM-547
+MCOSF-2416 Renommer le champ à Avancement / Statut du RDV</description>
+    <label>Avancement / Statut du RDV</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rdv à prendre</fullName>
+                <default>false</default>
+                <label>Rdv à prendre</label>
+            </value>
+            <value>
+                <fullName>Rdv confirmé pris, MES à faire</fullName>
+                <default>false</default>
+                <label>Rdv confirmé pris, MES à faire</label>
+            </value>
+            <value>
+                <fullName>MES faite, à facturer</fullName>
+                <default>false</default>
+                <label>MES faite, à facturer</label>
+            </value>
+            <value>
+                <fullName>MES à revoir</fullName>
+                <default>false</default>
+                <label>MES à revoir</label>
+            </value>
+            <value>
+                <fullName>Facturé</fullName>
+                <default>false</default>
+                <label>Facturé</label>
+            </value>
+            <value>
+                <fullName>Non-facturable</fullName>
+                <default>false</default>
+                <label>Non-facturable</label>
+            </value>
+            <value>
+                <fullName>Rdv confirmé pris, intervention à faire</fullName>
+                <default>false</default>
+                <label>Rdv confirmé pris, intervention à faire</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

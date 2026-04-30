@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CreneauProgramme__c</fullName>
+    <description>Sprint 8 - Calcul du créneau horaire programmé (mapping GZL-SF)</description>
+    <externalId>false</externalId>
+    <formula>IF ( Asset.Site__r.IsSalesforceFieldServiceActive__c
+	&amp;&amp; !ISBLANK ( SlotStartDate__c )
+	&amp;&amp; !ISBLANK ( DateDebutProgrammee__c )
+	&amp;&amp; ( ISBLANK ( NumLot__c )
+		|| ( !ISBLANK ( NumLot__c )
+			&amp;&amp; !ISPICKVAL ( Status, &quot;102&quot; ) ) )
+	, IF ( DATEVALUE ( SlotStartDate__c ) - DATE ( YEAR ( TODAY () ), 1, 1 ) + 1 &gt;= VALUE ( $Label.NbJourPassageEte )
+		&amp;&amp; DATEVALUE ( SlotStartDate__c ) - DATE ( YEAR ( TODAY () ), 1, 1 ) + 1 &lt; VALUE ( $Label.NbJourPassageHiver )
+
+		/* Heure d&apos;été */
+			, IF ( ( HOUR ( TIMEVALUE ( SlotEndDate__c + 1/12 ) ) * 60 + MINUTE ( TIMEVALUE ( SlotEndDate__c ) ) ) - ( HOUR ( TIMEVALUE ( SlotStartDate__c + 1/12 ) ) * 60 + MINUTE ( TIMEVALUE ( SlotStartDate__c ) ) ) &lt; 151
+					&amp;&amp; DATEVALUE ( SlotStartDate__c + 1/12 ) = DATEVALUE ( SlotEndDate__c + 1/12 )
+
+				/* Créneau 2H */
+				, IF ( TIMEVALUE ( DateDebutProgrammee__c + 1/12 ) &lt; TIMEVALUE (&quot;10:00:00.000&quot;)
+					, &quot;Matin avant 10h&quot;
+					, IF ( TIMEVALUE ( DateDebutProgrammee__c + 1/12 ) &lt; TIMEVALUE (&quot;13:00:00.000&quot;)
+						, &quot;Matin après 10h&quot;
+						, IF ( TIMEVALUE ( DateDebutProgrammee__c + 1/12 ) &lt; TIMEVALUE (&quot;15:30:00.000&quot;)
+							, &quot;Après-midi avant 15h30&quot;
+							, &quot;Après-midi après 15h30&quot; ) ) )
+
+				/* Créneau 4H */
+				, IF ( TIMEVALUE ( DateDebutProgrammee__c + 1/12 ) &lt; TIMEVALUE (&quot;13:00:00.000&quot;)
+					, &quot;Matin&quot;
+					, &quot;Après-midi&quot; ) )
+
+		/* Heure d&apos;hiver */
+			, IF ( ( HOUR ( TIMEVALUE ( SlotEndDate__c + 1/24 ) ) * 60 + MINUTE ( TIMEVALUE ( SlotEndDate__c ) ) ) - ( HOUR ( TIMEVALUE ( SlotStartDate__c + 1/24 ) ) * 60 + MINUTE ( TIMEVALUE ( SlotStartDate__c ) ) ) &lt; 151
+					&amp;&amp; DATEVALUE ( SlotStartDate__c + 1/24 ) = DATEVALUE ( SlotEndDate__c + 1/24 )
+
+				/* Créneau 2H */
+				, IF ( TIMEVALUE ( DateDebutProgrammee__c + 1/24 ) &lt; TIMEVALUE (&quot;10:00:00.000&quot;)
+					, &quot;Matin avant 10h&quot;
+					, IF ( TIMEVALUE ( DateDebutProgrammee__c + 1/24 ) &lt; TIMEVALUE (&quot;13:00:00.000&quot;)
+						, &quot;Matin après 10h&quot;
+						, IF ( TIMEVALUE ( DateDebutProgrammee__c + 1/24 ) &lt; TIMEVALUE (&quot;15:30:00.000&quot;)
+							, &quot;Après-midi avant 15h30&quot;
+							, &quot;Après-midi après 15h30&quot; ) ) )
+
+				/* Créneau 4H */
+				, IF ( TIMEVALUE ( DateDebutProgrammee__c + 1/24 ) &lt; TIMEVALUE (&quot;13:00:00.000&quot;)
+					, &quot;Matin&quot;
+					, &quot;Après-midi&quot; ) ) )
+
+	/* Bloc lot de VE programmées + Slot Start Date vide */
+	, IF ( Asset.Site__r.IsSalesforceFieldServiceActive__c
+		&amp;&amp; !ISBLANK ( DateDebutProgrammee__c )
+		, IF ( DATEVALUE ( DateDebutProgrammee__c ) - DATE ( YEAR ( TODAY () ), 1, 1) + 1 &gt;= VALUE ( $Label.NbJourPassageEte )
+			&amp;&amp; DATEVALUE ( DateDebutProgrammee__c ) - DATE ( YEAR ( TODAY () ), 1, 1 ) + 1 &lt; VALUE ( $Label.NbJourPassageHiver )
+
+			/* Heure d&apos;été */
+			, IF ( TIMEVALUE ( DateDebutProgrammee__c + 1/12 ) &lt; TIMEVALUE (&quot;13:00:00.000&quot;)
+				, &quot;Matin&quot;
+				, &quot;Après-midi&quot; )
+
+			/* Heure d&apos;hiver */
+			, IF ( TIMEVALUE ( DateDebutProgrammee__c + 1/24 ) &lt; TIMEVALUE (&quot;13:00:00.000&quot;)
+				, &quot;Matin&quot;
+				, &quot;Après-midi&quot; ) )
+
+		/* Bloc OptiTime */
+		, IF ( !ISBLANK ( StartDate )
+			, IF ( DATEVALUE ( StartDate ) - DATE ( YEAR ( TODAY () ), 1, 1) + 1 &gt;= VALUE ( $Label.NbJourPassageEte )
+				&amp;&amp; DATEVALUE ( StartDate ) - DATE ( YEAR ( TODAY () ), 1, 1 ) + 1 &lt; VALUE ( $Label.NbJourPassageHiver )
+
+				/* Heure d&apos;été */
+				, IF ( TIMEVALUE ( StartDate + 1/12 ) &lt; TIMEVALUE (&quot;13:00:00.000&quot;)
+					, &quot;Matin&quot;
+					, &quot;Après-midi&quot; )
+
+				/* Heure d&apos;hiver */
+				, IF ( TIMEVALUE ( StartDate + 1/24 ) &lt; TIMEVALUE (&quot;13:00:00.000&quot;)
+					, &quot;Matin&quot;
+					, &quot;Après-midi&quot; ) )
+			, &quot;&quot; ) ) )</formula>
+    <label>Créneau d&apos;intervention</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

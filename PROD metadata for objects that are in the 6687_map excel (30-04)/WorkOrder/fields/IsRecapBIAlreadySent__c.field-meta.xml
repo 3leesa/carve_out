@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsRecapBIAlreadySent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag anti-rejeu technique, assurant qu&apos;un récap BI n&apos;est pas envoyé plusieurs fois à un client ou à l&apos;imprimeur</description>
+    <label>Flag anti-rejeu Récap BI</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

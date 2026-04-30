@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Prevent_Edit_Ongoing_Optimization</fullName>
+    <active>true</active>
+    <description>Prevent users from editing Work Order whilst it is being optimized through a Lot de VE Optimization Request so we avoid failures in the process.</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(FSM_Optimization_Request__c)),
+FSM_Optimization_Request__c = TRUE,
+$User.LastName &lt;&gt; &quot;Platform Integration User&quot;,
+$User.LastName &lt;&gt; &quot;Batch Runner&quot;)</errorConditionFormula>
+    <errorMessage>Cette intervention est en cours d&apos;optimisation. Veuillez patienter jusqu&apos;à la fin de l&apos;optimisation pour le modifier.</errorMessage>
+</ValidationRule>

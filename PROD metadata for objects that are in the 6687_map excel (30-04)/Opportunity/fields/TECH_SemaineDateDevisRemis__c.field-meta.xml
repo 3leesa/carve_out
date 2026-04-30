@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_SemaineDateDevisRemis__c</fullName>
+    <description>Sprint 69 - Permet de récupérer le numéro de la semaine correspondant à la date de dernière modification de l&apos;un des champs Envoi par courrier ou Envoi par email / remis sur place, dans le cadre des rapports sur les opportunités commerciales</description>
+    <externalId>false</externalId>
+    <label>Date de devis remis (semaine)</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

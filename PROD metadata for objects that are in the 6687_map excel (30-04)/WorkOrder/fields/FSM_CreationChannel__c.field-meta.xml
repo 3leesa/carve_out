@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_CreationChannel__c</fullName>
+    <description>OP-242 : Créer les champs nécessaires aux flux et à la synchro WO &lt;-&gt; SA sur le WorkOrder
+OP-242 : Create the fields required for WO &lt;-&gt; SA flows and synchronization on the WorkOrder</description>
+    <label>Canal de création</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agent</fullName>
+                <default>true</default>
+                <label>Agent</label>
+            </value>
+            <value>
+                <fullName>Automatique</fullName>
+                <default>false</default>
+                <label>Automatique</label>
+            </value>
+            <value>
+                <fullName>Prise de rendez-vous automatique</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Prise de rendez-vous automatique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

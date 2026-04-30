@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OriginClient__c</fullName>
+    <description>Sprint 11 - Nouveau champ inexistant dans Gazelle (le champ portant ce nom dans Gazelle n&apos;a pas le même usage).</description>
+    <label>Origine Tiers</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ENGIE</fullName>
+                <default>false</default>
+                <label>ENGIE</label>
+            </value>
+            <value>
+                <fullName>Mailling</fullName>
+                <default>false</default>
+                <label>Mailling</label>
+            </value>
+            <value>
+                <fullName>Prescription</fullName>
+                <default>false</default>
+                <label>Prescription</label>
+            </value>
+            <value>
+                <fullName>Prospection</fullName>
+                <default>false</default>
+                <label>Prospection</label>
+            </value>
+            <value>
+                <fullName>Publicité</fullName>
+                <default>false</default>
+                <label>Publicité</label>
+            </value>
+            <value>
+                <fullName>Rachat</fullName>
+                <default>false</default>
+                <label>Rachat</label>
+            </value>
+            <value>
+                <fullName>Salon</fullName>
+                <default>false</default>
+                <label>Salon</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

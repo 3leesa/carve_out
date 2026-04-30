@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CC2__c</fullName>
+    <label>CC2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CC4</fullName>
+                <default>false</default>
+                <label>CC4</label>
+            </value>
+            <value>
+                <fullName>CC2</fullName>
+                <default>false</default>
+                <label>CC2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

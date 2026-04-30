@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INT_VR006_EcartDateProgrammeeReelle</fullName>
+    <active>false</active>
+    <description>RV pour identifier les rares cas où la date de début programmée et la date de début réelle sont différentes pour un BI programmé ou confirmé ou avisé</description>
+    <errorConditionFormula>$User.Id &lt;&gt; $Label.CL_USER_JUMANJI_ID 
+&amp;&amp; OR(ISPICKVAL(Status, &quot;105&quot;), ISPICKVAL(Status, &quot;102&quot;), ISPICKVAL(Status, &quot;103&quot;)) &amp;&amp;  (DateDebutProgrammee__c !=  StartDate)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>La date de début programmée et la date de début réelle sont différentes pour un BI programmé ou confirmé ou avisé</errorMessage>
+</ValidationRule>

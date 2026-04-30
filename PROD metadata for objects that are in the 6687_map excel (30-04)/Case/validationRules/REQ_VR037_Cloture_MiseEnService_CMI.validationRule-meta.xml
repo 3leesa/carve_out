@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR037_Cloture_MiseEnService_CMI</fullName>
+    <active>true</active>
+    <description>MCOSF-195: Rempl. CMI_Demande_CMI__c par Origine_de_la_demande__c</description>
+    <errorConditionFormula>AND( 
+NOT($Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c),
+ISPICKVAL(Origine_de_la_demande__c,&quot;CMI&quot;),
+ISPICKVAL(Type,&quot;Mise en service&quot;),
+ISPICKVAL(Status,&quot;Terminé&quot;),
+ISPICKVAL(Facturation__c,&quot;Facturable&quot;),  
+ISNULL(Edition_de_facture__c)
+				)</errorConditionFormula>
+    <errorMessage>Vous devez saisir une date de facturation, avant de clore sinon la mise en service sera considérée non facturable.</errorMessage>
+</ValidationRule>

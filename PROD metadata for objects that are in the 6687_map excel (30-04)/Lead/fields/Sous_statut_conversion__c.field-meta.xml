@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_statut_conversion__c</fullName>
+    <label>Sous-statut de la conversion</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Statut_de_la_conversion__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RDV Pris</fullName>
+                <default>false</default>
+                <label>RDV Pris</label>
+            </value>
+            <value>
+                <fullName>Transfert Agence Digitale</fullName>
+                <default>false</default>
+                <label>Transfert Agence Digitale</label>
+            </value>
+            <value>
+                <fullName>Transfert Service Client EHS</fullName>
+                <default>false</default>
+                <label>Transfert Service Client EHS</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>Doublon</fullName>
+                <default>false</default>
+                <label>Doublon</label>
+            </value>
+            <value>
+                <fullName>RDV à prendre par l&apos;agence</fullName>
+                <default>false</default>
+                <label>RDV à prendre par l&apos;agence</label>
+            </value>
+            <value>
+                <fullName>Transfert agence EHS</fullName>
+                <default>false</default>
+                <label>Transfert agence EHS</label>
+            </value>
+            <value>
+                <fullName>Transfert agence digitale - PV</fullName>
+                <default>false</default>
+                <label>Transfert agence digitale - PV</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Traité et converti en projet</controllingFieldValue>
+            <valueName>RDV Pris</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité et converti en projet</controllingFieldValue>
+            <valueName>Transfert Agence Digitale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité et converti en projet</controllingFieldValue>
+            <valueName>RDV à prendre par l&apos;agence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité et converti en projet</controllingFieldValue>
+            <valueName>Transfert agence digitale - PV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité et transféré</controllingFieldValue>
+            <valueName>Transfert Service Client EHS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité et transféré</controllingFieldValue>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>NA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité et transféré</controllingFieldValue>
+            <valueName>Transfert agence EHS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traité non converti</controllingFieldValue>
+            <valueName>Doublon</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

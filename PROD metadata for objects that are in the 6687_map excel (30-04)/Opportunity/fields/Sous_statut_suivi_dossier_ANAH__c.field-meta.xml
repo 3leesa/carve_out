@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sous_statut_suivi_dossier_ANAH__c</fullName>
+    <description>MCOSF-193 : Opp: Ajouter un champ « Sous-statut suivi dossier ANAH » dans la section « PEPA V2 / Ma Prime Rénov »</description>
+    <label>Sous-statut suivi dossier ANAH</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Problème DEVIS, RGE, CDC – Mandat accepté</fullName>
+                <default>false</default>
+                <label>Problème DEVIS, RGE, CDC – Mandat accepté</label>
+            </value>
+            <value>
+                <fullName>Problème DEVIS, RGE – Mandat accepté</fullName>
+                <default>false</default>
+                <label>Problème DEVIS, RGE – Mandat accepté</label>
+            </value>
+            <value>
+                <fullName>Problème DEVIS – Mandat accepté</fullName>
+                <default>false</default>
+                <label>Problème DEVIS – Mandat accepté</label>
+            </value>
+            <value>
+                <fullName>Problème DEVIS, CDC – Mandat accepté</fullName>
+                <default>false</default>
+                <label>Problème DEVIS, CDC – Mandat accepté</label>
+            </value>
+            <value>
+                <fullName>Problème RGE – Mandat accepté</fullName>
+                <default>false</default>
+                <label>Problème RGE – Mandat accepté</label>
+            </value>
+            <value>
+                <fullName>Problème CDC – Mandat accepté</fullName>
+                <default>false</default>
+                <label>Problème CDC – Mandat accepté</label>
+            </value>
+            <value>
+                <fullName>Problème RGE, CDC – Mandat accepté</fullName>
+                <default>false</default>
+                <label>Problème RGE, CDC – Mandat accepté</label>
+            </value>
+            <value>
+                <fullName>Problème ANAH</fullName>
+                <default>false</default>
+                <label>Problème ANAH</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

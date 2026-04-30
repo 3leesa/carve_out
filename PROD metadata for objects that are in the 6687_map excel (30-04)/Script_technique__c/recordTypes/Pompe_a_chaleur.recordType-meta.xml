@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pompe_a_chaleur</fullName>
+    <active>true</active>
+    <label>Pompe à chaleur</label>
+    <picklistValues>
+        <picklist>Adoucisseur_Filtre_anti_calcaire__c</picklist>
+        <values>
+            <fullName>Adoucisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filtre anti-calcaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas besoin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Age_de_equipement__c</picklist>
+        <values>
+            <fullName>Installation %3C 2 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation %3E 15 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation entre 10 et 15 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation entre 2 et 5 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation entre 5 et 10 ans</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Aide_l_acquisition_du_logement__c</picklist>
+        <values>
+            <fullName>Avec PTZ pour l%27acquisition du logement dans les 5 dernières années</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas de PTZ pour l%27acquisition du logement dans les 5 dernières années</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Basse_temperature_ou_condensation__c</picklist>
+        <values>
+            <fullName>Basse température</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Condensation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Budget_clim__c</picklist>
+        <values>
+            <fullName>Entre 1000 et 2000%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moins de 1000%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plus de 2000%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CC2__c</picklist>
+        <values>
+            <fullName>CC2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CC4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Caracteristique_de_la_cuve__c</picklist>
+        <values>
+            <fullName>En plein air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En sous-sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterrée</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Choix_de_la_marque_modele__c</picklist>
+        <values>
+            <fullName>Entrée de gamme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haut de gamme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne sais pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rapport qualité prix</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Choix_du_thermostat__c</picklist>
+        <values>
+            <fullName>Sonde extérieure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA connecté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA filaire modulant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA filaire simple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA sans fil modulant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA sans fil simple</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Criteres_signature_client__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offres financement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Options d%27entretien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réactivité</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>D_placement_chaudi_re__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Delai_pour_le_projet_client__c</picklist>
+        <values>
+            <fullName>Immédiat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moins de 2 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plus de 2 mois</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Desembouage_Filtre__c</picklist>
+        <values>
+            <fullName>Désembouage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Désembouage avec pot à boue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas besoin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pot à boue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traitement et rinçage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traitement et rinçage avec pot à boue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Entretien_avec_Engie_Home_Service__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Equipement_actuel__c</picklist>
+        <values>
+            <fullName>Chaudière fioul hors condensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz hors condensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière gaz à condensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière à charbon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Equipement_envisag__c</picklist>
+        <values>
+            <fullName>Autres équipements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière Gaz ETAS 90 ou 91%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière Gaz THPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière Gaz basse température</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe à chaleur AIR%2FEAU et EAU%2FEAU</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Espace_exterieur__c</picklist>
+        <values>
+            <fullName>Autre %28CF%2E commentaires%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balcon d%27environ 1m2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terrasse d%27environ 1m2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Evacuation_PVC_presente__c</picklist>
+        <values>
+            <fullName>A créer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autre %28CF%2E commentaires%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluation PVC OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe de relevage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Evacuation_PVC_presente_sinon__c</picklist>
+        <values>
+            <fullName>Neutraliseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe de relevage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pompe de relevage avec neutraliseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vidange à créer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fixation_chaudi_re_actuelle__c</picklist>
+        <values>
+            <fullName>Au sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Murale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fumisterie__c</picklist>
+        <values>
+            <fullName>Carottage à faire %2B ventouse horizontale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tubage vertical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventouse horizontale sans carottage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Installation_radiateur_plancher__c</picklist>
+        <values>
+            <fullName>Plancher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateurs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateurs et plancher</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Le_Linky_est_il_scelle__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Longueur_cable_compteur_LNKY_BR_ml_VT__c</picklist>
+        <values>
+            <fullName>Entre 10 et 15 ml</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entre 15 et 25 ml</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entre 5 et 10 ml</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entre O et 5 ml</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne sait pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supérieure à 25 ml</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Alimentation_electrique_maison__c</picklist>
+        <values>
+            <fullName>Câble d%E2%80%99alimentation relié par voie aérienne sur des poteaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Câble d%E2%80%99alimentation relié par voie souterraine dans des tranchées</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Connexion_disponible_emplacement__c</picklist>
+        <values>
+            <fullName>3G%2F4G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aucune</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIFI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Emplacement_souhaite_borne__c</picklist>
+        <values>
+            <fullName>Dans le garage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dans parking en sous-sol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En allée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En façade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sous abri voiture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sur parking extérieur privé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Energies_utilisees__c</picklist>
+        <values>
+            <fullName>autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>bois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>fioul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>gaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>solaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>électricité</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Etat_installation_electrique__c</picklist>
+        <values>
+            <fullName>Aux normes permettant une pose standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation à mettre aux normes ou à vérifier avant la pose de la borne</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Longueur_du_cable__c</picklist>
+        <values>
+            <fullName>Entre 0 et 5 ml</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entre 10 et 15 ml</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entre 15 et 25 ml</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entre 5 et 10 ml</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne sait pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supérieure à 25 ml</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Nb_de_percements_compteur_LNKY_BR_VT__c</picklist>
+        <values>
+            <fullName>%3E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Nombre_percements__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Puissance_de_la_borne__c</picklist>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2E4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Tarif_energie__c</picklist>
+        <values>
+            <fullName>EJP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP_HC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simple tarif</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tempo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Tranchee_a_realiser__c</picklist>
+        <values>
+            <fullName>Non pas besoin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui réalisée par le client à sa charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui à réaliser par l%27installateur</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Travaux_specifiques__c</picklist>
+        <values>
+            <fullName>Travaux en environnement confiné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux en hauteur %28%3E2m%29 ou dans les combles</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Type_contrat_energie__c</picklist>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Type_de_compteur__c</picklist>
+        <values>
+            <fullName>Electromécanique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linky</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Type_de_courant__c</picklist>
+        <values>
+            <fullName>Monophasé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ne sait pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Triphasé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Type_de_montage__c</picklist>
+        <values>
+            <fullName>Mural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sur pied vissé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MV_Vehicule_electrique_Type__c</picklist>
+        <values>
+            <fullName>Hybride rechargeable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicule 100%25 électrique</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Maison_ou_appartement__c</picklist>
+        <values>
+            <fullName>Appartement %3C 2 ans Syndic OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appartement %3C 2 ans Syndic PAS OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appartement %3E 2 ans Syndic OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appartement %3E 2 ans Syndic PAS OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maison %3C 2 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maison %3E 2 ans</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Marque_ou_modele_de_climatisation__c</picklist>
+        <values>
+            <fullName>Atlantic_Entrée_de_gamme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlantic_Milieu_de_gamme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daikin_Haut_de_gamme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panasonic_Entrée_de_gamme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panasonic_Haut_de_gamme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panasonic_Milieu_de_gamme</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mod_le_de_la_chaudi_re_actuelle__c</picklist>
+        <values>
+            <fullName>Basse température</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Condensation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mode_de_paiement_souhaite__c</picklist>
+        <values>
+            <fullName>Comptant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack chaudière</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mode_de_paiement_souhaite_pour_la_clim__c</picklist>
+        <values>
+            <fullName>Clim sèche avec financement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clim sèche comptant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack confort clim avec financement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack confort clim comptant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nature_du_mur_percer_Epaisseur__c</picklist>
+        <values>
+            <fullName>Autre %28CF%2E commentaires%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Briques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Béton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Béton cellulaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parpaing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pierre calcaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plâtre</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Neutralisation_cuve_fioul__c</picklist>
+        <values>
+            <fullName>A ajouter au devis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A la charge du client</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nombre_de_pieces__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Orientation_de_la_piece_a_climatiser__c</picklist>
+        <values>
+            <fullName>Est</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nord-Est</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nord-Ouest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ouest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sud-Est</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sud-Ouest</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proprietaire_ou_locataire__c</picklist>
+        <values>
+            <fullName>Locataire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propriétaire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Raccorder_ECS_sur_la_PAC__c</picklist>
+        <values>
+            <fullName>Je ne sais pas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Raison_du_projet_clim__c</picklist>
+        <values>
+            <fullName>Autre %28CF%2E commentaires%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plus de confort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remplacement existant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sortie_de_fumee__c</picklist>
+        <values>
+            <fullName>Conduit cheminée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Déjà en condensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Souhaits_Attentes_sur_le_produit__c</picklist>
+        <values>
+            <fullName>Autre %28CF%2E commentaires%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connecté autre couleur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connecté blanc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_du_logement__c</picklist>
+        <values>
+            <fullName>Résidence principale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résidence secondaire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_du_m_nage__c</picklist>
+        <values>
+            <fullName>Client locataire%2Foccupant à titre gratuit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client propriétaire non occupant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client propriétaire occupant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_m_nage_CP__c</picklist>
+        <values>
+            <fullName>Modeste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non modeste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Très modeste</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statut_m_nage_PRN_et_CITE__c</picklist>
+        <values>
+            <fullName>Aisé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intermédiaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modeste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Très modeste</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Thermostat__c</picklist>
+        <values>
+            <fullName>Sonde extérieure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA connecté</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA filaire modulant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA filaire simple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA sans fil modulant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA sans fil simple</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tranchee_realiser_compteur_LNKY_BR_VT__c</picklist>
+        <values>
+            <fullName>Non pas besoin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui réalisée par le client à sa charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui à réaliser par l%27installateur</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Travaux_isolation_apres_construction__c</picklist>
+        <values>
+            <fullName>Comble</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fenêtres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Porte d%27entrée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sol</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Travaux_specifiques_compteur_LNKY_BR_VT__c</picklist>
+        <values>
+            <fullName>Travaux en environnement confiné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travaux en hauteur %28%3E2m%29 ou dans les combles</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_ECS__c</picklist>
+        <values>
+            <fullName>Ballon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chauffage seul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instantané</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micro accu</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_ECS_actuel__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ballon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ballon élec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaudière</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chauffage seul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECS et chauffage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instantané</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micro accu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solaire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_chauffage_actuel__c</picklist>
+        <values>
+            <fullName>Autre %28CF%2E commentaires%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chauffage au fioul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chauffage au gaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chauffage solaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plancher chauffant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poêle à bois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateurs électriques</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_circuit_de_chauffage__c</picklist>
+        <values>
+            <fullName>Plancher chauffant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateurs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiateurs et plancher chauffant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_combustible__c</picklist>
+        <values>
+            <fullName>Autres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Butane propane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electricité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fioul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaz de ville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Géothermie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_la_chaudi_re_actuelle__c</picklist>
+        <values>
+            <fullName>Chauffage seul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixte</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_logement__c</picklist>
+        <values>
+            <fullName>Appartement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maison</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_de_radiateurs__c</picklist>
+        <values>
+            <fullName>Acier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aluminium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fonte</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_et_anciennet_de_construction_du_lo__c</picklist>
+        <values>
+            <fullName>Habitation %3C 2 ans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Habitation %3E 2 ans</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

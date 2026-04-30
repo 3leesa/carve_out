@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NouvelleDemande</fullName>
+    <availability>online</availability>
+    <description>Sprint 12 - Lors de la saisie d&apos;une demande depuis un équipement, le champs site gestionnaire est pré rempli par le site de rattachement de l&apos;équipement.</description>
+    <displayType>massActionButton</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Nouvelle demande</masterLabel>
+    <openType>replace</openType>
+    <page>RedirectToContactInfoFlowForAssetCases</page>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+</WebLink>

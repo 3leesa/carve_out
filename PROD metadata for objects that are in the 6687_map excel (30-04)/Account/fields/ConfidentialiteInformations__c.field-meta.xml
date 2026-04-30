@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConfidentialiteInformations__c</fullName>
+    <description>Sprint 8. Permet d&apos;indiquer si un client souhaite garder ses informations confidentielles</description>
+    <label>Canal non souhaité</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Téléphone fixe</fullName>
+                <default>false</default>
+                <label>Téléphone fixe</label>
+            </value>
+            <value>
+                <fullName>Téléphone mobile</fullName>
+                <default>false</default>
+                <label>Téléphone mobile</label>
+            </value>
+            <value>
+                <fullName>Téléphone autre</fullName>
+                <default>false</default>
+                <label>Téléphone autre</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Téléphone + Email</fullName>
+                <default>false</default>
+                <label>Téléphone + Email</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

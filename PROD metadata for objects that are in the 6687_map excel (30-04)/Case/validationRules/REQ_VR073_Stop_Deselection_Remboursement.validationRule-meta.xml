@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REQ_VR073_Stop_Deselection_Remboursement</fullName>
+    <active>true</active>
+    <errorConditionFormula>!$Setup.CS001_NeutraliserRegles__c.TECH_NeutraliserRegleValidation__c
+&amp;&amp; ISCHANGED ( Remboursement_effectue__c )
+&amp;&amp; NOT( Remboursement_effectue__c )</errorConditionFormula>
+    <errorMessage>Il n’est pas possible de désélectionner le remboursement effectué une fois que celui-ci a été saisi.</errorMessage>
+</ValidationRule>
