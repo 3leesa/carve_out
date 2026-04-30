@@ -1,7 +1,0 @@
-﻿objectApiName;componentName;settingType;targetName;template
-Case;TECH_AdressesDesMediateurs__c;formula;;"	 
-IF(TEXT(NiveauDEscalade__c)=""Courante"", ""Si vous n’êtes pas satisfait de cette réponse, vous pouvez écrire à : ""&BR()& $Label.Brand_Name &"", Service Consommateurs - CS 90125 - 27091 EVREUX Cedex"",
-IF(TEXT(NiveauDEscalade__c)=""Niveau 1"", ""Si vous n’êtes pas satisfait de cette réponse, vous pouvez écrire à : ""&BR()&""ENGIE, Courrier du Médiateur - TSA 27601– 59973 Tourcoing Cedex"",
-null
-)
-)"
