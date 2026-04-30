@@ -14,6 +14,8 @@ from xml.sax.saxutils import escape, unescape
 DEFAULT_WORK_DIR = ".carve_out_work"
 DEFAULT_SF_TIMEOUT_SECONDS = 300
 MAX_SOQL_LABELS_PER_QUERY = 100
+MAX_RETRIEVE_METADATA_MEMBERS_PER_BATCH = 20
+MAX_DEPLOY_SOURCE_DIRS_PER_BATCH = 20
 CSV_HEADERS = ["objectApiName", "componentName", "settingType", "targetName", "template"]
 SUPPORTED_SETTING_TYPES = {
     "defaultValue",
@@ -49,6 +51,13 @@ STANDARD_VALUE_SET_FIELDS = {
 def fail(message):
     print(message, file=sys.stderr)
     sys.exit(1)
+
+
+def format_batch_summary(batch_number, batch_size, paths):
+    lines = [f"- batch {batch_number}: {batch_size} file(s)"]
+    for path in paths:
+        lines.append(f"  - {path}")
+    return "\n".join(lines)
 
 
 def run_sf(args, timeout_seconds=DEFAULT_SF_TIMEOUT_SECONDS):
@@ -290,17 +299,23 @@ def retrieve_metadata_batch(alias, rows, timeout_seconds):
     if not metadata_members:
         return
 
-    args = [
-        "project",
-        "retrieve",
-        "start",
-        "--target-org",
-        alias,
-        "--json",
-    ]
-    for member in metadata_members:
-        args.extend(["--metadata", member])
-    run_sf(args, timeout_seconds=timeout_seconds)
+    for batch_number, batch in enumerate(
+        chunked(metadata_members, MAX_RETRIEVE_METADATA_MEMBERS_PER_BATCH), start=1
+    ):
+        print(
+            f"Retrieving metadata batch {batch_number} with {len(batch)} component(s)..."
+        )
+        args = [
+            "project",
+            "retrieve",
+            "start",
+            "--target-org",
+            alias,
+            "--json",
+        ]
+        for member in batch:
+            args.extend(["--metadata", member])
+        run_sf(args, timeout_seconds=timeout_seconds)
 
 
 def deploy_files(alias, file_paths, timeout_seconds):
@@ -308,17 +323,39 @@ def deploy_files(alias, file_paths, timeout_seconds):
     if not deploy_paths:
         return
 
-    args = [
-        "project",
-        "deploy",
-        "start",
-        "--target-org",
-        alias,
-        "--json",
-    ]
-    for file_path in deploy_paths:
-        args.extend(["--source-dir", file_path])
-    run_sf(args, timeout_seconds=timeout_seconds)
+    succeeded_batches = []
+    for batch_number, batch in enumerate(chunked(deploy_paths, MAX_DEPLOY_SOURCE_DIRS_PER_BATCH), start=1):
+        print(
+            f"Deploying batch {batch_number} with {len(batch)} prepared file(s)..."
+        )
+        args = [
+            "project",
+            "deploy",
+            "start",
+            "--target-org",
+            alias,
+            "--json",
+        ]
+        for file_path in batch:
+            args.extend(["--source-dir", file_path])
+        try:
+            run_sf(args, timeout_seconds=timeout_seconds)
+            succeeded_batches.append((batch_number, list(batch)))
+        except RuntimeError as exc:
+            summary_lines = [
+                f"Deploy failed on batch {batch_number} with {len(batch)} file(s).",
+            ]
+            if succeeded_batches:
+                summary_lines.append("\nPreviously deployed batches:")
+                summary_lines.extend(
+                    format_batch_summary(index, len(paths), paths)
+                    for index, paths in succeeded_batches
+                )
+            summary_lines.append("\nFailed batch:")
+            summary_lines.append(format_batch_summary(batch_number, len(batch), batch))
+            summary_lines.append("\nSalesforce CLI error:")
+            summary_lines.append(str(exc))
+            raise RuntimeError("\n".join(summary_lines)) from None
 
 
 def get_label_value(alias, label_name):

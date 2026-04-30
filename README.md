@@ -268,3 +268,4 @@ This helps catch mapping mistakes early, before retrieve or deploy.
 - A successful deploy can still be a no-op if the new value is the same as the current metadata value.
 - The script is designed around supported metadata patterns, not every possible Salesforce metadata type.
 - If another standard picklist behaves like `LeadSource`, the script may need an extra mapping for that storage pattern.
+- If any batch fail , run the command : sf project deploy report --target-org dev4 --job-id 0AfG500000QdUQfKAN --json (where id is the batch job id maybe referenced in the error thrown in the terminal)
