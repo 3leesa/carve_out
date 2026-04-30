@@ -1,0 +1,145 @@
+﻿objectApiName;componentName;settingType;targetName;template
+Account;Accord_ENGIE_Home_Services__c;fieldLabel;;Accord actions Co. {{Brand_Acronym}} via Mail
+Account;Accord_ENGIE_Home_Services__c;helpText;;Accord du client pour recevoir des propositions commerciales par Email de la part de {{Brand_Name}}.
+Account;Accord_partenaires_et_filiales_EHS__c;helpText;;Accord du client pour recevoir des propositions commerciales par Email de la part des partenaires de {{Brand_Name}}.
+Account;Client_EHS__c;fieldLabel;;Client {{Brand_Acronym}}
+Account;Identifiant_Lead_EHS__c;fieldLabel;;Identifiant Lead {{Brand_Acronym}}
+Account;InterlocuteurPrincipalEHS__c;description;;Sprint 11 - Interlocuteur principal en charge de la relation de compte chez {{Brand_Acronym}}
+Account;InterlocuteurPrincipalEHS__c;fieldLabel;;Interlocuteur principal {{Brand_Acronym}}
+Account;InterlocuteurPrincipalEHS__c;helpText;;Interlocuteur principal en charge de la relation de compte chez {{Brand_Acronym}}.
+Account;InterlocuteurPrincipalEHS__c;relatedListLabel;;Accounts (Interlocuteur principal {{Brand_Acronym}})
+InformationCommerciale__c;InterlocuteurPrincipalEHSClient__c;description;;Sprint 11 - Affichage en texte du champ Interlocuteur principal {{Brand_Acronym}} du client.
+InformationCommerciale__c;InterlocuteurPrincipalEHSClient__c;fieldLabel;;Interlocuteur principal {{Brand_Acronym}} du client
+Account;InterlocuteurSecondaireEHS__c;description;;Sprint 11 - Interlocuteur secondaire en charge de la relation de compte chez {{Brand_Acronym}}
+Account;InterlocuteurSecondaireEHS__c;fieldLabel;;Interlocuteur secondaire {{Brand_Acronym}}
+Account;InterlocuteurSecondaireEHS__c;helpText;;Interlocuteur secondaire en charge de la relation de compte chez {{Brand_Acronym}}.
+Account;InterlocuteurSecondaireEHS__c;relatedListLabel;;Accounts (Interlocuteur secondaire {{Brand_Acronym}})
+InformationCommerciale__c;InterlocuteurSecondaireEHSClient__c;description;;Sprint 11 - Affichage en texte du champ Interlocuteur secondaure {{Brand_Acronym}} du client.
+InformationCommerciale__c;InterlocuteurSecondaireEHSClient__c;fieldLabel;;Interlocuteur secondaire {{Brand_Acronym}}
+Account;Lead_AD_RaisonCloture__c;picklistLabel;Transfert agence –déjà client EHS;Transfert agence –déjà client {{Brand_Acronym}}
+Account;Motif_non_conversion__c;picklistLabel;Produit non vendu par EHS;HCi - Produit non vendu par {{Brand_Acronym}}
+Account;Numero_Tier_EHS__c;fieldLabel;;Numéro Tier {{Brand_Acronym}}
+Account;Numero_Tier_EHS__c;relatedListLabel;;Accounts (Numéro Tier {{Brand_Acronym}})
+Account;Opt_In_Engie_Home_Services__c;fieldLabel;;Opt In {{Brand_Name}}
+Account;Passe_par_Site_web_EHS__c;fieldLabel;;Passé par Site web {{Brand_Acronym}}
+Account;Sous_contrat_EHS__c;fieldLabel;;Sous contrat {{Brand_Acronym}}
+Account;Sous_statut_conversion__c;picklistLabel;Transfert Service Client EHS;Transfert Service Client {{Brand_Acronym}}
+Account;Sous_statut_conversion__c;picklistLabel;Transfert agence EHS;Transfert agence {{Brand_Acronym}}
+Agence__c;QRCodeGeneration;webLinkUrl;;{{URL_ExtranetPro}}v2/genqrcode?agenceId={!Agence__c.Id}&token=25725f3a738a0092f910563828675992527e5338da63d1ca03dc43c2a4f687570f0e026ac155fed37fa58e2f244d0cc985e0eae76a1f1e9051a033c79963044d6290002c111f5bfc5367072be6f2b75bfc8c7b9e42458e2217e4543ec9957555390f1852ff325d08a821f47034fb5102e41909ab734f921b807c61ea905511c6
+Case;EHS_Monitoring_Case ;listViewLabel ;;{{Brand_Acronym}} Monitoring
+Case;Motif_de_la_DemandeInfo__c;picklistLabel;Les offres Engie Home Services;Les offres {{Brand_Name}}
+Case;Motif_de_remboursement__c;picklistLabel;Remplacement appareil par EHS;Remplacement appareil par {{Brand_Acronym}}
+Case;Motif_Dossier_Detracteur__c;picklistLabel;Injoignable;{{Brand_Acronym}} injoignable
+Case;MotifResiliation__c;picklistLabel;"Remplacement d&apos;appareil Engie Home Services";Remplacement d'appareil {{Brand_Name}}
+Case;Origine_de_la_demande__c;picklistLabel;Autre;Autre (Distributeur, Installateurs {{Brand_Acronym}}/Partenaires, Promoteur)
+Case;TECH_AdressesDesMediateurs__c;formula;;"	 
+IF(TEXT(NiveauDEscalade__c)=""Courante"", ""Si vous n’êtes pas satisfait de cette réponse, vous pouvez écrire à : ""&BR()& $Label.Brand_Name & "", Service Consommateurs - CS 90125 - 27091 EVREUX Cedex"",
+IF(TEXT(NiveauDEscalade__c)=""Niveau 1"", ""Si vous n’êtes pas satisfait de cette réponse, vous pouvez écrire à : ""&BR()&""ENGIE, Courrier du Médiateur - TSA 27601– 59973 Tourcoing Cedex"",
+null
+)
+)"
+Case;TECH_AdresseWebEspaceClient__c;formula;;"IF( OR( CONTAINS(TEXT(Type), ""Visite""),
+CONTAINS(TEXT(Type), ""Entretien"") ),
+HYPERLINK($Label.URL_EspaceClient, $Label.URL_EspaceClient)+""."", null)"
+CM_SIPS_MerchantID__mdt;EHS_View;listViewLabel ;;{{Brand_Acronym}} View
+CMT_OKTA__mdt;Endpoint_EHS_Create_Social_Identity__c;fieldLabel;;Endpoint {{Brand_Acronym}} Create Social Identity
+CMT_OKTA__mdt;Endpoint_EHS_Social_Identity__c;fieldLabel;;Endpoint {{Brand_Acronym}} Social Identity
+CMT_OKTA__mdt;OKTA_SignIn_clientId_EHS__c;fieldLabel;;OKTA SignIn clientId {{Brand_Acronym}}
+CMT_OKTA__mdt;OKTA_SignIn_reactivation_EHS__c;fieldLabel;;OKTA SignIn reactivation {{Brand_Acronym}}
+CMT_OKTA__mdt;OKTA_SignIn_social_registration_EHS__c;fieldLabel;;OKTA SignIn social registration {{Brand_Acronym}}
+Consentement__c;Application__c;picklistLabel;EHS;{{Brand_Acronym}}
+Consentement__c;Canal_EHS__c;picklistLabel;Site EHS;Site {{Brand_Acronym}}
+Consentement__c;Canal_EHS__c;picklistLabel;EHS;{{Brand_Acronym}}
+Consentement__c;Canal_EHS__c;fieldLabel;;Canal {{Brand_Acronym}}
+ContentVersion;SubType__c;picklistLabel;Visa Qualité usage interne EHS;Visa Qualité usage interne {{Brand_Acronym}}
+Fabricant__c;Marque__c;picklistLabel;12572;{{Brand_Name}}
+Lead;Client_EHS__c;fieldLabel;;Client {{Brand_Acronym}}
+Lead;Copie_de_Leads_T3_Site_EHS_B2B;listViewLabel ;;Leads T3-Site {{Brand_Acronym}} B2B
+Lead;Identifiant_Lead_EHS__c;fieldLabel;;Identifiant Lead {{Brand_Acronym}}
+Lead;Leads_CMI_Site_EHS_B2B;listViewLabel ;;Leads CMI- Site {{Brand_Acronym}} B2B
+Lead;Leads_CMI_Site_EHS_B2B;listViewFilterValue;LEAD.LEAD_SOURCE|contains|1;Site {{Brand_Acronym}} B2B
+Lead;Leads_T1_Site_EHS_B2B;listViewLabel ;;Leads T1-Site {{Brand_Acronym}} B2B
+Lead;Leads_T4_Site_EHS_B2B;listViewLabel ;;Leads T4-Site {{Brand_Acronym}} B2B
+Lead;Leads_T5_Site_EHS_B2B;listViewLabel ;;Leads T5-Site {{Brand_Acronym}} B2B
+Lead;Leads_T6_Site_EHS_B2B;listViewLabel ;;Leads T6-Site {{Brand_Acronym}} B2B
+Lead;Leads_T7_Site_EHS_B2B;listViewLabel ;;Leads T7-Site {{Brand_Acronym}} B2B
+Lead;Leads_T8_Site_EHS_B2B;listViewLabel ;;Leads T8-Site {{Brand_Acronym}} B2B
+Lead;LeadSource;picklistLabel;EHS;{{Brand_Acronym}}
+Lead;LeadSource;picklistLabel;Opérations commerciales EHS;Opérations commerciales {{Brand_Acronym}}
+Lead;LeadSource;picklistLabel;Site EHS B2B;Site {{Brand_Acronym}} B2B
+Lead;Motif_de_non_conversion_B2B__c;picklistLabel;Hors périmètre EHS;Hors périmètre {{Brand_Acronym}}
+Lead;Motif_non_conversion__c;picklistLabel;Hors périmètre EHS;Hors périmètre {{Brand_Acronym}}
+Lead;Motif_non_conversion__c;picklistLabel;Produit non vendu par EHS;HCi - Produit non vendu par {{Brand_Acronym}}
+Lead;Numero_tiers_EHS__c;fieldLabel;;N° tiers {{Brand_Acronym}}
+Lead;Opt_In_Engie_Home_Services__c;fieldLabel;;Opt In {{Brand_Name}}
+Lead;OptinPartenairesEHS__c;fieldLabel;;Opt-in Partenaires {{Brand_Acronym}}
+Lead;Passe_par_Site_web_EHS__c;fieldLabel;;Passé par Site web {{Brand_Acronym}}
+Lead;Raisons__c;picklistLabel;Hors périmètre EHS;Hors périmètre {{Brand_Acronym}}
+Lead;Raisons__c;picklistLabel;Transfert agence –déjà client EHS;Transfert agence –déjà client {{Brand_Acronym}}
+Lead;Sous_contrat_EHS__c;fieldLabel;;Sous contrat {{Brand_Acronym}}
+Lead;Sous_statut_conversion__c;picklistLabel;Transfert Service Client EHS;Transfert Service Client {{Brand_Acronym}}
+Lead;Sous_statut_conversion__c;picklistLabel;Transfert agence EHS;Transfert agence {{Brand_Acronym}}
+Lead;TECH_Origine__c;formula;;"IF( LEFT(B2C_Plateau__c, 3) == 'PAP', 'PAP DGP',
+IF( LEFT(B2C_Plateau__c, 6) == 'CORNER', 'CORNER',
+IF( OR(B2C_Plateau__c == 'TVE_COMDATA_POITIERS_RDV', B2C_Plateau__c == 'TVE_EUROCRM_WEB'), 'Rebond Form ENGIE',
+IF( B2C_Plateau__c == 'PAP_SIM', 'Pop-up Store',
+IF( B2C_Plateau__c == 'SWAPP_NP', 'CORNERS',
+IF( RIGHT(B2C_Plateau__c,3) == 'LEE', 'LEE DGP',
+IF( LEFT(B2C_Plateau__c, 3) == 'DPP', 'CRC DGP',
+IF( LEFT(B2C_Plateau__c, 5) == 'DCRCP', 'CRC DGP',
+IF( LEFT(B2C_Plateau__c, 3) == 'TVE', 'TELEVENTE DGP',
+IF( LEFT(B2C_Plateau__c, 3) == $Label.Brand_Acronym, 'CRC ' & $Label.Brand_Acronym,
+IF( LEFT(B2C_Plateau__c, 3) == 'PIL', 'WEB formulaire DGP','')))))))))))"
+Lead;TECH_ToBeTransferedToAD__c;formula;;"AND(
+ISPICKVAL(LeadSource, $Label.Brand_Acronym),
+!ISPICKVAL(Type_devis__c, 'CRC'),
+ISPICKVAL(Objet_de_la_demande__c, 'Devis'),
+ISBLANK(TEXT(Statut_de_la_conversion__c)),
+TECH_RecordTypeDeveloperName__c = 'Appel_Sortant',
+OR(
+ISPICKVAL(Type_equipement_souhaite__c, 'Chaudière gaz murale'),
+ISPICKVAL(Type_equipement_souhaite__c, 'Climatisation'),
+ISPICKVAL(Type_equipement_souhaite__c, 'Pompe à chaleur')
+),
+OR(
+AND(ISPICKVAL(Origine_detaillee__c, 'SEA'),
+OR(
+ISPICKVAL(Origine_detaillee_2__c, 'GADS'),
+ISPICKVAL(Origine_detaillee_2__c, 'MSADS')
+),
+OR(
+ISBLANK(Nom_operation_commerciale__c),
+AND(NOT(ISBLANK(Nom_operation_commerciale__c)),
+NOT(BEGINS(Nom_operation_commerciale__c, 'SEAMarque')))
+)
+),
+ISPICKVAL(Origine_detaillee__c, 'SEO'),
+AND(
+ISPICKVAL(Origine_detaillee__c, 'Partenaire'),
+OR(ISPICKVAL(Origine_detaillee_2__c, 'ReworldMedia'),
+ISPICKVAL(Origine_detaillee_2__c, 'Kwanko'),
+ISPICKVAL(Origine_detaillee_2__c, 'HabitatPresto'),
+ISPICKVAL(Origine_detaillee_2__c, 'Compleo'),
+ISPICKVAL(Origine_detaillee_2__c, 'Batiweb'),
+ISPICKVAL(Origine_detaillee_2__c, 'DevisPlus')))))"
+Lead;TECH_TranquilityStatus__c;formula;;"IF(ISPICKVAL(Statut_de_la_conversion__c ,'Traité et converti en projet') && ISPICKVAL(Sous_statut_conversion__c ,'Transfert Agence Digitale'), '4.2',
+IF(OR((ISPICKVAL(Statut_de_la_conversion__c,'Traité et converti en projet')&&(ISPICKVAL(Sous_statut_conversion__c, 'RDV Pris')||ISPICKVAL(Sous_statut_conversion__c, ""RDV à prendre par l'agence""))),ISPICKVAL(Statut_de_la_conversion__c, 'Traité et transféré')),'4.3',
+IF(ISPICKVAL(Statut_de_la_conversion__c, 'Traité non converti'),CASE(TEXT(Motif_non_conversion__c), 'Pas intéressé','9.1','Horaires trop contraignants','9.1','Demande_informations','9.1','Prix trop élevé','9.1',""Refus d'entretien"",'9.2','Préfère un artisan local','9.3','Collectif ou social','10.1','Test – Fausse demande','10.1','Prospect déjà sous contrat avec un concurrent','10.2','Projet déjà réalisé (appareil / VE / dépannage)','10.3','RDV déjà pris (cas multi-demandes)','10.3','Projet non mature > 6 mois','10.4','Projet non mature < 6 mois','10.4',""Installation ou habitat non adapté à l'offre"",'10.5','Contact polluant','10.6','N_ne_correspond_pas_a_interesse','10.6','Pas de projet','10.7','Produit non vendu par ' & $Label.Brand_Acronym,'10.8','Interlocuteur non décisionnaire','10.9','Doublon','10.10','Injoignable permanent','11.1','Relance','11.3','Raccroché client','11.3','Cas suspicion C-19','11.4','Rappel','11.4','Faux numéro','11.5','11.2'),
+IF(ISPICKVAL(Motif_Rappel_n1__c,'89')||ISPICKVAL(Motif_Rappel_n2__c,'89')||ISPICKVAL(Motif_Rappel_n3__c,'89')||ISPICKVAL(Motif_Rappel_n4__c,'89')||ISPICKVAL(Motif_Rappel_n1__c,'92')||ISPICKVAL(Motif_Rappel_n2__c,'92')||ISPICKVAL(Motif_Rappel_n3__c,'92')||ISPICKVAL(Motif_Rappel_n4__c,'92')||ISPICKVAL(Motif_Rappel_n1__c,'93')||ISPICKVAL(Motif_Rappel_n2__c,'93')||ISPICKVAL(Motif_Rappel_n4__c,'93')||ISPICKVAL(Motif_Rappel_n4__c,'93'),'11.2',
+IF(ISPICKVAL(Motif_Rappel_n1__c,'95')||ISPICKVAL(Motif_Rappel_n2__c,'95')||ISPICKVAL(Motif_Rappel_n3__c,'95')||ISPICKVAL(Motif_Rappel_n4__c,'95'),'11.3',
+IF(ISPICKVAL(Motif_Rappel_n1__c,'94')||ISPICKVAL(Motif_Rappel_n2__c,'94')||ISPICKVAL(Motif_Rappel_n3__c,'94')||ISPICKVAL(Motif_Rappel_n4__c,'94'),'11.4',
+IF(ISPICKVAL(Motif_Rappel_n1__c,'91')||ISPICKVAL(Motif_Rappel_n2__c,'91')||ISPICKVAL(Motif_Rappel_n3__c,'91')||ISPICKVAL(Motif_Rappel_n4__c,'91'),'11.5',
+IF(ISPICKVAL(Motif_Rappel_n1__c,'97')||ISPICKVAL(Motif_Rappel_n2__c,'97')||ISPICKVAL(Motif_Rappel_n3__c,'97')||ISPICKVAL(Motif_Rappel_n4__c,'97'),'4.2','11.2'))))))))"
+Lead;Type_de_Demande__c;helpText;;Type de projet client issu du Site {{Brand_Acronym}} B2B
+Opportunity;B2B_Agence_Engie_Home_Service_li_e__c;fieldLabel;;Agence {{Brand_Name}} liée
+Opportunity;CEE_pour_Engie_Home_Services__c;fieldLabel;;CEE par {{Brand_Name}}
+Opportunity;devis_cr_la_demande_de__c;picklistLabel;Demande EHS;Demande {{Brand_Acronym}}
+Opportunity;MotifDePerteOpp__c;picklistLabel;Abandon projet par EHS;Abandon projet par {{Brand_Acronym}}
+Opportunity;Raison__c;picklistLabel;RDV ou VT non honorée par EHS;RDV ou VT non honorée par {{Brand_Acronym}}
+Opportunity;Raison__c;picklistLabel;Devis conseil sur initiative d’EHS;Devis conseil sur initiative d’{{Brand_Acronym}}
+PaymentLinkTrack__c;CampaignName__c;picklistLabel;ENGIE Home Services;{{Brand_Name}}
+PaymentLinkTrack__c;PaymentGatewayName__c;picklistLabel;ENGIE Home Services;{{Brand_Name}}
+Product2;Marque__c;picklistLabel;12572;{{Brand_Name}}
+Ressource__c;OpenPlanning;webLinkUrl;;{{URL_ExtranetPro}}v2/planning?token=309b421e494b3376263425fb40f0619da186f5a7157aa139bf400b61ed9b031df9491495e69feac397783727267f17fffaabed5ca9a757c373194c1cc7d99b6215e3091a6a2ebba379a59cd8608a05c14a801aced1c7dbb8be6c38ff13bf26fc4471e39d8041b8875fa13bafae6988dfe431c7f17eb030d9fffb5694b6446d1f&ressourceId={!Ressource__c.Id}
+Script_technique__c;Entretien_avec_Engie_Home_Service__c;fieldLabel;;Entretien avec {{Brand_Name}}
+WorkOrder;DejaReportEHS__c;fieldLabel;;Déjà reporté {{Brand_Acronym}}

@@ -41,6 +41,9 @@ SUPPORTED_FILTER_OPERATIONS = {
     "lessOrEqual",
     "greaterOrEqual",
 }
+STANDARD_VALUE_SET_FIELDS = {
+    ("Lead", "LeadSource"): "LeadSource",
+}
 
 
 def fail(message):
@@ -126,6 +129,19 @@ def validate_api_name(value, field_name, line_number):
         )
 
 
+def validate_list_view_field_name(value, line_number):
+    if not value:
+        return
+    if re.fullmatch(r"[A-Za-z0-9_]+(__c|__mdt|__e|__x)?", value):
+        return
+    if re.fullmatch(r"[A-Za-z0-9_]+\.[A-Za-z0-9_]+(__c|__mdt|__e|__x)?", value):
+        return
+    raise RuntimeError(
+        f"CSV line {line_number}: invalid list view filter field '{value}'. "
+        "Use the Salesforce API/developer name only."
+    )
+
+
 def validate_template(row):
     template = row["template"]
     if not template:
@@ -192,16 +208,34 @@ def group_by_component(rows):
         grouped.setdefault(key, []).append(row)
     return grouped
 
-dlls
+
+def resolve_picklist_storage(row):
+    standard_value_set_name = STANDARD_VALUE_SET_FIELDS.get((row["objectApiName"], row["componentName"]))
+    if row["settingType"] == "picklistLabel" and standard_value_set_name:
+        return {"kind": "standardValueSet", "name": standard_value_set_name}
+    return {"kind": "field"}
+
+
 def resolve_group_key(row):
     return build_default_relative_path(
         row["objectApiName"],
         row["componentName"],
         row["settingType"],
+        row=row,
     ).as_posix()
 
 
-def build_default_relative_path(object_api_name, component_name, setting_type):
+def build_default_relative_path(object_api_name, component_name, setting_type, row=None):
+    if setting_type == "picklistLabel" and row:
+        storage = resolve_picklist_storage(row)
+        if storage["kind"] == "standardValueSet":
+            return (
+                Path("force-app")
+                / "main"
+                / "default"
+                / "standardValueSets"
+                / f"{storage['name']}.standardValueSet-meta.xml"
+            )
     if setting_type in {
         "fieldLabel",
         "helpText",
@@ -223,6 +257,11 @@ def build_default_relative_path(object_api_name, component_name, setting_type):
 
 def get_metadata_member(row):
     setting_type = row["settingType"]
+    if setting_type == "picklistLabel":
+        storage = resolve_picklist_storage(row)
+        if storage["kind"] == "standardValueSet":
+            return f"StandardValueSet:{storage['name']}"
+
     if setting_type in {
         "fieldLabel",
         "helpText",
@@ -385,7 +424,7 @@ def replace_tag(xml_text, tag_name, new_value, root_tag):
 
 def get_picklist_label(xml_text, target_name):
     blocks = re.findall(r"<value>[\s\S]*?</value>", xml_text)
-    matches = [block for block in blocks if f"<fullName>{target_name}</fullName>" in block]
+    matches = [block for block in blocks if get_tag_value(block, "fullName") == target_name]
     if len(matches) != 1:
         raise RuntimeError(f"Could not uniquely find picklist value '{target_name}' in metadata.")
     match = re.search(r"<label>([\s\S]*?)</label>", matches[0])
@@ -399,12 +438,41 @@ def update_picklist_label(xml_text, target_name, new_label):
     def replace_block(match):
         nonlocal updated_count
         block = match.group(0)
-        if f"<fullName>{target_name}</fullName>" not in block:
+        if get_tag_value(block, "fullName") != target_name:
             return block
         updated_count += 1
         return re.sub(r"<label>[\s\S]*?</label>", f"<label>{escaped}</label>", block, count=1)
 
     updated = re.sub(r"<value>[\s\S]*?</value>", replace_block, xml_text)
+    if updated_count != 1:
+        raise RuntimeError(f"Could not uniquely update picklist value '{target_name}'.")
+    return updated
+
+
+def get_standard_value_set_label(xml_text, target_name):
+    blocks = re.findall(r"<standardValue>[\s\S]*?</standardValue>", xml_text)
+    matches = [block for block in blocks if get_tag_value(block, "fullName") == target_name]
+    if len(matches) != 1:
+        raise RuntimeError(f"Could not uniquely find picklist value '{target_name}' in metadata.")
+    label = get_tag_value(matches[0], "label")
+    return label or target_name
+
+
+def update_standard_value_set_label(xml_text, target_name, new_label):
+    escaped = escape(str(new_label), {"'": "&apos;", '"': "&quot;"})
+    updated_count = 0
+
+    def replace_block(match):
+        nonlocal updated_count
+        block = match.group(0)
+        if get_tag_value(block, "fullName") != target_name:
+            return block
+        updated_count += 1
+        if re.search(r"<label>[\s\S]*?</label>", block):
+            return re.sub(r"<label>[\s\S]*?</label>", f"<label>{escaped}</label>", block, count=1)
+        return block.replace("</standardValue>", f"    <label>{escaped}</label>\n</standardValue>")
+
+    updated = re.sub(r"<standardValue>[\s\S]*?</standardValue>", replace_block, xml_text)
     if updated_count != 1:
         raise RuntimeError(f"Could not uniquely update picklist value '{target_name}'.")
     return updated
@@ -438,7 +506,7 @@ def parse_filter_target(target_name, line_number=None):
             f"{line_prefix}invalid targetName '{target_name}'. "
             "Expected 'FieldApiName' or 'FieldApiName|operation|occurrence'."
         )
-    validate_api_name(parsed["field"], "list view filter field", line_number or "unknown")
+    validate_list_view_field_name(parsed["field"], line_number or "unknown")
     if parsed["operation"] and parsed["operation"] not in SUPPORTED_FILTER_OPERATIONS:
         suggestion = suggest_value(parsed["operation"], SUPPORTED_FILTER_OPERATIONS)
         suggestion_message = f" Did you mean '{suggestion}'?" if suggestion else ""
@@ -521,6 +589,9 @@ def get_current_value(xml_text, row):
     if setting_type == "formula":
         return get_tag_value(xml_text, "formula")
     if setting_type == "picklistLabel":
+        storage = resolve_picklist_storage(row)
+        if storage["kind"] == "standardValueSet":
+            return get_standard_value_set_label(xml_text, row["targetName"])
         return get_picklist_label(xml_text, row["targetName"])
     if setting_type == "relatedListLabel":
         return get_tag_value(xml_text, "relationshipLabel")
@@ -550,6 +621,9 @@ def apply_update(xml_text, row, resolved):
     if setting_type == "formula":
         return replace_tag(xml_text, "formula", resolved, root_tag)
     if setting_type == "picklistLabel":
+        storage = resolve_picklist_storage(row)
+        if storage["kind"] == "standardValueSet":
+            return update_standard_value_set_label(xml_text, row["targetName"], resolved)
         return update_picklist_label(xml_text, row["targetName"], resolved)
     if setting_type == "relatedListLabel":
         return replace_tag(xml_text, "relationshipLabel", resolved, root_tag)
