@@ -11,12 +11,30 @@ from pathlib import Path
 from xml.sax.saxutils import escape, unescape
 
 
+# Default working folder used in `prepare` mode to write the modified metadata
+# before anything is copied back into the Salesforce project.
 DEFAULT_WORK_DIR = ".carve_out_work"
+
+# Default timeout for Salesforce CLI calls. The script performs retrieve/query/deploy
+# operations, so we keep these values centralized for easier tuning.
 DEFAULT_SF_TIMEOUT_SECONDS = 300
+
+# Salesforce SOQL/tooling queries can become too large if too many labels are queried
+# in one request, so labels are fetched in batches.
 MAX_SOQL_LABELS_PER_QUERY = 100
+
+# The script retrieves metadata by type/member. We batch those calls to reduce the
+# chance of hitting CLI/API limits or creating huge command lines.
 MAX_RETRIEVE_METADATA_MEMBERS_PER_BATCH = 20
+
+# Same batching idea for deploys: deploy a manageable number of source dirs per call.
 MAX_DEPLOY_SOURCE_DIRS_PER_BATCH = 20
+
+# The input CSV must match this exact schema and column order.
 CSV_HEADERS = ["objectApiName", "componentName", "settingType", "targetName", "template"]
+
+# Supported operations the script knows how to change in metadata files.
+# Each settingType maps to a specific XML tag or XML structure later in the script.
 SUPPORTED_SETTING_TYPES = {
     "defaultValue",
     "description",
@@ -30,6 +48,9 @@ SUPPORTED_SETTING_TYPES = {
     "webLinkUrl",
     "validationRuleFormula",
 }
+
+# Supported List View filter operators for `listViewFilterValue`.
+# These are validated early so wrong values fail before any retrieve/deploy happens.
 SUPPORTED_FILTER_OPERATIONS = {
     "contains",
     "equals",
@@ -43,17 +64,23 @@ SUPPORTED_FILTER_OPERATIONS = {
     "lessOrEqual",
     "greaterOrEqual",
 }
+
+# Some picklists are not stored under the field metadata file. For standard Salesforce
+# value sets, the label must be updated in `standardValueSets/*.standardValueSet-meta.xml`.
 STANDARD_VALUE_SET_FIELDS = {
     ("Lead", "LeadSource"): "LeadSource",
 }
 
 
 def fail(message):
+    # Small helper for "fatal" user-facing validation errors.
+    # We print to stderr so shells/pipelines can distinguish failures from normal output.
     print(message, file=sys.stderr)
     sys.exit(1)
 
 
 def format_batch_summary(batch_number, batch_size, paths):
+    # Produces a readable multi-line summary used when a deploy batch fails.
     lines = [f"- batch {batch_number}: {batch_size} file(s)"]
     for path in paths:
         lines.append(f"  - {path}")
@@ -61,6 +88,9 @@ def format_batch_summary(batch_number, batch_size, paths):
 
 
 def run_sf(args, timeout_seconds=DEFAULT_SF_TIMEOUT_SECONDS):
+    # Central wrapper around the Salesforce CLI (`sf` / `sf.cmd` on Windows).
+    # Every CLI call goes through here so timeout handling and error formatting stay
+    # consistent across retrieve/query/deploy operations.
     executable = "sf.cmd" if os.name == "nt" else "sf"
     cmd = [executable] + args
     try:
@@ -85,6 +115,8 @@ def run_sf(args, timeout_seconds=DEFAULT_SF_TIMEOUT_SECONDS):
 
 
 def read_csv(csv_path):
+    # Reads the input mapping CSV. The file may use comma or semicolon separators,
+    # so we sniff the delimiter first and then validate the exact header names/order.
     with open(csv_path, newline="", encoding="utf-8-sig") as f:
         sample = f.read(4096)
         f.seek(0)
@@ -118,17 +150,22 @@ def read_csv(csv_path):
 
 
 def normalize_row(row, line_number):
+    # Trim whitespace from every CSV cell and keep the original line number for
+    # precise error messages later.
     normalized = {key: (value or "").strip() for key, value in row.items()}
     normalized["_line"] = line_number
     return normalized
 
 
 def suggest_value(value, allowed_values):
+    # Used only for friendlier validation messages, e.g. typo suggestions in settingType.
     matches = difflib.get_close_matches(value, sorted(allowed_values), n=1, cutoff=0.6)
     return matches[0] if matches else ""
 
 
 def validate_api_name(value, field_name, line_number):
+    # Basic Salesforce API name validation.
+    # We intentionally allow standard names and common custom suffixes.
     if not value:
         return
     if not re.fullmatch(r"[A-Za-z0-9_]+(__c|__mdt|__e|__x)?", value):
@@ -139,6 +176,9 @@ def validate_api_name(value, field_name, line_number):
 
 
 def validate_list_view_field_name(value, line_number):
+    # List view filters may target either a direct field (`Status__c`) or a dotted
+    # relationship-style path (`RecordType.Name`-like shape), so this validator is
+    # slightly more permissive than `validate_api_name`.
     if not value:
         return
     if re.fullmatch(r"[A-Za-z0-9_]+(__c|__mdt|__e|__x)?", value):
@@ -152,6 +192,9 @@ def validate_list_view_field_name(value, line_number):
 
 
 def validate_template(row):
+    # The `template` column is the desired target value. It can contain literal text
+    # plus custom-label placeholders like `{{My_Label}}`, so we validate both that
+    # the placeholder markers are balanced and that label tokens are safe.
     template = row["template"]
     if not template:
         raise RuntimeError(f"CSV line {row['_line']}: template is required.")
@@ -173,6 +216,8 @@ def validate_template(row):
 
 
 def validate_row(row):
+    # Validates one CSV row before any metadata is retrieved.
+    # This is intentionally strict so mistakes are caught early and clearly.
     setting_type = row["settingType"]
     if setting_type not in SUPPORTED_SETTING_TYPES:
         suggestion = suggest_value(setting_type, SUPPORTED_SETTING_TYPES)
@@ -211,6 +256,8 @@ def validate_row(row):
 
 
 def group_by_component(rows):
+    # Multiple CSV rows may target the same metadata file (for example several updates
+    # to the same field or list view). We group them so the file is read/updated once.
     grouped = {}
     for row in rows:
         key = resolve_group_key(row)
@@ -219,6 +266,8 @@ def group_by_component(rows):
 
 
 def resolve_picklist_storage(row):
+    # Decides whether a picklist label lives in the field metadata file or in a
+    # separate Standard Value Set metadata file.
     standard_value_set_name = STANDARD_VALUE_SET_FIELDS.get((row["objectApiName"], row["componentName"]))
     if row["settingType"] == "picklistLabel" and standard_value_set_name:
         return {"kind": "standardValueSet", "name": standard_value_set_name}
@@ -226,6 +275,7 @@ def resolve_picklist_storage(row):
 
 
 def resolve_group_key(row):
+    # `group_key` is the relative path of the metadata file that this row will touch.
     return build_default_relative_path(
         row["objectApiName"],
         row["componentName"],
@@ -235,6 +285,9 @@ def resolve_group_key(row):
 
 
 def build_default_relative_path(object_api_name, component_name, setting_type, row=None):
+    # Converts a CSV row definition into the expected Salesforce metadata file path.
+    # This path is used both after retrieve (to locate the downloaded file) and during
+    # prepare/deploy (to know where the updated file belongs in the project).
     if setting_type == "picklistLabel" and row:
         storage = resolve_picklist_storage(row)
         if storage["kind"] == "standardValueSet":
@@ -265,6 +318,7 @@ def build_default_relative_path(object_api_name, component_name, setting_type, r
 
 
 def get_metadata_member(row):
+    # Builds the `Type:Member` syntax expected by `sf project retrieve start --metadata`.
     setting_type = row["settingType"]
     if setting_type == "picklistLabel":
         storage = resolve_picklist_storage(row)
@@ -295,16 +349,23 @@ def get_metadata_member(row):
 
 
 def retrieve_metadata_batch(alias, rows, timeout_seconds):
+    # Retrieves all metadata components required by the CSV.
+    # We de-duplicate first because several rows may point to the same component.
+    print(f"\n[DEBUG] Starting metadata retrieval for : {rows}")
     metadata_members = sorted({get_metadata_member(row) for row in rows})
+    print(f"\n[DEBUG] Unique metadata members identified: {metadata_members}")
+
     if not metadata_members:
+        print("[DEBUG] No metadata members to retrieve. Skipping.")
         return
 
     for batch_number, batch in enumerate(
         chunked(metadata_members, MAX_RETRIEVE_METADATA_MEMBERS_PER_BATCH), start=1
     ):
-        print(
-            f"Retrieving metadata batch {batch_number} with {len(batch)} component(s)..."
-        )
+        print(f"\n[DEBUG] --- Processing Batch #{batch_number} ---")
+        print(f"[DEBUG] Batch size: {len(batch)}")
+        print(f"[DEBUG] Batch contents: {batch}")
+
         args = [
             "project",
             "retrieve",
@@ -315,10 +376,14 @@ def retrieve_metadata_batch(alias, rows, timeout_seconds):
         ]
         for member in batch:
             args.extend(["--metadata", member])
-        run_sf(args, timeout_seconds=timeout_seconds)
+
+        print(f"[DEBUG] Constructing CLI arguments: {' '.join(args)}")
+        # run_sf(args, timeout_seconds=timeout_seconds)
 
 
 def deploy_files(alias, file_paths, timeout_seconds):
+    # Deploys prepared files in batches. If one batch fails, we include a summary of
+    # what already succeeded so the operator knows where to resume/investigate.
     deploy_paths = [str(path) for path in file_paths]
     if not deploy_paths:
         return
@@ -359,6 +424,8 @@ def deploy_files(alias, file_paths, timeout_seconds):
 
 
 def get_label_value(alias, label_name):
+    # Fetches a single Custom Label value from Salesforce using the Tooling API.
+    # In normal runs labels are prefetched in bulk, but this remains as a fallback.
     safe_label_name = label_name.replace("'", "\\'")
     soql = f"SELECT Value FROM ExternalString WHERE Name = '{safe_label_name}'"
     output = run_sf(
@@ -381,6 +448,7 @@ def get_label_value(alias, label_name):
 
 
 def extract_label_names(rows):
+    # Scans all templates and extracts every unique `{{Label_Name}}` token.
     label_names = set()
     for row in rows:
         label_names.update(re.findall(r"\{\{([A-Za-z0-9_]+)\}\}", row["template"]))
@@ -388,11 +456,14 @@ def extract_label_names(rows):
 
 
 def chunked(items, size):
+    # Generic batching helper used for labels, retrieves, and deploys.
     for index in range(0, len(items), size):
         yield items[index : index + size]
 
 
 def prefetch_label_values(alias, rows, timeout_seconds):
+    # Resolves every label token up front. This reduces repeated CLI calls and makes
+    # failures deterministic before we start editing metadata files.
     label_names = extract_label_names(rows)
     if not label_names:
         return {}
@@ -429,6 +500,8 @@ def prefetch_label_values(alias, rows, timeout_seconds):
 
 
 def resolve_template(template, alias, cache):
+    # Replaces every `{{Custom_Label}}` token in the template with the current value
+    # from Salesforce, preserving any surrounding literal text.
     def repl(match):
         label_name = match.group(1)
         if label_name not in cache:
@@ -439,6 +512,8 @@ def resolve_template(template, alias, cache):
 
 
 def get_file_path(project_root, group_key):
+    # After retrieve, Salesforce writes files into the local project structure.
+    # This helper verifies the expected file exists before we try to read it.
     path = project_root / Path(group_key)
     if not path.exists():
         raise RuntimeError(f"Retrieved metadata not found: {path}")
@@ -446,11 +521,16 @@ def get_file_path(project_root, group_key):
 
 
 def get_tag_value(xml_text, tag_name):
+    # Lightweight XML extraction helper.
+    # This script uses regex/string replacement instead of a full XML parser because
+    # Salesforce metadata files are predictable and we want to preserve formatting.
     match = re.search(rf"<{tag_name}>([\s\S]*?)</{tag_name}>", xml_text)
     return unescape(match.group(1)) if match else ""
 
 
 def replace_tag(xml_text, tag_name, new_value, root_tag):
+    # Replaces the first matching XML tag value, or inserts the tag before the closing
+    # root element if the tag does not exist yet.
     escaped = escape(str(new_value), {"'": "&apos;", '"': "&quot;"})
     pattern = rf"<{tag_name}>[\s\S]*?</{tag_name}>"
     replacement = f"<{tag_name}>{escaped}</{tag_name}>"
@@ -460,6 +540,8 @@ def replace_tag(xml_text, tag_name, new_value, root_tag):
 
 
 def get_picklist_label(xml_text, target_name):
+    # For custom-field picklists, each value lives inside a `<value>...</value>` block.
+    # We locate the block whose `<fullName>` matches the target value API name.
     blocks = re.findall(r"<value>[\s\S]*?</value>", xml_text)
     matches = [block for block in blocks if get_tag_value(block, "fullName") == target_name]
     if len(matches) != 1:
@@ -469,6 +551,8 @@ def get_picklist_label(xml_text, target_name):
 
 
 def update_picklist_label(xml_text, target_name, new_label):
+    # Updates exactly one custom picklist value label.
+    # If zero or multiple blocks match, we fail rather than guessing.
     escaped = escape(str(new_label), {"'": "&apos;", '"': "&quot;"})
     updated_count = 0
 
@@ -487,6 +571,7 @@ def update_picklist_label(xml_text, target_name, new_label):
 
 
 def get_standard_value_set_label(xml_text, target_name):
+    # Same idea as `get_picklist_label`, but for standard value sets.
     blocks = re.findall(r"<standardValue>[\s\S]*?</standardValue>", xml_text)
     matches = [block for block in blocks if get_tag_value(block, "fullName") == target_name]
     if len(matches) != 1:
@@ -496,6 +581,7 @@ def get_standard_value_set_label(xml_text, target_name):
 
 
 def update_standard_value_set_label(xml_text, target_name, new_label):
+    # Updates a standard value set label, inserting `<label>` if Salesforce omitted it.
     escaped = escape(str(new_label), {"'": "&apos;", '"': "&quot;"})
     updated_count = 0
 
@@ -516,6 +602,11 @@ def update_standard_value_set_label(xml_text, target_name, new_label):
 
 
 def parse_filter_target(target_name, line_number=None):
+    # `listViewFilterValue` uses `targetName` in a compact syntax:
+    #   FieldApiName
+    #   FieldApiName|operation|occurrence
+    # Example: `Region__c|contains|2`
+    # This helper parses and validates that syntax into a structured dict.
     parts = [part.strip() for part in target_name.split("|")]
     parsed = {"field": "", "operation": "", "index": 1}
     line_prefix = f"CSV line {line_number}: " if line_number else ""
@@ -557,6 +648,8 @@ def parse_filter_target(target_name, line_number=None):
 
 
 def find_filter_block(xml_text, target_name):
+    # Finds the matching `<filters>...</filters>` block inside a List View metadata file.
+    # If several filters use the same field, `occurrence` lets the CSV pick which one.
     target = parse_filter_target(target_name)
     matches = []
     for match in re.finditer(r"<filters>[\s\S]*?</filters>", xml_text):
@@ -583,17 +676,21 @@ def find_filter_block(xml_text, target_name):
 
 
 def get_list_view_filter_value(xml_text, target_name):
+    # Reads the current filter value from the matched List View filter block.
     block = find_filter_block(xml_text, target_name)
     return get_tag_value(block, "value")
 
 
 def update_list_view_filter_value(xml_text, target_name, new_value):
+    # Updates only the filter block selected by `find_filter_block`.
     block = find_filter_block(xml_text, target_name)
     updated_block = replace_tag(block, "value", new_value, "filters")
     return xml_text.replace(block, updated_block, 1)
 
 
 def get_root_tag(setting_type):
+    # Maps each settingType to the XML root element of the metadata file it belongs to.
+    # `replace_tag` needs this to insert missing tags in the right place.
     if setting_type in {
         "fieldLabel",
         "helpText",
@@ -614,6 +711,8 @@ def get_root_tag(setting_type):
 
 
 def get_current_value(xml_text, row):
+    # Reads the current value from the retrieved metadata file so `check` and `preview`
+    # modes can show the before/after comparison.
     setting_type = row["settingType"]
     if setting_type == "fieldLabel":
         return get_tag_value(xml_text, "label")
@@ -644,6 +743,8 @@ def get_current_value(xml_text, row):
 
 
 def apply_update(xml_text, row, resolved):
+    # Applies one resolved CSV row to the XML text.
+    # `resolved` already contains the final string after label placeholders were expanded.
     setting_type = row["settingType"]
     root_tag = get_root_tag(setting_type)
 
@@ -676,6 +777,8 @@ def apply_update(xml_text, row, resolved):
 
 
 def apply_updates(xml_text, rows, alias, cache):
+    # Applies all updates for one metadata file sequentially.
+    # The output of one change becomes the input to the next.
     updated = xml_text
     for row in rows:
         resolved = resolve_template(row["template"], alias, cache)
@@ -684,6 +787,7 @@ def apply_updates(xml_text, rows, alias, cache):
 
 
 def write_preview_csv(preview_path, preview_rows):
+    # Writes a spreadsheet-friendly report showing what would change.
     headers = [
         "objectApiName",
         "componentName",
@@ -702,6 +806,7 @@ def write_preview_csv(preview_path, preview_rows):
 
 
 def print_check_row(row, resolved_new_value):
+    # Human-friendly console output for `check` mode.
     label = row["settingType"]
     details = []
     if row["componentName"]:
@@ -714,6 +819,7 @@ def print_check_row(row, resolved_new_value):
 
 
 def add_preview_row(preview_rows, row, current_value, resolved_new_value, status, message=""):
+    # Keeps preview row construction centralized so the schema stays consistent.
     preview_rows.append(
         {
             "objectApiName": row["objectApiName"],
@@ -729,6 +835,15 @@ def add_preview_row(preview_rows, row, current_value, resolved_new_value, status
 
 
 def main():
+    # High-level execution flow:
+    # 1. Parse CLI arguments.
+    # 2. Read and validate the CSV.
+    # 3. Retrieve the relevant metadata from Salesforce.
+    # 4. Depending on the mode:
+    #    - check: only print resolved target values
+    #    - preview: compare current vs new values and write a report
+    #    - prepare: write updated metadata into a work directory
+    #    - deploy: prepare, copy into the project, and deploy to Salesforce
     parser = argparse.ArgumentParser(
         description=(
             "Apply custom-label-driven metadata updates for Salesforce object metadata.\n"
@@ -776,6 +891,7 @@ def main():
     preview_rows = []
 
     if args.mode in ("prepare", "deploy"):
+        # Rebuild the work directory from scratch so it contains only files from this run.
         if work_dir.exists():
             shutil.rmtree(work_dir)
         work_dir.mkdir(parents=True, exist_ok=True)
@@ -784,6 +900,7 @@ def main():
     retrieve_metadata_batch(args.alias, rows, args.sf_timeout_seconds)
 
     for group_key, component_rows in grouped.items():
+        # Each group corresponds to one metadata file on disk.
         print(f"\nProcessing {group_key}")
 
         try:
@@ -791,6 +908,8 @@ def main():
             xml_text = component_file.read_text(encoding="utf-8")
 
             if args.mode in ("check", "preview"):
+                # Non-destructive modes: read current values and compute the future ones,
+                # but do not write any files.
                 for row in component_rows:
                     current_value = get_current_value(xml_text, row)
                     resolved_new_value = resolve_template(row["template"], args.alias, label_cache)
@@ -811,6 +930,8 @@ def main():
             print(f"- prepared {output_file}")
         except Exception as exc:
             if args.mode in ("check", "preview"):
+                # In preview-oriented modes we keep going and record the error per row so
+                # the user gets a full report instead of failing on the first problem.
                 for row in component_rows:
                     add_preview_row(preview_rows, row, "", "", "ERROR", str(exc))
                 continue
@@ -827,6 +948,9 @@ def main():
         return
 
     if args.mode == "deploy":
+        # `deploy` mode intentionally copies prepared files back into the project before
+        # running `sf project deploy start`, because the CLI deploy command expects files
+        # from the Salesforce project structure.
         print("\nCopying prepared files into the project...")
         for prepared_file, project_file in prepared_files:
             project_file.parent.mkdir(parents=True, exist_ok=True)
@@ -839,5 +963,22 @@ def main():
         print("\nDeployment finished.")
 
 
+# if __name__ == "__main__":
+#     main()
+
 if __name__ == "__main__":
-    main()
+    # Mock data to simulate what read_csv would return
+    test_rows = [
+        {"objectApiName": "Lead", "componentName": "Status", "settingType": "picklistLabel", "targetName": "Open"},
+        {"objectApiName": "Lead", "componentName": "MyField__c", "settingType": "fieldLabel", "template": "My Label"},
+        {"objectApiName": "Account", "componentName": "Industry", "settingType": "picklistLabel", "targetName": "Banking"},
+    ]
+    
+    # Example call (Change 'my-org-alias' to your actual alias)
+    # Note: This will actually attempt to call 'sf', so ensure you are logged in 
+    # or comment out 'run_sf' in the code to just see the prints.
+    try:
+        retrieve_metadata_batch("my-org-alias", test_rows, 30)
+    except Exception as e:
+        print(f"\nStopped at run_sf execution: {e}")
+
