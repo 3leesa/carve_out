@@ -16,16 +16,16 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
     
     Boolean isExtUserProfile = (UserInfo.getProfileId() == ExtUserProfileId); //NI : MCOSF-2742 - 28/03/2023
     Map<Id, Case> newCasesMap = (Map<Id, Case>) Trigger.newMap;
-    Map<Id, Case> oldCasesMap = (Map<Id, Case>) Trigger.oldMap;
+	Map<Id, Case> oldCasesMap = (Map<Id, Case>) Trigger.oldMap;
 
-    List<Case> newCases = (List<Case>) Trigger.new;
-    List<Case> oldCases = (List<Case>) Trigger.old;
+	List<Case> newCases = (List<Case>) Trigger.new;
+	List<Case> oldCases = (List<Case>) Trigger.old;
     
     if (Trigger.isBefore) {
         TR005_CaseTriggerHandler.getRelatedRecords(newCases, oldCasesMap);
         if (Trigger.isInsert) {
             User u = [SELECT IsAdmin__c from User where Id = :UserInfo.getUserId()];
-            System.debug(LoggingLevel.INFO,'##### Trigger CaseTrigger -- Before Insert -- BEGIN');
+			System.debug(LoggingLevel.INFO,'##### Trigger CaseTrigger -- Before Insert -- BEGIN');
             // TR005_CaseTriggerHandler.preventDuplicateCreation(newCases, u.IsAdmin__c);
             TR005_CaseTriggerHandler.preventDuplicateDevisPoseAssetCreation(newCases, u.IsAdmin__c);
             
@@ -80,7 +80,7 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
         if (Trigger.isUpdate) {
             System.debug(LoggingLevel.INFO,'##### Trigger CaseTrigger -- Before Update -- BEGIN');
             TR005_CaseTriggerHandler.beforeUpdateProcessing(newCases);
-            TR005_CaseTriggerHandler.eContrat_afterProcessing(newCases);
+			TR005_CaseTriggerHandler.eContrat_afterProcessing(newCases);
             if (!isExtUserProfile) {
                 TR005_CaseTriggerHandler.CMI_beforeUpdateProcessing(newCases, oldCasesMap, newCasesMap);
                 Map<Id, Case> majCaseOwnerLst = new Map<Id, Case>();
@@ -133,15 +133,15 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
             System.debug(LoggingLevel.INFO,'##### Trigger CaseTrigger -- After Insert -- BEGIN');
             if(!Test.isRunningTest()) TR005_CaseTriggerHandler.majGestionaireDemande(newCases); //MCOSF-4744
             TR005_CaseTriggerHandler.afterInsertProcessing(newCases);
-            TR005_CaseTriggerHandler.eContrat_afterProcessing(newCases);
+			TR005_CaseTriggerHandler.eContrat_afterProcessing(newCases);
             //création d'opportunité sur demandes (devis/pose, devis/pose AD, Souscription)
-            TR005_CaseTriggerHandler.createOpportunityOnCase(newCases);
+    		TR005_CaseTriggerHandler.createOpportunityOnCase(newCases);
             TR005_CaseTriggerHandler.calculNombreReclamations(newCases);
             //MCOSF-2643 - Service Client : Echange client lors de la creation d'une demande de depannage depuis l'espace client
             TR005_CaseTriggerHandler.createTaskFromCaseEC(newCases);
             //MCOSF-6278 -Creates "Prestation Hors Contrat" Opportunity when a "Visite / Entretien" case is created on an Asset with no active contract
             TR005_CaseTriggerHandler.createOppForPrestationHorsContrat(newCases);
-            //System.debug(LoggingLevel.INFO,'##### Trigger CaseTrigger -- After Insert -- END');
+            System.debug(LoggingLevel.INFO,'##### Trigger CaseTrigger -- After Insert -- END');
         }
 
         // MCOSF-2742 - bypass update for community user

@@ -28,17 +28,12 @@ public class TR005_CaseTriggerHandler {
         get {return Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('PoseEquipement').getRecordTypeId();}
     }
 
-    /*public static Id getPoseEquipementRecordTypeId() {
-    return Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName()
-        .get('PoseEquipement').getRecordTypeId();
-    }*/
-
     public static String OPPORTUNITY_RECORDTYPE_PRESTATION_HORS_CONTRAT_ID {
     get { 
         return Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('Prestation_Hors_Contrat').getRecordTypeId(); 
     }
     }
-    
+
     public static Boolean firstRunMajCaseOwner = true;
     public static Boolean firstRunMajCaseOwnerAfterUpdate = true; //MCOSF-2573 : maj case owner after update
     public static Boolean firstRunMajWorkorderAssocies = true;
@@ -61,7 +56,7 @@ public class TR005_CaseTriggerHandler {
     public static Map<Id, User> usersMap = new Map<Id, User>();
     public static Map<Id, Case> parentCasesMap = new Map<Id, Case>();
     // public static Map<Id, List<Case>> relatedCasesMap = new Map<Id, List<Case>>();
-    public static Map<Id, Asset> astMap = new Map<Id, Asset>();
+    public static Map<Id, Asset> astMap = new Map<Id, Asset>(); 
     public static Set<WorkOrder> relatedWos = new Set<WorkOrder>();
     public static Map<Id, Agence__c> sitesMap = new Map<Id, Agence__c>();
     
@@ -329,8 +324,7 @@ public class TR005_CaseTriggerHandler {
     * Trigger : Case.AFTER_INSERT
     * Creates "Prestation Hors Contrat" Opportunity when a "Visite / Entretien" case
     * is created on an Asset with no active contract
-*/    
-
+    */
     public static void createOppForPrestationHorsContrat(List<Case> newCases) {
     System.debug('##### TR005_CaseTriggerHandler - CreateOppForPrestationHorsContrat -- BEGIN');
 
@@ -379,8 +373,6 @@ public class TR005_CaseTriggerHandler {
 
     System.debug('##### TR005_CaseTriggerHandler - CreateOppForPrestationHorsContrat -- END');
     }
-    
-    
     //MCOSF-3571 : Recette parcours web - Creer Opp en Asynchro - START
     public class CaseQueueable implements System.Queueable {
         private List<String> caseIdList;
@@ -609,7 +601,7 @@ public class TR005_CaseTriggerHandler {
                 //system.debug('MJS-TEST-casesCMIEnquete2: ' + casesCMIEnquete);
                 AP_EnvoiEnqueteCMI.envoiEnqueteCMI(casesCMIEnquete);
             }
-                */
+            */
         }
     }
     
